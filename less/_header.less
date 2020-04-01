@@ -1,5 +1,8 @@
 /* Header */
 
+.header {
+    background-color: #ffffff;
+}
 
 .header__top {
     display: flex;
@@ -127,6 +130,27 @@
     
     &:nth-child(2) {
         border-top: 1px solid #d3d3d3;
+        position: relative;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: -1px;
+            width: 30px;
+            height: 2px;
+            background-color: #ffffff;
+        }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0px;
+            top: -1px;
+            width: 30px;
+            height: 2px;
+            background-color: #ffffff;
+        }
     }
 }
 
@@ -151,6 +175,10 @@
     
     .general-drop__wrapper {
         width: 100%;
+    }
+    
+    .general-drop__link {
+        padding: 15px 30px;
     }
 }
 
