@@ -1,0 +1,115 @@
+// Popup
+
+.popup {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+    &.active {
+        display: flex;
+        
+        .popup-content {
+            animation: popup-scale .6s;
+        }
+    }
+}
+
+.popup__wrapper {
+    width: 100%;
+    margin: auto 0px;
+    position: relative;
+    animation: popup-scale .5s;
+    
+    &.popup-reviews {
+        max-width: 540px;
+        padding-top: 100px;
+        
+        .close-popup {
+            top: 30px;
+        }
+    }
+}
+
+
+@keyframes popup-scale {
+    0% {
+        transform: scale(0);
+    }
+    
+    100% {
+        transform: scale(1);
+    }
+}
+
+.close-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    right: 0px;
+    top: -70px;
+    transition: background-color .4s;
+    z-index: 3;
+    
+    .decor {
+        width: 14px;
+        height: 14px;
+        position: relative;
+        transform: rotate(-45deg);
+        
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+            transform: translateY(-50%);
+            background-color: #ffffff;
+            transition: background-color .4s;
+        }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0px;
+            width: 1px;
+            height: 100%;
+            transform: translateX(-50%);
+            background-color: #ffffff;
+            transition: background-color .4s;
+        }
+    }
+}
+
+.popup-reviews {
+    .reviews__item {
+        width: 100%;
+        margin-right: 0px;
+    }
+    
+    .reviews__text {
+        max-height: 100%;
+        display: block;
+
+    }
+}

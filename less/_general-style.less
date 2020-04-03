@@ -88,8 +88,8 @@ body {
 }
 
 .container {
-    max-width: 1150px;
-    padding: 0px 20px;
+    max-width: 1170px;
+    padding: 0px 40px;
     margin: 0px auto;
 }
 
@@ -142,8 +142,9 @@ body {
 
 .main-button-more {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    position: relative;
     max-width: 290px;
     width: 100%;
     height: 48px;
@@ -153,14 +154,17 @@ body {
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.08);
     font-size: 13px;
     font-weight: 700;
+    padding-right: 20px;
     text-transform: uppercase;
     margin-left: auto;
-    transition: background-color .4s, border-color .4s;
+    transition: background-color .4s, border-color .4s, color .4s;
     
     .icon-arrow-more {
-        font-size: 10px;
-        margin-left: 30px;
-        padding-right: 10px;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 9px;
     }
 }
 

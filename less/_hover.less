@@ -1,4 +1,4 @@
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1170px) {
     /* Header */
     
     .general-drop {
@@ -133,6 +133,19 @@
                 }
             }
         }
+    }
+    
+    .header__general-button {
+        &:hover {
+            background-color: #4ad14a;
+            color: #ffffff;
+        }
+        
+        &:active {
+            backround-color: #2c922c;
+            transition: none;
+        }
+        
     }
     
     /* // Header */
@@ -341,10 +354,129 @@
     
     /* Best company */
     
+    .best-company__item {
+        &:hover {
+            box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.08);
+        }
+    }
+    
     .best-company__name {
         &:hover {
             background-color: #ffffff;
             color: #2c922c;
+        }
+    }
+    
+    /* // Best Company */
+    
+    /* Popup */
+    
+    .close-popup {
+        
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            
+             .decor {
+                 &::before,
+                 &::after {
+                     background-color: rgb(61, 61, 61);
+                 }
+            }
+        }
+        
+        &:active {
+            background-color: rgba(255, 255, 255, 0.7);
+            transition: none;;
+        }
+    }
+    
+    /* //Popup */
+    
+    /* Footer */
+    
+    .footer__social-link {
+        &:hover {
+            background-color: #f5f5f5;
+            
+            .icon-facebook {
+                color: #3b5998;
+            }
+            
+            .icon-instagram {
+                color: #e1306c;
+            }
+            .icon-message:before {
+                color: #2c922c;
+            }
+            
+            .icon-telegram:before {
+                color: #0088cc;
+            }
+            
+            .icon-twitter:before {
+                color: #1da1f2;
+            }
+            
+            .icon-vk:before {
+                color: #45668e;
+            }
+            
+            .icon-youtube:before {
+                color: #ff0000;
+            }
+        }
+    }
+    
+    .footer__call-back__button {
+        &:hover {
+            color: #f5850c;
+        }
+        
+        &:active {
+            color: #da770c;
+            transition: none;
+        }
+    }
+    
+    .footer__menu__link {
+        &:hover {
+            color: #2c922c;
+        }
+        
+        &:active {
+            color: #055c05;
+            transition: none;
+        }
+    }
+    
+    .footer__sub-button {
+        &:hover {
+            color: #2c922c;
+        }
+        
+        &:active {
+            color: #055c05;
+        }
+    }
+    
+    .footer__sub-category__link {
+        &:hover {
+            color: #2c922c;
+        }
+        
+        &:active {
+            color: #055c05;
+        }
+    }
+    
+    .footer__copyright__link {
+        &:hover {
+            background-color: #373737;
+        }
+        
+        &:active {
+            background-color: #2c2c2c;
+            transition: none;
         }
     }
 }

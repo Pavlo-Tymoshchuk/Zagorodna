@@ -105,6 +105,36 @@ document.addEventListener('DOMContentLoaded', function(){
     // // /SLider
     
     
+    // Burger and search
+    
+    document.addEventListener('click', function(e){
+        let elem = e.target;
+        let mobileMenu = document.querySelector('.header__nav');
+        
+        if(elem.closest('.header-burger')) {
+            
+            if(mobileMenu) {
+                mobileMenu.classList.toggle("active");
+                document.querySelector('.header-burger').classList.toggle('active');
+            }
+        }
+        
+        if(!elem.closest(".header__nav") && !elem.closest(".header-burger")) {
+            mobileMenu.classList.remove("active");
+            document.querySelector('.header-burger').classList.remove('active');
+        }
+        
+        if(elem.closest('.header__button-search')) {
+            document.querySelector('.header__search-tablet').classList.toggle("active");
+        }
+        
+        if(!elem.closest(".header__button-search") && !elem.closest('.header__search-tablet')) {
+            document.querySelector('.header__search-tablet').classList.remove("active");
+        }
+    });
+    
+    // //Burger  and search
+    
     // Drop
     
     var dropList = document.querySelectorAll('.js-drop-item');
@@ -236,4 +266,97 @@ document.addEventListener('DOMContentLoaded', function(){
     
     // //Infinty slider
     
+    // More info
+        
+      function showMoreInfo() {
+            
+        let info = document.querySelectorAll('.js-item .js-content p');
+        let content = document.querySelectorAll('.js-item .js-content');
+        let moreButton = document.querySelectorAll('.js-item .js-more');
+        
+        if(info) {
+            for(var i = 0; info.length > i; i++) {
+                if(info[i].offsetHeight > content[i].offsetHeight) {
+                    moreButton[i].classList.add('show');
+                }else {
+                    moreButton[i].classList.remove('show');
+                }
+            }
+        }
+    }
+        
+    showMoreInfo();
+    
+    window.addEventListener('resize', function(){
+        showMoreInfo();
+    });
+    
+
+    
+    document.addEventListener('click', function(e){
+        let elem = e.target;
+        
+        if(elem.closest(".js-more")) {
+            let wrapper = elem.closest(".js-more").closest('.js-item');
+            let firstElem = wrapper.querySelector(".reviews__header").cloneNode(true);
+            let secondElem = wrapper.querySelector(".reviews__caption").cloneNode(true);
+            let thirdElem = wrapper.querySelector(".reviews__text").cloneNode(true);
+            document.querySelector('.popup-reviews .reviews__item').append(firstElem);
+            document.querySelector('.popup-reviews .reviews__item').append(secondElem);
+            document.querySelector('.popup-reviews .reviews__item').append(thirdElem);
+        }
+    });
+    
+    // /More info
+    
+    // Popup
+        
+    let mainButton = document.querySelectorAll('.js-button');
+    let overlay = document.querySelector('.overlay');
+    let htmlOverflow = document.querySelector('html');
+    
+    for(var i = 0; mainButton.length > i; i++) {
+        if(mainButton[i] !== null) {
+            
+            mainButton[i].addEventListener('click', function(){
+                let getData = this.getAttribute('data-target');
+                let popup = document.querySelector('.popup[data-target = ' + getData + ']');
+                popup.classList.add('active');
+                htmlOverflow.classList.add('overflow')
+            });
+        }
+    }
+    
+    document.addEventListener('click', function(e){
+        let elem = e.target;
+        let popupActive = document.querySelector('.popup.active');
+        let popupReviews = document.querySelector(".popup-reviews").closest('.popup.active');
+        
+        if(elem.closest('.js-close')){
+            if(popupReviews) {
+                popupReviews.querySelector('.reviews__header').remove();
+                popupReviews.querySelector('.reviews__caption').remove();
+                popupReviews.querySelector('.reviews__text').remove();
+            }
+            
+            if(popupActive) {
+                popupActive.classList.remove('active');
+                htmlOverflow.classList.remove('overflow');
+            }
+        }
+        
+        if(!elem.closest(".popup-content") && !elem.closest(".js-button")) {
+            if(popupActive) {
+                popupActive.classList.remove('active');
+                htmlOverflow.classList.remove('overflow');
+            }
+            if(popupReviews) {
+                popupReviews.querySelector('.reviews__header').remove();
+                popupReviews.querySelector('.reviews__caption').remove();
+                popupReviews.querySelector('.reviews__text').remove();
+            }
+        }
+    });
+    
+    // //Popup 
 });

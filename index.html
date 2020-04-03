@@ -9,8 +9,8 @@
 <body>
     <header class="header">
         <div class="header__top">
-            <div class="header__city general-drop">
-                <p class="header__city__wrapper">
+            <div class="header__city general-drop js-drop-item">
+                <p class="header__city__wrapper js-drop-button">
                     <span class="icon-place"></span>
                     <span class="header__city__text">Киев</span>
                     <span class="icon-drop"></span>
@@ -46,11 +46,38 @@
                     </ul>
                 </div>
             </div>
+            <div class="header__search header__search-tablet">
+                <form action="#" class="header__form">
+                    <label class="input__wrapper">
+                        <input type="text" class="main-input" placeholder="Что искать?">
+                    </label>
+                    <button class="header__search-button">
+                        <span class="icon-search"></span>
+                    </button>
+                </form>
+            </div>
+            <div class="header__navigation">
+                <button class="header-burger">
+                    <span class="header-burger__decor"></span>
+                    <span class="header-burger__decor"></span>
+                </button>
+                <button class="header__button-search"><span class="icon-search"></span></button>
+                <a href="#" class="header__button header__button-general"><span class="icon-heart-outline"></span></a>
+                <div class="header__buttons__wrapper header__buttons__wrapper-mobile">
+                    <a href="#" class="header__button">
+                        <span class="icon-bell-outline"></span>
+                        <span class="header__button-noty"></span>
+                    </a>
+                </div>
+            </div>
             <nav class="header__nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item general-drop">
-                        <span class="header__nav-item-text">Журнал</span>
-                        <span class="icon-drop"></span>
+                    <li class="header__nav-item general-drop js-drop-item">
+                        <button class="js-drop-button">
+                            <span class="header__nav-tablet-icon" style="background-image:url(./img/header-icon-img-1.svg)"></span>
+                            <span class="header__nav-item-text">Журнал</span>
+                            <span class="icon-drop"></span>
+                        </button>
                         <div class="general-drop__wrapper">
                             <ul class="general-drop__list">
                                 <li class="general-drop__item active">
@@ -68,9 +95,81 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="header__nav-item general-drop">
-                        <span class="header__nav-item-text">Аналитика</span>
-                        <span class="icon-drop"></span>
+                    <li class="header__nav-item general-drop js-drop-item">
+                        <button class="js-drop-button">
+                            <span class="header__nav-tablet-icon" style="background-image:url(./img/header-icon-img-2.svg)"></span>
+                            <span class="header__nav-item-text">Аналитика</span>
+                            <span class="icon-drop"></span>
+                        </button>
+                        <div class="general-drop__wrapper">
+                            <ul class="general-drop__list">
+                                <li class="general-drop__item">
+                                    <a href="#" class="general-drop__link">Экспертиза недвижимости</a>
+                                </li>
+                                <li class="general-drop__item">
+                                    <a href="#" class="general-drop__link">Маркетинговые исследования</a>
+                                </li>
+                                <li class="general-drop__item">
+                                    <a href="#" class="general-drop__link">Классификация недвижимости</a>
+                                </li>
+                                <li class="general-drop__item">
+                                    <a href="#" class="general-drop__link">Земля Украины</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__nav-item general-drop js-drop-item">
+                        <button class="js-drop-button">
+                            <span class="header__nav-tablet-icon" style="background-image:url(./img/header-icon-img-3.svg)"></span>
+                            <span class="header__nav-item-text">Мероприятия</span>
+                            <span class="icon-drop"></span>
+                        </button>
+                        <div class="general-drop__wrapper">
+                            <ul class="general-drop__list">
+                                <li class="general-drop__item">
+                                    <a href="#" class="general-drop__link">Экспертиза недвижимости</a>
+                                </li>
+                                <li class="general-drop__item">
+                                    <a href="#" class="general-drop__link">Маркетинговые исследования</a>
+                                </li>
+                                <li class="general-drop__item">
+                                    <a href="#" class="general-drop__link">Классификация недвижимости</a>
+                                </li>
+                                <li class="general-drop__item">
+                                    <a href="#" class="general-drop__link">Земля Украины</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__nav-item general-drop js-drop-item">
+                        <button class="js-drop-button">
+                            <span class="header__nav-tablet-icon" style="background-image:url(./img/header-icon-img-4.svg)"></span>
+                            <span class="header__nav-item-text">Сервисы</span>
+                            <span class="icon-drop"></span>
+                        </button>
+                        <div class="general-drop__wrapper">
+                            <ul class="general-drop__list">
+                                <li class="general-drop__item">
+                                    <a href="#" class="general-drop__link">Экспертиза недвижимости</a>
+                                </li>
+                                <li class="general-drop__item">
+                                    <a href="#" class="general-drop__link">Маркетинговые исследования</a>
+                                </li>
+                                <li class="general-drop__item">
+                                    <a href="#" class="general-drop__link">Классификация недвижимости</a>
+                                </li>
+                                <li class="general-drop__item">
+                                    <a href="#" class="general-drop__link">Земля Украины</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__nav-item general-drop js-drop-item">
+                        <button class="js-drop-button">
+                            <span class="header__nav-tablet-icon" style="background-image:url(./img/header-icon-img-5.svg)"></span>
+                            <span class="header__nav-item-text">Инфо-центр</span>
+                            <span class="icon-drop"></span>
+                        </button>
                         <div class="general-drop__wrapper">
                             <ul class="general-drop__list">
                                 <li class="general-drop__item active">
@@ -88,72 +187,15 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="header__nav-item general-drop">
-                        <span class="header__nav-item-text">Мероприятия</span>
-                        <span class="icon-drop"></span>
+                    <li class="header__nav-item general-drop js-drop-item">
+                        <button class="js-drop-button">
+                            <span class="header__nav-tablet-icon" style="background-image:url(./img/header-icon-img-6.svg)"></span>
+                            <span class="header__nav-item-text">О компании</span>
+                            <span class="icon-drop"></span>
+                        </button>
                         <div class="general-drop__wrapper">
                             <ul class="general-drop__list">
-                                <li class="general-drop__item active">
-                                    <a href="#" class="general-drop__link">Экспертиза недвижимости</a>
-                                </li>
                                 <li class="general-drop__item">
-                                    <a href="#" class="general-drop__link">Маркетинговые исследования</a>
-                                </li>
-                                <li class="general-drop__item">
-                                    <a href="#" class="general-drop__link">Классификация недвижимости</a>
-                                </li>
-                                <li class="general-drop__item">
-                                    <a href="#" class="general-drop__link">Земля Украины</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="header__nav-item general-drop">
-                        <span class="header__nav-item-text">Сервисы</span>
-                        <span class="icon-drop"></span>
-                        <div class="general-drop__wrapper">
-                            <ul class="general-drop__list">
-                                <li class="general-drop__item active">
-                                    <a href="#" class="general-drop__link">Экспертиза недвижимости</a>
-                                </li>
-                                <li class="general-drop__item">
-                                    <a href="#" class="general-drop__link">Маркетинговые исследования</a>
-                                </li>
-                                <li class="general-drop__item">
-                                    <a href="#" class="general-drop__link">Классификация недвижимости</a>
-                                </li>
-                                <li class="general-drop__item">
-                                    <a href="#" class="general-drop__link">Земля Украины</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="header__nav-item general-drop">
-                        <span class="header__nav-item-text">Инфо-центр</span>
-                        <span class="icon-drop"></span>
-                        <div class="general-drop__wrapper">
-                            <ul class="general-drop__list">
-                                <li class="general-drop__item active">
-                                    <a href="#" class="general-drop__link">Экспертиза недвижимости</a>
-                                </li>
-                                <li class="general-drop__item">
-                                    <a href="#" class="general-drop__link">Маркетинговые исследования</a>
-                                </li>
-                                <li class="general-drop__item">
-                                    <a href="#" class="general-drop__link">Классификация недвижимости</a>
-                                </li>
-                                <li class="general-drop__item">
-                                    <a href="#" class="general-drop__link">Земля Украины</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="header__nav-item general-drop">
-                        <span class="header__nav-item-text">О компании</span>
-                        <span class="icon-drop"></span>
-                        <div class="general-drop__wrapper">
-                            <ul class="general-drop__list">
-                                <li class="general-drop__item active">
                                     <a href="#" class="general-drop__link">Экспертиза недвижимости</a>
                                 </li>
                                 <li class="general-drop__item">
@@ -177,9 +219,12 @@
                     <li class="header__nav-item">
                         <a href="#" class="header__nav-link">Словарь</a>
                     </li>
-                    <li class="header__nav-item general-drop">
-                        <span class="header__nav-item-text">Бизнесу</span>
-                        <span class="icon-drop"></span>
+                    <li class="header__nav-item general-drop js-drop-item">
+                        <button class="js-drop-button">
+                            <span class="header__nav-tablet-icon" style="background-image:url(./img/header-icon-img-7.svg)"></span>
+                            <span class="header__nav-item-text">Бизнесу</span>
+                            <span class="icon-drop"></span>
+                        </button>
                         <div class="general-drop__wrapper">
                             <ul class="general-drop__list">
                                 <li class="general-drop__item active">
@@ -198,6 +243,22 @@
                         </div>
                     </li>
                 </ul>
+                <div class="header__change-lang general-drop js-drop-item">
+                    <button class="js-drop-button">
+                        <span class="header__change-lang__text">Рус</span>
+                        <span class="icon-drop"></span>
+                    </button>
+                    <div class="general-drop__wrapper">
+                        <ul class="general-drop__list">
+                            <li class="general-drop__item active">
+                                <a href="#" class="general-drop__link">Рус</a>
+                            </li>
+                            <li class="general-drop__item">
+                                <a href="#" class="general-drop__link">Укр</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <div class="header__change-lang general-drop">
                 <span class="header__change-lang__text">Рус</span>
@@ -205,7 +266,7 @@
                 <div class="general-drop__wrapper">
                     <ul class="general-drop__list">
                         <li class="general-drop__item active">
-                            <a href="#" class="general-drop__link active">Рус</a>
+                            <a href="#" class="general-drop__link">Рус</a>
                         </li>
                         <li class="general-drop__item">
                             <a href="#" class="general-drop__link">Укр</a>
@@ -215,10 +276,10 @@
             </div>
         </div>
         <div class="header__dow">
-            <div class="header__logo">
+            <a href="#" class="header__logo">
                 <img src="./img/logo.svg" alt="Zagorodna">
                 <p class="header__logo__text">Портал загородной недвижимости №1 в Украине</p>
-            </div>
+            </a>
             <ul class="header__list">
                 <li class="header__item">
                     <a href="#" class="header__link">
@@ -256,6 +317,8 @@
                 </form>
             </div>
             <div class="header__buttons__wrapper">
+                <a href="#" class="header__general-button">Оценить объект</a>
+                <a href="#" class="header__button header__button-general"><span class="icon-heart-outline"></span></a>
                 <a href="#" class="header__button">
                     <span class="icon-heart-outline"></span>
                 </a>
@@ -423,7 +486,7 @@
                             </p>
                             <p class="procut__distance">
                                 <span class="icon-city-variant-outline"></span>
-                                <span>10 км</span>
+                                <span>10 <span>км</span></span>
                             </p>
                         </div>
                     </li>
@@ -457,7 +520,7 @@
                             </p>
                             <p class="procut__distance">
                                 <span class="icon-city-variant-outline"></span>
-                                <span>10 км</span>
+                                <span>10 <span>км</span></span>
                             </p>
                         </div>
                     </li>
@@ -491,7 +554,7 @@
                             </p>
                             <p class="procut__distance">
                                 <span class="icon-city-variant-outline"></span>
-                                <span>10 км</span>
+                                <span>10 <span>км</span></span>
                             </p>
                         </div>
                     </li>
@@ -525,7 +588,7 @@
                             </p>
                             <p class="procut__distance">
                                 <span class="icon-city-variant-outline"></span>
-                                <span>10 км</span>
+                                <span>10 <span>км</span></span>
                             </p>
                         </div>
                     </li>
@@ -559,7 +622,7 @@
                             </p>
                             <p class="procut__distance">
                                 <span class="icon-city-variant-outline"></span>
-                                <span>10 км</span>
+                                <span>10 <span>км</span></span>
                             </p>
                         </div>
                     </li>
@@ -593,12 +656,12 @@
                             </p>
                             <p class="procut__distance">
                                 <span class="icon-city-variant-outline"></span>
-                                <span>10 км</span>
+                                <span>10 <span>км</span></span>
                             </p>
                         </div>
                     </li>
                 </ul>
-                <div class="general-button__wrapper js-arrow-infinity">
+                <div class="general-button__wrapper js-arrow-infinity general-button--hide">
                     <div class="wrapper">
                         <button class="general-button prev">
                             <span class="icon-arrow-left"></span>
@@ -1123,7 +1186,7 @@
                     <p class="calc-product">24 <span>Всего</span></p>
                 </div>
                 <ul class="reviews__list js-infinity-slider-list reviews-slider__list">
-                    <li class="reviews__item reviews-slider__item js-slider-item-infinity show">
+                    <li class="reviews__item reviews-slider__item js-slider-item-infinity show js-item">
                         <div class="reviews__header">
                             <div class="wrapper">
                                 <ul class="star__list">
@@ -1153,14 +1216,16 @@
                             <p>Актер</p>
                         </div>
                         <div class="reviews__text">
-                            <p>Повседневная практика показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки систем массового участия. Товарищи! сложившаяся структура организации позволяет оценить значение модели развития. Таким образом реализация намеченных плановых заданий в значительной...</p>
+                            <div class="js-content">
+                                <p>Повседневная практика показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки систем массового участия. Товарищи! сПовседневная практика показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки систем массового участия. Товарищи! сложившаяся структура организации позволяет оценить значение модели развития. Таким образом реализация намеченных плановых заданий в значительной.ложившаяся структура организации позволяет оценить значение модели развития. Таким образом реализация намеченных плановых заданий в значительной...</p>
+                            </div>
                         </div>
-                        <button class="read-more">
+                        <button class="read-more js-more js-button" data-target="reviews">
                             <span>Читать далее</span>
                             <span class="icon-arrow-more"></span>
                         </button>
                     </li>
-                    <li class="reviews__item reviews-slider__item js-slider-item-infinity">
+                    <li class="reviews__item reviews-slider__item js-slider-item-infinity js-item">
                         <div class="reviews__header">
                             <div class="wrapper">
                                 <ul class="star__list">
@@ -1190,14 +1255,16 @@
                             <p>Певица</p>
                         </div>
                         <div class="reviews__text">
-                            <p>Повседневная практика показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки систем массового участия. Товарищи! сложившаяся структура организации позволяет оценить значение модели развития. Таким образом реализация намеченных плановых заданий в значительной...</p>
+                            <div class="js-content">
+                                <p>Повседневная практика показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки систем массового участия. Товарищи! сложившаяся структура организации позволяет оценить значение модели развития. Таким образом реализация намеченных плановых заданий в значительной...</p>
+                            </div>
                         </div>
-                        <button class="read-more">
+                        <button class="read-more js-more js-button" data-target="reviews">
                             <span>Читать далее</span>
                             <span class="icon-arrow-more"></span>
                         </button>
                     </li>
-                    <li class="reviews__item reviews-slider__item js-slider-item-infinity">
+                    <li class="reviews__item reviews-slider__item js-slider-item-infinity js-item">
                         <div class="reviews__header">
                             <div class="wrapper">
                                 <ul class="star__list">
@@ -1227,14 +1294,16 @@
                             <p>Актер</p>
                         </div>
                         <div class="reviews__text">
-                            <p>Повседневная практика показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки систем массового участия. Товарищи! сложившаяся структура организации позволяет оценить значение модели развития. Таким образом реализация намеченных плановых заданий в значительной...</p>
+                            <div class="js-content">
+                                <p>Повседневная практика показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки систем массового участия. Товарищи! сложившаяся структура организации позволяет оценить значение модели развития. Таким образом реализация намеченных плановых заданий в значительной...</p>
+                            </div>
                         </div>
-                        <button class="read-more">
+                        <button class="read-more js-more js-button" data-target="reviews">
                             <span>Читать далее</span>
                             <span class="icon-arrow-more"></span>
                         </button>
                     </li>
-                    <li class="reviews__item reviews-slider__item js-slider-item-infinity">
+                    <li class="reviews__item reviews-slider__item js-slider-item-infinity js-item">
                         <div class="reviews__header">
                             <div class="wrapper">
                                 <ul class="star__list">
@@ -1264,9 +1333,11 @@
                             <p>Певица</p>
                         </div>
                         <div class="reviews__text">
-                            <p>Повседневная практика показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки систем массового участия. Товарищи! сложившаяся структура организации позволяет оценить значение модели развития. Таким образом реализация намеченных плановых заданий в значительной...</p>
+                            <div class="js-content">
+                                <p>Повседневная практика показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки систем массового участия. Товарищи! сложившаяся структура организации позволяет оценить значение модели развития. Таким образом реализация намеченных плановых заданий в значительной...</p>
+                            </div>
                         </div>
-                        <button class="read-more">
+                        <button class="read-more js-more js-button" data-target="reviews">
                             <span>Читать далее</span>
                             <span class="icon-arrow-more"></span>
                         </button>
@@ -1288,7 +1359,1222 @@
                 </div>
             </div>
         </section>
+        <section class="product">
+            <div class="product__wrapper container slider-infinity">
+                <div class="general-heading">
+                    <h2 class="main-caption-l">Коттеджные городки</h2>
+                    <p class="calc-product">28 <span>Всего</span></p>
+                </div>
+                <ul class="product__list product-slider__list js-infinity-slider-list">
+                    <li class="product__item product-slider__item js-slider-item-infinity show">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status">Проект</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Европейский-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating empty">Н.Д.</p>
+                            <p class="product__status completed">Завершен</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites active">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Positanуo-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating empty">Н.Д.</p>
+                            <p class="product__status completed">Завершен</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites active">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Positanуo-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="general-button__wrapper js-arrow-infinity">
+                    <div class="wrapper">
+                        <button class="general-button prev">
+                            <span class="icon-arrow-left"></span>
+                        </button>
+                        <button class="general-button next">
+                            <span class="icon-arrow-right"></span>
+                        </button>
+                    </div>
+                    <a href="#" class="main-button-more">
+                        <span>Смотреть все коттеджи</span>
+                        <span class="icon-arrow-more"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="product__wrapper container slider-infinity">
+                <div class="general-heading">
+                    <h2 class="main-caption-l">Новостройки</h2>
+                    <p class="calc-product">24 <span>Всего</span></p>
+                </div>
+                <ul class="product__list product-slider__list js-infinity-slider-list">
+                    <li class="product__item product-slider__item js-slider-item-infinity show">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status">Проект</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Европейский-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating empty">Н.Д.</p>
+                            <p class="product__status completed">Завершен</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites active">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Positanуo-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating empty">Н.Д.</p>
+                            <p class="product__status completed">Завершен</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites active">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Positanуo-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="general-button__wrapper js-arrow-infinity">
+                    <div class="wrapper">
+                        <button class="general-button prev">
+                            <span class="icon-arrow-left"></span>
+                        </button>
+                        <button class="general-button next">
+                            <span class="icon-arrow-right"></span>
+                        </button>
+                    </div>
+                    <a href="#" class="main-button-more">
+                        <span>Смотреть все новостройки</span>
+                        <span class="icon-arrow-more"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="rating-block">
+            <div class="rating-block__wrapper container">
+                <div class="js-drop-item rating-drop__wrapper">
+                    <button class="rating__button-mobile js-drop-button">
+                        <span class="rating-icon"></span>
+                        <span>Рейтинги недвижимости</span>
+                        <span class="icon-drop"></span>
+                    </button>
+                    <h2 class="main-caption-l rating-caption"><span class="rating-icon"></span>Рейтинги недвижимости</h2>
+                    <ul class="rating-block__list">
+                        <li class="rating-block__item">
+                            <div class="rating-block__item__header">
+                                <span class="rating-block-icon"></span>
+                                <h3 class="rating-block__item__caption"><span>ТОП-10</span>новостроек</h3>
+                            </div>
+                            <div class="rating-block__table">
+                                <div class="rating-block__table__caption">
+                                    <p class="table-number">№</p>
+                                    <p class="table-name">Название</p>
+                                    <p class="table-rating">баллы</p>
+                                </div>
+                                <div class="wrapper">
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">1</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">2503</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">2</p>
+                                        <p class="table-name">Новый Коралловый Риф</p>
+                                        <p class="table-rating">2203</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">3</p>
+                                        <p class="table-name">Морская жемчужина</p>
+                                        <p class="table-rating">2100</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">4</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">2003</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">5</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">1503</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">6</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">1203</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">7</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">253</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">8</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">250</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">9</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">203</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">10</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">03</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="rating-block__item">
+                            <div class="rating-block__item__header">
+                                <span class="rating-block-icon"></span>
+                                <h3 class="rating-block__item__caption"><span>ТОП-10</span>новостроек</h3>
+                            </div>
+                            <div class="rating-block__table">
+                                <div class="rating-block__table__caption">
+                                    <p class="table-number">№</p>
+                                    <p class="table-name">Название</p>
+                                    <p class="table-rating">баллы</p>
+                                </div>
+                                <div class="wrapper">
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">1</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">2503</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">2</p>
+                                        <p class="table-name">Новый Коралловый Риф</p>
+                                        <p class="table-rating">2203</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">3</p>
+                                        <p class="table-name">Морская жемчужина</p>
+                                        <p class="table-rating">2100</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">4</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">2003</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">5</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">1503</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">6</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">1203</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">7</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">253</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">8</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">250</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">9</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">203</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">10</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">03</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="rating-block__item rating-block__item-assessment">
+                            <div class="rating-block__item__header">
+                                <span class="rating-block-icon-man"></span>
+                                <h3 class="rating-block__item__caption">Народный рейтинг коттеджных городков</h3>
+                            </div>
+                            <div class="rating-block__table">
+                                <div class="rating-block__table__caption">
+                                    <p class="table-number">№</p>
+                                    <p class="table-name">Название</p>
+                                    <p class="table-calc">Кол-во</p>
+                                    <p class="table-rating">Оценка</p>
+                                </div>
+                                <div class="wrapper">
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">1</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">2</p>
+                                        <p class="table-name">Новый Коралловый Риф</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.2</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">3</p>
+                                        <p class="table-name">Морская жемчужина</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">4</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">5</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">6</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">100</p>
+                                        <p class="table-rating">4.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">7</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">3.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">8</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">9</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">10</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="rating-block__item rating-block__item-assessment">
+                            <div class="rating-block__item__header">
+                                <span class="rating-block-icon-man"></span>
+                                <h3 class="rating-block__item__caption">Народный рейтинг новостроек</h3>
+                            </div>
+                            <div class="rating-block__table">
+                                <div class="rating-block__table__caption">
+                                    <p class="table-number">№</p>
+                                    <p class="table-name">Название</p>
+                                    <p class="table-calc">Кол-во</p>
+                                    <p class="table-rating">Оценка</p>
+                                </div>
+                                <div class="wrapper">
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">1</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">2</p>
+                                        <p class="table-name">Новый Коралловый Риф</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.2</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">3</p>
+                                        <p class="table-name">Морская жемчужина</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">4</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">5</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">6</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">100</p>
+                                        <p class="table-rating">4.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">7</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">3.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">8</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">9</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">10</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="js-drop-item rating-drop__wrapper">
+                    <button class="rating__button-mobile js-drop-button">
+                        <span class="rating-icon"></span>
+                        <span>Статистика недвижимости</span>
+                        <span class="icon-drop"></span>
+                    </button>
+                    <h2 class="main-caption-l rating-caption"><span class="rating-icon"></span>Статистика недвижимости</h2>
+                    <ul class="rating-block__list rating-block__list-diagram">
+                        <li class="rating-block__item">
+                            <div class="rating-block__item__header">
+                                <span class="rating-block-icon-diagram"></span>
+                                <h3 class="rating-block__item__caption">Статистика (грн) - Новостройка</h3>
+                            </div>
+                            <div class="rating-block__table">
+                                <div class="wrapper">
+                                    <div class="rating-block__general-info">
+                                        <p class="name">Украина</p>
+                                        <p class="date">01.2020 - <span>15925</span></p>
+                                        <p class="date">02.2020 - <span>v 15915</span></p>
+                                    </div>
+                                    <div class="rating-block__general-info">
+                                        <p class="name">Киев</p>
+                                        <p class="date">01.2020 - <span>15925</span></p>
+                                        <p class="date">02.2020 - <span>v 15915</span></p>
+                                    </div>
+                                </div>
+                                <div class="rating-block__table__caption">
+                                    <p class="table-number">№</p>
+                                    <p class="table-area">Район</p>
+                                    <p class="table-date">01.2020</p>
+                                    <p class="table-date">02.2020</p>
+                                </div>
+                                <div class="wrapper">
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">1</p>
+                                        <p class="table-name">Одесская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">2</p>
+                                        <p class="table-name">Харьковская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">3</p>
+                                        <p class="table-name">Запорожская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">4</p>
+                                        <p class="table-name">Киевская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">5</p>
+                                        <p class="table-name">Черновицкая</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">6</p>
+                                        <p class="table-name">Херсонская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">7</p>
+                                        <p class="table-name">Ивано-Франковская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">8</p>
+                                        <p class="table-name">Закарпатская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">9</p>
+                                        <p class="table-name">Львовская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">10</p>
+                                        <p class="table-name">Николаевская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="rating-block__item">
+                            <div class="rating-block__item__header">
+                                <span class="rating-block-icon-diagram"></span>
+                                <h3 class="rating-block__item__caption">Статистика (грн) - Коттеджи</h3>
+                            </div>
+                            <div class="rating-block__table">
+                                <div class="wrapper">
+                                    <div class="rating-block__general-info">
+                                        <p class="name">Украина</p>
+                                        <p class="date">01.2020 - <span>15925</span></p>
+                                        <p class="date">02.2020 - <span>v 15915</span></p>
+                                    </div>
+                                    <div class="rating-block__general-info">
+                                        <p class="name">Киев</p>
+                                        <p class="date">01.2020 - <span>15925</span></p>
+                                        <p class="date">02.2020 - <span>v 15915</span></p>
+                                    </div>
+                                </div>
+                                <div class="rating-block__table__caption">
+                                    <p class="table-number">№</p>
+                                    <p class="table-area">Район</p>
+                                    <p class="table-date">01.2020</p>
+                                    <p class="table-date">02.2020</p>
+                                </div>
+                                <div class="wrapper">
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">1</p>
+                                        <p class="table-name">Одесская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">2</p>
+                                        <p class="table-name">Харьковская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">3</p>
+                                        <p class="table-name">Запорожская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">4</p>
+                                        <p class="table-name">Киевская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">5</p>
+                                        <p class="table-name">Черновицкая</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">6</p>
+                                        <p class="table-name">Херсонская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">7</p>
+                                        <p class="table-name">Ивано-Франковская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">8</p>
+                                        <p class="table-name">Закарпатская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">9</p>
+                                        <p class="table-name">Львовская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">10</p>
+                                        <p class="table-name">Николаевская</p>
+                                        <p class="table-rating">25003</p>
+                                        <p class="table-rating">25030</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="main-button-more">Показать все области</a>
+            </div>
+        </section>
+        <section class="seo-block">
+            <div class="seo-block__wrapper container">
+                <h2 class="main-caption-l">Коттеджные городки и поселки Украины на Zagorodna.com</h2>
+                <div class="seo-block__content">
+                    <div class="wrapper">
+                        <p>Таунхаус в Киеве для себя и родителей. Дуплекс в пригороде. Коттедж под Киевом малоэтажный на 2 семьи. Купить дачу под Киевом. Купить дом в Украине. Вилла на побережье... Кто не мечтает жить там, где плещется море, шумят реликтовые сосны и можно не вспоминать о суматохе городских "джунглей"?! Каждый! База (каталог) коттеджных городков и поселков Украины, собранная на нашем портале, то, что вам нужно! У нас все функционально, доступно, просто и... в полном объеме! Коттеджные городки Киевской области, построенные коттеджные городки под Киевом, строящиеся и проектируемые коттеджные поселки во всех регионах Украины - к вашим услугам! Позитивная энергетика, или смена места жительства на пользу.
+                        </p>
+                        <p>
+                        Коттеджный городок под Киевом в начале 2000-ных привлекал каждого. КПП на въезде, круглосуточная охрана, водоем в центре коттеджных поселков или на каждом участке, система "умный дом", богатая социальная инфраструктура и доступность транспорта, перспективы жить в однородном окружении манили многих. Но со временем вкусы менялись, время шло. Коттеджные городки Одессы (с участками на первой и последующих береговых линиях), коттеджные поселки во Львове (в историческом центре) и на востоке страны стали не менее привлекательными. Коттеджные поселки Крыма чего стоят! Купить дом в коттеджном поселке под Севастополем или Ялтой - значит позволить себе жить у вечно плещущейся воды, наслаждаться местными красотами, теплым климатом, 
+                        </p>стройными кипарисами. Земля под Киевом не нужна! Мы лучше купим дом под Киевом, дачу под Киевом или любую недвижимость в Киевской области. Бесконечные предложения от портала: купить дом/продать дачу легко…
+                        Портал загородной недвижимости предлагает сотни коттеджных городков от застройщиков, крупных девелоперов со всей территории Украины. Они предлагают купить дом в Украине! На любой вкус и финансовые возможности. Изучите варианты при помощи удобной формы поиска, рассмотрите фото, обратите внимание на параметры, свяжитесь с продавцом для уточнения деталей. Первый раз совершаете покупку дома в коттеджном поселке под Киевом? Цены в коттеджных городках под Киевом вас не пугают, но вы не знаете, как должен правильно выглядеть договор купли-продажи, какие госпошлины и налоги стоит уплатить, какие справки собрать? Сотрудники нашего портала помогут вам в любом вопросе, проведя профессиональную консультацию. 
+                        <p>Недвижимость за городом можете приобретать, не раздумывая, выбрав интересный вариант в интересующем вас городе страны. Купить дачу под Киевом, или недвижимость в Киевской области не составит труда! Продать-купить коттедж в коттеджном городке или земельный участок в коттеджном поселке с нашей помощью - легко. Для продажи собственного коттеджа (в связи со сменой работы, места учебы детей, прочими нюансами) нужно заполнить специальную форму, все информационные поля. Покупатель оценит не только техническую информацию, нюансы, касающиеся вашего объекта недвижимости, но и цену на коттедж. К вашим услугам наши профессионалы, которые помогут правильно оценить дом или участок с тем, чтобы не прогадать при совершении сделки. Продажа дома под Киевом с нашей помощью - быстрый и эффективный результат! Недвижимость в Киевской области, или коттеджный городок под Киевом Коттеджный городок с развлекательным центром, ресторанным комплексом, конной школой и множеством спортивных секций, медицинскими учреждениями 
+                        </p>
+                        <p>это мини-город в городе. Коттеджный поселок под Киевом, выстроенный вдали от промзон и проезжих трасс, привлечет внимание неспешным ритмом жизни истинных консерваторов. Или новаторов, стремящихся попробовать нечто новое. Коттеджные городки Киевской области - вот "заповедная" территория для тех, кто желает проводить свободное время вдали от бизнес-центра, суматохи и вечных проблем. Коттеджи под Киевом пользуются стабильным спросом. Купить дом под Киевом - это значит очертить круг собственного комфорта, желаний и возможностей! Недвижимость в Киевской области всегда пользовалась повышенной популярностью. Это связано с большим потоком смелых и креативных, приезжающих покорять столицу. Земельные участки в коттеджных городках - вот предел мечтаний многих, тех, кто желает выстроить дом по собственному эскизу. Дома под Киевом не привлекает полной готовностью, зачастую большим спросом пользуются те, где еще можно проявить фантазию. С нашим порталом найти любую недвижимость за городом просто! Источник: © Zagorodna.com</p>
+                    </div>
+
+                </div>
+            </div>
+            
+        </section>
     </main>
+    <footer class="footer">
+        <div class="footer__header">
+            <div class="footer__header__wrapper container">
+                <div class="footer__address">
+                    <h5 class="footer__caption">Адрес:</h5>
+                    <p>г. Киев, ул. Маршала Малиновского, 13а </p>
+                </div>
+                <ul class="footer__socila-list">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <span class="icon-facebook"></span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <span class="icon-twitter"></span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <span class="icon-instagram"></span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <span class="icon-youtube"></span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <span class="icon-vk"></span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <span class="icon-telegram"></span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <span class="icon-message"></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__call-back">
+                    <a href="tel:+38 050-384-44-98" class="footer__call-back__link">+38 050-384-44-98</a>
+                    <button class="footer__call-back__button">Обратный  звонок</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer__menu">
+            <div class="footer__menu__wrapper container js-drop-item">
+                <button class="footer__mobile-button js-drop-button">
+                    <span>Полезные ссылки</span>
+                    <span class="icon-drop"></span>
+                </button>
+                <ul class="footer__menu__list">
+                    <li class="footer__menu__item">
+                        <a href="#" class="footer__menu__link">О проекте <span>zagorodna.com</span></a>
+                    </li>
+                    <li class="footer__menu__item">
+                        <a href="#" class="footer__menu__link">Наши услуги</a>
+                    </li>
+                    <li class="footer__menu__item">
+                        <a href="#" class="footer__menu__link">Контакты</a>
+                    </li>
+                    <li class="footer__menu__item">
+                        <a href="#" class="footer__menu__link">Вопросы и ответы</a>
+                    </li>
+                    <li class="footer__menu__item">
+                        <a href="#" class="footer__menu__link">Словарь</a>
+                    </li>
+                    <li class="footer__menu__item">
+                        <a href="#" class="footer__menu__link">Online-оценка недвижимости</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__category">
+            <div class="footer__category__wrapper container">
+                <ul class="footer__category__list">
+                    <li class="footer__category__item js-drop-item">
+                        <button class="footer__mobile-button js-drop-button">
+                            <span>Коттеджные городки</span>
+                            <span class="icon-drop"></span>
+                        </button>
+                        <h5 class="footer__caption">Коттеджные городки</h5>
+                        <ul class="footer__sub-category__list">
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Акции</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Таунхаусы</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Коттеджы</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Поселки дуплексов</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Участки в кот. поселках</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Элитные поселки</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Поселки дуплексов</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Участки в кот. поселках</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Элитные поселки</a>
+                            </li>
+                        </ul>
+                        <button class="footer__sub-button js-drop-button">
+                            <span class="icon-drop"></span>
+                        </button>
+                    </li>
+                    <li class="footer__category__item js-drop-item">
+                        <button class="footer__mobile-button js-drop-button">
+                            <span>Новостройки</span>
+                            <span class="icon-drop"></span>
+                        </button>
+                        <h5 class="footer__caption">Новостройки</h5>
+                        <ul class="footer__sub-category__list">
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Акции</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Таунхаусы</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Коттеджы</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Поселки дуплексов</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Участки в кот. поселках</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Элитные поселки</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Поселки дуплексов</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Участки в кот. поселках</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Элитные поселки</a>
+                            </li>
+                        </ul>
+                        <button class="footer__sub-button js-drop-button">
+                            <span class="icon-drop"></span>
+                        </button>
+                    </li>
+                    <li class="footer__category__item js-drop-item">
+                         <button class="footer__mobile-button js-drop-button">
+                            <span>Журнал и мероприятия</span>
+                            <span class="icon-drop"></span>
+                        </button>
+                        <h5 class="footer__caption">Журнал и мероприятия</h5>
+                        <ul class="footer__sub-category__list">
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Акции</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Таунхаусы</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Коттеджы</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Поселки дуплексов</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Участки в кот. поселках</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Элитные поселки</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Поселки дуплексов</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Участки в кот. поселках</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Элитные поселки</a>
+                            </li>
+                        </ul>
+                        <button class="footer__sub-button js-drop-button">
+                            <span class="icon-drop"></span>
+                        </button>
+                    </li>
+                    <li class="footer__category__item js-drop-item">
+                        <button class="footer__mobile-button js-drop-button">
+                            <span>информация</span>
+                            <span class="icon-drop"></span>
+                        </button>
+                        <h5 class="footer__caption">информация</h5>
+                        <ul class="footer__sub-category__list">
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Акции</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Таунхаусы</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Коттеджы</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Поселки дуплексов</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Участки в кот. поселках</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Элитные поселки</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Поселки дуплексов</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Участки в кот. поселках</a>
+                            </li>
+                            <li class="footer__sub-category__item">
+                                <a href="#" class="footer__sub-category__link">Элитные поселки</a>
+                            </li>
+                        </ul>
+                        <button class="footer__sub-button js-drop-button">
+                            <span class="icon-drop"></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="footer__copyright__wrapper container">
+                <p>© Copyright 2010-2020 "РеалЭкспо" ООО </p>
+                <a href="#" class="footer__copyright__link">Политика конфиденциальности</a>
+                <a href="#" class="footer__copyright__link">Карта сайта</a>
+            </div>
+        </div>
+    </footer>
+    <section class="popup" data-target="reviews">
+        <div class="popup__wrapper popup-reviews">
+            <button class="close-popup js-close">
+                <span class="decor"></span>
+            </button>
+            <div class="reviews__item"></div>
+        </div>
+    </section>
     <script src="./js/main.js"></script>
 </body>
 </html>
