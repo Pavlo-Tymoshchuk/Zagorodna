@@ -23,7 +23,8 @@
     color: #fefefe;
     opacity: 0;
     transform: translateX(-200%);
-    transition: transform 1.2s, opacity .6s;
+    transition: transform .8s, opacity .8s;
+    transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
     z-index: 1;
     
     &::before {
@@ -36,7 +37,7 @@
         background-color: rgba(0, 0, 0, 0.6);
         z-index: 1;
         opacity: 1;
-        transition: opacity .4s;
+        transition: opacity .6s;
     }
     
     
