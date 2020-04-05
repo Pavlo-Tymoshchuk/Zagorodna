@@ -23,7 +23,7 @@
     color: #fefefe;
     opacity: 0;
     transform: translateX(-200%);
-    transition: transform 1s, opacity .6s;
+    transition: transform 1.2s, opacity .6s;
     z-index: 1;
     
     &::before {
@@ -31,7 +31,7 @@
         position: absolute;
         left: 0px;
         top: 0px;
-        width: 100%;
+        width: calc(100% + 2px);
         height: 100%;
         background-color: rgba(0, 0, 0, 0.6);
         z-index: 1;
@@ -59,6 +59,10 @@
     &.next {
         transform: translateX(100%) !important;
         opacity: 1;
+        
+        &::before {
+            left: -1px;
+        }
         
         + .main-slider__item {
             transform: translateX(200%) !important;
