@@ -18,6 +18,10 @@
             transform: translate(-50%, -50%);
         }
     }
+    
+    .general-button--hide {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -27,10 +31,6 @@
     
     .general-heading {
         margin-bottom: 40px;
-    }
-    
-    .general-button--hide {
-        display: none;
     }
     
     .read-more {
@@ -63,7 +63,11 @@
 }
 
 @media screen and (max-width: 576px) {
-    .main-button-more {
-        max-width: 100%;
+    
+    .general-button__wrapper {
+        .main-button-more {
+            max-width: 100%;
+            position: relative;
+        }
     }
 }
