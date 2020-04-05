@@ -6,6 +6,10 @@
             border-color: rgb(234, 234, 234);
             
             
+            .general-drop-input {
+                color: #2c922c;
+            }
+            
             span {
                 color: #2c922c;
             }
@@ -113,23 +117,23 @@
             color: #f5850c;
             background-color: #f5f5f5;
         }
-        
-        &:nth-child(1) {
-            &:active {
-                .icon-heart-outline{
-                    &::before {
-                        content: "\e906";
-                    }
+    }
+    
+    .header__button__favorite {
+        &:active {
+            .icon-heart-outline{
+                &::before {
+                    content: "\e906";
                 }
             }
         }
-        
-        &:nth-child(2) {
-            &:active {
-                .icon-bell-outline  {
-                    &::before {
-                        content: "\e905";
-                    }
+    }
+    
+    .header__button-noty {
+        &:active {
+            .icon-bell-outline  {
+                &::before {
+                    content: "\e905";
                 }
             }
         }
@@ -213,6 +217,11 @@
         &:hover {
             background-color: rgb(69, 221, 69);
         }
+        
+        &:active {
+            background-color: #2c922c;
+            transition: none;
+        }
     }
     
     .general-button__wrapper-main {
@@ -270,11 +279,21 @@
         &:hover {
             color: #2c922c;
         }
+        
+        &:active {
+            color: #f5850c;
+            transition: none;
+        }
     }
     
     .product__text {
         &:hover {
             color: #2c922c;
+        }
+        
+        &:active {
+            color: #f5850c;
+            transition: none;
         }
     }
     
@@ -319,6 +338,11 @@
         &:hover {
             color: #2c922c;
         }
+        
+        &:active {
+            color: #f5850c;
+            transition: none;
+        }
     }
     
     /* //Popular */
@@ -357,15 +381,21 @@
     .best-company__item {
         &:hover {
             box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.08);
+            
+            .best-company__name {
+                background-color: #ffffff;
+                color: #2c922c;
+            }
+        }
+        
+        &:active {
+            .best-company__name {
+                color: #f5850c;
+                transition: none;
+            }
         }
     }
     
-    .best-company__name {
-        &:hover {
-            background-color: #ffffff;
-            color: #2c922c;
-        }
-    }
     
     /* // Best Company */
     
@@ -423,6 +453,104 @@
             
             .icon-youtube:before {
                 color: #ff0000;
+            }
+        }
+        
+        &:active {
+            transition: none;
+        }
+    }
+    
+    .footer__social-item {
+        
+        &:nth-child(1) {
+            .footer__social-link {
+                &:active {
+                    background-color: #3b5998;
+                    
+                    .icon-facebook {
+                        color: #ffffff;
+                        transition: none;
+                    }
+                }
+            }
+        }
+            
+        &:nth-child(2) {
+            .footer__social-link {
+                &:active {
+                    background-color: #1da1f2;
+                    
+                    .icon-twitter:before {
+                        color: #ffffff;
+                        transition: none;
+                    }
+                }
+            }
+        }
+        
+        &:nth-child(3) {
+            .footer__social-link {
+                &:active {
+                    background-color: #e1306c;
+                    
+                    .icon-instagram {
+                        color: #ffffff;
+                        transition: none;
+                    }
+                }
+            }
+        }
+        
+        &:nth-child(4) {
+            .footer__social-link {
+                &:active {
+                    background-color: #ff0000;
+                    
+                    .icon-youtube {
+                        color: #ffffff;
+                        transition: none;
+                    }
+                }
+            }
+        }
+        
+        &:nth-child(5) {
+            .footer__social-link {
+                &:active {
+                    background-color: #45668e;
+                    
+                    .icon-vk:before {
+                        color: #ffffff;
+                        transition: none;
+                    }
+                }
+            }
+        }
+        
+        &:nth-child(6) {
+            .footer__social-link {
+                &:active {
+                    background-color: #0088cc;
+                    
+                    .icon-telegram:before {
+                        color: #ffffff;
+                        transition: none;
+                    }
+                }
+            }
+        }
+        
+        &:nth-child(7) {
+            .footer__social-link {
+                &:active {
+                    background-color: #2c922c;
+                    
+                    .icon-message:before {
+                        color: #ffffff;
+                        transition: none;
+                    }
+                }
             }
         }
     }
