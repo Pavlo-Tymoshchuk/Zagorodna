@@ -325,10 +325,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    cursor: pointer;
     margin-right: 15px;
     font-size: 14px;
     font-weight: 500;
+    pointer-events: none;
     transition: color .4s;
 }
 
@@ -355,37 +355,38 @@
     position: relative;
     height: 553px;
     margin-bottom: 0px;
+    padding: 0px 25px;
 }
 
 .product-slider__item {
     position: absolute;
     opacity: 0;
-    transform: translateX(calc(-200% - 90px));
+    transform: translateX(calc(-100% - 30px));
     transition: transform .6s, opacity .6s;
     
     &.show {
         opacity: 1;
-        transform: translateX(calc(-100% - 30px));
+        transform: translateX(0);
         
         + .product-slider__item {
             opacity: 1;
-            transform: translateX(0px);
+            transform: translateX(calc(100% + 30px));
             
             + .product-slider__item {
                 opacity: 1;
-                transform: translateX(calc(100% + 30px));
+                transform: translateX(calc(200% + 60px));
                 
                 + .product-slider__item {
                     opacity: 1;
-                    transform: translateX(calc(200% + 60px));
+                    transform: translateX(calc(300% + 90px));
                     
                     + .product-slider__item {
                         opacity: 1;
-                        transform: translateX(calc(300% + 90px));
+                        transform: translateX(calc(400% + 120px));
                         
                         ~ .product-slider__item {
                             opacity: 0;
-                            transform: translateX(calc(400% + 120px));
+                            transform: translateX(calc(500% + 150px));
                         }
                     }
                 }
@@ -403,6 +404,9 @@
     transition: box-shadow .4s, transform .6s, opacity .6s;
 }
 
+.product-slider__item {
+    width: 350px;
+}
 
 .product__item__header {
     padding: 15px 10px 15px 20px;
@@ -569,7 +573,7 @@
     align-items: center;
     
     .icon-map-marker-outline {
-        font-size: 15px;
+        font-size: 16px;
         padding-right: 8px;
     }
 }
