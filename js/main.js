@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function(){
     // /SLider
     
     
-    // Burger and search
+    // Burger and search and noty
     
     document.addEventListener('click', function(e){
         let elem = e.target;
@@ -147,9 +147,25 @@ document.addEventListener('DOMContentLoaded', function(){
         if(!elem.closest(".header__button-search") && !elem.closest('.header__search-tablet')) {
             document.querySelector('.header__search-tablet').classList.remove("active");
         }
+        
+        let notyWrapper = document.querySelector('.js-noty-wrapper');
+        let notyButton = document.querySelectorAll('.js-noty-button');
+        
+        if(elem.closest('.js-noty-button')) {
+            elem.closest('.js-noty-button').classList.toggle('active');
+            notyWrapper.classList.toggle('active');
+        }
+        
+        if(!elem.closest('.js-noty-button') && !elem.closest(".js-noty-wrapper")) {
+            notyButton.forEach((item) => {
+                item.classList.remove('active');
+            });
+            notyWrapper.classList.remove('active');
+        }
     });
     
-    // //Burger  and search
+    // //Burger and search and noty
+    
     
     // Drop
     
@@ -374,5 +390,22 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     });
     
-    // //Popup 
+    // //Popup
+    
+    // Pre catalog Filter 
+    
+    document.addEventListener('click', function(e){
+        let item = e.target;
+        let filterWrapper = document.querySelector('.js-filter-drop')
+        
+        if(item.closest('.js-filter')) {
+            filterWrapper.classList.add('active');
+            item.closest('.js-filter').classList.add('active');
+        }
+        
+        if(!item.closest('.js-filter') && !item.closest(".js-filter-drop")) {
+            filterWrapper.classList.remove('active');
+            document.querySelector('.js-filter').classList.remove('active');
+        }
+    });
 });
