@@ -194,9 +194,11 @@ document.addEventListener('DOMContentLoaded', function(){
             element.closest('.js-drop-contains').classList.add('active');
             let innerContent = element.closest('.js-drop-contains').innerHTML;
             let dropInput = dropList.querySelector('.js-drop-input');
+            let dropButton = dropList.querySelector('.js-drop-button .text');
             
             if(dropInput) {
                 dropInput.value = innerContent;
+                dropButton.innerHTML = innerContent;
             }
             
             // close dropdown

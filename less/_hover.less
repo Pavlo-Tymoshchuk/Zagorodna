@@ -1,7 +1,17 @@
 @media screen and (min-width: 1170px) {
     /* Header */
     
-    .general-drop {
+    .general-drop  {
+        &:hover {
+            .general-drop__text {
+                color: #2c922c;
+            }
+        }
+        
+        
+    }
+    .header__nav-item,
+    .header__change-lang  {
         &:hover {
             border-color: rgb(234, 234, 234);
             
@@ -667,6 +677,31 @@
                     opacity: 1;
                 }
             }
+        }
+    }
+    
+    /* Pre catalog */
+    
+    /* Call back */
+    
+    .checkbox__wrapper {
+        &:hover {
+            .custome-checkbox {
+                border-color: #2c922c;
+                color: #2c922c;
+            }
+        }
+    }
+    
+    .call-back__button {
+        &:hover {
+            border-color: #f5850c;
+        }
+        
+        &:active {
+            background-color: #da770c;
+            border-color: #da770c;
+            transition: none;
         }
     }
 }

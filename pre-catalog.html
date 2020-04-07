@@ -10,7 +10,7 @@
     <header class="header">
         <div class="header__top">
             <div class="header__city general-drop js-drop-item">
-                <p class="header__city__wrapper js-drop-button">
+                <p class="header__city__wrapper js-drop-button general-drop__text">
                     <span class="icon-place"></span>
                     <span class="header__city__text">Киев</span>
                     <span class="icon-drop"></span>
@@ -786,27 +786,47 @@
                 <h4 class="call-back__caption">Подписывайтесь на обновления по выбранному местоположению!</h4>
                 <form action="#" class="call-back__form">
                     <div class="call-back__header">
+                        <input type="hidden" name="call-back-name">
+                        <input type="hidden" name="call-back-distans">
                         <span class="icon-place-big"></span>
-                        <p>Киевская область, Киев</p>
-                        <p class="button-distance">+20 км</p>
-                        <p class="">Земельный участок</p>
+                        <p class="call-back__name">Киевская область, Киев</p>
+                        <p class="call-back__distance">+20 км</p>
+                        <div class="general-drop call-back__drop js-drop-item">
+                            <input type="hidden" class="js-drop-input" name="call-back-drop">
+                            <button type="button" class="call-back__drop-button js-drop-button general-drop__text"> 
+                                <span class="text">Земельный участок</span>
+                                <span class="icon-drop"></span>
+                            </button>
+                            <div class="general-drop__wrapper">
+                                <ul class="general-drop__list">
+                                    <li class="general-drop__item js-drop-contains">Киев</li>
+                                    <li class="general-drop__item js-drop-contains">Харьков</li>
+                                    <li class="general-drop__item js-drop-contains">Одесса</li>
+                                    <li class="general-drop__item js-drop-contains">Днепр</li>
+                                    <li class="general-drop__item js-drop-contains">Киев</li>
+                                    <li class="general-drop__item js-drop-contains">Харьков</li>
+                                    <li class="general-drop__item js-drop-contains">Одесса</li>
+                                    <li class="general-drop__item js-drop-contains">Днепр</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="call-back__body">
-                        <label class="input__wrapper">
+                        <label class="checkbox__wrapper">
                             <input type="checkbox" class="input-checkbox">
                             <span class="custome-checkbox">
                                 <span class='icon-active'></span>
                             </span>
                             <span class="checkbox-text">Добавление новой недвижимости</span>
                         </label>
-                        <label class="input__wrapper">
+                        <label class="checkbox__wrapper">
                             <input type="checkbox" class="input-checkbox">
                             <span class="custome-checkbox">
                                 <span class='icon-active'></span>
                             </span>
                             <span class="checkbox-text">Изменение статуса</span>
                         </label>
-                        <label class="input__wrapper">
+                        <label class="checkbox__wrapper">
                             <input type="checkbox" class="input-checkbox">
                             <span class="custome-checkbox">
                                 <span class='icon-active'></span>
@@ -816,11 +836,772 @@
                     </div>
                     <div class="call-back__footer">
                         <label class="input__wrapper">
-                            <input type="text" class="main-input">
+                            <input type="email" class="main-input" placeholder="Ваш email">
                         </label>
-                        <button class='filter-button'>Подписаться</button>
+                        <button class='call-back__button'>Подписаться</button>
                     </div>
                 </form>
+            </div>
+        </section>
+        <section class="product">
+            <div class="product__wrapper slider-infinity">
+                <div class="general-heading container">
+                    <h2 class="main-caption-l">Построенные коттеджные городки</h2>
+                    <p class="calc-product">24 <span>Всего</span></p>
+                </div>
+                <ul class="product__list product-slider__list js-infinity-slider-list">
+                    <li class="product__item product-slider__item js-slider-item-infinity show">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status">Проект</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Европейский-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating empty">Н.Д.</p>
+                            <p class="product__status completed">Завершен</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites active">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Positanуo-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating empty">Н.Д.</p>
+                            <p class="product__status completed">Завершен</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites active">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Positanуo-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="general-button__wrapper js-arrow-infinity container">
+                    <div class="wrapper">
+                        <button class="general-button prev">
+                            <span class="icon-arrow-left"></span>
+                        </button>
+                        <button class="general-button next">
+                            <span class="icon-arrow-right"></span>
+                        </button>
+                    </div>
+                    <a href="#" class="main-button-more">
+                        <span class="text">Смотреть все новостройки</span>
+                        <span class="icon-arrow-more"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="product__wrapper slider-infinity">
+                <div class="general-heading container">
+                    <h2 class="main-caption-l">Строящиеся коттеджные городки</h2>
+                    <p class="calc-product">24 <span>Всего</span></p>
+                </div>
+                <ul class="product__list product-slider__list js-infinity-slider-list">
+                    <li class="product__item product-slider__item js-slider-item-infinity show">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status">Проект</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Европейский-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating empty">Н.Д.</p>
+                            <p class="product__status completed">Завершен</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites active">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Positanуo-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating empty">Н.Д.</p>
+                            <p class="product__status completed">Завершен</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites active">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Positanуo-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="general-button__wrapper js-arrow-infinity container">
+                    <div class="wrapper">
+                        <button class="general-button prev">
+                            <span class="icon-arrow-left"></span>
+                        </button>
+                        <button class="general-button next">
+                            <span class="icon-arrow-right"></span>
+                        </button>
+                    </div>
+                    <a href="#" class="main-button-more">
+                        <span class="text">Смотреть все новостройки</span>
+                        <span class="icon-arrow-more"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="product__wrapper slider-infinity">
+                <div class="general-heading container">
+                    <h2 class="main-caption-l">Проектируемые коттеджные городки</h2>
+                    <p class="calc-product">24 <span>Всего</span></p>
+                </div>
+                <ul class="product__list product-slider__list js-infinity-slider-list">
+                    <li class="product__item product-slider__item js-slider-item-infinity show">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status">Проект</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Европейский-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating empty">Н.Д.</p>
+                            <p class="product__status completed">Завершен</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites active">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Positanуo-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating empty">Н.Д.</p>
+                            <p class="product__status completed">Завершен</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites active">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Positanуo-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="general-button__wrapper js-arrow-infinity container">
+                    <div class="wrapper">
+                        <button class="general-button prev">
+                            <span class="icon-arrow-left"></span>
+                        </button>
+                        <button class="general-button next">
+                            <span class="icon-arrow-right"></span>
+                        </button>
+                    </div>
+                    <a href="#" class="main-button-more">
+                        <span class="text">Смотреть все новостройки</span>
+                        <span class="icon-arrow-more"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="best-company">
+            <div class="best-company__wrapper container">
+                <div class="general-heading">
+                    <h2 class="main-caption-l">Коттеджы по типу в Киеве</h2>
+                    <p class="calc-product">240 <span>Всего</span></p>
+                </div>
+                <ul class="best-company__list">
+                    <li class="best-company__item">
+                        <a href="#">
+                            <img src="./img/best-img-1.png" alt="Фото">
+                        </a>
+                        <div class="best-company__name">
+                            <a href="#">
+                                <h5>Виллы</h5>
+                                <span>575</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="best-company__item">
+                        <a href="#">
+                            <img src="./img/best-img-2.png" alt="Фото">
+                        </a>
+                        <div class="best-company__name">
+                            <a href="#">
+                                <h5>Дуплексы</h5>
+                                <span>175</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="best-company__item">
+                        <a href="#">
+                            <img src="./img/popular-img-1.png" alt="Фото">
+                        </a>
+                        <div class="best-company__name">
+                            <a href="#">
+                                <h5>Квадрексы</h5>
+                                <span>575</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="best-company__item">
+                        <a href="#">
+                            <img src="./img/popular-img-2.png" alt="Фото">
+                        </a>
+                        <div class="best-company__name">
+                            <a href="#">
+                                <h5>Коттеджи</h5>
+                                <span>575</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="best-company__item">
+                        <a href="#">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="best-company__name">
+                            <a href="#">
+                                <h5>Таунхаусы</h5>
+                                <span>575</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="best-company__item">
+                        <a href="#">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="best-company__name">
+                            <a href="#">
+                                <h5>Эллинги</h5>
+                                <span>575</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <p class="best-company__text">Таким образом начало повседневной работы по формированию позиции играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Равным образом дальнейшее развитие различных форм деятельности позволяет оценить значение существенных финансовых и административных условий.</p>
             </div>
         </section>
     </main>
