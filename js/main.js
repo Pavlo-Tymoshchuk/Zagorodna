@@ -412,8 +412,8 @@ document.addEventListener('DOMContentLoaded', function(){
                 item.classList.remove('active');
             });
             
-            filterWrapper.classList.add('active');
-            item.closest('.js-filter').classList.add('active');
+            filterWrapper.classList.toggle('active');
+            item.closest('.js-filter').classList.toggle('active');
         }
         
         if(!item.closest('.js-filter') && !item.closest(".js-filter-drop")) {

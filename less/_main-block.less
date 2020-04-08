@@ -1086,6 +1086,7 @@
 }
 
 .reviews-slider__item {
+    height: 100%;
     width: calc(50% - 30px);
     position: absolute;
     opacity: 0;
@@ -1943,7 +1944,7 @@
     border-radius: 24px;
     background-color: #ffffff;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.08);
-    padding: 12px 20px;
+    padding: 12px 15px;
     font-size: 14px;
     line-height: 24px;
     font-weight: 600;
@@ -1957,6 +1958,7 @@
         border-color: rgb(211, 211, 211);
     }
 }
+
 
 .product-pre-catalog {
     margin-top: 70px;
@@ -1993,6 +1995,10 @@
         font-size: 24px;
         color: #2c922c;
     }
+    
+    .call-back__drop {
+        padding: 10px 30px;
+    }
 }
 
 .call-back__drop {
@@ -2007,7 +2013,8 @@
     font-weight: 500;
     
     .general-drop__wrapper {
-        max-width: 100%;
+        max-width: calc(100% + 5px);
+        width: calc(100% + 5px);
         max-height: 250px;
         text-align: left;
     }
@@ -2182,6 +2189,7 @@
     font-size: 56px;
     color: #ffffff;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .free-search__body {
@@ -2232,12 +2240,6 @@
     }
     
     .reviews-slider__item {
-        width: calc(50% - 30px);
-        position: absolute;
-        opacity: 0;
-        transform: translateX(calc(-100% - 60px));
-        transition: transform .6s, opacity .4s;
-        
         &.show {
             opacity: 1;
             transform: translateX(0);
@@ -2260,7 +2262,7 @@
     }
     
     .reviews__item {
-        width: calc(33.333% - 30px);
+        width: 350px;
         padding: 20px 30px 30px;
     }
     
@@ -2271,7 +2273,6 @@
     
     .reviews__header {
         justify-content: flex-end;
-        margin-right: -10px;
         
         &::before {
             content: "";
@@ -2284,6 +2285,10 @@
         }
     }
     
+    .reviews__time-publication {
+        margin-right: -10px;
+    }
+    
     .reviews__img {
         top: -100px;
     }
@@ -2293,6 +2298,15 @@
         justify-content: center;
         text-align: center;
         margin-top: 60px;
+        
+        h4 {
+            max-height: 48px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
     }
     
     .star__list {
@@ -2303,6 +2317,8 @@
     .reviews__text {
         margin-top: 10px;
         font-style: italic;
+        -webkit-line-clamp: 5;
+        max-height: 120px;
     }
 }
 
@@ -2698,4 +2714,3 @@
         transition: transform .4s;
     }
 }
-
