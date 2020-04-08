@@ -610,6 +610,22 @@ main {
 .breadcrumbs__item:last-child::after {
   display: none;
 }
+.general-text {
+  font-size: 15px;
+  line-height: 23px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.main-caption-xl {
+  font-family: 'Circe', sans-serif;
+  font-size: 40px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #3c2f21;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
 /* Header */
 .header {
   background-color: #ffffff;
