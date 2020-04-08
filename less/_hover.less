@@ -670,7 +670,7 @@
         }
     }
     
-    .pre-catalog-filter__drop {
+    .catalog-filter__drop {
         .general-drop__item {
             &:hover {
                 .icon-drop {
@@ -704,5 +704,109 @@
             transition: none;
         }
     }
+    
+    /* Call back */
+    
+    /* Best-company-info */
+    
+    .best-company-info__item {
+        &:hover {
+            box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.08);
+        }
+    }
+    
+    .best-company-info__header {
+        h4 {
+            &:hover {
+                color: #2c922c;
+            }
+        }
+        
+        
+        &:active {
+            color: #f5850c;
+            transition: none;
+        }
+    }
+    
+    .best-company-info__button {
+        &:hover {
+            color: #f5850c;
+        }
+    }
+    
+    .best-company-info___social-link {
+        &:hover {
+            .icon-facebook {
+                color: #3b5998;
+            }
+            
+            .icon-instagram {
+                color: #e1306c;
+            }
+        }
+        
+        &:active {
+            transition: none;
+        }
+    }
+    
+    .best-company-info__social-item {
+        &:nth-child(1) {
+            .best-company-info___social-link {
+                &:active {
+                    background-color: #3b5998;
+                    
+                    .icon-facebook {
+                        color: #ffffff;
+                        
+                    }
+                }
+            }
+        }
+        
+        &:nth-child(2) {
+            .best-company-info___social-link {
+                &:active {
+                    background-color: #e1306c;
+                    
+                    .icon-instagram {
+                        color: #ffffff;
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+    /* //Best company info */
+    
+    /* Rating */
+    
+    .rating-block__table-link {
+        &:hover {
+            color: #2c922c;
+        }
+        
+        &:active {
+            color: #f5850c;
+            transition: none;
+        }
+    }
+    
+    /* //Rating */
+    
+    /* Info block */
+    
+    .info-block__spoiler__button {
+        &:hover {
+            color: #2c922c;
+        }
+        
+        &:active {
+            color: #f5850c;
+            transition: none;
+        }
+    }
+    
 }
-

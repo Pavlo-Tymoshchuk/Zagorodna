@@ -432,12 +432,12 @@
             </div>
         </section>
         <section class="pre-catalog-filter">
-            <div class="pre-catalog-filter__wrapper container">
-                <form action="#" class="pre-catalog-filter__form">
-                    <label class="input__wrapper js-filter">
+            <div class="catalog-filter__wrapper container">
+                <form action="#" class="catalog-filter__form">
+                    <label class="input__wrapper js-filter" data-target="filter">
                         <input type="text" class="main-input" placeholder="Киевская область, Киев">
                         <span class="icon-place-big"></span>
-                        <button type="button" class="button-distance">+20 км</button>
+                        <button type="button" class="button-distance js-filter" data-target="distance">+20 км</button>
                         <span class="line"></span>
                     </label>
                     <label class="input__wrapper">
@@ -449,7 +449,11 @@
                         <span class="filter-button__text">искать в каталоге</span>
                     </button>
                 </form>
-                <div class="pre-catalog-filter__drop js-filter-drop">
+                <div class="catalog-filter__distance catalog-drop js-filter-drop" data-target="distance">
+                    <p class="caption">Расстояние в радиусе, км</p>
+                    <div></div>
+                </div>
+                <div class="catalog-filter__drop js-filter-drop catalog-drop" data-target="filter">
                     <div class="wrapper">
                         <h4 class="caption">Выберите область</h4>
                         <div class="general-drop__wrapper">
@@ -846,7 +850,7 @@
         <section class="product">
             <div class="product__wrapper slider-infinity">
                 <div class="general-heading container">
-                    <h2 class="main-caption-l">Построенные коттеджные городки</h2>
+                    <h2 class="main-caption-l main-caption-l--transform">Построенные коттеджные городки</h2>
                     <p class="calc-product">24 <span>Всего</span></p>
                 </div>
                 <ul class="product__list product-slider__list js-infinity-slider-list">
@@ -1065,7 +1069,7 @@
                         </button>
                     </div>
                     <a href="#" class="main-button-more">
-                        <span class="text">Смотреть все новостройки</span>
+                        <span class="text">Смотреть все</span>
                         <span class="icon-arrow-more"></span>
                     </a>
                 </div>
@@ -1074,7 +1078,7 @@
         <section class="product">
             <div class="product__wrapper slider-infinity">
                 <div class="general-heading container">
-                    <h2 class="main-caption-l">Строящиеся коттеджные городки</h2>
+                    <h2 class="main-caption-l main-caption-l--transform">Строящиеся коттеджные городки</h2>
                     <p class="calc-product">24 <span>Всего</span></p>
                 </div>
                 <ul class="product__list product-slider__list js-infinity-slider-list">
@@ -1293,7 +1297,7 @@
                         </button>
                     </div>
                     <a href="#" class="main-button-more">
-                        <span class="text">Смотреть все новостройки</span>
+                        <span class="text">Смотреть все</span>
                         <span class="icon-arrow-more"></span>
                     </a>
                 </div>
@@ -1302,7 +1306,7 @@
         <section class="product">
             <div class="product__wrapper slider-infinity">
                 <div class="general-heading container">
-                    <h2 class="main-caption-l">Проектируемые коттеджные городки</h2>
+                    <h2 class="main-caption-l main-caption-l--transform">Проектируемые коттеджные городки</h2>
                     <p class="calc-product">24 <span>Всего</span></p>
                 </div>
                 <ul class="product__list product-slider__list js-infinity-slider-list">
@@ -1521,7 +1525,7 @@
                         </button>
                     </div>
                     <a href="#" class="main-button-more">
-                        <span class="text">Смотреть все новостройки</span>
+                        <span class="text">Смотреть все</span>
                         <span class="icon-arrow-more"></span>
                     </a>
                 </div>
@@ -1530,7 +1534,7 @@
         <section class="best-company">
             <div class="best-company__wrapper container">
                 <div class="general-heading">
-                    <h2 class="main-caption-l">Коттеджы по типу в Киеве</h2>
+                    <h2 class="main-caption-l main-caption-l--transform">Коттеджы по типу в Киеве</h2>
                     <p class="calc-product">240 <span>Всего</span></p>
                 </div>
                 <ul class="best-company__list">
@@ -1602,6 +1606,1612 @@
                     </li>
                 </ul>
                 <p class="best-company__text">Таким образом начало повседневной работы по формированию позиции играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Равным образом дальнейшее развитие различных форм деятельности позволяет оценить значение существенных финансовых и административных условий.</p>
+            </div>
+        </section>
+        <section class="free-search container">
+            <div class="free-search__wrapper">
+                <h3 class="free-search__caption">Бесплатный подбор недвижимости</h3>
+                <div class="free-search__body">
+                    <p><span>подберем</span>за</p>
+                    <h4 class="free-search__number">5</h4>
+                    <p><span>вариантов</span>шагов</p>
+                </div>
+               <button class="call-back__button">подобрать бесплатно</button>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="reviews__wrapper container slider-infinity">
+                <div class="general-heading">
+                    <h2 class="main-caption-l main-caption-l--transform">Отзывы о коттеджах Киева</h2>
+                    <p class="calc-product">24 <span>Всего</span></p>
+                </div>
+                <ul class="reviews__list reviews__list-construction js-infinity-slider-list reviews-slider__list">
+                    <li class="reviews__item reviews-slider__item js-slider-item-infinity show">
+                        <div class="reviews__header">
+                            <div class="reviews__img" style="background-image:url(./img/product-img-1.png)"></div>
+                            <p class="reviews__time-publication">20.02.20</p>
+                        </div>
+                        <div class="reviews__caption">
+                            <h4>«МАЄТОК. Жемчужина Италии» коттеджный городок</h4>
+                            <ul class="star__list">
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="reviews__text">
+                            <p>Были на выхах у друзей, живут в МАЕТКЕ. По-доброму позавидовали, вот к чему нужно стремиться - дом в таком месте !!! Ребята, ждите соседей, т.е. - нас)</p>
+                            <p class="reviews__text__autor">Нелли</p>
+                        </div>
+                        <div class="reviews__footer">
+                            <p class="reviews__calc-coments">
+                                <span class="icon-comment-text-outline"></span>
+                                <span class="number">18</span>
+                            </p>
+                            <a href="#" class="read-more">
+                                <span>Читать еще отзывы</span>
+                                <span class="icon-arrow-more"></span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="reviews__item reviews-slider__item js-slider-item-infinity">
+                        <div class="reviews__header">
+                            <div class="reviews__img" style="background-image:url(./img/product-img-2.png)"></div>
+                            <p class="reviews__time-publication">20.02.20</p>
+                        </div>
+                        <div class="reviews__caption">
+                            <h4>«МАЄТОК. Жемчужина Италии» коттеджный городок</h4>
+                            <ul class="star__list">
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="reviews__text">
+                            <p>Были на выхах у друзей, живут в МАЕТКЕ. По-доброму позавидовали, вот к чему нужно стремиться - дом в таком месте !!! Ребята, ждите соседей, т.е. - нас)</p>
+                            <p class="reviews__text__autor">Нелли</p>
+                        </div>
+                        <div class="reviews__footer">
+                            <p class="reviews__calc-coments">
+                                <span class="icon-comment-text-outline"></span>
+                                <span class="number">18</span>
+                            </p>
+                            <a href="#" class="read-more">
+                                <span>Читать еще отзывы</span>
+                                <span class="icon-arrow-more"></span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="reviews__item reviews-slider__item js-slider-item-infinity">
+                        <div class="reviews__header">
+                            <div class="reviews__img" style="background-image:url(./img/product-img-1.png)"></div>
+                            <p class="reviews__time-publication">20.02.20</p>
+                        </div>
+                        <div class="reviews__caption">
+                            <h4>«МАЄТОК. Жемчужина Италии» коттеджный городок</h4>
+                            <ul class="star__list">
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="reviews__text">
+                            <p>Были на выхах у друзей, живут в МАЕТКЕ. По-доброму позавидовали, вот к чему нужно стремиться - дом в таком месте !!! Ребята, ждите соседей, т.е. - нас)</p>
+                            <p class="reviews__text__autor">Нелли</p>
+                        </div>
+                        <div class="reviews__footer">
+                            <p class="reviews__calc-coments">
+                                <span class="icon-comment-text-outline"></span>
+                                <span class="number">18</span>
+                            </p>
+                            <a href="#" class="read-more">
+                                <span>Читать еще отзывы</span>
+                                <span class="icon-arrow-more"></span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="reviews__item reviews-slider__item js-slider-item-infinity">
+                        <div class="reviews__header">
+                            <div class="reviews__img" style="background-image:url(./img/product-img-2.png)"></div>
+                            <p class="reviews__time-publication">20.02.20</p>
+                        </div>
+                        <div class="reviews__caption">
+                            <h4>«МАЄТОК. Жемчужина Италии» коттеджный городок</h4>
+                            <ul class="star__list">
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="reviews__text">
+                            <p>Были на выхах у друзей, живут в МАЕТКЕ. По-доброму позавидовали, вот к чему нужно стремиться - дом в таком месте !!! Ребята, ждите соседей, т.е. - нас)</p>
+                            <p class="reviews__text__autor">Нелли</p>
+                        </div>
+                        <div class="reviews__footer">
+                            <p class="reviews__calc-coments">
+                                <span class="icon-comment-text-outline"></span>
+                                <span class="number">18</span>
+                            </p>
+                            <a href="#" class="read-more">
+                                <span>Читать еще отзывы</span>
+                                <span class="icon-arrow-more"></span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="reviews__item reviews-slider__item js-slider-item-infinity">
+                        <div class="reviews__header">
+                            <div class="reviews__img" style="background-image:url(./img/product-img-1.png)"></div>
+                            <p class="reviews__time-publication">20.02.20</p>
+                        </div>
+                        <div class="reviews__caption">
+                            <h4>«МАЄТОК. Жемчужина Италии» коттеджный городок</h4>
+                            <ul class="star__list">
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="start__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="reviews__text">
+                            <p>Были на выхах у друзей, живут в МАЕТКЕ. По-доброму позавидовали, вот к чему нужно стремиться - дом в таком месте !!! Ребята, ждите соседей, т.е. - нас)</p>
+                            <p class="reviews__text__autor">Нелли</p>
+                        </div>
+                        <div class="reviews__footer">
+                            <p class="reviews__calc-coments">
+                                <span class="icon-comment-text-outline"></span>
+                                <span class="number">18</span>
+                            </p>
+                            <a href="#" class="read-more">
+                                <span>Читать еще отзывы</span>
+                                <span class="icon-arrow-more"></span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="general-button__wrapper js-arrow-infinity container">
+                    <div class="wrapper">
+                        <button class="general-button prev">
+                            <span class="icon-arrow-left"></span>
+                        </button>
+                        <button class="general-button next">
+                            <span class="icon-arrow-right"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="product__wrapper slider-infinity">
+                <div class="general-heading container">
+                    <h2 class="main-caption-l">Новостройки Киева</h2>
+                    <p class="calc-product">24 <span>Всего</span></p>
+                </div>
+                <ul class="product__list product-slider__list js-infinity-slider-list">
+                    <li class="product__item product-slider__item js-slider-item-infinity show">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status">Проект</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Европейский-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating empty">Н.Д.</p>
+                            <p class="product__status completed">Завершен</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites active">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Positanуo-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating empty">Н.Д.</p>
+                            <p class="product__status completed">Завершен</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites active">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Positanуo-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="general-button__wrapper js-arrow-infinity container">
+                    <div class="wrapper">
+                        <button class="general-button prev">
+                            <span class="icon-arrow-left"></span>
+                        </button>
+                        <button class="general-button next">
+                            <span class="icon-arrow-right"></span>
+                        </button>
+                    </div>
+                    <a href="#" class="main-button-more">
+                        <span class="text">Смотреть все</span>
+                        <span class="icon-arrow-more"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="best-company-info">
+            <div class="best-company-info__wrapper container">
+                <div class="general-heading">
+                    <h2 class="main-caption-l main-caption-l--transform">Лучшие компании Киева</h2>
+                    <p class="calc-product">24 <span>Всего</span></p>
+                </div>
+                <p class="best-company-info__text">Таким образом начало повседневной работы по формированию позиции играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Равным образом дальнейшее развитие различных форм 
+                деятельности позволяет оценить значение существенных финансовых и административных условий.</p>
+                <ul class="best-company-info__list">
+                    <li class="best-company-info__item">
+                        <div class="best-company-info__header">
+                            <div class="info">
+                                <h4> 
+                                    <a href="#">УБЕРЁМ – клининг сервис по уборке квартир и домов</a>
+                                </h4>
+                                <p>Строительная техника. Инструменты. Оборудование</p>
+                            </div>
+                            <div class="best-company-info__button-list">
+                                <button class="best-company-info__button active">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                                <button class="best-company-info__button active">
+                                    <span class="icon-bell-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="best-company-info__footer">
+                            <ul class="best-company-info__contact-list">
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-web"></span>
+                                    <span class="text">comfort-life.com.ua</span>
+                                </li>
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-phone-outline"></span>
+                                    <span class="text">+38 093 732-31-94</span>
+                                </li>
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-map-marker-outline"></span>
+                                    <span class="text">Ивано-Франковск</span>
+                                </li>
+                            </ul>
+                            <div class="wrapper">
+                                <ul class="best-company-info__social-list">
+                                    <li class="best-company-info__social-item">
+                                        <a href="#" class="best-company-info___social-link">
+                                            <span class="icon-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li class="best-company-info__social-item">
+                                        <a href="#" class="best-company-info___social-link">
+                                            <span class="icon-instagram"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="best-company-info__img">
+                                    <img src="./img/best-company-info-img-1.png" alt="Name-company">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="best-company-info__item">
+                        <div class="best-company-info__header">
+                            <div class="info">
+                                <h4> 
+                                    <a href="#">БМ Групп</a>
+                                </h4>
+                                <p>Строительная техника. Инструменты. Оборудование</p>
+                            </div>
+                            <div class="best-company-info__button-list">
+                                <button class="best-company-info__button">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                                <button class="best-company-info__button">
+                                    <span class="icon-bell-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="best-company-info__footer">
+                            <ul class="best-company-info__contact-list">
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-web"></span>
+                                    <span class="text">comfort-life.com.ua</span>
+                                </li>
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-phone-outline"></span>
+                                    <span class="text">+38 093 732-31-94</span>
+                                </li>
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-map-marker-outline"></span>
+                                    <span class="text">Ивано-Франковск</span>
+                                </li>
+                            </ul>
+                            <div class="wrapper">
+                                <ul class="best-company-info__social-list">
+                                    <li class="best-company-info__social-item">
+                                        <a href="#" class="best-company-info___social-link">
+                                            <span class="icon-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li class="best-company-info__social-item">
+                                        <a href="#" class="best-company-info___social-link">
+                                            <span class="icon-instagram"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="best-company-info__img">
+                                    <img src="./img/best-company-info-img-1.png" alt="Name-company">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="best-company-info__item">
+                        <div class="best-company-info__header">
+                            <div class="info">
+                                <h4> 
+                                    <a href="#">Домо-строительный комбинат ДБК «Росичи»</a>
+                                </h4>
+                                <p>Строительная техника. Инструменты. Оборудование</p>
+                            </div>
+                            <div class="best-company-info__button-list">
+                                <button class="best-company-info__button">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                                <button class="best-company-info__button">
+                                    <span class="icon-bell-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="best-company-info__footer">
+                            <ul class="best-company-info__contact-list">
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-web"></span>
+                                    <span class="text">comfort-life.com.ua</span>
+                                </li>
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-phone-outline"></span>
+                                    <span class="text">+38 093 732-31-94</span>
+                                </li>
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-map-marker-outline"></span>
+                                    <span class="text">Ивано-Франковск</span>
+                                </li>
+                            </ul>
+                            <div class="wrapper">
+                                <ul class="best-company-info__social-list">
+                                    <li class="best-company-info__social-item">
+                                        <a href="#" class="best-company-info___social-link">
+                                            <span class="icon-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li class="best-company-info__social-item">
+                                        <a href="#" class="best-company-info___social-link">
+                                            <span class="icon-instagram"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="best-company-info__img">
+                                    <img src="./img/best-company-info-img-1.png" alt="Name-company">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="best-company-info__item">
+                        <div class="best-company-info__header">
+                            <div class="info">
+                                <h4> 
+                                    <a href="#">Риэлтор Дмитрий Власов</a>
+                                </h4>
+                                <p>Строительная техника. Инструменты. Оборудование</p>
+                            </div>
+                            <div class="best-company-info__button-list">
+                                <button class="best-company-info__button">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                                <button class="best-company-info__button">
+                                    <span class="icon-bell-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="best-company-info__footer">
+                            <ul class="best-company-info__contact-list">
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-web"></span>
+                                    <span class="text">comfort-life.com.ua</span>
+                                </li>
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-phone-outline"></span>
+                                    <span class="text">+38 093 732-31-94</span>
+                                </li>
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-map-marker-outline"></span>
+                                    <span class="text">Ивано-Франковск</span>
+                                </li>
+                            </ul>
+                            <div class="wrapper">
+                                <ul class="best-company-info__social-list">
+                                    <li class="best-company-info__social-item">
+                                        <a href="#" class="best-company-info___social-link">
+                                            <span class="icon-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li class="best-company-info__social-item">
+                                        <a href="#" class="best-company-info___social-link">
+                                            <span class="icon-instagram"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="best-company-info__img">
+                                    <img src="./img/best-company-info-img-1.png" alt="Name-company">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="main-button-more">
+                    <span class="text">Смотреть все компании</span>
+                    <span class="icon-arrow-more"></span>
+                </a>
+            </div>
+        </section>
+        <section class="product">
+            <div class="product__wrapper slider-infinity">
+                <div class="general-heading container">
+                    <h2 class="main-caption-l main-caption-l--transform">Акции от застройщиков</h2>
+                    <p class="calc-product">24 <span>Всего</span></p>
+                </div>
+                <ul class="product__list product__list-sale product-slider__list js-infinity-slider-list">
+                    <li class="product__item product-slider__item js-slider-item-infinity show">
+                        <div class="product__item__header">
+                            <p class="product__sale">-10%</p>
+                            <p class="product__time-sale">02.02 - 02.03</p>
+                            <div class="product__buttons">
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                            <span class="product__name">Европейский-2</span>
+                        </a>
+                        <div class="product__item__body">
+                            <div class="product__description">
+                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
+                                <p class="product__name-company">
+                                    <span class="company-logo" style="background-image:url(./img/company-logo.png)"></span>
+                                    <span>Синергия</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__sale">ремонт  В подарок</p>
+                            <p class="product__time-sale">02.02 - 02.03</p>
+                            <div class="product__buttons">
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                            <span class="product__name">Европейский-2</span>
+                        </a>
+                        <div class="product__item__body">
+                            <div class="product__description">
+                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
+                                <p class="product__name-company">
+                                    <span>Интеграл Буд</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Софиевка</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__sale">spa-weekend  В подарунок</p>
+                            <p class="product__time-sale">03.02 - 02.03</p>
+                            <div class="product__buttons">
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                            <span class="product__name">“Итальянский”</span>
+                        </a>
+                        <div class="product__item__body">
+                            <div class="product__description">
+                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
+                                <p class="product__name-company">
+                                    <span>Интеграл Буд</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__sale">-10%</p>
+                            <p class="product__time-sale">02.02 - 02.03</p>
+                            <div class="product__buttons">
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                            <span class="product__name">Европейский-2</span>
+                        </a>
+                        <div class="product__item__body">
+                            <div class="product__description">
+                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
+                                <p class="product__name-company">
+                                    <span class="company-logo" style="background-image:url(./img/company-logo.png)"></span>
+                                    <span>Синергия</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__sale">-10%</p>
+                            <p class="product__time-sale">02.02 - 02.03</p>
+                            <div class="product__buttons">
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                            <span class="product__name">ЖК “Ласточкино гнездо”</span>
+                        </a>
+                        <div class="product__item__body">
+                            <div class="product__description">
+                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
+                                <p class="product__name-company">
+                                    <span class="company-logo" style="background-image:url(./img/company-logo.png)"></span>
+                                    <span>Синергия</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__sale">-10%</p>
+                            <p class="product__time-sale">02.02 - 02.03</p>
+                            <div class="product__buttons">
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                            <span class="product__name">Европейский-2</span>
+                        </a>
+                        <div class="product__item__body">
+                            <div class="product__description">
+                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
+                                <p class="product__name-company">
+                                    <span class="company-logo" style="background-image:url(./img/company-logo.png)"></span>
+                                    <span>Синергия</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__sale">-10%</p>
+                            <p class="product__time-sale">02.02 - 02.03</p>
+                            <div class="product__buttons">
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                            <span class="product__name">Европейский-2</span>
+                        </a>
+                        <div class="product__item__body">
+                            <div class="product__description">
+                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
+                                <p class="product__name-company">
+                                    <span class="company-logo" style="background-image:url(./img/company-logo.png)"></span>
+                                    <span>Синергия</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="general-button__wrapper js-arrow-infinity container">
+                    <div class="wrapper">
+                        <button class="general-button prev">
+                            <span class="icon-arrow-left"></span>
+                        </button>
+                        <button class="general-button next">
+                            <span class="icon-arrow-right"></span>
+                        </button>
+                    </div>
+                    <a href="#" class="main-button-more">
+                        <span class="text">Смотреть все акции</span>
+                        <span class="icon-arrow-more"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="popular">
+            <div class="popular__wrapper container">
+                <div class="general-heading">
+                    <h2 class="main-caption-l main-caption-l--transform">Статьи о коттеджных городках и поселках Киева</h2>
+                    <a href="#" class="read-more">
+                        <span>Читать все статьи</span>
+                        <span class="icon-arrow-more"></span>
+                    </a>
+                </div>
+                <div class="popular__block popular__block-construction">
+                    <div class="popular__block__header">
+                        <div class="wrapper">
+                            <ul class="popular-sub-name__list">
+                                <li class="popular-sub-name__item active">Строительство</li>
+                            </ul>
+                        </div>
+                        <div class="wrapper">
+                            <ul class="popular-sub-name__list">
+                                <li class="popular-sub-name__item">Аналитика</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="popular__block__body">
+                        <ul class="popular__block__list popular__block__list-main">
+                            <li class="popular__block__item">
+                                <h3 class="popular__name-category">Астрология и недвижимость</h3>
+                                <div class="popular__info__wrapper">
+                                    <div class="popular__img" style="background-image: url(./img/popular-img-1.png)"></div>
+                                    <div class="popular__info">
+                                        <div class="popular__info__header">
+                                            <h4 class="popular__name"><a href="#">Должностных лиц Госгеокадастра Киевской области схватили при получении взятки </a></h4>
+                                            <button class="popular-button">
+                                                <span class="icon-heart-outline"></span>
+                                            </button>
+                                        </div>
+                                        <div class="popular__footer">
+                                            <p class="popular__date">12 Ноя 2019</p>
+                                            <div class="popular__statistics">
+                                                <p class="popular__views">
+                                                    <span class="icon-eyes"></span>
+                                                    <span>344</span>
+                                                </p>
+                                                <p class="popular__comments">
+                                                    <span class="icon-comment-text-outline"></span>
+                                                    <span>10</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="popular__block__item">
+                                <h3 class="popular__name-category">Астрология и недвижимость</h3>
+                                <div class="popular__info__wrapper">
+                                    <div class="popular__img" style="background-image: url(./img/popular-img-1.png)"></div>
+                                    <div class="popular__info">
+                                        <div class="popular__info__header">
+                                            <h4 class="popular__name"><a href="#">Должностных лиц Госгеокадастра Киевской области схватили при получении взятки </a></h4>
+                                            <button class="popular-button">
+                                                <span class="icon-heart-outline"></span>
+                                            </button>
+                                        </div>
+                                        <div class="popular__footer">
+                                            <p class="popular__date">12 Ноя 2019</p>
+                                            <div class="popular__statistics">
+                                                <p class="popular__views">
+                                                    <span class="icon-eyes"></span>
+                                                    <span>344</span>
+                                                </p>
+                                                <p class="popular__comments">
+                                                    <span class="icon-comment-text-outline"></span>
+                                                    <span>10</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="popular__block__item">
+                                <h3 class="popular__name-category">Земля</h3>
+                                <div class="popular__info__wrapper">
+                                    <div class="popular__img" style="background-image: url(./img/popular-img-2.png)"></div>
+                                    <div class="popular__info">
+                                        <div class="popular__info__header">
+                                            <h4 class="popular__name"><a href="#">Какие риски ждут застройщика при приобретении земли </a></h4>
+                                            <button class="popular-button active">
+                                                <span class="icon-heart-outline"></span>
+                                            </button>
+                                        </div>
+                                        <div class="popular__footer">
+                                            <p class="popular__date">12 Ноя 2019</p>
+                                            <div class="popular__statistics">
+                                                <p class="popular__views">
+                                                    <span class="icon-eyes"></span>
+                                                    <span>344</span>
+                                                </p>
+                                                <p class="popular__comments">
+                                                    <span class="icon-comment-text-outline"></span>
+                                                    <span>10</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="popular__block__item">
+                                <h3 class="popular__name-category">Астрология и недвижимость</h3>
+                                <div class="popular__info__wrapper">
+                                    <div class="popular__img" style="background-image: url(./img/popular-img-1.png)"></div>
+                                    <div class="popular__info">
+                                        <div class="popular__info__header">
+                                            <h4 class="popular__name"><a href="#">Должностных лиц Госгеокадастра Киевской области схватили при получении взятки </a></h4>
+                                            <button class="popular-button">
+                                                <span class="icon-heart-outline"></span>
+                                            </button>
+                                        </div>
+                                        <div class="popular__footer">
+                                            <p class="popular__date">12 Ноя 2019</p>
+                                            <div class="popular__statistics">
+                                                <p class="popular__views">
+                                                    <span class="icon-eyes"></span>
+                                                    <span>344</span>
+                                                </p>
+                                                <p class="popular__comments">
+                                                    <span class="icon-comment-text-outline"></span>
+                                                    <span>10</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                             <li class="popular__block__item">
+                                <h3 class="popular__name-category">Земля</h3>
+                                <div class="popular__info__wrapper">
+                                    <div class="popular__img" style="background-image: url(./img/popular-img-2.png)"></div>
+                                    <div class="popular__info">
+                                        <div class="popular__info__header">
+                                            <h4 class="popular__name"><a href="#">Какие риски ждут застройщика при приобретении земли </a></h4>
+                                            <button class="popular-button active">
+                                                <span class="icon-heart-outline"></span>
+                                            </button>
+                                        </div>
+                                        <div class="popular__footer">
+                                            <p class="popular__date">12 Ноя 2019</p>
+                                            <div class="popular__statistics">
+                                                <p class="popular__views">
+                                                    <span class="icon-eyes"></span>
+                                                    <span>344</span>
+                                                </p>
+                                                <p class="popular__comments">
+                                                    <span class="icon-comment-text-outline"></span>
+                                                    <span>10</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="popular__block__item">
+                                <h3 class="popular__name-category">Астрология и недвижимость</h3>
+                                <div class="popular__info__wrapper">
+                                    <div class="popular__img" style="background-image: url(./img/popular-img-1.png)"></div>
+                                    <div class="popular__info">
+                                        <div class="popular__info__header">
+                                            <h4 class="popular__name"><a href="#">Должностных лиц Госгеокадастра Киевской области схватили при получении взятки </a></h4>
+                                            <button class="popular-button">
+                                                <span class="icon-heart-outline"></span>
+                                            </button>
+                                        </div>
+                                        <div class="popular__footer">
+                                            <p class="popular__date">12 Ноя 2019</p>
+                                            <div class="popular__statistics">
+                                                <p class="popular__views">
+                                                    <span class="icon-eyes"></span>
+                                                    <span>344</span>
+                                                </p>
+                                                <p class="popular__comments">
+                                                    <span class="icon-comment-text-outline"></span>
+                                                    <span>10</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subscribe-block">
+                    <h5 class="subscribe-block__text">Нашли полезную информацию?<br> Подписывайтесь на актуальные публикации:</h5>
+                    <form action="#" class="subscribe-block__form">
+                        <label class="input__wrapper">
+                            <span class="subscribe-block__decor"></span>
+                            <input type="email" class="main-input" placeholder="Ваш имейл">
+                        </label>
+                        <button class="subscribe-block__button">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="rating-block rating-block-info">
+            <div class="rating-block__wrapper container">
+                <div class="js-drop-item rating-drop__wrapper">
+                    <button class="rating__button-mobile js-drop-button">
+                        <span class="rating-icon"></span>
+                        <span>Рейтинги коттеджных городков Киева</span>
+                        <span class="icon-drop"></span>
+                    </button>
+                    <h2 class="main-caption-l rating-caption"><span class="rating-icon"></span>Рейтинги коттеджных городков Киева </h2>
+                    <ul class="rating-block__list">
+                        <li class="rating-block__item">
+                            <div class="rating-block__item__header">
+                                <span class="rating-block-icon"></span>
+                                <h3 class="rating-block__item__caption"><span>ТОП-10</span>коттеджных городков</h3>
+                            </div>
+                            <div class="rating-block__table">
+                                <div class="rating-block__table__caption">
+                                    <p class="table-number">№</p>
+                                    <p class="table-name">Название</p>
+                                    <p class="table-rating">баллы</p>
+                                </div>
+                                <div class="wrapper">
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">1</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">2503</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">2</p>
+                                        <p class="table-name">Новый Коралловый Риф</p>
+                                        <p class="table-rating">2203</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">3</p>
+                                        <p class="table-name">Морская жемчужина</p>
+                                        <p class="table-rating">2100</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">4</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">2003</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">5</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">1503</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">6</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">1203</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">7</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">253</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">8</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">250</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">9</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">203</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">10</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-rating">03</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="rating-block__item rating-block__item-assessment">
+                            <div class="rating-block__item__header">
+                                <span class="rating-block-icon-man"></span>
+                                <h3 class="rating-block__item__caption">Народный рейтинг коттеджных городков</h3>
+                            </div>
+                            <div class="rating-block__table">
+                                <div class="rating-block__table__caption">
+                                    <p class="table-number">№</p>
+                                    <p class="table-name">Название</p>
+                                    <p class="table-calc">Кол-во</p>
+                                    <p class="table-rating">Оценка</p>
+                                </div>
+                                <div class="wrapper">
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">1</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">2</p>
+                                        <p class="table-name">Новый Коралловый Риф</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.2</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">3</p>
+                                        <p class="table-name">Морская жемчужина</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">4</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">5</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">6</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">100</p>
+                                        <p class="table-rating">4.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">7</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">3.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">8</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">9</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                    <div class="rating-block__table__item">
+                                        <p class="table-number">10</p>
+                                        <p class="table-name">Городок “Мечта бизнесмена”</p>
+                                        <p class="table-calc">10</p>
+                                        <p class="table-rating">9.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="js-drop-item rating-drop__wrapper rating-drop__wrapper-info">
+                    <button class="rating__button-mobile js-drop-button">
+                        <span class="rating-icon"></span>
+                        <span>Статистика коттеджных городков</span>
+                        <span class="icon-drop"></span>
+                    </button>
+                    <div class="rating-block__general-wrapper">
+                        <h2 class="main-caption-l rating-caption"><span class="rating-icon"></span>Статистика коттеджных городков</h2>
+                        <ul class="rating-block__list rating-block__list-diagram">
+                            <li class="rating-block__item">
+                                <div class="rating-block__item__header">
+                                    <span class="rating-block-icon-diagram"></span>
+                                    <h3 class="rating-block__item__caption">Статистика (грн) - Новостройка</h3>
+                                </div>
+                                <div class="rating-block__table">
+                                    <div class="wrapper">
+                                        <div class="rating-block__general-info">
+                                            <p class="name">Украина</p>
+                                            <p class="date">01.2020 - <span>15925</span></p>
+                                            <p class="date">02.2020 - <span>v 15915</span></p>
+                                        </div>
+                                        <div class="rating-block__general-info">
+                                            <p class="name">Киев</p>
+                                            <p class="date">01.2020 - <span>15925</span></p>
+                                            <p class="date">02.2020 - <span>v 15915</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="rating-block__table__caption">
+                                        <p class="table-number">№</p>
+                                        <p class="table-area">Район</p>
+                                        <p class="table-date">01.2020</p>
+                                        <p class="table-date">02.2020</p>
+                                    </div>
+                                    <div class="wrapper">
+                                        <div class="rating-block__table__item">
+                                            <p class="table-number">1</p>
+                                            <p class="table-name">Одесская</p>
+                                            <p class="table-rating">25003</p>
+                                            <p class="table-rating">25030</p>
+                                        </div>
+                                        <div class="rating-block__table__item">
+                                            <p class="table-number">2</p>
+                                            <p class="table-name">Харьковская</p>
+                                            <p class="table-rating">25003</p>
+                                            <p class="table-rating">25030</p>
+                                        </div>
+                                        <div class="rating-block__table__item">
+                                            <p class="table-number">3</p>
+                                            <p class="table-name">Запорожская</p>
+                                            <p class="table-rating">25003</p>
+                                            <p class="table-rating">25030</p>
+                                        </div>
+                                        <div class="rating-block__table__item">
+                                            <p class="table-number">4</p>
+                                            <p class="table-name">Киевская</p>
+                                            <p class="table-rating">25003</p>
+                                            <p class="table-rating">25030</p>
+                                        </div>
+                                        <div class="rating-block__table__item">
+                                            <p class="table-number">5</p>
+                                            <p class="table-name">Черновицкая</p>
+                                            <p class="table-rating">25003</p>
+                                            <p class="table-rating">25030</p>
+                                        </div>
+                                        <div class="rating-block__table__item">
+                                            <p class="table-number">6</p>
+                                            <p class="table-name">Херсонская</p>
+                                            <p class="table-rating">25003</p>
+                                            <p class="table-rating">25030</p>
+                                        </div>
+                                        <div class="rating-block__table__item">
+                                            <p class="table-number">7</p>
+                                            <p class="table-name">Ивано-Франковская</p>
+                                            <p class="table-rating">25003</p>
+                                            <p class="table-rating">25030</p>
+                                        </div>
+                                        <div class="rating-block__table__item">
+                                            <p class="table-number">8</p>
+                                            <p class="table-name">Закарпатская</p>
+                                            <p class="table-rating">25003</p>
+                                            <p class="table-rating">25030</p>
+                                        </div>
+                                        <div class="rating-block__table__item">
+                                            <p class="table-number">9</p>
+                                            <p class="table-name">Львовская</p>
+                                            <p class="table-rating">25003</p>
+                                            <p class="table-rating">25030</p>
+                                        </div>
+                                        <div class="rating-block__table__item">
+                                            <p class="table-number">10</p>
+                                            <p class="table-name">Николаевская</p>
+                                            <p class="table-rating">25003</p>
+                                            <p class="table-rating">25030</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rating-block__general-wrapper">
+                        <h2 class="main-caption-l rating-caption">Земли Украины</h2>
+                        <ul class="rating-block__list">
+                            <li class="rating-block__item">
+                                <div class="rating-block__item__header">
+                                    <span class="rating-block-icon-info"></span>
+                                    <h3 class="rating-block__item__caption">Справочная информация</h3>
+                                </div>
+                                <div class="rating-block__table rating-block__table-info">
+                                    <ul class="rating-block__table-list">
+                                        <li class="rating-block__table-item">
+                                            <a href="#" class="rating-block__table-link">
+                                                <span class="text">Органы земельных ресурсов Украины</span>
+                                                <span class="icon-arrow-more"></span>
+                                            </a>
+                                        </li>
+                                        <li class="rating-block__table-item">
+                                            <a href="#" class="rating-block__table-link">
+                                                <span class="text">Природоохранные организации Украины</span>
+                                                <span class="icon-arrow-more"></span>
+                                            </a>
+                                        </li>
+                                        <li class="rating-block__table-item">
+                                            <a href="#" class="rating-block__table-link">
+                                                <span class="text">Землеустроительные фирмы Украины</span>
+                                                <span class="icon-arrow-more"></span>
+                                            </a>
+                                        </li>
+                                        <li class="rating-block__table-item">
+                                            <a href="#" class="rating-block__table-link">
+                                                <span class="text">Земельный аудит в Украине</span>
+                                                <span class="icon-arrow-more"></span>
+                                            </a>
+                                        </li>
+                                        <li class="rating-block__table-item">
+                                            <a href="#" class="rating-block__table-link">
+                                                <span class="text">Органы земельных ресурсов Украины</span>
+                                                <span class="icon-arrow-more"></span>
+                                            </a>
+                                        </li>
+                                        <li class="rating-block__table-item">
+                                            <a href="#" class="rating-block__table-link">
+                                                <span class="text">Общественные организации земельного рынка Укра...</span>
+                                                <span class="icon-arrow-more"></span>
+                                            </a>
+                                        </li>
+                                        <li class="rating-block__table-item">
+                                            <a href="#" class="rating-block__table-link">
+                                                <span class="text">Общественные организации земельного рынка Укра...</span>
+                                                <span class="icon-arrow-more"></span>
+                                            </a>
+                                        </li>
+                                        <li class="rating-block__table-item">
+                                            <a href="#" class="rating-block__table-link">
+                                                <span class="text">Природоохранные организации Украины</span>
+                                                <span class="icon-arrow-more"></span>
+                                            </a>
+                                        </li>
+                                        <li class="rating-block__table-item">
+                                            <a href="#" class="rating-block__table-link">
+                                                <span class="text">Землеустроительные фирмы Украины</span>
+                                                <span class="icon-arrow-more"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="main-button-more">Показать все области</button>
+            </div>
+        </section>
+        <section class="info-block">
+            <div class="info-block__wrapper container">
+                <div class="general-heading">
+                    <h2 class="main-caption-l main-caption-l--transform">Киевская область: населенные пункты, история</h2>
+                </div>
+                <div class="info-block__container">
+                    <div class="info-block__inner">
+                        <div class="info-block__inner__img info-block__inner__img-area">
+                            <img src="./img/product-img-1.png" alt="Киев">
+                        </div>
+                        <p>Киевская область основана 27 февраля 1932 года.</p>
+                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
+                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
+                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                        <h4 class="info-block__inner__caption">Инвестиционная политика</h4>
+                        <p>Киевская область основана 27 февраля 1932 года.</p>
+                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
+                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
+                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info-block">
+            <div class="info-block__wrapper container">
+                <div class="general-heading">
+                    <h2 class="main-caption-l main-caption-l--transform">Экспертиза недвижимости</h2>
+                </div>
+                <div class="info-block__container">
+                    <div class="info-block__inner">
+                        <div class="info-block__inner__img info-block__inner__img-place">
+                            <img src="./img/info-img-1.png" alt="Место">
+                        </div>
+                        <h4 class="info-block__inner__caption">"МАЄТОК" - новая философия загородной жизни</h4>
+                        <p>Киевская область основана 27 февраля 1932 года.</p>
+                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
+                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
+                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                        <p>Киевская область основана 27 февраля 1932 года.</p>
+                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
+                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
+                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info-block">
+            <div class="info-block__wrapper container">
+                <div class="general-heading">
+                    <h2 class="main-caption-l main-caption-l--transform">Классификация коттеджных городков</h2>
+                </div>
+                <div class="info-block__container">
+                    <div class="info-block__inner info-block__inner__classification">
+                        <p>При классификации коттеджных посёлков выделяют 5 категорий: <strong>элитная категория, бизнес-категория, эконом-категория, таунхаусы, дома бюджет класса.</strong></p>
+                        <p>Киевская область основана 27 февраля 1932 года.</p>
+                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
+                        <h4 class="info-block__inner__caption ">Элитная категория</h4>
+                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
+                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                        <p>Киевская область основана 27 февраля 1932 года.</p>
+                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
+                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
+                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section class="info-block">
+            <div class="info-block__wrapper container">
+                <div class="general-heading">
+                    <h2 class="main-caption-l main-caption-l--transform">Частые вопросы и ответы о коттеджных городках</h2>
+                    <a href="#" class="read-more">
+                        <span>Читать все вопросы</span>
+                        <span class="icon-arrow-more"></span>
+                    </a>
+                </div>
+                <div class="info-block__container">
+                    <div class="info-block__inner">
+                        <ul class="info-block__spoiler__list">
+                            <li class="info-block__spoiler__item js-drop-item">
+                                <button class="info-block__spoiler__button js-drop-button">
+                                    <span class="text">Как изменились цены на дома в коттеджных городках с начала года и в марте-2010 года?</span>
+                                    <span class="icon-drop"></span>
+                                </button>
+                                <div class="info__wrapper">
+                                    <h4 class="info-block__inner__caption">"МАЄТОК" - новая философия загородной жизни</h4>
+                                        <p>Киевская область основана 27 февраля 1932 года.</p>
+                                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
+                                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
+                                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                                        <p>Киевская область основана 27 февраля 1932 года.</p>
+                                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
+                                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
+                                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                                </div>
+                            </li>
+                            <li class="info-block__spoiler__item js-drop-item">
+                                <button class="info-block__spoiler__button js-drop-button">
+                                    <span class="text">Какие типы недвижимости преобладают в коттеджных городках и какова их стоимость?</span>
+                                    <span class="icon-drop"></span>
+                                </button>
+                                <div class="info__wrapper">
+                                    <h4 class="info-block__inner__caption">"МАЄТОК" - новая философия загородной жизни</h4>
+                                        <p>Киевская область основана 27 февраля 1932 года.</p>
+                                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
+                                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
+                                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                                        <p>Киевская область основана 27 февраля 1932 года.</p>
+                                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
+                                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
+                                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                                </div>
+                            </li>
+                            <li class="info-block__spoiler__item js-drop-item">
+                                <button class="info-block__spoiler__button js-drop-button">
+                                    <span class="text">Какие факторы сейчас влияют на стоимость коттеджей?</span>
+                                    <span class="icon-drop"></span>
+                                </button>
+                                <div class="info__wrapper">
+                                    <h4 class="info-block__inner__caption">"МАЄТОК" - новая философия загородной жизни</h4>
+                                        <p>Киевская область основана 27 февраля 1932 года.</p>
+                                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
+                                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
+                                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                                        <p>Киевская область основана 27 февраля 1932 года.</p>
+                                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
+                                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
+                                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                                </div>
+                            </li>
+                            <li class="info-block__spoiler__item js-drop-item">
+                                <button class="info-block__spoiler__button js-drop-button">
+                                    <span class="text">Изменилось ли предложение коттеджей в этом году? Ведутся ли сейчас строительство коттеджей?</span>
+                                    <span class="icon-drop"></span>
+                                </button>
+                                <div class="info__wrapper">
+                                    <h4 class="info-block__inner__caption">"МАЄТОК" - новая философия загородной жизни</h4>
+                                        <p>Киевская область основана 27 февраля 1932 года.</p>
+                                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
+                                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
+                                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                                        <p>Киевская область основана 27 февраля 1932 года.</p>
+                                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
+                                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
+                                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                                </div>
+                            </li>
+                            <li class="info-block__spoiler__item js-drop-item">
+                                <button class="info-block__spoiler__button js-drop-button">
+                                    <span class="text">Как изменились цены на дома в коттеджных городках с начала года и в марте-2010 года?</span>
+                                    <span class="icon-drop"></span>
+                                </button>
+                                <div class="info__wrapper">
+                                    <h4 class="info-block__inner__caption">"МАЄТОК" - новая философия загородной жизни</h4>
+                                        <p>Киевская область основана 27 февраля 1932 года.</p>
+                                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
+                                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
+                                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                                        <p>Киевская область основана 27 февраля 1932 года.</p>
+                                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
+                                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
+                                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

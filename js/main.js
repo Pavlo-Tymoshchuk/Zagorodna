@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     let newElem = itemShow;
                     itemShow.remove();
                     sliderList.append(newElem);
-                },380);
+                },390);
                 
             });
             
@@ -356,7 +356,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 let getData = this.getAttribute('data-target');
                 let popup = document.querySelector('.popup[data-target = ' + getData + ']');
                 popup.classList.add('active');
-                htmlOverflow.classList.add('overflow')
+                htmlOverflow.classList.add('overflow');
             });
         }
     }
@@ -398,16 +398,34 @@ document.addEventListener('DOMContentLoaded', function(){
     
     document.addEventListener('click', function(e){
         let item = e.target;
-        let filterWrapper = document.querySelector('.js-filter-drop')
+        let allItems = document.querySelectorAll('.js-filter');
+        let allWrappers = document.querySelectorAll('.js-filter-drop');
         
         if(item.closest('.js-filter')) {
+            let target = item.closest('.js-filter').getAttribute('data-target');
+            let filterWrapper = document.querySelector('.js-filter-drop[data-target = ' + target + ']');
+            
+            allItems.forEach((item) => {
+                item.classList.remove('active');
+            });
+            allWrappers.forEach((item) => {
+                item.classList.remove('active');
+            });
+            
             filterWrapper.classList.add('active');
             item.closest('.js-filter').classList.add('active');
         }
         
         if(!item.closest('.js-filter') && !item.closest(".js-filter-drop")) {
-            filterWrapper.classList.remove('active');
-            document.querySelector('.js-filter').classList.remove('active');
+            
+            if(allWrappers) {
+                allItems.forEach((item) => {
+                    item.classList.remove('active');
+                });
+                allWrappers.forEach((item) => {
+                    item.classList.remove('active');
+                });
+            }
         }
     });
 });
