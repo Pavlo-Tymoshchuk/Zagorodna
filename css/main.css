@@ -4703,6 +4703,9 @@ main {
   .main-section {
     margin-bottom: 170px;
   }
+  .main-slider__dots {
+    pointer-events: none;
+  }
   /* /Main slider */
   /* General Filter */
   .general-filter {
