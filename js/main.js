@@ -166,6 +166,20 @@ document.addEventListener('DOMContentLoaded', function(){
     
     // //Burger and search and noty
     
+    // Show menu 
+    
+    let wrapperToTop = document.querySelector('.header__list');
+    
+    document.addEventListener('scroll', function(){
+        if(window.pageYOffset > 200) {
+            wrapperToTop.classList.add('hide');
+        }else {
+            wrapperToTop.classList.remove('hide');
+        }
+    });
+    
+    // Show menu 
+    
     
     // Drop
     
@@ -398,34 +412,32 @@ document.addEventListener('DOMContentLoaded', function(){
     
     document.addEventListener('click', function(e){
         let item = e.target;
-        let allItems = document.querySelectorAll('.js-filter');
         let allWrappers = document.querySelectorAll('.js-filter-drop');
         
         if(item.closest('.js-filter')) {
             let target = item.closest('.js-filter').getAttribute('data-target');
             let filterWrapper = document.querySelector('.js-filter-drop[data-target = ' + target + ']');
             
-            allItems.forEach((item) => {
-                item.classList.remove('active');
-            });
-            allWrappers.forEach((item) => {
-                item.classList.remove('active');
-            });
-            
-            filterWrapper.classList.toggle('active');
-            item.closest('.js-filter').classList.toggle('active');
+            if(filterWrapper.classList.contains("active")){
+                filterWrapper.classList.remove('active');
+            }else {
+                allWrappers.forEach((item) => {
+                    item.classList.remove('active');
+                });
+                 filterWrapper.classList.add('active');
+            }
         }
         
         if(!item.closest('.js-filter') && !item.closest(".js-filter-drop")) {
             
             if(allWrappers) {
-                allItems.forEach((item) => {
-                    item.classList.remove('active');
-                });
                 allWrappers.forEach((item) => {
                     item.classList.remove('active');
                 });
             }
         }
     });
+    
+    // Pre catalog filter 
+    
 });

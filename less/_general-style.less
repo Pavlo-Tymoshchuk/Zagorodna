@@ -181,12 +181,11 @@ main {
     .text {
         margin-left: auto;
     }
+    
+    &.product {
+        margin: 40px auto 0px;
+    }
 }
-
-.main-button-more--product {
-    margin: 40px auto 0px;
-}
-
 
 .general-button {
     display: flex;
@@ -247,6 +246,10 @@ main {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    
+    .main-caption-l {
+        margin-right: 10px;
+    } 
 }
 
 .calc-product {
@@ -257,6 +260,7 @@ main {
     font-weight: 300;
     color: #575757;
     text-transform: uppercase;
+    margin-left: 10px;
     
     span {
         color: #3d3d3d;
@@ -272,6 +276,7 @@ main {
     font-size: 14px;
     line-height: 14px;
     font-weight: 700;
+    white-space: nowrap;
     text-transform: uppercase;
     transition: color .4s;
     
@@ -360,7 +365,7 @@ main {
         .general-drop__wrapper  {
             visibility: visible;
             opacity: 1;
-            transition: visibility 0s 0s, opacity .4s .2s;
+            transition: opacity .4s;
             z-index: 2;
         }
         
@@ -392,7 +397,7 @@ main {
     visibility: hidden;
     opacity: 0;
     z-index: 2;
-    transition: visibility 0s .4s, opacity .2s .2s;
+    transition: opacity .2s;
     cursor: initial;
     overflow: auto;
     scrollbar-color: rgb(241, 235, 228) white;

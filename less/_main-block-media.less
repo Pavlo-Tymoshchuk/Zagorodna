@@ -243,6 +243,9 @@
         }
     }
     
+    .rating-block__list {
+        margin-right: -30px;
+    }
     
     .rating-block__item {
         width: calc(50% - 30px);
@@ -287,6 +290,16 @@
                 text-align: right;
             }
         }
+    }
+    
+    .rating-drop__info {
+        .rating-drop__wrapper {
+            width: calc(50% - 15px);
+        }
+    } 
+    
+    .rating-block__table-list {
+        max-height: 560px;
     }
     
     /* //Rating */
@@ -334,6 +347,15 @@
     /* /General Filter */
     
     /* Product */
+    
+    .product__list {
+        margin-right: -40px;
+    }
+    
+    .product__item {
+        width: 324px;
+        margin-right: 40px;
+    }
     
     .calc-product {
         font-size: 26px;
@@ -571,10 +593,10 @@
                 width: 42%;
             }
         }
-    }
-    
-     .filter-button__text {
-        display: none;
+        
+        .filter-button__text {
+            display: none;
+        }
     }
     
     .filter-selected__caption {
@@ -589,6 +611,21 @@
         margin-left: 70px;
     }
     
+    .catalog-filter__drop {
+        max-width: 690px;
+        
+        .general-drop__item {
+            padding: 10px 25px 10px 40px; 
+        }
+        
+        .wrapper {
+            max-width: 230px;
+        }
+        
+        .caption {
+            padding: 17px 0px 15px 40px;
+        }
+    }
     /* /Catalog filter */
     
     /* Call back */
@@ -616,7 +653,7 @@
     }
     
     .custome-checkbox {
-        margin-right: 5px;
+        margin-right: 7px;
     }
     
     /* //Call back */
@@ -638,6 +675,61 @@
     }
     
     /* //Reviews construction */
+    
+    /* Best company info */
+    
+    .best-company-info__header {
+        font-size: 13px;
+        line-height: 15px;
+        
+        h4 {
+            font-size: 15px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .best-company-info__contact-item {
+        font-size: 13px;
+    }
+    
+    .best-company-info__footer {
+        flex-direction: column;
+        
+        .wrapper {
+            margin-top: 15px;
+        }
+    }
+    
+    /* Best company info */
+    
+    /* Info block */
+    
+    
+    .info-block__container {
+        width: 100vw;
+        margin-left: -40px;
+        padding: 0px 40px;
+    }
+    
+    .info-block__inner__img-area {
+        padding: 0px 20px 20px 0px;
+    }
+    
+    .info-block__container-place {
+        padding-bottom: 25px;
+        
+        .info-block__inner__img {
+            max-width: 360px;
+            height: 210px;
+        }
+    }
+    
+    .info-block__spoiler__button {
+        font-size: 16px;
+    }
+    
+    /* Info block */
 }
 
 @media screen and (max-width: 840px) {
@@ -669,6 +761,106 @@
     
     .filter-check {
         margin: 0px auto;
+    }
+    
+    .catalog-filter__drop {
+        left: 20px;
+        max-width: calc(100% - 40px);
+        
+        .wrapper {
+            &:nth-child(n + 2) {
+                display: none;
+            }
+        }
+    }
+    
+    .catalog-filter__distance {
+        left: 20px;
+        max-width: calc(100% - 40px);
+    }
+    
+    .catalog-filter__form {
+        flex-direction: column;
+        
+        .input__wrapper {
+            &:first-of-type {
+                width: 100%;
+            }
+            
+            &:last-of-type {
+                width: 100%;
+            }
+        }
+        
+        .catalog__filter-button {
+            transform: none;
+            top:auto;
+            bottom: 0px;
+        }
+        
+        .input__wrapper {
+            &:first-of-type {
+                .main-input {
+                    border-radius: 6px 6px 0px 0px;
+                    border-bottom: none;
+                    border-right: 4px solid #ffffff;
+                }
+            }
+            
+            &:last-of-type {
+                .main-input {
+                    border-radius: 0px 0px 6px 6px;
+                    border-top: none;
+                    border-left: 4px solid #ffffff;
+                }
+                
+                .line {
+                    bottom: auto;
+                    top: 0px;
+                }
+            }
+            
+            .line {
+                width: 100%;
+                height: 1px;
+                top: auto;
+                bottom: 0px;
+                transform: none;
+            }
+            
+            .main-input {
+                &:focus {
+                    border-color: #d3d3d3;
+                    background-color: #ffffff;
+                    
+                    ~ .line {
+                        background-color: #d3d3d3;
+                        height: 2px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    } 
+    
+    .filter-selected__caption {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .filter-selected__list {
+        margin: 0px -10px -10px 0px;
+        justify-content: flex-start;
+    }
+    
+    .filter-selected__item {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 12px 18px;
+        
+        &:first-child {
+            margin-left: 60px;
+        }
     }
     
     /* /Filter */
@@ -747,6 +939,13 @@
         font-size: 14px;
     }
     
+    .popular__block-construction {
+        .popular__block__header {
+            .wrapper {
+                max-width: 210px;
+            }
+        }
+    }
     /* //Popular */
     
     /* Subscribe */
@@ -777,6 +976,19 @@
         top: -90px;
     }
     
+    .reviews__list-construction {
+        &.reviews-slider__list {
+            height: 362px;
+        }
+        
+        .reviews__img {
+            top: -90px;
+        }
+        
+        .reviews__caption {
+            margin-top: 20px;
+        }
+    } 
     /* Reviews */
     
     /* Rating */
@@ -791,6 +1003,19 @@
         margin-right: 0px;
     }
     
+     .rating-drop__info {
+        flex-direction: column;
+        
+        .rating-drop__wrapper {
+            width: 100%;
+            margin-bottom: 50px !important;
+            
+            &:last-child {
+                margin-bottom: 0px !important;
+            }
+        }
+    }
+    
     /* //Rating */
     
     /* Seo block */
@@ -801,6 +1026,141 @@
     }
     
     /* /Seo block */
+    
+    /* Call-back */
+    
+    .call-back {
+        padding: 60px 0px;
+        margin-top: 60px;
+    }
+    
+    .call-back__caption {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 35px;
+    }
+    
+    .call-back__header {
+        position: relative;
+        margin-bottom: 115px;
+        
+    }
+    
+    .call-back__drop {
+        position: absolute;
+        left: 0px;
+        top: calc(100% + 30px);
+        max-width: 100%;
+        
+        .general-drop__wrapper {
+            max-width: calc(100% + 7px);
+            width: calc(100% + 7px);
+            left: -3px;
+        }
+    }
+    
+    .call-back__body {
+        margin: 0px 0px 30px 0px;
+        flex-direction: column;
+        padding: 15px 20px;
+        
+        .checkbox__wrapper {
+            margin-right: 0px;
+            margin-bottom: 20px;
+            padding: 0px;
+            
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    
+    /* Call back */
+    
+    /* Free search */
+    
+    .free-search {
+        width: 100vw;
+        padding: 0px;
+        margin-bottom: 60px;
+    }
+    
+    .free-search__wrapper {
+        width: 100vw;
+        padding: 50px 20px 120px;
+    }
+    
+    .free-search__caption {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    
+    .free-search__number {
+        font-size: 150px;
+        margin: 0px 15px;
+    }
+    
+    .free-search__body {
+        p  {
+            span {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    
+    /* /Free search */
+    
+    /* Info block */
+    
+    .info-block {
+        margin-bottom: 60px;
+    }
+    
+    .info-block__container {
+        margin-left: -20px;
+        padding: 0px 20px;
+    }
+    
+    .info-block__container-place {
+        padding-bottom: 20px;
+    }
+    
+    .info-block__inner__img-area {
+        max-width: 200px;
+        height: 180px;
+        padding: 0px 15px 15px 0px;
+    }
+    
+    .info-block__container-place {
+        .info-block__inner__img {
+            max-width: 220px;
+            height: 150px;
+            padding: 0px 15px 10px 0px;
+        }
+        
+        .info-block__inner {
+            max-height: 363px;
+        }
+    }
+    
+    .info-block__inner {
+        font-size: 14px;
+    }
+    
+    .info-block__inner__caption {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+    
+    .info-block__inner__classification  {
+        p {
+            margin-bottom: 12px;
+        }
+    }
+    
+    /* /Info block */
 }
 
 @media screen and (max-width: 576px) {
@@ -870,6 +1230,20 @@
         width: 100%;
     }
     
+    .catalog-filter__form {
+        .input__wrapper {
+            .icon-place-big {
+                display: none;
+            }
+            
+            &:first-of-type {
+                .main-input {
+                    padding-left: 20px;
+                }
+            }
+        } 
+    }
+    
     /* // General filter */
     
     /* Product */
@@ -882,22 +1256,15 @@
         padding: 0px 20px;
     }
     
+    .product__item__footer {
+        padding: 0px 20px 15px;
+    }
+    
     /* //Product */
     
     /* Popular */
     .popular {
         padding: 45px 0px;
-    }
-    
-    .popular__wrapper {
-        .general-heading {
-            flex-wrap: wrap;
-            flex-direction: column;
-        }
-        
-        .read-more {
-            margin-top: 25px;
-        }
     }
     
     .popular__block {
@@ -940,6 +1307,14 @@
     .popular__name {
         width: 100%;
     }
+    
+    .popular__block-construction {
+        .popular__block__header {
+            .wrapper {
+                max-width: 140px;
+            }
+        } 
+    } 
     
     /* //Popular */
     
@@ -1032,10 +1407,13 @@
     
     .rating-block {
         margin-top: 50px;
+        padding-top: 0px;
+        margin-bottom: 60px;
     }
     
     .rating-block__wrapper {
         padding: 0px;
+        border-top: 1px solid #d3d3d3;
     }
     
     .rating-drop__wrapper {
@@ -1105,6 +1483,12 @@
         }
     }
     
+    .rating-drop__info {
+        .rating-drop__wrapper {
+            margin-bottom: 0px !important;
+        }
+    }
+    
     /* //Rating */
     
     /* Seo block */
@@ -1119,7 +1503,71 @@
         .wrapper {
             padding-top: 30px;
         }
-    }  
+    } 
+    
+    /* /Seo block */
+    
+    /* Call back */
+    
+    .call-back__header {
+        .call-back__drop-button {
+            padding: 10px 25px;
+        }
+    }
+    
+    .call-back__footer {
+        flex-direction: column;
+        
+        .input__wrapper {
+            max-width: 100%;
+            margin-bottom: 35px;
+        }
+        
+        .call-back__button {
+            max-width: 100%;
+        }
+    }
+    
+    /* //Call back */
+    
+    /* Best company info */
+    
+    .best-company-info__list {
+        margin-right: 0px;
+    }
+    
+    .best-company-info__item {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .best-company-info__header {
+        margin-bottom: 15px;
+    }
+    
+    /* Best company info */
+    
+    .info-block__container-place  {
+        .info-block__inner__img {
+            max-width: 180px;
+            height: 120px;
+        }
+        
+        .read-more {
+            font-size: 13px;
+            
+            .icon-arrow-more {
+                font-size: 9px;
+            }
+        }
+    }
+    
+    .info-block__inner__img-area {
+        max-width: 160px;
+        height: 120px;
+        padding: 0px 5px 5px 0px;
+    }
 }
 
 @media screen and (max-width: 440px) {

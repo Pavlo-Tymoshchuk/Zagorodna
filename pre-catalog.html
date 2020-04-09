@@ -435,7 +435,7 @@
             <div class="catalog-filter__wrapper container">
                 <form action="#" class="catalog-filter__form">
                     <label class="input__wrapper js-filter" data-target="filter">
-                        <input type="text" class="main-input" placeholder="Киевская область, Киев">
+                        <input type="text" class="main-input" placeholder="Киевская область, Киев" readonly>
                         <span class="icon-place-big"></span>
                         <button type="button" class="button-distance js-filter" data-target="distance">+20 км</button>
                         <span class="line"></span>
@@ -458,7 +458,7 @@
                         <h4 class="caption">Выберите область</h4>
                         <div class="general-drop__wrapper">
                             <ul class="general-drop__list">
-                                <li class="general-drop__item active">
+                                <li class="general-drop__item">
                                     <span>Одесская</span>
                                     <span class="icon-drop"></span>
                                 </li>
@@ -499,7 +499,7 @@
                         <h4 class="caption">Выберите город</h4>
                         <div class="general-drop__wrapper">
                             <ul class="general-drop__list">
-                                <li class="general-drop__item active">
+                                <li class="general-drop__item">
                                     <span>Одесса</span>
                                     <span class="icon-drop"></span>
                                 </li>
@@ -540,7 +540,7 @@
                         <h4 class="caption">Выберите район</h4>
                         <div class="general-drop__wrapper">
                             <ul class="general-drop__list">
-                                <li class="general-drop__item active">Поселок Котовского</li>
+                                <li class="general-drop__item">Поселок Котовского</li>
                                 <li class="general-drop__item">Поселок Таирова</li>
                                 <li class="general-drop__item">Исторический центр</li>
                                 <li class="general-drop__item">Днепр</li>
@@ -548,6 +548,9 @@
                                 <li class="general-drop__item">Харьков</li>
                                 <li class="general-drop__item">Одесса</li>
                                 <li class="general-drop__item">Днепр</li>
+                                <li class="general-drop__item">Молдаванка</li>
+                                <li class="general-drop__item">Заставы и Ленпоселок </li>
+                                <li class="general-drop__item">Ближние Мельницы</li>
                             </ul>
                         </div>
                     </div>
@@ -782,7 +785,7 @@
                         </div>
                     </li>
                 </ul>
-                <a href="#" class="main-button-more main-button-more--product">Смотреть каталог</a>
+                <a href="#" class="main-button-more product">Смотреть каталог</a>
             </div>
         </section>
         <section class="call-back">
@@ -2521,10 +2524,10 @@
         </section>
         <section class="popular">
             <div class="popular__wrapper container">
-                <div class="general-heading">
+                <div class="general-heading more">
                     <h2 class="main-caption-l main-caption-l--transform">Статьи о коттеджных городках и поселках Киева</h2>
                     <a href="#" class="read-more">
-                        <span>Читать все статьи</span>
+                        <span>Читать все статьи о киеве</span>
                         <span class="icon-arrow-more"></span>
                     </a>
                 </div>
@@ -2873,173 +2876,182 @@
                         </li>
                     </ul>
                 </div>
-                <div class="js-drop-item rating-drop__wrapper rating-drop__wrapper-info">
-                    <button class="rating__button-mobile js-drop-button">
-                        <span class="rating-icon"></span>
-                        <span>Статистика коттеджных городков</span>
-                        <span class="icon-drop"></span>
-                    </button>
-                    <div class="rating-block__general-wrapper">
-                        <h2 class="main-caption-l rating-caption"><span class="rating-icon"></span>Статистика коттеджных городков</h2>
-                        <ul class="rating-block__list rating-block__list-diagram">
-                            <li class="rating-block__item">
-                                <div class="rating-block__item__header">
-                                    <span class="rating-block-icon-diagram"></span>
-                                    <h3 class="rating-block__item__caption">Статистика (грн) - Новостройка</h3>
-                                </div>
-                                <div class="rating-block__table">
-                                    <div class="wrapper">
-                                        <div class="rating-block__general-info">
-                                            <p class="name">Украина</p>
-                                            <p class="date">01.2020 - <span>15925</span></p>
-                                            <p class="date">02.2020 - <span>v 15915</span></p>
+                <div class="rating-drop__info">
+                    <div class="js-drop-item rating-drop__wrapper">
+                        <button class="rating__button-mobile js-drop-button">
+                            <span class="rating-icon"></span>
+                            <span>Статистика коттеджных городков</span>
+                            <span class="icon-drop"></span>
+                        </button>
+                        <div class="rating-block__general-wrapper">
+                            <h2 class="main-caption-l rating-caption"><span class="rating-icon"></span>Статистика коттеджных городков</h2>
+                            <ul class="rating-block__list rating-block__list-diagram">
+                                <li class="rating-block__item">
+                                    <div class="rating-block__item__header">
+                                        <span class="rating-block-icon-diagram"></span>
+                                        <h3 class="rating-block__item__caption">Статистика (грн) - Новостройка</h3>
+                                    </div>
+                                    <div class="rating-block__table">
+                                        <div class="wrapper">
+                                            <div class="rating-block__general-info">
+                                                <p class="name">Украина</p>
+                                                <p class="date">01.2020 - <span>15925</span></p>
+                                                <p class="date">02.2020 - <span>v 15915</span></p>
+                                            </div>
+                                            <div class="rating-block__general-info">
+                                                <p class="name">Киев</p>
+                                                <p class="date">01.2020 - <span>15925</span></p>
+                                                <p class="date">02.2020 - <span>v 15915</span></p>
+                                            </div>
                                         </div>
-                                        <div class="rating-block__general-info">
-                                            <p class="name">Киев</p>
-                                            <p class="date">01.2020 - <span>15925</span></p>
-                                            <p class="date">02.2020 - <span>v 15915</span></p>
+                                        <div class="rating-block__table__caption">
+                                            <p class="table-number">№</p>
+                                            <p class="table-area">Район</p>
+                                            <p class="table-date">01.2020</p>
+                                            <p class="table-date">02.2020</p>
+                                        </div>
+                                        <div class="wrapper">
+                                            <div class="rating-block__table__item">
+                                                <p class="table-number">1</p>
+                                                <p class="table-name">Одесская</p>
+                                                <p class="table-rating">25003</p>
+                                                <p class="table-rating">25030</p>
+                                            </div>
+                                            <div class="rating-block__table__item">
+                                                <p class="table-number">2</p>
+                                                <p class="table-name">Харьковская</p>
+                                                <p class="table-rating">25003</p>
+                                                <p class="table-rating">25030</p>
+                                            </div>
+                                            <div class="rating-block__table__item">
+                                                <p class="table-number">3</p>
+                                                <p class="table-name">Запорожская</p>
+                                                <p class="table-rating">25003</p>
+                                                <p class="table-rating">25030</p>
+                                            </div>
+                                            <div class="rating-block__table__item">
+                                                <p class="table-number">4</p>
+                                                <p class="table-name">Киевская</p>
+                                                <p class="table-rating">25003</p>
+                                                <p class="table-rating">25030</p>
+                                            </div>
+                                            <div class="rating-block__table__item">
+                                                <p class="table-number">5</p>
+                                                <p class="table-name">Черновицкая</p>
+                                                <p class="table-rating">25003</p>
+                                                <p class="table-rating">25030</p>
+                                            </div>
+                                            <div class="rating-block__table__item">
+                                                <p class="table-number">6</p>
+                                                <p class="table-name">Херсонская</p>
+                                                <p class="table-rating">25003</p>
+                                                <p class="table-rating">25030</p>
+                                            </div>
+                                            <div class="rating-block__table__item">
+                                                <p class="table-number">7</p>
+                                                <p class="table-name">Ивано-Франковская</p>
+                                                <p class="table-rating">25003</p>
+                                                <p class="table-rating">25030</p>
+                                            </div>
+                                            <div class="rating-block__table__item">
+                                                <p class="table-number">8</p>
+                                                <p class="table-name">Закарпатская</p>
+                                                <p class="table-rating">25003</p>
+                                                <p class="table-rating">25030</p>
+                                            </div>
+                                            <div class="rating-block__table__item">
+                                                <p class="table-number">9</p>
+                                                <p class="table-name">Львовская</p>
+                                                <p class="table-rating">25003</p>
+                                                <p class="table-rating">25030</p>
+                                            </div>
+                                            <div class="rating-block__table__item">
+                                                <p class="table-number">10</p>
+                                                <p class="table-name">Николаевская</p>
+                                                <p class="table-rating">25003</p>
+                                                <p class="table-rating">25030</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="rating-block__table__caption">
-                                        <p class="table-number">№</p>
-                                        <p class="table-area">Район</p>
-                                        <p class="table-date">01.2020</p>
-                                        <p class="table-date">02.2020</p>
-                                    </div>
-                                    <div class="wrapper">
-                                        <div class="rating-block__table__item">
-                                            <p class="table-number">1</p>
-                                            <p class="table-name">Одесская</p>
-                                            <p class="table-rating">25003</p>
-                                            <p class="table-rating">25030</p>
-                                        </div>
-                                        <div class="rating-block__table__item">
-                                            <p class="table-number">2</p>
-                                            <p class="table-name">Харьковская</p>
-                                            <p class="table-rating">25003</p>
-                                            <p class="table-rating">25030</p>
-                                        </div>
-                                        <div class="rating-block__table__item">
-                                            <p class="table-number">3</p>
-                                            <p class="table-name">Запорожская</p>
-                                            <p class="table-rating">25003</p>
-                                            <p class="table-rating">25030</p>
-                                        </div>
-                                        <div class="rating-block__table__item">
-                                            <p class="table-number">4</p>
-                                            <p class="table-name">Киевская</p>
-                                            <p class="table-rating">25003</p>
-                                            <p class="table-rating">25030</p>
-                                        </div>
-                                        <div class="rating-block__table__item">
-                                            <p class="table-number">5</p>
-                                            <p class="table-name">Черновицкая</p>
-                                            <p class="table-rating">25003</p>
-                                            <p class="table-rating">25030</p>
-                                        </div>
-                                        <div class="rating-block__table__item">
-                                            <p class="table-number">6</p>
-                                            <p class="table-name">Херсонская</p>
-                                            <p class="table-rating">25003</p>
-                                            <p class="table-rating">25030</p>
-                                        </div>
-                                        <div class="rating-block__table__item">
-                                            <p class="table-number">7</p>
-                                            <p class="table-name">Ивано-Франковская</p>
-                                            <p class="table-rating">25003</p>
-                                            <p class="table-rating">25030</p>
-                                        </div>
-                                        <div class="rating-block__table__item">
-                                            <p class="table-number">8</p>
-                                            <p class="table-name">Закарпатская</p>
-                                            <p class="table-rating">25003</p>
-                                            <p class="table-rating">25030</p>
-                                        </div>
-                                        <div class="rating-block__table__item">
-                                            <p class="table-number">9</p>
-                                            <p class="table-name">Львовская</p>
-                                            <p class="table-rating">25003</p>
-                                            <p class="table-rating">25030</p>
-                                        </div>
-                                        <div class="rating-block__table__item">
-                                            <p class="table-number">10</p>
-                                            <p class="table-name">Николаевская</p>
-                                            <p class="table-rating">25003</p>
-                                            <p class="table-rating">25030</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="rating-block__general-wrapper">
-                        <h2 class="main-caption-l rating-caption">Земли Украины</h2>
-                        <ul class="rating-block__list">
-                            <li class="rating-block__item">
-                                <div class="rating-block__item__header">
-                                    <span class="rating-block-icon-info"></span>
-                                    <h3 class="rating-block__item__caption">Справочная информация</h3>
-                                </div>
-                                <div class="rating-block__table rating-block__table-info">
-                                    <ul class="rating-block__table-list">
-                                        <li class="rating-block__table-item">
-                                            <a href="#" class="rating-block__table-link">
-                                                <span class="text">Органы земельных ресурсов Украины</span>
-                                                <span class="icon-arrow-more"></span>
-                                            </a>
-                                        </li>
-                                        <li class="rating-block__table-item">
-                                            <a href="#" class="rating-block__table-link">
-                                                <span class="text">Природоохранные организации Украины</span>
-                                                <span class="icon-arrow-more"></span>
-                                            </a>
-                                        </li>
-                                        <li class="rating-block__table-item">
-                                            <a href="#" class="rating-block__table-link">
-                                                <span class="text">Землеустроительные фирмы Украины</span>
-                                                <span class="icon-arrow-more"></span>
-                                            </a>
-                                        </li>
-                                        <li class="rating-block__table-item">
-                                            <a href="#" class="rating-block__table-link">
-                                                <span class="text">Земельный аудит в Украине</span>
-                                                <span class="icon-arrow-more"></span>
-                                            </a>
-                                        </li>
-                                        <li class="rating-block__table-item">
-                                            <a href="#" class="rating-block__table-link">
-                                                <span class="text">Органы земельных ресурсов Украины</span>
-                                                <span class="icon-arrow-more"></span>
-                                            </a>
-                                        </li>
-                                        <li class="rating-block__table-item">
-                                            <a href="#" class="rating-block__table-link">
-                                                <span class="text">Общественные организации земельного рынка Укра...</span>
-                                                <span class="icon-arrow-more"></span>
-                                            </a>
-                                        </li>
-                                        <li class="rating-block__table-item">
-                                            <a href="#" class="rating-block__table-link">
-                                                <span class="text">Общественные организации земельного рынка Укра...</span>
-                                                <span class="icon-arrow-more"></span>
-                                            </a>
-                                        </li>
-                                        <li class="rating-block__table-item">
-                                            <a href="#" class="rating-block__table-link">
-                                                <span class="text">Природоохранные организации Украины</span>
-                                                <span class="icon-arrow-more"></span>
-                                            </a>
-                                        </li>
-                                        <li class="rating-block__table-item">
-                                            <a href="#" class="rating-block__table-link">
-                                                <span class="text">Землеустроительные фирмы Украины</span>
-                                                <span class="icon-arrow-more"></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="js-drop-item rating-drop__wrapper">
+                        <button class="rating__button-mobile js-drop-button">
+                            <span class="rating-block-icon-info"></span>
+                            <span>Земли Украины</span>
+                            <span class="icon-drop"></span>
+                        </button>
+                        <div class="rating-block__general-wrapper">
+                            <h2 class="main-caption-l rating-caption">Земли Украины</h2>
+                            <ul class="rating-block__list">
+                                <li class="rating-block__item">
+                                    <div class="rating-block__item__header">
+                                        <span class="rating-block-icon-info"></span>
+                                        <h3 class="rating-block__item__caption">Справочная информация</h3>
+                                    </div>
+                                    <div class="rating-block__table rating-block__table-info">
+                                        <ul class="rating-block__table-list">
+                                            <li class="rating-block__table-item">
+                                                <a href="#" class="rating-block__table-link">
+                                                    <span class="text">Органы земельных ресурсов Украины</span>
+                                                    <span class="icon-arrow-more"></span>
+                                                </a>
+                                            </li>
+                                            <li class="rating-block__table-item">
+                                                <a href="#" class="rating-block__table-link">
+                                                    <span class="text">Природоохранные организации Украины</span>
+                                                    <span class="icon-arrow-more"></span>
+                                                </a>
+                                            </li>
+                                            <li class="rating-block__table-item">
+                                                <a href="#" class="rating-block__table-link">
+                                                    <span class="text">Землеустроительные фирмы Украины</span>
+                                                    <span class="icon-arrow-more"></span>
+                                                </a>
+                                            </li>
+                                            <li class="rating-block__table-item">
+                                                <a href="#" class="rating-block__table-link">
+                                                    <span class="text">Земельный аудит в Украине</span>
+                                                    <span class="icon-arrow-more"></span>
+                                                </a>
+                                            </li>
+                                            <li class="rating-block__table-item">
+                                                <a href="#" class="rating-block__table-link">
+                                                    <span class="text">Органы земельных ресурсов Украины</span>
+                                                    <span class="icon-arrow-more"></span>
+                                                </a>
+                                            </li>
+                                            <li class="rating-block__table-item">
+                                                <a href="#" class="rating-block__table-link">
+                                                    <span class="text">Общественные организации земельного рынка Укра...</span>
+                                                    <span class="icon-arrow-more"></span>
+                                                </a>
+                                            </li>
+                                            <li class="rating-block__table-item">
+                                                <a href="#" class="rating-block__table-link">
+                                                    <span class="text">Общественные организации земельного рынка Укра...</span>
+                                                    <span class="icon-arrow-more"></span>
+                                                </a>
+                                            </li>
+                                            <li class="rating-block__table-item">
+                                                <a href="#" class="rating-block__table-link">
+                                                    <span class="text">Природоохранные организации Украины</span>
+                                                    <span class="icon-arrow-more"></span>
+                                                </a>
+                                            </li>
+                                            <li class="rating-block__table-item">
+                                                <a href="#" class="rating-block__table-link">
+                                                    <span class="text">Землеустроительные фирмы Украины</span>
+                                                    <span class="icon-arrow-more"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <button class="main-button-more">Показать все области</button>
@@ -3073,21 +3085,21 @@
                 <div class="general-heading">
                     <h2 class="main-caption-l main-caption-l--transform">Экспертиза недвижимости</h2>
                 </div>
-                <div class="info-block__container">
+                <div class="info-block__container info-block__container-place">
                     <div class="info-block__inner">
-                        <div class="info-block__inner__img info-block__inner__img-place">
+                        <div class="info-block__inner__img">
                             <img src="./img/info-img-1.png" alt="Место">
                         </div>
                         <h4 class="info-block__inner__caption">"МАЄТОК" - новая философия загородной жизни</h4>
-                        <p>Киевская область основана 27 февраля 1932 года.</p>
-                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
-                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
-                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
-                        <p>Киевская область основана 27 февраля 1932 года.</p>
-                        <p>Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
-                        <p>Территория области составляет 28,4 тысячи квадратных километров (4,7% территории Украины). Численность населения области составляет 1795,3 тыс. человек, в том числе: городское - 1047,8 тыс. человек, сельское - 747,8 тыс. человек; плотность населения на 1 кв. км. - 64 человека. Киевщина имеет 8200 км автодорог.</p>
-                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий.</p>
+                        <p>Мегаполис с его шумом и бурным ритмом жизни часто вызывает желание отгородиться от давления большого города, создать собственный уютный и безопасный мир.</p>
+                        <p>Мегаполис с его шумом и бурным ритмом жизни часто вызывает желание отгородиться от давления большого города, создать собственный уютный и безопасный мир.</p>
+                        <p>Площадь сельхозугодий края составляет 1,7 млн. га, или 4, 2% от общей площади угодий Украины. В Киевской области работает 10 тыс. малых предприятий. Киевская область основана 27 февраля 1932 года.
+                        Область разделена на 25 городов, в том числе 11 городов областного значения и 14 - районного значения, 29 поселков городского типа, 1132 сельских населенных пункта. Всего населенных пунктов -1186.</p>
                     </div>
+                    <a href="#" class="read-more">
+                        <span>Читать полностью</span>
+                        <span class="icon-arrow-more"></span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -3114,7 +3126,7 @@
         </section>
          <section class="info-block">
             <div class="info-block__wrapper container">
-                <div class="general-heading">
+                <div class="general-heading more">
                     <h2 class="main-caption-l main-caption-l--transform">Частые вопросы и ответы о коттеджных городках</h2>
                     <a href="#" class="read-more">
                         <span>Читать все вопросы</span>

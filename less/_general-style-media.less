@@ -6,27 +6,38 @@
     }
     
     .general-button__wrapper {
-        height: 48px;
+        margin: 0px;
         
         .wrapper {
             display: none;
         }
         
         .main-button-more {
-            right: auto;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: static;
+            transform: none;
+            margin-left: 0px;
+            margin-top: 40px;
         }
     }
     
     .general-button--hide {
         display: none;
     }
+    
+    .breadcrumbs {
+        padding-left: 40px;
+    }
 }
 
 @media screen and (max-width: 992px) {
+    
+    .main-caption-xl {
+        font-size: 32px;
+    }
+    
     .main-caption-l {
         font-size: 26px;
+        line-height: 30px;
     }
     
     .general-heading {
@@ -53,12 +64,20 @@
         padding: 0px 20px;
     }
     
+    .main-caption-xl {
+        font-size: 28px;
+    }
+    
     .main-caption-l {
         font-size: 22px;
     }
     
     .general-heading {
         margin-bottom: 22px;
+    }
+    
+    .breadcrumbs {
+        padding-left: 20px;
     }
 }
 
@@ -68,6 +87,18 @@
         .main-button-more {
             max-width: 100%;
             position: relative;
+        }
+    }
+    
+    .general-heading {
+        
+        &.more {
+            flex-wrap: wrap;
+            flex-direction: column;
+            
+            .read-more {
+                margin-top: 25px;
+            }
         }
     }
 }

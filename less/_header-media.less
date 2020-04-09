@@ -395,7 +395,7 @@
     }
     
     .header__list {
-        margin-left: 0px;
+        margin-left: 5px;
     }
     
     .header__dow {
@@ -566,9 +566,69 @@
     }
     
     .header__list {
-        display: none;
+        width: 100%;
+        margin-left: 0px;
+        justify-content: center;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        background-color: #ffffff;
+        box-shadow: 0px -1px 4px 0px rgba(0, 0, 0, 0.08);
+        transition: transform .4s;
+        
+        &.hide {
+            transform: translateY(110%);
+        }
     }
     
+    .header__link {
+        width: 80px;
+        height: 65px;
+        font-size: 9px;
+    }
+    
+    .header__item {
+        &::before {
+            display: none;
+        }
+        
+        &:nth-child(1) {
+            .header__link {
+                width: 70px;
+            }
+            
+            .header__link-img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+        
+        &:nth-child(2) {
+            .header__link-img {
+                width: 51px;
+                height: 31px;
+                background-image: url(../img/header-cottages.svg);
+            }
+        }
+        
+        &:nth-child(3) {
+            .header__link-img {
+                width: 41px;
+                height: 30px;
+                background-image: url(../img/header-skyscrapers.svg);
+            }
+        }
+        
+        &:nth-child(4) {
+            .header__link-img {
+                width: 37px;
+                height: 32px;
+                background-image: url(../img/header-office.svg);
+            }
+        }
+}
+    
+
     .header__logo {
         justify-content: center;
         max-width: initial
