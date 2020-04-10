@@ -1371,6 +1371,12 @@ main {
     background-color: #eaeaea;
     color: #2c922c;
   }
+  .general-tabs__item:hover {
+    color: #2c922c;
+  }
+  .general-tabs__item:hover::before {
+    background-color: #7bc97b;
+  }
   .breadcrumbs__item:hover {
     color: #3D3D3D;
   }
@@ -2717,11 +2723,11 @@ main {
   padding: 0px 0px 5px;
   position: relative;
   margin-right: 30px;
-  transition: color 0.4s;
   letter-spacing: -0.035em;
   text-align: center;
   cursor: pointer;
   flex-shrink: 0;
+  transition: color 0.4s;
 }
 .general-tabs__item::before {
   content: "";
