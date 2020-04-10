@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header class="header">
+     <header class="header">
         <div class="header__top">
             <div class="header__city general-drop js-drop-item">
                 <p class="header__city__wrapper js-drop-button general-drop__text">
@@ -23,7 +23,7 @@
                         <li class="general-drop__item">Днепр</li>
                     </ul>
                     <ul class="general-drop__list">
-                        <li class="general-drop__item active">Киев</li>
+                        <li class="general-drop__item">Киев</li>
                         <li class="general-drop__item">Харьков</li>
                         <li class="general-drop__item">Одесса</li>
                         <li class="general-drop__item">Днепр</li>
@@ -60,7 +60,7 @@
             </div>
             <nav class="header__nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item general-drop js-drop-item">
+                    <li class="header__nav-item js-drop-item">
                         <button class="js-drop-button">
                             <span class="header__nav-tablet-icon" style="background-image:url(./img/header-icon-img-1.svg)"></span>
                             <span class="header__nav-item-text">Журнал</span>
@@ -83,7 +83,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="header__nav-item general-drop js-drop-item">
+                    <li class="header__nav-item js-drop-item">
                         <button class="js-drop-button">
                             <span class="header__nav-tablet-icon" style="background-image:url(./img/header-icon-img-2.svg)"></span>
                             <span class="header__nav-item-text">Аналитика</span>
@@ -106,7 +106,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="header__nav-item general-drop js-drop-item">
+                    <li class="header__nav-item js-drop-item">
                         <button class="js-drop-button">
                             <span class="header__nav-tablet-icon" style="background-image:url(./img/header-icon-img-3.svg)"></span>
                             <span class="header__nav-item-text">Мероприятия</span>
@@ -129,7 +129,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="header__nav-item general-drop js-drop-item">
+                    <li class="header__nav-item js-drop-item">
                         <button class="js-drop-button">
                             <span class="header__nav-tablet-icon" style="background-image:url(./img/header-icon-img-4.svg)"></span>
                             <span class="header__nav-item-text">Сервисы</span>
@@ -152,7 +152,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="header__nav-item general-drop js-drop-item">
+                    <li class="header__nav-item js-drop-item">
                         <button class="js-drop-button">
                             <span class="header__nav-tablet-icon" style="background-image:url(./img/header-icon-img-5.svg)"></span>
                             <span class="header__nav-item-text">Инфо-центр</span>
@@ -175,7 +175,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="header__nav-item general-drop js-drop-item">
+                    <li class="header__nav-item js-drop-item">
                         <button class="js-drop-button">
                             <span class="header__nav-tablet-icon" style="background-image:url(./img/header-icon-img-6.svg)"></span>
                             <span class="header__nav-item-text">О компании</span>
@@ -207,7 +207,7 @@
                     <li class="header__nav-item">
                         <a href="#" class="header__nav-link">Словарь</a>
                     </li>
-                    <li class="header__nav-item general-drop js-drop-item">
+                    <li class="header__nav-item js-drop-item">
                         <button class="js-drop-button">
                             <span class="header__nav-tablet-icon" style="background-image:url(./img/header-icon-img-7.svg)"></span>
                             <span class="header__nav-item-text">Бизнесу</span>
@@ -305,7 +305,7 @@
                 </form>
             </div>
             <div class="header__buttons__wrapper">
-                <a href="#" class="header__general-button">Подобрать бесплатно</a>
+                <a href="#" class="header__general-button general-button-color">Подобрать бесплатно</a>
                 <a href="#" class="header__button header__button-general">
                     <span class="icon-house"></span>
                 </a>
@@ -794,10 +794,13 @@
                 <form action="#" class="call-back__form">
                     <div class="call-back__header">
                         <input type="hidden" name="call-back-name">
-                        <input type="hidden" name="call-back-distans">
                         <span class="icon-place-big"></span>
                         <p class="call-back__name">Киевская область, Киев</p>
-                        <p class="call-back__distance">+20 км</p>
+                        <button type="button" class="button-distance js-filter" data-target="distance-callback">+20 км</button>
+                        <div class="catalog-filter__distance catalog-drop js-filter-drop" data-target="distance-callback">
+                            <p class="caption">Расстояние в радиусе, км</p>
+                            <div></div>
+                        </div>
                         <div class="general-drop call-back__drop js-drop-item">
                             <input type="hidden" class="js-drop-input" name="call-back-drop">
                             <button type="button" class="call-back__drop-button js-drop-button general-drop__text"> 

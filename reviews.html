@@ -426,507 +426,195 @@
                         <a href="#" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <a href="#" class="breadcrumbs__link">Каталог</a>
+                        <a href="#" class="breadcrumbs__link">Отзывы</a>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="catalog">
-            <div class="catalog__map">
-                <button class="catalog__map-open">
-                    <span class="icon-full"></span>
-                </button>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.0849493721676!2d36.23039151571485!3d49.991016779414565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f00948c297%3A0xb1ae000554c43aec!2z0L_Quy4g0JrQvtC90YHRgtC40YLRg9GG0LjQuCwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1586514450928!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-            <div class="general-heading container">
-                <h2 class="main-caption-l">Коттеджные городки и поселки Украины</h2>
-                <div class="catalog__buttons-wrapper">
-                    <button class="general-button-color">Купить дом</button>
-                    <button class="filter-button js-filter" data-target="full-filter">
-                        <span class="filter-button__decor"></span>
-                        <span class="filter-button__text">Фильтрация</span>
-                    </button>
-                </div>
-            </div>
-            <div class="catalog__wrapper container">
-                <div class="catalog__main-wrapper">
-                    <form action="#" class="catalog-filter__form">
-                        <label class="input__wrapper js-filter" data-target="filter">
-                            <input type="text" class="main-input" placeholder="Киевская область, Киев">
-                            <span class="icon-place-big"></span>
-                            <button type="button" class="button-distance js-filter" data-target="distance">+20 км</button>
-                            <span class="line"></span>
-                        </label>
-                        <label class="input__wrapper">
-                            <input type="text" class="main-input main-input-filter" placeholder="КМ, адрес или компания">
-                        </label>
-                        <button class="catalog__filter-button">
-                            <span class="icon-search"></span>
+        <section class="reviews-page">
+            <div class="reviews-page__wrapper container">
+                <div class="general-heading">
+                    <h2 class="main-caption-l main-caption-l--transform">Отзывы</h2>
+                    <div class="general-drop reviews__drop js-drop-item">
+                        <button type="button" class="reviews__drop__button js-drop-button general-drop__text"> 
+                            <span class="text">Самое лучшее</span>
+                            <span class="icon-drop"></span>
                         </button>
-                    </form>
-                    <div class="catalog-filter__distance catalog-drop js-filter-drop" data-target="distance">
-                        <p class="caption">Расстояние в радиусе, км</p>
-                        <div></div>
-                    </div>
-                    <div class="catalog-filter__drop js-filter-drop catalog-drop" data-target="filter">
-                        <div class="wrapper">
-                            <h4 class="caption">Выберите область</h4>
-                            <div class="general-drop__wrapper">
-                                <ul class="general-drop__list">
-                                    <li class="general-drop__item">
-                                        <span>Одесская</span>
-                                        <span class="icon-drop"></span>
-                                    </li>
-                                    <li class="general-drop__item">
-                                        <span>Киевская</span>
-                                        <span class="icon-drop"></span>
-                                    </li>
-                                    <li class="general-drop__item">
-                                        <span>Одесса</span>
-                                        <span class="icon-drop"></span>
-                                    </li>
-                                    <li class="general-drop__item">
-                                        <span>Ивано-Франковская</span>
-                                        <span class="icon-drop"></span>
-                                    </li>
-                                </ul>
-                                <ul class="general-drop__list">
-                                    <li class="general-drop__item">
-                                        <span>Одесская</span>
-                                        <span class="icon-drop"></span>
-                                    </li>
-                                    <li class="general-drop__item">
-                                        <span>Киевская</span>
-                                        <span class="icon-drop"></span>
-                                    </li>
-                                    <li class="general-drop__item">
-                                        <span>Одесса</span>
-                                        <span class="icon-drop"></span>
-                                    </li>
-                                    <li class="general-drop__item">
-                                        <span>Ивано-Франковская</span>
-                                        <span class="icon-drop"></span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="wrapper">
-                            <h4 class="caption">Выберите город</h4>
-                            <div class="general-drop__wrapper">
-                                <ul class="general-drop__list">
-                                    <li class="general-drop__item">
-                                        <span>Одесса</span>
-                                        <span class="icon-drop"></span>
-                                    </li>
-                                    <li class="general-drop__item">
-                                        <span>Арциз</span>
-                                        <span class="icon-drop"></span>
-                                    </li>
-                                    <li class="general-drop__item">
-                                        <span>Балта</span>
-                                        <span class="icon-drop"></span>
-                                    </li>
-                                    <li class="general-drop__item">
-                                        <span>Ивано-Франковская</span>
-                                        <span class="icon-drop"></span>
-                                    </li>
-                                </ul>
-                                <ul class="general-drop__list">
-                                    <li class="general-drop__item">
-                                        <span>Одесса</span>
-                                        <span class="icon-drop"></span>
-                                    </li>
-                                    <li class="general-drop__item">
-                                        <span>Киевская</span>
-                                        <span class="icon-drop"></span>
-                                    </li>
-                                    <li class="general-drop__item">
-                                        <span>Одесса</span>
-                                        <span class="icon-drop"></span>
-                                    </li>
-                                    <li class="general-drop__item">
-                                        <span>Ивано-Франковская</span>
-                                        <span class="icon-drop"></span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="wrapper">
-                            <h4 class="caption">Выберите район</h4>
-                            <div class="general-drop__wrapper">
-                                <ul class="general-drop__list">
-                                    <li class="general-drop__item">Поселок Котовского</li>
-                                    <li class="general-drop__item">Поселок Таирова</li>
-                                    <li class="general-drop__item">Исторический центр</li>
-                                    <li class="general-drop__item">Днепр</li>
-                                    <li class="general-drop__item">Киев</li>
-                                    <li class="general-drop__item">Харьков</li>
-                                    <li class="general-drop__item">Одесса</li>
-                                    <li class="general-drop__item">Днепр</li>
-                                    <li class="general-drop__item">Молдаванка</li>
-                                    <li class="general-drop__item">Заставы и Ленпоселок </li>
-                                    <li class="general-drop__item">Ближние Мельницы</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="catalog__filtration__wrapper js-filter-drop" data-target="full-filter">
-                        <div class="catalog__filtration__container">
-                            <h5 class="catalog__mobile-caption">Фильтрация</h5>
-                            <div class="catalog__filtration__header">
-                                <div class="wrapper">
-                                    <h5 class="catalog__filtration__caption">Тип коттеджа</h5>
-                                    <ul class="catalog__filtration__list">
-                                        <li class="catalog__filtration__item active">Вилла</li>
-                                        <li class="catalog__filtration__item">Участок</li>
-                                        <li class="catalog__filtration__item">Квадрекс</li>
-                                        <li class="catalog__filtration__item">Дуплекс</li>
-                                        <li class="catalog__filtration__item">Таунхаус</li>
-                                        <li class="catalog__filtration__item">Эллинг</li>
-                                        <li class="catalog__filtration__item">Коттедж</li>
-                                    </ul>
-                                </div>
-                                <div class="catalog__range-slider">
-                                    <h5 class="catalog__filtration__caption">Диапазон цен (грн/м2)</h5>
-                                    <div class="wrapper">
-                                        <p class="values">8 000</p>
-                                        <p class="values">80 000</p>
-                                    </div>
-                                </div>
-                                <button class="filter-button">
-                                    <span class="filter-button__decor"></span>
-                                    <span class="filter-button__text">Подобрать</span>
-                                </button>
-                            </div>
-                            <div class="catalog__filtration__body js-catalog-more-item">
-                                <div class="catalog__filtration__body__wrapper">
-                                    <div class="catalog__range-slider catalog__range-slider-tablet">
-                                        <h5 class="catalog__filtration__caption">Диапазон цен (грн/м2)</h5>
-                                        <div class="wrapper">
-                                            <p class="values">8 000</p>
-                                            <p class="values">80 000</p>
-                                        </div>
-                                    </div>
-                                    <div class="calc-wrapper">
-                                        <h5 class="catalog__filtration__caption">Этажность</h5>
-                                        <ul class="catalog__filtration__list catalog__filtration__list-number">
-                                            <li class="catalog__filtration__item active">1</li>
-                                            <li class="catalog__filtration__item">2</li>
-                                            <li class="catalog__filtration__item">3</li>
-                                            <li class="catalog__filtration__item">4</li>
-                                            <li class="catalog__filtration__item">5</li>
-                                            <li class="catalog__filtration__item">6</li>
-                                        </ul>
-                                    </div>
-                                    <div class="catalog__range-slider">
-                                        <h5 class="catalog__filtration__caption">Участок (100 м2)</h5>
-                                        <div class="wrapper">
-                                            <p class="values">10</p>
-                                            <p class="values">100</p>
-                                        </div>
-                                    </div>
-                                    <div class="catalog__range-slider">
-                                        <h5 class="catalog__filtration__caption">Площадь домовладения (м2)</h5>
-                                        <div class="wrapper">
-                                            <p class="values">100</p>
-                                            <p class="values">500</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="catalog__filtration__body__wrapper catalog__filtration__body__wrapper-list">
-                                    <div class="catalog__checkbox-wrapper">
-                                        <h5 class="catalog__filtration__caption">Материал стен</h5>
-                                        <ul class="catalog__filtration__list">
-                                            <li class="catalog__filtration__item active">Кирпич</li>
-                                            <li class="catalog__filtration__item">Газоблок</li>
-                                            <li class="catalog__filtration__item">Керамоблок</li>
-                                            <li class="catalog__filtration__item">Термоблок</li>
-                                            <li class="catalog__filtration__item">Sip-панели</li>
-                                            <li class="catalog__filtration__item">Газобетон</li>
-                                        </ul>
-                                    </div>
-                                    <div class="catalog__checkbox-wrapper">
-                                        <h5 class="catalog__filtration__caption">Материал крыши</h5>
-                                        <ul class="catalog__filtration__list">
-                                            <li class="catalog__filtration__item active">Черепица</li>
-                                            <li class="catalog__filtration__item">Минеральна вата</li>
-                                            <li class="catalog__filtration__item">Базальтовая плита</li>
-                                            <li class="catalog__filtration__item">Базальтовая плита</li>
-                                            <li class="catalog__filtration__item">Термоблок</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__filtration__footer">
-                                <label class="checkbox__wrapper">
-                                    <input type="checkbox" class="input-checkbox">
-                                    <span class="custome-checkbox">
-                                        <span class='icon-active'></span>
-                                    </span>
-                                    <span class="checkbox-text">Только акции</span>
-                                </label>
-                                <div class="general-drop js-drop-item">
-                                    <button type="button" class=" js-drop-button general-filter__button"> 
-                                        <span class="text">По рейтингу</span>
-                                        <span class="icon-drop"></span>
-                                    </button>
-                                    <div class="general-drop__wrapper">
-                                        <ul class="general-drop__list">
-                                            <li class="general-drop__item">По рейтингу</li>
-                                            <li class="general-drop__item">По цене</li>
-                                            <li class="general-drop__item">По рейтингу</li>
-                                            <li class="general-drop__item">По рейтингу</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="general-drop js-drop-item catalog__filtration__number">
-                                    <button type="button" class=" js-drop-button general-filter__button"> 
-                                        <span class="text">15</span>
-                                        <span class="icon-drop"></span>
-                                    </button>
-                                    <div class="general-drop__wrapper">
-                                        <ul class="general-drop__list">
-                                            <li class="general-drop__item">15</li>
-                                            <li class="general-drop__item">30</li>
-                                            <li class="general-drop__item">60</li>
-                                            <li class="general-drop__item">90</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- disabled когда кнопка отключена -->
-                                <button class="catalog__clear">
-                                    <span class="wrapper">
-                                        <span class="icon-clear"></span>
-                                        <span class="text">Сбросить</span>
-                                    </span>
-                                </button>
-                                <button class="catalog__open-more js-catalog-more"></button>
-                            </div>
-                        </div>
-                        <div class="catalog__filtration__mobile-panel">
-                            <button class="catalog__back-button js-catalog-back">
-                                <span class="icon-arrow-more"></span>
-                            </button>
-                            <button class="filter-button">
-                                <span class="filter-button__decor"></span>
-                                <span class="filter-button__text">Подобрать</span>
-                            </button>
-                            <button class="catalog__clear">
-                                <span class="wrapper">
-                                    <span class="icon-clear"></span>
-                                </span>
-                            </button>
+                        <div class="general-drop__wrapper">
+                            <ul class="general-drop__list">
+                                <li class="general-drop__item js-drop-contains">Самое лучшее</li>
+                                <li class="general-drop__item js-drop-contains">Самое лучшее</li>
+                                <li class="general-drop__item js-drop-contains">Самое лучшее</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="product product-catalog">
-            <div class="product__wrapper container">
-                <ul class="product__list">
-                    <li class="product__item">
-                        <div class="product__item__header">
-                            <p class="product__rating">9,5</p>
-                            <p class="product__status">Проект</p>
-                            <div class="product__buttons">
-                                <button class="button-compare">
-                                    <span class="icon-compare"></span>
-                                </button>
-                                <button class="button-favorites">
-                                    <span class="icon-heart-outline"></span>
-                                </button>
+                <div class="general-tabs">
+                    <ul class="general-tabs__list">
+                        <li class="general-tabs__item">Об Zagorodna.com</li>
+                        <li class="general-tabs__item active">Об “Реал Экспо”</li>
+                        <li class="general-tabs__item">О застройщиках</li>
+                        <li class="general-tabs__item">О коттеджных городках</li>
+                        <li class="general-tabs__item">О новостройках</li>
+                        <li class="general-tabs__item general-tabs__item-empty"></li>
+                    </ul>
+                </div>
+                <ul class="reviews__list">
+                    <li class="reviews__item js-item">
+                        <div class="reviews__header">
+                            <div class="wrapper">
+                                <ul class="star__list">
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                </ul>
+                                <p class="time-on-service">На сервисе 10 мес.</p>
+                            </div>
+                            <div class="reviews__img" style="background-image:url(./img/reviews-img-1.png)"></div>
+                            <p class="reviews__time-publication">20.02.20</p>
+                        </div>
+                        <div class="reviews__caption">
+                            <h4>Сергей Казанин</h4>
+                            <p>Актер</p>
+                        </div>
+                        <div class="reviews__text">
+                            <div class="js-content">
+                                <p>Повседневная практика показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки систем массового участия. Товарищи! сПовседневная практика показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки систем массового участия. Товарищи! сложившаяся структура организации позволяет оценить значение модели развития. Таким образом реализация намеченных плановых заданий в значительной.ложившаяся структура организации позволяет оценить значение модели развития. Таким образом реализация намеченных плановых заданий в значительной...</p>
                             </div>
                         </div>
-                        <a href="#" class="product__img">
-                            <img src="./img/product-img-1.png" alt="Фото">
-                        </a>
-                        <div class="product__item__body">
-                            <h3 class="product__name"><a href="#">Европейский-2</a></h3>
-                            <div class="product__description">
-                                <p class="product__name-place">Таунхаус</p>
-                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
-                            </div>
-                        </div>
-                        <div class="product__item__footer">
-                            <p class="product__city">
-                                <span class="icon-map-marker-outline"></span>
-                                <span>Хмельницкий город</span>
-                            </p>
-                            <p class="procut__distance">
-                                <span class="icon-city-variant-outline"></span>
-                                <span>10 <span>км</span></span>
-                            </p>
-                        </div>
+                        <button class="read-more js-more js-button" data-target="reviews">
+                            <span>Читать далее</span>
+                            <span class="icon-arrow-more"></span>
+                        </button>
                     </li>
-                    <li class="product__item">
-                        <div class="product__item__header">
-                            <p class="product__rating empty">Н.Д.</p>
-                            <p class="product__status completed">Завершен</p>
-                            <div class="product__buttons">
-                                <button class="button-compare">
-                                    <span class="icon-compare"></span>
-                                </button>
-                                <button class="button-favorites active">
-                                    <span class="icon-heart-outline"></span>
-                                </button>
+                    <li class="reviews__item js-item">
+                        <div class="reviews__header">
+                            <div class="wrapper">
+                                <ul class="star__list">
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                </ul>
+                                <p class="time-on-service">На сервисе 10 мес.</p>
+                            </div>
+                            <div class="reviews__img" style="background-image:url(./img/reviews-img-2.png)"></div>
+                            <p class="reviews__time-publication">10.02.20</p>
+                        </div>
+                        <div class="reviews__caption">
+                            <h4>София Ротару</h4>
+                            <p>Певица</p>
+                        </div>
+                        <div class="reviews__text">
+                            <div class="js-content">
+                                <p>Повседневная практика показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки систем массового участия. Товарищи! сложившаяся структура организации позволяет оценить значение модели развития. Таким образом реализация намеченных плановых заданий в значительной...</p>
                             </div>
                         </div>
-                        <a href="#" class="product__img">
-                            <img src="./img/product-img-1.png" alt="Фото">
-                        </a>
-                        <div class="product__item__body">
-                            <h3 class="product__name"><a href="#">Positanуo-2</a></h3>
-                            <div class="product__description">
-                                <p class="product__name-place">Таунхаус</p>
-                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
-                            </div>
-                        </div>
-                        <div class="product__item__footer">
-                            <p class="product__city">
-                                <span class="icon-map-marker-outline"></span>
-                                <span>Хмельницкий город</span>
-                            </p>
-                            <p class="procut__distance">
-                                <span class="icon-city-variant-outline"></span>
-                                <span>10 <span>км</span></span>
-                            </p>
-                        </div>
+                        <button class="read-more js-more js-button" data-target="reviews">
+                            <span>Читать далее</span>
+                            <span class="icon-arrow-more"></span>
+                        </button>
                     </li>
-                    <li class="product__item">
-                        <div class="product__item__header">
-                            <p class="product__rating">9,5</p>
-                            <p class="product__status build">Строится</p>
-                            <div class="product__buttons">
-                                <button class="button-compare">
-                                    <span class="icon-compare"></span>
-                                </button>
-                                <button class="button-favorites">
-                                    <span class="icon-heart-outline"></span>
-                                </button>
+                    <li class="reviews__item js-item">
+                        <div class="reviews__header">
+                            <div class="wrapper">
+                                <ul class="star__list">
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                </ul>
+                                <p class="time-on-service">На сервисе 10 мес.</p>
+                            </div>
+                            <div class="reviews__img" style="background-image:url(./img/reviews-img-1.png)"></div>
+                            <p class="reviews__time-publication">20.02.20</p>
+                        </div>
+                        <div class="reviews__caption">
+                            <h4>Сергей Казанин</h4>
+                            <p>Актер</p>
+                        </div>
+                        <div class="reviews__text">
+                            <div class="js-content">
+                                <p>Повседневная практика показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки систем массового участия. Товарищи! сложившаяся структура организации позволяет оценить значение модели развития. Таким образом реализация намеченных плановых заданий в значительной...</p>
                             </div>
                         </div>
-                        <a href="#" class="product__img">
-                            <img src="./img/product-img-2.png" alt="Фото">
-                        </a>
-                        <div class="product__item__body">
-                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
-                            <div class="product__description">
-                                <p class="product__name-place">Таунхаус</p>
-                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
-                            </div>
-                        </div>
-                        <div class="product__item__footer">
-                            <p class="product__city">
-                                <span class="icon-map-marker-outline"></span>
-                                <span>Хмельницкий город</span>
-                            </p>
-                            <p class="procut__distance">
-                                <span class="icon-city-variant-outline"></span>
-                                <span>10 <span>км</span></span>
-                            </p>
-                        </div>
+                        <button class="read-more js-more js-button" data-target="reviews">
+                            <span>Читать далее</span>
+                            <span class="icon-arrow-more"></span>
+                        </button>
                     </li>
-                    <li class="product__item">
-                        <div class="product__item__header">
-                            <p class="product__rating">9,5</p>
-                            <p class="product__status build">Строится</p>
-                            <div class="product__buttons">
-                                <button class="button-compare">
-                                    <span class="icon-compare"></span>
-                                </button>
-                                <button class="button-favorites">
-                                    <span class="icon-heart-outline"></span>
-                                </button>
+                    <li class="reviews__item js-item">
+                        <div class="reviews__header">
+                            <div class="wrapper">
+                                <ul class="star__list">
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                    <li class="start__item">
+                                        <span class="icon-star"></span>
+                                    </li>
+                                </ul>
+                                <p class="time-on-service">На сервисе 10 мес.</p>
+                            </div>
+                            <div class="reviews__img" style="background-image:url(./img/reviews-img-2.png)"></div>
+                            <p class="reviews__time-publication">10.02.20</p>
+                        </div>
+                        <div class="reviews__caption">
+                            <h4>София Ротару</h4>
+                            <p>Певица</p>
+                        </div>
+                        <div class="reviews__text">
+                            <div class="js-content">
+                                <p>Повседневная практика показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки систем массового участия. Товарищи! сложившаяся структура организации позволяет оценить значение модели развития. Таким образом реализация намеченных плановых заданий в значительной...</p>
                             </div>
                         </div>
-                        <a href="#" class="product__img">
-                            <img src="./img/product-img-2.png" alt="Фото">
-                        </a>
-                        <div class="product__item__body">
-                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
-                            <div class="product__description">
-                                <p class="product__name-place">Таунхаус</p>
-                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
-                            </div>
-                        </div>
-                        <div class="product__item__footer">
-                            <p class="product__city">
-                                <span class="icon-map-marker-outline"></span>
-                                <span>Хмельницкий город</span>
-                            </p>
-                            <p class="procut__distance">
-                                <span class="icon-city-variant-outline"></span>
-                                <span>10 <span>км</span></span>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__item__header">
-                            <p class="product__rating empty">Н.Д.</p>
-                            <p class="product__status completed">Завершен</p>
-                            <div class="product__buttons">
-                                <button class="button-compare">
-                                    <span class="icon-compare"></span>
-                                </button>
-                                <button class="button-favorites active">
-                                    <span class="icon-heart-outline"></span>
-                                </button>
-                            </div>
-                        </div>
-                        <a href="#" class="product__img">
-                            <img src="./img/product-img-1.png" alt="Фото">
-                        </a>
-                        <div class="product__item__body">
-                            <h3 class="product__name"><a href="#">Positanуo-2</a></h3>
-                            <div class="product__description">
-                                <p class="product__name-place">Таунхаус</p>
-                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
-                            </div>
-                        </div>
-                        <div class="product__item__footer">
-                            <p class="product__city">
-                                <span class="icon-map-marker-outline"></span>
-                                <span>Хмельницкий город</span>
-                            </p>
-                            <p class="procut__distance">
-                                <span class="icon-city-variant-outline"></span>
-                                <span>10 <span>км</span></span>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__item__header">
-                            <p class="product__rating">9,5</p>
-                            <p class="product__status build">Строится</p>
-                            <div class="product__buttons">
-                                <button class="button-compare">
-                                    <span class="icon-compare"></span>
-                                </button>
-                                <button class="button-favorites">
-                                    <span class="icon-heart-outline"></span>
-                                </button>
-                            </div>
-                        </div>
-                        <a href="#" class="product__img">
-                            <img src="./img/product-img-2.png" alt="Фото">
-                        </a>
-                        <div class="product__item__body">
-                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
-                            <div class="product__description">
-                                <p class="product__name-place">Таунхаус</p>
-                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
-                            </div>
-                        </div>
-                        <div class="product__item__footer">
-                            <p class="product__city">
-                                <span class="icon-map-marker-outline"></span>
-                                <span>Хмельницкий город</span>
-                            </p>
-                            <p class="procut__distance">
-                                <span class="icon-city-variant-outline"></span>
-                                <span>10 <span>км</span></span>
-                            </p>
-                        </div>
+                        <button class="read-more js-more js-button" data-target="reviews">
+                            <span>Читать далее</span>
+                            <span class="icon-arrow-more"></span>
+                        </button>
                     </li>
                 </ul>
                 <div class="pagination__wrapper">
@@ -1218,6 +906,35 @@
                         </button>
                     </li>
                 </ul>
+                <div class="pagination__wrapper">
+                    <div class="pagination__container">
+                        <button class="general-button">
+                            <span class="icon-pagi-left"></span>
+                        </button>
+                        <button class="general-button">
+                            <span class="icon-arrow-pagi-left"></span>
+                        </button>
+                        <ul class="pagination__list">
+                            <li class="pagination__item active">1</li>
+                            <li class="pagination__item">2</li>
+                            <li class="pagination__item">3</li>
+                            <li class="pagination__item">4</li>
+                            <li class="pagination__item">5</li>
+                            <li class="pagination__item">6</li>
+                            <li class="pagination__item dots">...</li>
+                            <li class="pagination__item">23</li>
+                        </ul>
+                        <button class="general-button">
+                            <span class="icon-arrow-pagi-right"></span>
+                        </button>
+                        <button class="general-button">
+                            <span class="icon-pagi-right"></span>
+                        </button>
+                    </div>
+                    <a href="#" class="main-button-more">
+                        <span class="text">Показать больше</span>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="footer__copyright">

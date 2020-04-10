@@ -212,6 +212,9 @@ document.addEventListener('DOMContentLoaded', function(){
             
             if(dropInput) {
                 dropInput.value = innerContent;
+            }
+            
+            if(dropButton) {
                 dropButton.innerHTML = innerContent;
             }
             
@@ -445,10 +448,15 @@ document.addEventListener('DOMContentLoaded', function(){
         }
         
         if(!item.closest('.js-catalog-more-item') && !item.closest('.js-catalog-more')) {
-            item.closest('.js-catalog-more').classList.remove('active');
-            catalogMoreItem.classList.remove('active');
+            if(item.closest('.js-catalog-more')) {
+                item.closest('.js-catalog-more').classList.remove('active');
+                catalogMoreItem.classList.remove('active');
+            }
         }
         
+        if(item.closest(".js-catalog-back")) {
+            document.querySelector('.js-filter-drop[data-target = full-filter ]').classList.remove('active');
+        }
     });
     
     // Pre catalog filter 

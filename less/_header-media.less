@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 1680px) {
     .header__nav-item {
-        &:not(.general-drop) {
+        &:not(.js-drop-item) {
             display: none;
         }
     }
@@ -39,6 +39,10 @@
         
         .general-drop__item {
             padding: 10px 30px 10px 45px;
+        }
+        
+        .general-drop__text {
+            padding: 10px 20px;
         }
     }
     
@@ -91,6 +95,12 @@
     
     .header__search {
         margin: 0px 20px;
+    }
+    
+    .header__city {
+        .general-drop__text {
+            padding: 10px 15px;
+        }
     }
 }
 
@@ -215,6 +225,10 @@
         padding: 0px 0px 20px;
         margin-bottom: 20px;
         border-bottom: 1px solid #d3d3d3;
+        
+        button {
+            width: 100%;
+        }
         
         &:last-child {
             margin-bottom: 0px;
