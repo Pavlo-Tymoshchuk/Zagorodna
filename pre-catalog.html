@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-     <header class="header">
+    <header class="header">
         <div class="header__top">
             <div class="header__city general-drop js-drop-item">
                 <p class="header__city__wrapper js-drop-button general-drop__text">
@@ -47,11 +47,15 @@
                 </button>
                 <button class="header__button-search">
                     <span class="icon-search"></span>
+                    <span class="decor"></span>
                 </button>
                 <a href="#" class="header__button header__button-general">
                     <span class="icon-house"></span>
                 </a>
                 <div class="header__buttons__wrapper header__buttons__wrapper-mobile">
+                     <a href="#" class="header__button header__button-favorite active">
+                        <span class="icon-heart-outline"></span>
+                    </a>
                     <button class="header__button header__button-noty js-noty-button">
                         <span class="icon-bell-outline"></span>
                         <span class="header__button-noty-decor"></span>
@@ -231,20 +235,26 @@
                         </div>
                     </li>
                 </ul>
-                <div class="header__change-lang general-drop js-drop-item">
-                    <button class="js-drop-button">
-                        <span class="header__change-lang__text">Рус</span>
-                        <span class="icon-drop"></span>
+                <div class="header__nav__buttons">
+                    <button class="button-pick-up">
+                        <span class="icon-house"></span>
+                        <span>Подобрать бесплатно</span>
                     </button>
-                    <div class="general-drop__wrapper">
-                        <ul class="general-drop__list">
-                            <li class="general-drop__item active">
-                                <a href="#" class="general-drop__link">Рус</a>
-                            </li>
-                            <li class="general-drop__item">
-                                <a href="#" class="general-drop__link">Укр</a>
-                            </li>
-                        </ul>
+                    <div class="header__change-lang general-drop js-drop-item">
+                        <button class="js-drop-button">
+                            <span class="header__change-lang__text">Рус</span>
+                            <span class="icon-drop"></span>
+                        </button>
+                        <div class="general-drop__wrapper">
+                            <ul class="general-drop__list">
+                                <li class="general-drop__item active">
+                                    <a href="#" class="general-drop__link">Рус</a>
+                                </li>
+                                <li class="general-drop__item">
+                                    <a href="#" class="general-drop__link">Укр</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -3276,7 +3286,23 @@
                 </ul>
                 <div class="footer__call-back">
                     <a href="tel:+38 050-384-44-98" class="footer__call-back__link">+38 050-384-44-98</a>
-                    <button class="footer__call-back__button">Обратный  звонок</button>
+                    <button class="footer__call-back__button js-button" data-target="footer-callback">Обратный  звонок</button>
+                    <div class="popup popup-footer" data-target="footer-callback">
+                        <button class="close-popup js-close">
+                            <span class="decor"></span>
+                        </button>
+                        <form action="#" class="footer-callback__form">
+                            <label class="input__wrapper">
+                                <span class="input__caption">Имя</span>
+                                <input type="text" class="main-input" placeholder="Как к вам обращаться?">
+                            </label>
+                            <label class="input__wrapper">
+                                <span class="input__caption">Контактный телефон*</span>
+                                <input type="tel" class="main-input" placeholder="Куда перезвонить?">
+                            </label>
+                            <button class="main-button">Отправить</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

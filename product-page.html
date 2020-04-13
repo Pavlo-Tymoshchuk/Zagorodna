@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header class="header">
+     <header class="header">
         <div class="header__top">
             <div class="header__city general-drop js-drop-item">
                 <p class="header__city__wrapper js-drop-button general-drop__text">
@@ -436,296 +436,32 @@
                         <a href="#" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <a href="#" class="breadcrumbs__link">Акции от застройщиков Киева</a>
+                        <a href="#" class="breadcrumbs__link">Каталог</a>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="favorite">
-            <div class="favorite__wrapper container">
-                <div class="general-heading">
-                    <h2 class="main-caption-l">Акции от застройщиков Киева</h2>
+        <section class="product-page">
+            <div class="general-sitebar">
+                <div class="general__map">
+                    <button class="general__map-open">
+                        <span class="icon-full"></span>
+                    </button>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.0849493721676!2d36.23039151571485!3d49.991016779414565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f00948c297%3A0xb1ae000554c43aec!2z0L_Quy4g0JrQvtC90YHRgtC40YLRg9GG0LjQuCwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1586514450928!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-                <div class="main-filtration__wrapper main-filtration__wrapper-offers">
-                    <ul class="general-filter__list">
-                        <li class="general-filter__item ">
-                            <h4 class="general-filter__caption">Область</h4>
-                            <div class="general-drop js-drop-item">
-                                <button type="button" class="general-filter__button js-drop-button">
-                                    <input type="text" class="general-drop-input js-drop-input" value="Все области" readonly="">
-                                    <span class="icon-drop"></span>
-                                </button>
-                                <div class="general-drop__wrapper">
-                                    <ul class="general-drop__list">
-                                        <li class="general-drop__item js-drop-contains active">Киевская</li>
-                                        <li class="general-drop__item js-drop-contains">Киевская1</li>
-                                        <li class="general-drop__item js-drop-contains">Киевская2</li>
-                                        <li class="general-drop__item js-drop-contains">Киевская3</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="general-filter__item">
-                            <h4 class="general-filter__caption">Тип</h4>
-                            <div class="general-drop js-drop-item">
-                                <button type="button" class="general-filter__button js-drop-button">
-                                    <input type="text" class="general-drop-input js-drop-input" value="Все типы" readonly="">
-                                    <span class="icon-drop"></span>
-                                </button>
-                                <div class="general-drop__wrapper">
-                                    <ul class="general-drop__list">
-                                        <li class="general-drop__item js-drop-contains active">Тип-2</li>
-                                        <li class="general-drop__item js-drop-contains">Тип-2</li>
-                                        <li class="general-drop__item js-drop-contains">Тип-3</li>
-                                        <li class="general-drop__item js-drop-contains">Тип-4</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="general-filter__item">
-                            <h4 class="general-filter__caption">Тип недвижимости</h4>
-                            <div class="general-drop js-drop-item">
-                                <button type="button" class="general-filter__button js-drop-button">
-                                    <input type="text" class="general-drop-input js-drop-input" value="Все типы" readonly="">
-                                    <span class="icon-drop"></span>
-                                </button>
-                                <div class="general-drop__wrapper">
-                                    <ul class="general-drop__list">
-                                        <li class="general-drop__item js-drop-contains active">Тип недвижимости-2</li>
-                                        <li class="general-drop__item js-drop-contains">Тип недвижимости-2</li>
-                                        <li class="general-drop__item js-drop-contains">Тип недвижимости-3</li>
-                                        <li class="general-drop__item js-drop-contains">Тип недвижимости-4</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="general-filter__item">
-                            <h4 class="general-filter__caption">Застройщик</h4>
-                            <div class="general-drop js-drop-item">
-                                <button type="button" class="general-filter__button js-drop-button">
-                                    <input type="text" class="general-drop-input js-drop-input" value="Все типы" readonly="">
-                                    <span class="icon-drop"></span>
-                                </button>
-                                <div class="general-drop__wrapper">
-                                    <ul class="general-drop__list">
-                                        <li class="general-drop__item js-drop-contains active">Застройщик-2</li>
-                                        <li class="general-drop__item js-drop-contains">Застройщик-2</li>
-                                        <li class="general-drop__item js-drop-contains">Застройщик-3</li>
-                                        <li class="general-drop__item js-drop-contains">Застройщик-4</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <ul class="product__list product__list-sale">
-                    <li class="product__item">
-                        <div class="product__item__header">
-                            <p class="product__sale">-10%</p>
-                            <p class="product__time-sale">02.02 - 02.03</p>
-                            <div class="product__buttons">
-                                <button class="button-favorites">
-                                    <span class="icon-heart-outline"></span>
-                                </button>
-                            </div>
-                        </div>
-                        <a href="#" class="product__img">
-                            <img src="./img/product-img-1.png" alt="Фото">
-                            <span class="product__name">Европейский-2</span>
-                        </a>
-                        <div class="product__item__body">
-                            <div class="product__description">
-                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
-                                <p class="product__name-company">
-                                    <span class="company-logo" style="background-image:url(./img/company-logo.png)"></span>
-                                    <span>Синергия</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="product__item__footer">
-                            <p class="product__city">
-                                <span class="icon-map-marker-outline"></span>
-                                <span>Хмельницкий город</span>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__item__header">
-                            <p class="product__sale">ремонт  В подарок</p>
-                            <p class="product__time-sale">02.02 - 02.03</p>
-                            <div class="product__buttons">
-                                <button class="button-favorites">
-                                    <span class="icon-heart-outline"></span>
-                                </button>
-                            </div>
-                        </div>
-                        <a href="#" class="product__img">
-                            <img src="./img/product-img-2.png" alt="Фото">
-                            <span class="product__name">Европейский-2</span>
-                        </a>
-                        <div class="product__item__body">
-                            <div class="product__description">
-                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
-                                <p class="product__name-company">
-                                    <span>Интеграл Буд</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="product__item__footer">
-                            <p class="product__city">
-                                <span class="icon-map-marker-outline"></span>
-                                <span>Софиевка</span>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__item__header">
-                            <p class="product__sale">spa-weekend  В подарунок</p>
-                            <p class="product__time-sale">03.02 - 02.03</p>
-                            <div class="product__buttons">
-                                <button class="button-favorites">
-                                    <span class="icon-heart-outline"></span>
-                                </button>
-                            </div>
-                        </div>
-                        <a href="#" class="product__img">
-                            <img src="./img/product-img-1.png" alt="Фото">
-                            <span class="product__name">“Итальянский”</span>
-                        </a>
-                        <div class="product__item__body">
-                            <div class="product__description">
-                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
-                                <p class="product__name-company">
-                                    <span>Интеграл Буд</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="product__item__footer">
-                            <p class="product__city">
-                                <span class="icon-map-marker-outline"></span>
-                                <span>Хмельницкий город</span>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__item__header">
-                            <p class="product__sale">-10%</p>
-                            <p class="product__time-sale">02.02 - 02.03</p>
-                            <div class="product__buttons">
-                                <button class="button-favorites">
-                                    <span class="icon-heart-outline"></span>
-                                </button>
-                            </div>
-                        </div>
-                        <a href="#" class="product__img">
-                            <img src="./img/product-img-2.png" alt="Фото">
-                            <span class="product__name">Европейский-2</span>
-                        </a>
-                        <div class="product__item__body">
-                            <div class="product__description">
-                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
-                                <p class="product__name-company">
-                                    <span class="company-logo" style="background-image:url(./img/company-logo.png)"></span>
-                                    <span>Синергия</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="product__item__footer">
-                            <p class="product__city">
-                                <span class="icon-map-marker-outline"></span>
-                                <span>Хмельницкий город</span>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__item__header">
-                            <p class="product__sale">-10%</p>
-                            <p class="product__time-sale">02.02 - 02.03</p>
-                            <div class="product__buttons">
-                                <button class="button-favorites">
-                                    <span class="icon-heart-outline"></span>
-                                </button>
-                            </div>
-                        </div>
-                        <a href="#" class="product__img">
-                            <img src="./img/product-img-1.png" alt="Фото">
-                            <span class="product__name">ЖК “Ласточкино гнездо”</span>
-                        </a>
-                        <div class="product__item__body">
-                            <div class="product__description">
-                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
-                                <p class="product__name-company">
-                                    <span class="company-logo" style="background-image:url(./img/company-logo.png)"></span>
-                                    <span>Синергия</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="product__item__footer">
-                            <p class="product__city">
-                                <span class="icon-map-marker-outline"></span>
-                                <span>Хмельницкий город</span>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__item__header">
-                            <p class="product__sale">-10%</p>
-                            <p class="product__time-sale">02.02 - 02.03</p>
-                            <div class="product__buttons">
-                                <button class="button-favorites">
-                                    <span class="icon-heart-outline"></span>
-                                </button>
-                            </div>
-                        </div>
-                        <a href="#" class="product__img">
-                            <img src="./img/product-img-1.png" alt="Фото">
-                            <span class="product__name">Европейский-2</span>
-                        </a>
-                        <div class="product__item__body">
-                            <div class="product__description">
-                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
-                                <p class="product__name-company">
-                                    <span class="company-logo" style="background-image:url(./img/company-logo.png)"></span>
-                                    <span>Синергия</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="product__item__footer">
-                            <p class="product__city">
-                                <span class="icon-map-marker-outline"></span>
-                                <span>Хмельницкий город</span>
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-                <div class="pagination__wrapper">
-                    <div class="pagination__container">
-                        <button class="general-button">
-                            <span class="icon-pagi-left"></span>
-                        </button>
-                        <button class="general-button">
-                            <span class="icon-arrow-pagi-left"></span>
-                        </button>
-                        <ul class="pagination__list">
-                            <li class="pagination__item active">1</li>
-                            <li class="pagination__item">2</li>
-                            <li class="pagination__item">3</li>
-                            <li class="pagination__item">4</li>
-                            <li class="pagination__item">5</li>
-                            <li class="pagination__item">6</li>
-                            <li class="pagination__item dots">...</li>
-                            <li class="pagination__item">23</li>
-                        </ul>
-                        <button class="general-button">
-                            <span class="icon-arrow-pagi-right"></span>
-                        </button>
-                        <button class="general-button">
-                            <span class="icon-pagi-right"></span>
-                        </button>
-                    </div>
-                    <a href="#" class="main-button-more">
-                        <span class="text">Показать больше</span>
-                    </a>
+            </div>
+            <div class="general-heading container">
+                <h2 class="main-caption-l main-caption-l--transform">«Роскошный» коттеджный городок</h2>
+                <div class="product-page__buttons-wrapper">
+                    <button class="product-page__button">
+                        <span class="icon-compare"></span>
+                    </button>
+                    <button class="product-page__button">
+                        <span class="icon-heart-outline"></span>
+                    </button>
+                    <button class="product-page__button">
+                        <span class="icon-bell-outline"></span>
+                    </button>
                 </div>
             </div>
         </section>

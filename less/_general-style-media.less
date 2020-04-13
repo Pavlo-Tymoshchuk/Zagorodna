@@ -15,8 +15,7 @@
         .main-button-more {
             position: static;
             transform: none;
-            margin-left: 0px;
-            margin-top: 40px;
+            margin: 30px auto 0px;
         }
     }
     
@@ -29,11 +28,11 @@
     }
     
     .pagination__wrapper {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         
         .main-button-more {
-            margin-top: 30px;
+            margin: 30px auto 0px;
         }
     }
     
@@ -75,7 +74,9 @@
     }
     
     .general-button__wrapper {
-        margin-top: 30px;
+        .main-button-more {
+            margin-top: 30px;
+        }
     }
     
     .main-filtration__wrapper {
@@ -108,6 +109,36 @@
             
             &::before {
                 display: none;
+            }
+        }
+    }
+    
+    .main-filtration__wrapper-news {
+        background-color: transparent;
+        box-shadow: none;
+        
+        .general-filter__list {
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .general-filter__item {
+            margin-bottom: 30px;
+            max-width: 450px;
+            background-color: #ffffff;
+            margin-right: 0px;
+            border-radius: 6px;
+            
+            .general-drop {
+                margin-left: 0px;
+            }
+            
+            &::before {
+                display: none;
+            }
+            
+            &:last-child {
+                margin-bottom: 0px;
             }
         }
     }
@@ -171,6 +202,12 @@
             margin-left: 0px;
         }
     }
+    
+    .main-filtration__wrapper-news {
+        .general-filter__item {
+            max-width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -229,6 +266,12 @@
             &:last-child {
                 margin-bottom: 0px;
             }
+        }
+    }
+    
+    .main-filtration__wrapper-best-company {
+        .general-filter__item {
+            max-width: 100% !important;
         }
     }
 }

@@ -47,11 +47,15 @@
                 </button>
                 <button class="header__button-search">
                     <span class="icon-search"></span>
+                    <span class="decor"></span>
                 </button>
                 <a href="#" class="header__button header__button-general">
                     <span class="icon-house"></span>
                 </a>
                 <div class="header__buttons__wrapper header__buttons__wrapper-mobile">
+                     <a href="#" class="header__button header__button-favorite active">
+                        <span class="icon-heart-outline"></span>
+                    </a>
                     <button class="header__button header__button-noty js-noty-button">
                         <span class="icon-bell-outline"></span>
                         <span class="header__button-noty-decor"></span>
@@ -231,20 +235,26 @@
                         </div>
                     </li>
                 </ul>
-                <div class="header__change-lang general-drop js-drop-item">
-                    <button class="js-drop-button">
-                        <span class="header__change-lang__text">Рус</span>
-                        <span class="icon-drop"></span>
+                <div class="header__nav__buttons">
+                    <button class="button-pick-up">
+                        <span class="icon-house"></span>
+                        <span>Подобрать бесплатно</span>
                     </button>
-                    <div class="general-drop__wrapper">
-                        <ul class="general-drop__list">
-                            <li class="general-drop__item active">
-                                <a href="#" class="general-drop__link">Рус</a>
-                            </li>
-                            <li class="general-drop__item">
-                                <a href="#" class="general-drop__link">Укр</a>
-                            </li>
-                        </ul>
+                    <div class="header__change-lang general-drop js-drop-item">
+                        <button class="js-drop-button">
+                            <span class="header__change-lang__text">Рус</span>
+                            <span class="icon-drop"></span>
+                        </button>
+                        <div class="general-drop__wrapper">
+                            <ul class="general-drop__list">
+                                <li class="general-drop__item active">
+                                    <a href="#" class="general-drop__link">Рус</a>
+                                </li>
+                                <li class="general-drop__item">
+                                    <a href="#" class="general-drop__link">Укр</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -432,11 +442,13 @@
             </div>
         </section>
         <section class="catalog">
-            <div class="catalog__map">
-                <button class="catalog__map-open">
-                    <span class="icon-full"></span>
-                </button>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.0849493721676!2d36.23039151571485!3d49.991016779414565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f00948c297%3A0xb1ae000554c43aec!2z0L_Quy4g0JrQvtC90YHRgtC40YLRg9GG0LjQuCwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1586514450928!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="general-sitebar">
+                <div class="general__map">
+                    <button class="general__map-open">
+                        <span class="icon-full"></span>
+                    </button>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.0849493721676!2d36.23039151571485!3d49.991016779414565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f00948c297%3A0xb1ae000554c43aec!2z0L_Quy4g0JrQvtC90YHRgtC40YLRg9GG0LjQuCwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1586514450928!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
             </div>
             <div class="general-heading container">
                 <h2 class="main-caption-l">Коттеджные городки и поселки Украины</h2>
@@ -1026,7 +1038,23 @@
                 </ul>
                 <div class="footer__call-back">
                     <a href="tel:+38 050-384-44-98" class="footer__call-back__link">+38 050-384-44-98</a>
-                    <button class="footer__call-back__button">Обратный  звонок</button>
+                    <button class="footer__call-back__button js-button" data-target="footer-callback">Обратный  звонок</button>
+                    <div class="popup popup-footer" data-target="footer-callback">
+                        <button class="close-popup js-close">
+                            <span class="decor"></span>
+                        </button>
+                        <form action="#" class="footer-callback__form">
+                            <label class="input__wrapper">
+                                <span class="input__caption">Имя</span>
+                                <input type="text" class="main-input" placeholder="Как к вам обращаться?">
+                            </label>
+                            <label class="input__wrapper">
+                                <span class="input__caption">Контактный телефон*</span>
+                                <input type="tel" class="main-input" placeholder="Куда перезвонить?">
+                            </label>
+                            <button class="main-button">Отправить</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

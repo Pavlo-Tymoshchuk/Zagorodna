@@ -169,6 +169,7 @@
             align-items: flex-start;
             padding: 0px;
             margin-top: 25px;
+            border: none;
             
             .general-drop__link {
                 padding: 5px 0px;
@@ -177,10 +178,10 @@
             .general-drop__wrapper {
                 display: none;
                 opacity: 1;
-                position: relative;
                 visibility: visible;
                 transition: none;
                 box-shadow: none;
+                padding-top: 10px;
             }
             
             &.active {
@@ -419,6 +420,15 @@
     .header__noty__wrapper {
         right: 35px;
     }
+    
+    
+    .header__nav__buttons {
+        display: block;
+        
+        .button-pick-up {
+            display: none;
+        }
+    }
 }
 
 
@@ -477,7 +487,7 @@
 @media screen and (max-width: 767px) {
     
     .header__top {
-        padding: 5px 30px;
+        padding: 5px 20px;
     }
     
     .header__buttons__wrapper {
@@ -487,7 +497,35 @@
     }
     
     .header__buttons__wrapper-mobile {
-        display: block;
+        display: flex;
+    }
+    .header__navigation {
+        .header__button-general {
+            display: none;
+        }
+    }
+    
+    .header__nav__buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        
+        .button-pick-up {
+            display: flex;
+            color: #2c922c;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 800;
+            
+            .icon-house {
+                margin-right: 25px;
+                font-size: 18px;
+            }
+        }
+        
+        .header__change-lang {
+            margin-top: 0px;
+        }
     }
     
     .header__dow {
@@ -517,13 +555,8 @@
     }
     
     .header__navigation {
-        .header__button {
-            width: 40px;
-            height: 40px;
-        }
-        
-        .header__button-general {
-            margin: 0px 10px;
+        .header__button-favorite {
+            margin-right: 10px;
         }
     }
     
@@ -553,10 +586,39 @@
         color: #2c922c;
         border-radius: 6px;
         border: 1px solid transparent;
+        position: relative;
+        
+        .icon-search {
+            transition: opacity .4s;
+        }
+        
+        .decor {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 14px;
+            height: 14px;
+            background: url(../img/burger-close.svg) center / contain no-repeat;
+            opacity: 0;
+            transition: opacity .4s;
+        }
         
         &:active {
             border-color: #eaeaea;
             transition: none;
+        }
+        
+        &.active {
+            border-color: #eaeaea;
+            
+            .icon-search {
+                opacity: 0;
+            }
+            
+            .decor {
+                opacity: 1;
+            }
         }
     }
     

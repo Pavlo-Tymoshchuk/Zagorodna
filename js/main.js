@@ -142,10 +142,12 @@ document.addEventListener('DOMContentLoaded', function(){
         
         if(elem.closest('.header__button-search')) {
             document.querySelector('.header__search-tablet').classList.toggle("active");
+            elem.closest('.header__button-search').classList.toggle('active');
         }
         
         if(!elem.closest(".header__button-search") && !elem.closest('.header__search-tablet')) {
             document.querySelector('.header__search-tablet').classList.remove("active");
+            document.querySelector('.header__button-search').classList.remove("active");
         }
         
         let notyWrapper = document.querySelector('.js-noty-wrapper');
@@ -396,7 +398,7 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         }
         
-        if(!elem.closest(".popup-content") && !elem.closest(".js-button")) {
+        if(!elem.closest(".popup-content") && !elem.closest(".js-button") && !elem.closest('.js-close')) {
             if(popupActive) {
                 popupActive.classList.remove('active');
                 htmlOverflow.classList.remove('overflow');

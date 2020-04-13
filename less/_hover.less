@@ -170,7 +170,7 @@
         &:active {
             .icon-bell-outline  {
                 &::before {
-                    content: "\e905";
+                    content: "\e90f";
                 }
             }
         }
@@ -233,11 +233,13 @@
         }
     }
     
-    .main-input {
+    .main-input,
+    .main-textarea {
         &:hover {
             border-color: #d3d3d3;
         }
     }
+    
     
     .general-button,
     .main-button-more {
@@ -283,6 +285,44 @@
         &:active {
             color: #f5850c;
             transition: none;
+        }
+    }
+    
+    .general__social-item {
+        &.facebook {
+            &:hover {
+                color: #3b5998;
+            }
+        }
+        
+        &.twitter {
+            &:hover {
+                color: #1da1f2;
+            }
+        }
+        
+        &.instagram {
+            &:hover {
+                color: #e1306c;
+            }
+        }
+        
+        &.vk {
+            &:hover {
+                color: #45668e;
+            }
+        }
+        
+        &.link {
+            &:hover {
+                color: #2c922c;
+            }
+        }
+        
+        &.telegram {
+            &:hover {
+                color: #0088cc;
+            }
         }
     }
     
@@ -356,7 +396,7 @@
         }
     }
     
-    .catalog__map-open {
+    .general__map-open {
         &:hover {
             color: #2c922c;
         }
@@ -533,6 +573,34 @@
         }
     }
     
+    /* /Reviews */
+    
+    /* Product page */
+    
+    .general-noty__button {
+        &:hover {
+            color: #cd8332;
+        }
+    }
+    
+    /* Product page */
+    
+    /* Article */
+    
+    .article-main__recommendation {
+        a {
+            &:hover {
+                color: #f5850c;
+            }
+        }
+    }
+    
+    .article-page__link {
+        &:hover {
+            color: #f5850c;
+        }
+    }
+    
     /* Popup */
     
     .close-popup {
@@ -558,6 +626,17 @@
     
     /* Footer */
     
+    .popup-footer {
+        .close-popup {
+            &:hover {
+                background-color: #f5f5f5;
+            }
+            
+            &:active {
+                border-color: #d3d3d3;
+            }
+        }
+    }
     .footer__social-link {
         &:hover {
             background-color: #f5f5f5;
