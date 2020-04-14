@@ -5939,7 +5939,7 @@ main {
   .header__city {
     max-width: 220px;
   }
-  .header__city .general-drop__wrapper {
+  .header__city .general-drop__container {
     max-width: 220px;
   }
   .header__search {
