@@ -418,6 +418,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.addEventListener('click', function(e){
         let item = e.target;
         let allWrappers = document.querySelectorAll('.js-filter-drop');
+        let allItems = document.querySelectorAll('.js-filter');
         
         if(item.closest('.js-filter')) {
             let target = item.closest('.js-filter').getAttribute('data-target');
@@ -425,11 +426,13 @@ document.addEventListener('DOMContentLoaded', function(){
             
             if(filterWrapper.classList.contains("active")){
                 filterWrapper.classList.remove('active');
+                item.closest('.js-filter').classList.remove('active');
             }else {
                 allWrappers.forEach((item) => {
                     item.classList.remove('active');
                 });
                  filterWrapper.classList.add('active');
+                 item.closest('.js-filter').classList.add('active');
             }
         }
         
@@ -437,6 +440,10 @@ document.addEventListener('DOMContentLoaded', function(){
             
             if(allWrappers) {
                 allWrappers.forEach((item) => {
+                    item.classList.remove('active');
+                });
+                
+                allItems.forEach((item) => {
                     item.classList.remove('active');
                 });
             }

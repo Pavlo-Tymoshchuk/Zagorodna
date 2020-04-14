@@ -15,19 +15,24 @@
                     <span class="header__city__text">Киев</span>
                     <span class="icon-drop"></span>
                 </p>
-                <div class="general-drop__wrapper">
-                    <ul class="general-drop__list">
-                        <li class="general-drop__item active">Киев</li>
-                        <li class="general-drop__item">Харьков</li>
-                        <li class="general-drop__item">Одесса</li>
-                        <li class="general-drop__item">Днепр</li>
-                    </ul>
-                    <ul class="general-drop__list">
-                        <li class="general-drop__item">Киев</li>
-                        <li class="general-drop__item">Харьков</li>
-                        <li class="general-drop__item">Одесса</li>
-                        <li class="general-drop__item">Днепр</li>
-                    </ul>
+                <div class="general-drop__container">
+                    <div class="general-drop__wrapper">
+                        <ul class="general-drop__list">
+                            <li class="general-drop__item active">Киев</li>
+                            <li class="general-drop__item">Харьков</li>
+                            <li class="general-drop__item">Одесса</li>
+                            <li class="general-drop__item">Днепр</li>
+                        </ul>
+                        <ul class="general-drop__list">
+                            <li class="general-drop__item">Киев</li>
+                            <li class="general-drop__item">Харьков</li>
+                            <li class="general-drop__item">Одесса</li>
+                            <li class="general-drop__item">Днепр</li>
+                            <li class="general-drop__item">Донецк</li>
+                            <li class="general-drop__item">Житомер</li>
+                            <li class="general-drop__item">Харьков</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="header__search header__search-tablet">
@@ -444,7 +449,7 @@
         <section class="product-page">
             <div class="general-sitebar">
                 <div class="general__map">
-                    <button class="general__map-open">
+                    <button class="general__open">
                         <span class="icon-full"></span>
                     </button>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.0849493721676!2d36.23039151571485!3d49.991016779414565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f00948c297%3A0xb1ae000554c43aec!2z0L_Quy4g0JrQvtC90YHRgtC40YLRg9GG0LjQuCwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1586514450928!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -452,16 +457,132 @@
             </div>
             <div class="general-heading container">
                 <h2 class="main-caption-l main-caption-l--transform">«Роскошный» коттеджный городок</h2>
-                <div class="product-page__buttons-wrapper">
-                    <button class="product-page__button">
+                <div class="general-noty__buttons-container">
+                    <button class="general-noty__button general-noty__button-compare">
                         <span class="icon-compare"></span>
                     </button>
-                    <button class="product-page__button">
+                    <button class="general-noty__button general-noty__button-favorite">
                         <span class="icon-heart-outline"></span>
                     </button>
-                    <button class="product-page__button">
+                    <button class="general-noty__button general-noty__button-sing-up">
                         <span class="icon-bell-outline"></span>
                     </button>
+                </div>
+            </div>
+            <div class="product-page__wrapper container">
+                <div class="product-page__main">
+                    <div class="product-page__img-wrapper">
+                        <div class="product-page__img-header">
+                            <div class="product-page__slider-number">
+                                <span class="current">1</span>
+                                <span>/</span>
+                                <span class="all">6</span>
+                            </div>
+                             <button class="general__open">
+                                <span class="icon-full"></span>
+                            </button>
+                        </div>
+                        <div class="product-page__general-img">
+                            <img src="./img/general-img-product-1.png" alt="Городок">
+                        </div>
+                        <div class="product-page__img-navigation">
+                            <button class="general-button prev">
+                                <span class="icon-arrow-left"></span>
+                            </button>
+                            <ul class="product-page__img-list">
+                                <li class="product-page__img-item">
+                                    <img src="./img/general-img-product-1.png" alt="Городок">
+                                </li>
+                                <li class="product-page__img-item">
+                                    <img src="./img/general-img-product-2.png" alt="Городок">
+                                </li>
+                                <li class="product-page__img-item">
+                                    <img src="./img/general-img-product-3.png" alt="Городок">
+                                </li>
+                                <li class="product-page__img-item">
+                                    <img src="./img/general-img-product-1.png" alt="Городок">
+                                </li>
+                                <li class="product-page__img-item">
+                                    <img src="./img/general-img-product-2.png" alt="Городок">
+                                </li>
+                            </ul>
+                            <button class="general-button next">
+                                <span class="icon-arrow-right"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-page__info-wrapper">
+                        <div class="product-page__info-header">
+                            <div class="product-page__rating">
+                                <p class="product__rating">9,5</p>
+                                <p>(<span>30</span> оценок)</p>
+                            </div>
+                            <div class="product-page__status">
+                                <p class="product__status">Заморожено</p>
+                                <p class="product__status build">Строится</p>
+                            </div>
+                        </div>
+                        <div class="product-page__info-body">
+                            <div class="wrapper">
+                                <div class="product-page__info-name">
+                                    <span>Проект от:</span>
+                                    <h5>“Smart Development”</h5>
+                                </div>
+                                <div class="product-page__price">
+                                    <p>13 900 - 20 370</p>
+                                    <span>грн/м2</span>
+                                </div>
+                            </div>
+                            <div class="product-page__buttons">
+                                <button class="general-button-color">
+                                    <span class="icon-phone"></span>
+                                    <span>+38 050 384-44-98</span>
+                                </button>
+                                <button class="filter-button">приобрести</button>
+                                <button class="general-button-color">Задать вопрос</button>
+                                <button class="catalog__filter-button">Назначить визит</button>
+                            </div>
+                            <div class="product-page__address">
+                                <p>Киевская область, Обуховский р-н</p>
+                                <strong>Романков, Ул. Роскошная, Д.1</strong>
+                            </div>
+                        </div>
+                        <div class="general-social__wrapper">
+                            <h5>Поделиться ссылкой:</h5>
+                            <ul class="general__socila-list">
+                                <li class="general__social-item facebook">
+                                    <a href="#" class="general__social-link">
+                                        <span class="icon-facebook"></span>
+                                    </a>
+                                </li>
+                                <li class="general__social-item twitter">
+                                    <a href="#" class="general__social-link">
+                                        <span class="icon-twitter"></span>
+                                    </a>
+                                </li>
+                                <li class="general__social-item instagram">
+                                    <a href="#" class="general__social-link">
+                                        <span class="icon-instagram"></span>
+                                    </a>
+                                </li>
+                                <li class="general__social-item vk">
+                                    <a href="#" class="general__social-link">
+                                        <span class="icon-vk"></span>
+                                    </a>
+                                </li>
+                                <li class="general__social-item telegram">
+                                    <a href="#" class="general__social-link">
+                                        <span class="icon-telegram"></span>
+                                    </a>
+                                </li>
+                                <li class="general__social-item link">
+                                    <a href="#" class="general__social-link">
+                                        <span class="icon-link-variant"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

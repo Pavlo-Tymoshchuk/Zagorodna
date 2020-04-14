@@ -417,6 +417,13 @@ main {
         .icon-drop {
             transform: rotate(180deg);
         }
+        
+        .general-drop__container {
+            transform: scale(1);
+            opacity: 1;
+            transition: opacity .4s, transform 0s 0s;
+            z-index: 2;
+        }
     }
 }
 
@@ -429,6 +436,31 @@ main {
         overflow: hidden;
     }
 }
+
+.general-drop__container {
+    padding-right: 5px;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    top: calc(100% + 1px);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    opacity: 0;
+    z-index: 2;
+    transform: scale(0);
+    transition: opacity .2s, transform 0s .3s;
+    
+    .general-drop__wrapper {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        max-height: 430px;
+    }
+}
+
 
 .general-drop__wrapper {
     position: absolute;
@@ -464,45 +496,40 @@ main {
     }
 }
 
-// .general-drop__container {
-//     padding: 15px 5px;
-//     position: absolute;
-//     left: 0px;
-//     top: calc(100% + 1px);
-//     width: 258px;
-//     background-color: rgb(255, 255, 255);
-//     box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.08);
-//     border-radius: 6px;
-//     visibility: hidden;
-// }
 
 .general-drop__list {
     font-size: 13px;
     line-height: 24px;
     font-weight: 600;
+    border-top: 1px solid #d3d3d3;
+    position: relative;
+        
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: -1px;
+        width: 30px;
+        height: 2px;
+        background-color: #ffffff;
+    }
     
-    &:nth-of-type(2) {
-        border-top: 1px solid #d3d3d3;
-        position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0px;
+        top: -1px;
+        width: 30px;
+        height: 2px;
+        background-color: #ffffff;
+    }
+    
+    &:first-child {
+        border-top: none;
         
-        &::before {
-            content: "";
-            position: absolute;
-            left: 0px;
-            top: -1px;
-            width: 30px;
-            height: 2px;
-            background-color: #ffffff;
-        }
-        
+        &::before,
         &::after {
-            content: "";
-            position: absolute;
-            right: 0px;
-            top: -1px;
-            width: 30px;
-            height: 2px;
-            background-color: #ffffff;
+            display: none;
         }
     }
 }
@@ -861,6 +888,11 @@ main {
     }
 }
 
+.general-noty__button-compare {
+    &.active {
+        color: #cd8332;
+    }
+}
 
 .general-social__wrapper {
     display: flex;
