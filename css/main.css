@@ -5737,6 +5737,9 @@ main {
     max-width: 100%;
     position: relative;
   }
+  .general-button__wrapper.container .main-button-more {
+    right: 0px;
+  }
   .general-heading.more {
     flex-wrap: wrap;
     flex-direction: column;
@@ -5949,6 +5952,7 @@ main {
     padding: 0px 0px 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid #d3d3d3;
+    border-radius: 0px;
   }
   .header__nav-item button {
     width: 100%;
