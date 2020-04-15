@@ -172,12 +172,18 @@ document.addEventListener('DOMContentLoaded', function(){
     
     let wrapperToTop = document.querySelector('.header__list');
     
+    var lastScrollTop = 0;
+    
     document.addEventListener('scroll', function(){
-        if(window.pageYOffset > 200) {
+        let pageOffset = window.pageYOffset;
+
+        if(pageOffset > lastScrollTop) {
             wrapperToTop.classList.add('hide');
         }else {
             wrapperToTop.classList.remove('hide');
         }
+        
+        lastScrollTop = pageOffset;
     });
     
     // Show menu 
@@ -398,7 +404,7 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         }
         
-        if(!elem.closest(".popup-content") && !elem.closest(".js-button") && !elem.closest('.js-close')) {
+        if(!elem.closest(".popup__wrapper") && !elem.closest(".js-button") && !elem.closest('.js-close')) {
             if(popupActive) {
                 popupActive.classList.remove('active');
                 htmlOverflow.classList.remove('overflow');
@@ -470,12 +476,115 @@ document.addEventListener('DOMContentLoaded', function(){
     
     // Pre catalog filter 
     
-    // Catalog
+    // Show product img
     
-    let catalogMore = document.querySelector('.js-catalog-more');
+    let allImg = document.querySelectorAll('.js-image');
+    let generalImg = document.querySelector('.js-general-image img');
+    let buttonPrev = document.querySelector('.js-image-button-prev');
+    let buttonNext = document.querySelector('.js-image-button-next');
+    let setAllNumber = document.querySelector('.js-slider-number .all');
     
+    function setCurrentSlideIndex(item) {
+        let slider = item.closest('.slider');
+        let currentSlideIndex = slider.querySelector('.js-image.active').getAttribute('data-index');
+        item.innerHTML = currentSlideIndex;
+    }
     
+    document.querySelectorAll('.js-slider-number .current').forEach(function(item){
+        setCurrentSlideIndex(item);
+    });
     
+    function changeImg(item) {
+        let style = item.getAttribute('src');
+        generalImg.setAttribute('src', style);
+    }
+    
+    if(generalImg) {
+        setAllNumber.innerHTML = allImg.length;
+        allImg.forEach(function(item){
+            item.addEventListener('click', function(){
+                allImg.forEach(function(item){
+                    item.classList.remove("active");
+                });
+                item.classList.add('active');
+                let getIndex = item.getAttribute('data-index');
+                
+                buttonNext.classList.remove('disabled');
+                buttonPrev.classList.remove('disabled');
+                
+                if(getIndex == 1) {
+                    buttonPrev.classList.add('disabled');
+                }
+                
+                if(getIndex == allImg.length) {
+                    buttonNext.classList.add('disabled');
+                }
+                
+                changeImg(item.querySelector('img'));
+                
+                document.querySelectorAll('.js-slider-number .current').forEach(function(item){
+                    setCurrentSlideIndex(item);
+                });
+            });
+        });
+        
+        if(buttonPrev){
+            buttonPrev.addEventListener('click', function(){
+                let showImg = document.querySelector('.js-image.active');
+                
+                
+                if(!showImg.previousElementSibling) {
+                    return;
+                }
+                
+                showImg.previousElementSibling.scrollIntoView({block: "nearest", behavior: "smooth", inline: "nearest"});
+
+                showImg.previousElementSibling.classList.add("active");
+                showImg.classList.remove("active");
+                
+                changeImg(showImg.previousElementSibling.querySelector('img'));
+                
+                document.querySelectorAll('.js-slider-number .current').forEach(function(item){
+                    setCurrentSlideIndex(item);
+                });
+                
+                buttonNext.classList.remove("disabled");
+                
+                if(showImg.previousElementSibling.previousElementSibling == null) {
+                    buttonPrev.classList.add('disabled');
+                }
+            });
+            
+            buttonNext.addEventListener("click", function(){
+                let showImg = document.querySelector('.js-image.active');
+
+                if(!showImg.nextElementSibling) {
+                    return;
+                }
+                
+                showImg.nextElementSibling.scrollIntoView({block: "nearest", behavior: "smooth", inline: "nearest"});
+                
+                showImg.nextElementSibling.classList.add("active");
+                showImg.classList.remove("active");
+                
+                changeImg(showImg.nextElementSibling.querySelector('img'));
+                
+                document.querySelectorAll('.js-slider-number .current').forEach(function(item){
+                    setCurrentSlideIndex(item);
+                });
+                
+                buttonPrev.classList.remove("disabled");
+                
+                if(showImg.nextElementSibling.nextElementSibling == null) {
+                    buttonNext.classList.add('disabled');
+                }
+                
+            });
+        
+        }
+    }
+    
+    // //Show product img
 });
 
 window.addEventListener("DOMContentLoaded", function() {

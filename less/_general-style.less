@@ -193,6 +193,12 @@ main {
         transform: translateY(-50%);
     }
     
+    &.container {
+        .main-button-more {
+            right: 42px;
+        }
+    }
+    
     span {
         font-weight: 700;
     }
@@ -914,21 +920,8 @@ main {
     margin-right: 20px;
     font-size: 16px;
     transition: color .4s;
-    
-    &.facebook {
-        font-size: 13px;
-    }
-    
     &:last-child {
         margin-right: 0px;
-    }
-    
-    &.telegram {
-        font-size: 17px;
-    }
-    
-    &.link {
-        font-size: 17px;
     }
 }
 
@@ -940,5 +933,19 @@ main {
     height: 48px;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.08);
     background-color: #ffffff;
+    border-radius: 4px;
+    transition: color .4s;
+    
+    &.social-telegram {
+        font-size: 17px;
+    }
+    
+    &.social-link {
+        font-size: 17px;
+    }
+    
+    &.social-facebook {
+        font-size: 13px;
+    }
 }
 

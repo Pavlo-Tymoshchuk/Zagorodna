@@ -1797,8 +1797,8 @@
             </div>
         </section>
         <section class="reviews">
-            <div class="reviews__wrapper  slider-infinity">
-                <div class="general-heading container">
+            <div class="reviews__wrapper slider-infinity container">
+                <div class="general-heading">
                     <h2 class="main-caption-l">О нас говорят</h2>
                     <p class="calc-product">24 <span>Всего</span></p>
                 </div>
@@ -1960,7 +1960,7 @@
                         </button>
                     </li>
                 </ul>
-                <div class="general-button__wrapper js-arrow-infinity container">
+                <div class="general-button__wrapper js-arrow-infinity">
                     <div class="wrapper">
                         <button class="general-button prev">
                             <span class="icon-arrow-left"></span>
@@ -2489,39 +2489,39 @@
                 </div>
                 <ul class="footer__socila-list">
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-facebook">
                             <span class="icon-facebook"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-twitter">
                             <span class="icon-twitter"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-instagram">
                             <span class="icon-instagram"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-youtube">
                             <span class="icon-youtube"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-vk">
                             <span class="icon-vk"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-telegram">
                             <span class="icon-telegram"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <button class="footer__social-link js-button social-message" data-target="call-back">
                             <span class="icon-message"></span>
-                        </a>
+                        </button>
                     </li>
                 </ul>
                 <div class="footer__call-back">
@@ -2750,6 +2750,33 @@
                 <span class="decor"></span>
             </button>
             <div class="reviews__item"></div>
+        </div>
+    </section>
+    <section class="popup" data-target="call-back">
+        <div class="popup__wrapper popup-call-back">
+            <button class="close-popup js-close close-popup-inner">
+                <span class="decor"></span>
+            </button>
+            <h5 class="popup-caption">Появились вопросы?</h5>
+            <form action="#" class="popup-call-back__form">
+                <label class="input__wrapper">
+                    <span class="input__caption">Имя</span>
+                    <input type="text" class="main-input" placeholder="Как к вам обращаться?">
+                </label>
+                <label class="input__wrapper">
+                    <span class="input__caption">Контактный телефон*</span>
+                    <input type="tel" class="main-input" placeholder="Куда перезвонить?">
+                </label>
+                <label class="input__wrapper">
+                    <span class="input__caption">Email*</span>
+                    <input type="email" class="main-input" placeholder="Ваш электронный адрес" required>
+                </label>
+                <label class="textarea__wrapper">
+                    <span class="input__caption">Дополнительная информация</span>
+                    <textarea class="main-textarea" placeholder="Напишите дополнительно"></textarea>
+                </label>
+                <button class="main-button">Отправить</button>
+            </form>
         </div>
     </section>
     <script src="./js/main.js"></script>

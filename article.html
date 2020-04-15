@@ -502,33 +502,33 @@
                         <div class="general-social__wrapper">
                             <h5>Поделиться ссылкой:</h5>
                             <ul class="general__socila-list">
-                                <li class="general__social-item facebook">
-                                    <a href="#" class="general__social-link">
+                                <li class="general__social-item">
+                                    <a href="#" class="general__social-link social-facebook">
                                         <span class="icon-facebook"></span>
                                     </a>
                                 </li>
-                                <li class="general__social-item twitter">
-                                    <a href="#" class="general__social-link">
+                                <li class="general__social-item">
+                                    <a href="#" class="general__social-link social-twitter">
                                         <span class="icon-twitter"></span>
                                     </a>
                                 </li>
-                                <li class="general__social-item instagram">
-                                    <a href="#" class="general__social-link">
+                                <li class="general__social-item">
+                                    <a href="#" class="general__social-link social-instagram">
                                         <span class="icon-instagram"></span>
                                     </a>
                                 </li>
-                                <li class="general__social-item vk">
-                                    <a href="#" class="general__social-link">
+                                <li class="general__social-item">
+                                    <a href="#" class="general__social-link social-vk">
                                         <span class="icon-vk"></span>
                                     </a>
                                 </li>
-                                <li class="general__social-item telegram">
-                                    <a href="#" class="general__social-link">
+                                <li class="general__social-item">
+                                    <a href="#" class="general__social-link social-telegram">
                                         <span class="icon-telegram"></span>
                                     </a>
                                 </li>
-                                <li class="general__social-item link">
-                                    <a href="#" class="general__social-link">
+                                <li class="general__social-item">
+                                    <a href="#" class="general__social-link social-link">
                                         <span class="icon-link-variant"></span>
                                     </a>
                                 </li>
@@ -695,7 +695,7 @@
             </div>
         </section>
     </main>
-     <footer class="footer">
+    <footer class="footer">
         <div class="footer__header">
             <div class="footer__header__wrapper container">
                 <div class="footer__address">
@@ -704,39 +704,39 @@
                 </div>
                 <ul class="footer__socila-list">
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-facebook">
                             <span class="icon-facebook"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-twitter">
                             <span class="icon-twitter"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-instagram">
                             <span class="icon-instagram"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-youtube">
                             <span class="icon-youtube"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-vk">
                             <span class="icon-vk"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-telegram">
                             <span class="icon-telegram"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <button class="footer__social-link js-button social-message" data-target="call-back">
                             <span class="icon-message"></span>
-                        </a>
+                        </button>
                     </li>
                 </ul>
                 <div class="footer__call-back">
@@ -965,6 +965,33 @@
                 <span class="decor"></span>
             </button>
             <div class="reviews__item"></div>
+        </div>
+    </section>
+    <section class="popup" data-target="call-back">
+        <div class="popup__wrapper popup-call-back">
+            <button class="close-popup js-close close-popup-inner">
+                <span class="decor"></span>
+            </button>
+            <h5 class="popup-caption">Появились вопросы?</h5>
+            <form action="#" class="popup-call-back__form">
+                <label class="input__wrapper">
+                    <span class="input__caption">Имя</span>
+                    <input type="text" class="main-input" placeholder="Как к вам обращаться?">
+                </label>
+                <label class="input__wrapper">
+                    <span class="input__caption">Контактный телефон*</span>
+                    <input type="tel" class="main-input" placeholder="Куда перезвонить?">
+                </label>
+                <label class="input__wrapper">
+                    <span class="input__caption">Email*</span>
+                    <input type="email" class="main-input" placeholder="Ваш электронный адрес" required>
+                </label>
+                <label class="textarea__wrapper">
+                    <span class="input__caption">Дополнительная информация</span>
+                    <textarea class="main-textarea" placeholder="Напишите дополнительно"></textarea>
+                </label>
+                <button class="main-button">Отправить</button>
+            </form>
         </div>
     </section>
     <script src="./js/main.js"></script>

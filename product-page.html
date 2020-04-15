@@ -447,7 +447,7 @@
             </div>
         </section>
         <section class="product-page">
-            <div class="general-sitebar">
+            <div class="general-sitebar general-sitebar-product">
                 <div class="general__map">
                     <button class="general__open">
                         <span class="icon-full"></span>
@@ -471,42 +471,43 @@
             </div>
             <div class="product-page__wrapper container">
                 <div class="product-page__main">
-                    <div class="product-page__img-wrapper">
+                    <h4 class="product-page__type">Коттедж</h4>
+                    <div class="product-page__img-wrapper slider">
                         <div class="product-page__img-header">
-                            <div class="product-page__slider-number">
-                                <span class="current">1</span>
+                            <div class="product-page__slider-number js-slider-number">
+                                <span class="current"></span>
                                 <span>/</span>
-                                <span class="all">6</span>
+                                <span class="all"></span>
                             </div>
                              <button class="general__open">
                                 <span class="icon-full"></span>
                             </button>
                         </div>
-                        <div class="product-page__general-img">
+                        <div class="product-page__general-img js-general-image">
                             <img src="./img/general-img-product-1.png" alt="Городок">
                         </div>
                         <div class="product-page__img-navigation">
-                            <button class="general-button prev">
+                            <button class="general-button js-image-button-prev">
                                 <span class="icon-arrow-left"></span>
                             </button>
                             <ul class="product-page__img-list">
-                                <li class="product-page__img-item">
+                                <li class="product-page__img-item active js-image" data-index="1">
                                     <img src="./img/general-img-product-1.png" alt="Городок">
                                 </li>
-                                <li class="product-page__img-item">
+                                <li class="product-page__img-item js-image" data-index="2">
                                     <img src="./img/general-img-product-2.png" alt="Городок">
                                 </li>
-                                <li class="product-page__img-item">
+                                <li class="product-page__img-item js-image" data-index="3">
                                     <img src="./img/general-img-product-3.png" alt="Городок">
                                 </li>
-                                <li class="product-page__img-item">
+                                <li class="product-page__img-item js-image" data-index="4">
                                     <img src="./img/general-img-product-1.png" alt="Городок">
                                 </li>
-                                <li class="product-page__img-item">
+                                <li class="product-page__img-item js-image" data-index="5">
                                     <img src="./img/general-img-product-2.png" alt="Городок">
                                 </li>
                             </ul>
-                            <button class="general-button next">
+                            <button class="general-button js-image-button-next">
                                 <span class="icon-arrow-right"></span>
                             </button>
                         </div>
@@ -534,55 +535,82 @@
                                 </div>
                             </div>
                             <div class="product-page__buttons">
-                                <button class="general-button-color">
+                                <button class="general-button-color product-page__button-phone">
                                     <span class="icon-phone"></span>
                                     <span>+38 050 384-44-98</span>
                                 </button>
                                 <button class="filter-button">приобрести</button>
-                                <button class="general-button-color">Задать вопрос</button>
-                                <button class="catalog__filter-button">Назначить визит</button>
+                                <button class="general-button-color product-page__button-question">Задать вопрос</button>
+                                <button class="catalog__filter-button product-page__button-meeting">Назначить визит</button>
                             </div>
                             <div class="product-page__address">
                                 <p>Киевская область, Обуховский р-н</p>
                                 <strong>Романков, Ул. Роскошная, Д.1</strong>
+                                <p class="procut__distance">
+                                    <span class="icon-city-variant-outline"></span>
+                                    <span>10 <span>км</span></span>
+                                </p>
+                                <span class="icon-place-big"></span>
                             </div>
                         </div>
-                        <div class="general-social__wrapper">
-                            <h5>Поделиться ссылкой:</h5>
-                            <ul class="general__socila-list">
-                                <li class="general__social-item facebook">
-                                    <a href="#" class="general__social-link">
-                                        <span class="icon-facebook"></span>
-                                    </a>
-                                </li>
-                                <li class="general__social-item twitter">
-                                    <a href="#" class="general__social-link">
-                                        <span class="icon-twitter"></span>
-                                    </a>
-                                </li>
-                                <li class="general__social-item instagram">
-                                    <a href="#" class="general__social-link">
-                                        <span class="icon-instagram"></span>
-                                    </a>
-                                </li>
-                                <li class="general__social-item vk">
-                                    <a href="#" class="general__social-link">
-                                        <span class="icon-vk"></span>
-                                    </a>
-                                </li>
-                                <li class="general__social-item telegram">
-                                    <a href="#" class="general__social-link">
-                                        <span class="icon-telegram"></span>
-                                    </a>
-                                </li>
-                                <li class="general__social-item link">
-                                    <a href="#" class="general__social-link">
-                                        <span class="icon-link-variant"></span>
-                                    </a>
-                                </li>
-                            </ul>
+                        <div class="product-page__info-footer">
+                            <div class="general-social__wrapper">
+                                <h5>Поделиться ссылкой:</h5>
+                                <ul class="general__socila-list">
+                                    <li class="general__social-item">
+                                        <a href="#" class="general__social-link social-facebook">
+                                            <span class="icon-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li class="general__social-item">
+                                        <a href="#" class="general__social-link social-twitter">
+                                            <span class="icon-twitter"></span>
+                                        </a>
+                                    </li>
+                                    <li class="general__social-item">
+                                        <a href="#" class="general__social-link social-instagram">
+                                            <span class="icon-instagram"></span>
+                                        </a>
+                                    </li>
+                                    <li class="general__social-item">
+                                        <a href="#" class="general__social-link social-telegram">
+                                            <span class="icon-telegram"></span>
+                                        </a>
+                                    </li>
+                                    <li class="general__social-item">
+                                        <a href="#" class="general__social-link social-link">
+                                            <span class="icon-link-variant"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="general-tabs">
+                    <ul class="general-tabs__list general-tabs__list-product">
+                        <li class="general-tabs__item active">Про комплекс</li>
+                        <li class="general-tabs__item">Типовые проекты</li>
+                        <li class="general-tabs__item">Карта</li>
+                        <li class="general-tabs__item">Видео</li>
+                        <li class="general-tabs__item">Отзывы</li>
+                        <li class="general-tabs__item">Акции</li>
+                        <li class="general-tabs__item general-tabs__item-empty"></li>
+                    </ul>
+                </div>
+                <div class="product-page__same">
+                    <h4 class="product-page__caption">Цены на типовые проекты</h4>
+                    <h5 class="product-page__same__caption">Таунхаусы</h5>
+                    <ul class="product-page__same__list">
+                        <li class="product-page__same__item">
+                            <div class="img" style="background-image:url(./img/general-img-product-1.pn)"></div>
+                            <p class="name">
+                                <a href="#">Проект 1</a>
+                            </p>
+                            <p class="price">от 3.05 млн грн</p>
+                            <p class="area">120.50 м2</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -596,39 +624,39 @@
                 </div>
                 <ul class="footer__socila-list">
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-facebook">
                             <span class="icon-facebook"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-twitter">
                             <span class="icon-twitter"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-instagram">
                             <span class="icon-instagram"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-youtube">
                             <span class="icon-youtube"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-vk">
                             <span class="icon-vk"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <a href="#" class="footer__social-link social-telegram">
                             <span class="icon-telegram"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
+                        <button class="footer__social-link js-button social-message" data-target="call-back">
                             <span class="icon-message"></span>
-                        </a>
+                        </button>
                     </li>
                 </ul>
                 <div class="footer__call-back">
@@ -857,6 +885,33 @@
                 <span class="decor"></span>
             </button>
             <div class="reviews__item"></div>
+        </div>
+    </section>
+    <section class="popup" data-target="call-back">
+        <div class="popup__wrapper popup-call-back">
+            <button class="close-popup js-close close-popup-inner">
+                <span class="decor"></span>
+            </button>
+            <h5 class="popup-caption">Появились вопросы?</h5>
+            <form action="#" class="popup-call-back__form">
+                <label class="input__wrapper">
+                    <span class="input__caption">Имя</span>
+                    <input type="text" class="main-input" placeholder="Как к вам обращаться?">
+                </label>
+                <label class="input__wrapper">
+                    <span class="input__caption">Контактный телефон*</span>
+                    <input type="tel" class="main-input" placeholder="Куда перезвонить?">
+                </label>
+                <label class="input__wrapper">
+                    <span class="input__caption">Email*</span>
+                    <input type="email" class="main-input" placeholder="Ваш электронный адрес" required>
+                </label>
+                <label class="textarea__wrapper">
+                    <span class="input__caption">Дополнительная информация</span>
+                    <textarea class="main-textarea" placeholder="Напишите дополнительно"></textarea>
+                </label>
+                <button class="main-button">Отправить</button>
+            </form>
         </div>
     </section>
     <script src="./js/main.js"></script>

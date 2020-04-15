@@ -288,40 +288,122 @@
         }
     }
     
-    .general__social-item {
-        &.facebook {
-            &:hover {
-                color: #3b5998;
+    .social-link {
+        &:hover {
+            color: #2c922c;
+            
+            &:active {
+                background-color: #2c922c;
+                
+                .icon-link-variant:before {
+                    color: #ffffff;
+                    transition: none;
+                }
             }
         }
-        
-        &.twitter {
-            &:hover {
-                color: #1da1f2;
+    }
+    
+    .social-facebook {
+        &:hover {
+            color: #3b5998;
+            
+            &:active {
+                background-color: #3b5998;
+                
+                .icon-facebook {
+                    color: #ffffff;
+                    transition: none;
+                }
             }
         }
-        
-        &.instagram {
-            &:hover {
-                color: #e1306c;
+    }
+    
+    .social-twitter {
+        &:hover {
+            color: #1da1f2;
+            
+            &:active {
+                background-color: #1da1f2;
+                
+                .icon-twitter:before {
+                    color: #ffffff;
+                    transition: none;
+                }
             }
         }
-        
-        &.vk {
-            &:hover {
-                color: #45668e;
+    }
+    
+    .social-instagram {
+        &:hover {
+            color: #e1306c;
+            
+            &:active {
+                background-color: #e1306c;
+                
+                .icon-instagram {
+                    color: #ffffff;
+                    transition: none;
+                }
             }
         }
-        
-        &.link {
-            &:hover {
-                color: #2c922c;
+    }
+    
+    .social-youtube {
+        &:hover {
+            color: #ff0000;
+            
+            &:active {
+                background-color: #ff0000;
+                
+                .icon-youtube {
+                    color: #ffffff;
+                    transition: none;
+                }
             }
         }
-        
-        &.telegram {
-            &:hover {
-                color: #0088cc;
+    }
+    
+    .social-vk {
+        &:hover {
+            color: #45668e;
+            
+            &:active {
+                background-color: #45668e;
+                
+                .icon-vk:before {
+                    color: #ffffff;
+                    transition: none;
+                }
+            }
+        }
+    }
+    
+    .social-telegram {
+        &:hover {
+            color: #0088cc;
+            
+            &:active {
+                background-color: #0088cc;
+                
+                .icon-telegram:before {
+                    color: #ffffff;
+                    transition: none;
+                }
+            }
+        }
+    }
+    
+    .social-message {
+        &:hover {
+            color: #2c922c;
+            
+            &:active {
+                background-color: #2c922c;
+                
+                .icon-message:before {
+                    color: #ffffff;
+                    transition: none;
+                }
             }
         }
     }
@@ -589,6 +671,15 @@
         }
     }
     
+    .product-page__img-item {
+        &:hover {
+            &::before {
+                background-color: rgba(255, 255, 255, 0.3);
+                border-color: #d3d3d3;
+            }
+        }
+    }
+    
     /* Product page */
     
     /* Article */
@@ -628,6 +719,22 @@
         }
     }
     
+    .close-popup-inner {
+        &:hover {
+            .decor {
+                 &::before,
+                 &::after {
+                     background-color: #000000;
+                 }
+            }
+            
+            &:active {
+                border-color: #d3d3d3;
+                transition: none;;
+            }
+        }
+    }
+    
     /* //Popup */
     
     /* Footer */
@@ -646,131 +753,6 @@
     .footer__social-link {
         &:hover {
             background-color: #f5f5f5;
-            
-            .icon-facebook {
-                color: #3b5998;
-            }
-            
-            .icon-instagram {
-                color: #e1306c;
-            }
-            .icon-message:before {
-                color: #2c922c;
-            }
-            
-            .icon-telegram:before {
-                color: #0088cc;
-            }
-            
-            .icon-twitter:before {
-                color: #1da1f2;
-            }
-            
-            .icon-vk:before {
-                color: #45668e;
-            }
-            
-            .icon-youtube:before {
-                color: #ff0000;
-            }
-        }
-        
-        &:active {
-            transition: none;
-        }
-    }
-    
-    .footer__social-item {
-        
-        &:nth-child(1) {
-            .footer__social-link {
-                &:active {
-                    background-color: #3b5998;
-                    
-                    .icon-facebook {
-                        color: #ffffff;
-                        transition: none;
-                    }
-                }
-            }
-        }
-            
-        &:nth-child(2) {
-            .footer__social-link {
-                &:active {
-                    background-color: #1da1f2;
-                    
-                    .icon-twitter:before {
-                        color: #ffffff;
-                        transition: none;
-                    }
-                }
-            }
-        }
-        
-        &:nth-child(3) {
-            .footer__social-link {
-                &:active {
-                    background-color: #e1306c;
-                    
-                    .icon-instagram {
-                        color: #ffffff;
-                        transition: none;
-                    }
-                }
-            }
-        }
-        
-        &:nth-child(4) {
-            .footer__social-link {
-                &:active {
-                    background-color: #ff0000;
-                    
-                    .icon-youtube {
-                        color: #ffffff;
-                        transition: none;
-                    }
-                }
-            }
-        }
-        
-        &:nth-child(5) {
-            .footer__social-link {
-                &:active {
-                    background-color: #45668e;
-                    
-                    .icon-vk:before {
-                        color: #ffffff;
-                        transition: none;
-                    }
-                }
-            }
-        }
-        
-        &:nth-child(6) {
-            .footer__social-link {
-                &:active {
-                    background-color: #0088cc;
-                    
-                    .icon-telegram:before {
-                        color: #ffffff;
-                        transition: none;
-                    }
-                }
-            }
-        }
-        
-        &:nth-child(7) {
-            .footer__social-link {
-                &:active {
-                    background-color: #2c922c;
-                    
-                    .icon-message:before {
-                        color: #ffffff;
-                        transition: none;
-                    }
-                }
-            }
         }
     }
     
