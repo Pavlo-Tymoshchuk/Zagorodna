@@ -8115,6 +8115,9 @@ main {
     display: block;
     animation: opacity-footer 0.4s;
   }
+  .footer__category__item.active .icon-drop {
+    transform: rotate(180deg);
+  }
   .footer__sub-category__list {
     display: none;
     max-height: 100%;
