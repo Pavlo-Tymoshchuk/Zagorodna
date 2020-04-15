@@ -404,7 +404,7 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         }
         
-        if(!elem.closest(".popup__wrapper") && !elem.closest(".js-button") && !elem.closest('.js-close')) {
+        if(!elem.closest(".popup__wrapper") && !elem.closest(".js-button") && !elem.closest('.js-close') && !elem.closest('.js-arrow-infinity')) {
             if(popupActive) {
                 popupActive.classList.remove('active');
                 htmlOverflow.classList.remove('overflow');

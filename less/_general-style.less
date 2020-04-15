@@ -235,6 +235,7 @@ main {
     &.product {
         margin: 40px auto 0px;
     }
+
 }
 
 .general-button {
@@ -351,6 +352,11 @@ main {
     color: #ffffff;
     text-transform: uppercase;
     transition: background-color .4s ,box-shadow .4s;
+    
+    &.disabled {
+        background-color: #ababab;
+        pointer-events: none;
+    }
 }
 
 
@@ -949,3 +955,28 @@ main {
     }
 }
 
+.general-voting {
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    
+    h5 {
+        color: #3c2f21;
+        font-family: "Circe", sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    
+    .checkbox__wrapper {
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+    
+    .main-button {
+        max-width: 100%;
+        height: 48px;
+        margin-top: 40px;
+    }
+}

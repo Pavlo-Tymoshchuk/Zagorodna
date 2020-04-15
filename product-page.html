@@ -454,6 +454,33 @@
                     </button>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.0849493721676!2d36.23039151571485!3d49.991016779414565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f00948c297%3A0xb1ae000554c43aec!2z0L_Quy4g0JrQvtC90YHRgtC40YLRg9GG0LjQuCwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1586514450928!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
+                <div class="general-voting">
+                    <h5>Чем вам понравился городок “Роскошный”?</h5>
+                    <form action="#" class="general-voting__form">
+                        <label class="checkbox__wrapper">
+                            <input type="checkbox" class="input-checkbox">
+                            <span class="custome-checkbox">
+                                <span class='icon-active'></span>
+                            </span>
+                            <span class="checkbox-text">Хорошее озеленение и трава</span>
+                        </label>
+                        <label class="checkbox__wrapper">
+                            <input type="checkbox" class="input-checkbox">
+                            <span class="custome-checkbox">
+                                <span class='icon-active'></span>
+                            </span>
+                            <span class="checkbox-text">Развитая инфраструктура</span>
+                        </label>
+                        <label class="checkbox__wrapper">
+                            <input type="checkbox" class="input-checkbox">
+                            <span class="custome-checkbox">
+                                <span class='icon-active'></span>
+                            </span>
+                            <span class="checkbox-text">Близость к городу</span>
+                        </label>
+                        <button class="main-button">Проголосовать</button>
+                    </form>
+                </div>
             </div>
             <div class="general-heading container">
                 <h2 class="main-caption-l main-caption-l--transform">«Роскошный» коттеджный городок</h2>
@@ -470,8 +497,8 @@
                 </div>
             </div>
             <div class="product-page__wrapper container">
+                <h4 class="product-page__type">Коттедж</h4>
                 <div class="product-page__main">
-                    <h4 class="product-page__type">Коттедж</h4>
                     <div class="product-page__img-wrapper slider">
                         <div class="product-page__img-header">
                             <div class="product-page__slider-number js-slider-number">
@@ -479,7 +506,7 @@
                                 <span>/</span>
                                 <span class="all"></span>
                             </div>
-                             <button class="general__open">
+                             <button class="general__open js-button" data-target="full-screen">
                                 <span class="icon-full"></span>
                             </button>
                         </div>
@@ -487,7 +514,7 @@
                             <img src="./img/general-img-product-1.png" alt="Городок">
                         </div>
                         <div class="product-page__img-navigation">
-                            <button class="general-button js-image-button-prev">
+                            <button class="general-button js-image-button-prev disabled">
                                 <span class="icon-arrow-left"></span>
                             </button>
                             <ul class="product-page__img-list">
@@ -495,16 +522,16 @@
                                     <img src="./img/general-img-product-1.png" alt="Городок">
                                 </li>
                                 <li class="product-page__img-item js-image" data-index="2">
-                                    <img src="./img/general-img-product-2.png" alt="Городок">
+                                    <img src="./img/main-slider-img-1.png" alt="Городок">
                                 </li>
                                 <li class="product-page__img-item js-image" data-index="3">
-                                    <img src="./img/general-img-product-3.png" alt="Городок">
+                                    <img src="./img/main-slider-img-2.png" alt="Городок">
                                 </li>
                                 <li class="product-page__img-item js-image" data-index="4">
                                     <img src="./img/general-img-product-1.png" alt="Городок">
                                 </li>
                                 <li class="product-page__img-item js-image" data-index="5">
-                                    <img src="./img/general-img-product-2.png" alt="Городок">
+                                    <img src="./img/main-slider-img-3.jpg" alt="Городок">
                                 </li>
                             </ul>
                             <button class="general-button js-image-button-next">
@@ -600,17 +627,875 @@
                 </div>
                 <div class="product-page__same">
                     <h4 class="product-page__caption">Цены на типовые проекты</h4>
-                    <h5 class="product-page__same__caption">Таунхаусы</h5>
-                    <ul class="product-page__same__list">
-                        <li class="product-page__same__item">
-                            <div class="img" style="background-image:url(./img/general-img-product-1.pn)"></div>
-                            <p class="name">
-                                <a href="#">Проект 1</a>
-                            </p>
-                            <p class="price">от 3.05 млн грн</p>
-                            <p class="area">120.50 м2</p>
+                    <div class="product-page__container">
+                        <h5 class="product-page__same__caption">Таунхаусы</h5>
+                        <ul class="product-page__same__list">
+                            <li class="product-page__same__item">
+                                <div class="img" style="background-image:url(./img/general-img-product-1.png)"></div>
+                                <p class="name">
+                                    <a href="#">Проект 1</a>
+                                </p>
+                                <p class="price">от <strong>3.05</strong> млн грн</p>
+                                <p class="area">120.50 м2</p>
+                            </li>
+                            <li class="product-page__same__item">
+                                <div class="img" style="background-image:url(./img/general-img-product-1.png)"></div>
+                                <p class="name">
+                                    <a href="#">Проект 2</a>
+                                </p>
+                                <p class="price">от <strong>3.05</strong> млн грн</p>
+                                <p class="area">120.50 м2</p>
+                            </li>
+                            <li class="product-page__same__item">
+                                <div class="img" style="background-image:url(./img/general-img-product-1.png)"></div>
+                                <p class="name">
+                                    <a href="#">Проект 3</a>
+                                </p>
+                                <p class="price">от <strong>3.05</strong> млн грн</p>
+                                <p class="area">120.50 м2</p>
+                            </li>
+                            <li class="product-page__same__item">
+                                <div class="img" style="background-image:url(./img/general-img-product-1.png)"></div>
+                                <p class="name">
+                                    <a href="#">Проект 4</a>
+                                </p>
+                                <p class="price">опродано</p>
+                                <p class="area">—</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-page__container">
+                        <h5 class="product-page__same__caption">Дуплексы</h5>
+                        <ul class="product-page__same__list">
+                            <li class="product-page__same__item">
+                                <div class="img" style="background-image:url(./img/general-img-product-1.png)"></div>
+                                <p class="name">
+                                    <a href="#">Проект 1</a>
+                                </p>
+                                <p class="price">от <strong>3.05</strong> млн грн</p>
+                                <p class="area">120.50 м2</p>
+                            </li>
+                            <li class="product-page__same__item">
+                                <div class="img" style="background-image:url(./img/general-img-product-1.png)"></div>
+                                <p class="name">
+                                    <a href="#">Проект 2</a>
+                                </p>
+                                <p class="price">от <strong>3.05</strong> млн грн</p>
+                                <p class="area">120.50 м2</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-page__status-wrapper">
+                    <h4 class="product-page__caption">Статус строительства домов</h4>
+                    <p class="product-page__status-info">Информация предоставлена отделом продаж состоянием на 25.02.2020</p>
+                    <div class="product-page__status-table">
+                        <div class="product-page__status-table__header">
+                            <p class="type">Тип</p>
+                            <p class="in-project">В проекте</p>
+                            <p class="build">Строятся</p>
+                            <p class="status">Завершенные</p>
+                        </div>
+                        <ul class="product-page__status-table__list">
+                            <li class="product-page__status-table__item">
+                                <p class="type">Таунхаусы</p>
+                                <p class="in-project">4</p>
+                                <p class="build">4</p>
+                                <p class="status">4</p>
+                            </li>
+                            <li class="product-page__status-table__item">
+                                <p class="type">Дуплексы</p>
+                                <p class="in-project">4</p>
+                                <p class="build">2</p>
+                                <p class="status">4</p>
+                            </li>
+                            <li class="product-page__status-table__item">
+                                <p class="type">Коттеджи</p>
+                                <p class="in-project">4</p>
+                                <p class="build">4</p>
+                                <p class="status">1</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-page__characteristic-wrapper">
+                    <h4 class="product-page__caption">Характеристики</h4>
+                    <ul class="product-page__characteristic-list">
+                        <li class="product-page__characteristic-item">
+                            <div class="img" style='background-image:url(./img/characteristic-img-1.png)'></div>
+                            <div class="info">
+                                <h5 class="caption">Площадь домовладения</h5>
+                                <p>196.00 - 300.00 (м2)</p>
+                            </div>
+                        </li>
+                        <li class="product-page__characteristic-item">
+                            <div class="img" style='background-image:url(./img/characteristic-img-2.png)'></div>
+                            <div class="info">
+                                <h5 class="caption">Площадь участка</h5>
+                                <p>6.50 - 13,70 (сот.)</p>
+                            </div>
+                        </li>
+                        <li class="product-page__characteristic-item">
+                            <div class="img" style='background-image:url(./img/characteristic-img-3.png)'></div>
+                            <div class="info">
+                                <h5 class="caption">Площадь застройки</h5>
+                                <p>2,00 (га)</p>
+                            </div>
+                        </li>
+                        <li class="product-page__characteristic-item">
+                            <div class="img" style='background-image:url(./img/characteristic-img-4.png)'></div>
+                            <div class="info">
+                                <h5 class="caption">Количество участков</h5>
+                                <p>5</p>
+                            </div>
+                        </li>
+                        <li class="product-page__characteristic-item">
+                            <div class="img" style='background-image:url(./img/characteristic-img-5.png)'></div>
+                            <div class="info">
+                                <h5 class="caption">Количество таунхаусов</h5>
+                                <p>5</p>
+                            </div>
+                        </li>
+                        <li class="product-page__characteristic-item">
+                            <div class="img" style='background-image:url(./img/characteristic-img-6.png)'></div>
+                            <div class="info">
+                                <h5 class="caption">Количество дуплексов</h5>
+                                <p>4</p>
+                            </div>
+                        </li>
+                        <li class="product-page__characteristic-item">
+                            <div class="img" style='background-image:url(./img/characteristic-img-7.png)'></div>
+                            <div class="info">
+                                <h5 class="caption">Количество домовладений</h5>
+                                <p>30</p>
+                            </div>
+                        </li>
+                        <li class="product-page__characteristic-item">
+                            <div class="img" style='background-image:url(./img/characteristic-img-8.png)'></div>
+                            <div class="info">
+                                <h5 class="caption">Материал стен</h5>
+                                <p>Газоблок</p>
+                            </div>
+                        </li>
+                        <li class="product-page__characteristic-item">
+                            <div class="img" style='background-image:url(./img/characteristic-img-9.png)'></div>
+                            <div class="info">
+                                <h5 class="caption">Материал крышы</h5>
+                                <p>Металлочерепица</p>
+                            </div>
+                        </li>
+                        <li class="product-page__characteristic-item product-page__characteristic-item-big">
+                            <div class="img" style='background-image:url(./img/characteristic-img-10.png)'></div>
+                            <div class="info">
+                                <h5 class="caption">Ифраструктура</h5>
+                                <p>Два парка, деские площадки, аэродром,торговый центр, охрана</p>
+                            </div>
+                        </li>
+                        <li class="product-page__characteristic-item product-page__characteristic-item-big">
+                            <div class="img communication" style='background-image:url(./img/characteristic-img-11.png)'></div>
+                            <div class="info">
+                                <h5 class="caption">Коммуникации</h5>
+                                <p>Электричество, водоснабжение, интернет</p>
+                            </div>
                         </li>
                     </ul>
+                    <div class="product-page__characteristic-description">
+                        <h5>Описание</h5>
+                        <p>Коттеджный городок "Роскошный" расположен в 12 км от Киева по Обуховской трассе в с. Романков Киевской области. Это небольшой коттеджный поселок с готовыми коттеджами, рассчитан на 7 домовладений. Все коттеджи построены из красного облицовочного кирпича. Коттеджный городок введен в эксплуатацию.  Дома в коттеджном поселке имеют площадь от 242 до 290 кв.м. Участки в коттеджном городке "Роскошный" имеют площадь от 9,5 до 11,5 соток. Дома продаются со строительной отделкой. В дома подведено водоснабжение, канализация, газ. В доме имеется итальянский котел, алюминиевые батареи. Городок граничит с коттеджным поселком "Солнечная долина".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="product__wrapper slider-infinity">
+                <div class="general-heading container">
+                    <h2 class="main-caption-l main-caption-l--transform">Рядом с городком</h2>
+                    <p class="calc-product">24 <span>Всего</span></p>
+                </div>
+                <ul class="product__list product-slider__list js-infinity-slider-list">
+                    <li class="product__item product-slider__item js-slider-item-infinity show">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status">Проект</p>
+                            <div class="product__buttons">
+                                <button class="button-compare active">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Европейский-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating empty">Н.Д.</p>
+                            <p class="product__status completed">Завершен</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites active">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Positanуo-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating empty">Н.Д.</p>
+                            <p class="product__status completed">Завершен</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites active">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Positanуo-2</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__rating">9,5</p>
+                            <p class="product__status build">Строится</p>
+                            <div class="product__buttons">
+                                <button class="button-compare">
+                                    <span class="icon-compare"></span>
+                                </button>
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                        </a>
+                        <div class="product__item__body">
+                            <h3 class="product__name"><a href="#">Новый Коралловый Риф</a></h3>
+                            <div class="product__description">
+                                <p class="product__name-place">Таунхаус</p>
+                                <p class="product__price">от<span>13 900</span>грн/кв.м</p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                            <p class="procut__distance">
+                                <span class="icon-city-variant-outline"></span>
+                                <span>10 <span>км</span></span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="general-button__wrapper js-arrow-infinity general-button--hide container">
+                    <div class="wrapper">
+                        <button class="general-button prev">
+                            <span class="icon-arrow-left"></span>
+                        </button>
+                        <button class="general-button next">
+                            <span class="icon-arrow-right"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="best-company-info">
+            <div class="best-company-info__wrapper container">
+                <div class="general-heading">
+                    <h2 class="main-caption-l main-caption-l--transform">Лучшие застройщики</h2>
+                    <p class="calc-product">240<span>Всего</span></p>
+                </div>
+                <ul class="best-company-info__list">
+                    <li class="best-company-info__item">
+                        <div class="best-company-info__header">
+                            <div class="info">
+                                <h4> 
+                                    <a href="#">УБЕРЁМ – клининг сервис по уборке квартир и домов</a>
+                                </h4>
+                                <p>Строительная техника. Инструменты. Оборудование</p>
+                            </div>
+                            <div class="best-company-info__button-list">
+                                <button class="best-company-info__button active">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                                <button class="best-company-info__button active">
+                                    <span class="icon-bell-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="best-company-info__footer">
+                            <ul class="best-company-info__contact-list">
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-web"></span>
+                                    <span class="text">comfort-life.com.ua</span>
+                                </li>
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-phone-outline"></span>
+                                    <span class="text">+38 093 732-31-94</span>
+                                </li>
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-map-marker-outline"></span>
+                                    <span class="text">Ивано-Франковск</span>
+                                </li>
+                            </ul>
+                            <div class="wrapper">
+                                <ul class="best-company-info__social-list">
+                                    <li class="best-company-info__social-item">
+                                        <a href="#" class="best-company-info___social-link">
+                                            <span class="icon-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li class="best-company-info__social-item">
+                                        <a href="#" class="best-company-info___social-link">
+                                            <span class="icon-instagram"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="best-company-info__img">
+                                    <img src="./img/best-company-info-img-1.png" alt="Name-company">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="best-company-info__item">
+                        <div class="best-company-info__header">
+                            <div class="info">
+                                <h4> 
+                                    <a href="#">БМ Групп</a>
+                                </h4>
+                                <p>Строительная техника. Инструменты. Оборудование</p>
+                            </div>
+                            <div class="best-company-info__button-list">
+                                <button class="best-company-info__button">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                                <button class="best-company-info__button">
+                                    <span class="icon-bell-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="best-company-info__footer">
+                            <ul class="best-company-info__contact-list">
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-web"></span>
+                                    <span class="text">comfort-life.com.ua</span>
+                                </li>
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-phone-outline"></span>
+                                    <span class="text">+38 093 732-31-94</span>
+                                </li>
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-map-marker-outline"></span>
+                                    <span class="text">Ивано-Франковск</span>
+                                </li>
+                            </ul>
+                            <div class="wrapper">
+                                <ul class="best-company-info__social-list">
+                                    <li class="best-company-info__social-item">
+                                        <a href="#" class="best-company-info___social-link">
+                                            <span class="icon-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li class="best-company-info__social-item">
+                                        <a href="#" class="best-company-info___social-link">
+                                            <span class="icon-instagram"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="best-company-info__img">
+                                    <img src="./img/best-company-info-img-1.png" alt="Name-company">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="best-company-info__item">
+                        <div class="best-company-info__header">
+                            <div class="info">
+                                <h4> 
+                                    <a href="#">Домо-строительный комбинат ДБК «Росичи»</a>
+                                </h4>
+                                <p>Строительная техника. Инструменты. Оборудование</p>
+                            </div>
+                            <div class="best-company-info__button-list">
+                                <button class="best-company-info__button">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                                <button class="best-company-info__button">
+                                    <span class="icon-bell-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="best-company-info__footer">
+                            <ul class="best-company-info__contact-list">
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-web"></span>
+                                    <span class="text">comfort-life.com.ua</span>
+                                </li>
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-phone-outline"></span>
+                                    <span class="text">+38 093 732-31-94</span>
+                                </li>
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-map-marker-outline"></span>
+                                    <span class="text">Ивано-Франковск</span>
+                                </li>
+                            </ul>
+                            <div class="wrapper">
+                                <ul class="best-company-info__social-list">
+                                    <li class="best-company-info__social-item">
+                                        <a href="#" class="best-company-info___social-link">
+                                            <span class="icon-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li class="best-company-info__social-item">
+                                        <a href="#" class="best-company-info___social-link">
+                                            <span class="icon-instagram"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="best-company-info__img">
+                                    <img src="./img/best-company-info-img-1.png" alt="Name-company">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="best-company-info__item">
+                        <div class="best-company-info__header">
+                            <div class="info">
+                                <h4> 
+                                    <a href="#">Риэлтор Дмитрий Власов</a>
+                                </h4>
+                                <p>Строительная техника. Инструменты. Оборудование</p>
+                            </div>
+                            <div class="best-company-info__button-list">
+                                <button class="best-company-info__button">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                                <button class="best-company-info__button">
+                                    <span class="icon-bell-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="best-company-info__footer">
+                            <ul class="best-company-info__contact-list">
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-web"></span>
+                                    <span class="text">comfort-life.com.ua</span>
+                                </li>
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-phone-outline"></span>
+                                    <span class="text">+38 093 732-31-94</span>
+                                </li>
+                                <li class="best-company-info__contact-item">
+                                    <span class="icon-map-marker-outline"></span>
+                                    <span class="text">Ивано-Франковск</span>
+                                </li>
+                            </ul>
+                            <div class="wrapper">
+                                <ul class="best-company-info__social-list">
+                                    <li class="best-company-info__social-item">
+                                        <a href="#" class="best-company-info___social-link">
+                                            <span class="icon-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li class="best-company-info__social-item">
+                                        <a href="#" class="best-company-info___social-link">
+                                            <span class="icon-instagram"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="best-company-info__img">
+                                    <img src="./img/best-company-info-img-1.png" alt="Name-company">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="main-button-more">
+                    <span class="text">Смотреть все компании</span>
+                    <span class="icon-arrow-more"></span>
+                </a>
+            </div>
+        </section>
+        <section class="product">
+            <div class="product__wrapper slider-infinity">
+                <div class="general-heading container">
+                    <h2 class="main-caption-l main-caption-l--transform">Акции от застройщиков</h2>
+                    <p class="calc-product">24 <span>Всего</span></p>
+                </div>
+                <ul class="product__list product__list-sale product-slider__list js-infinity-slider-list">
+                    <li class="product__item product-slider__item js-slider-item-infinity show">
+                        <div class="product__item__header">
+                            <p class="product__sale">-10%</p>
+                            <p class="product__time-sale">02.02 - 02.03</p>
+                            <div class="product__buttons">
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                            <span class="product__name">Европейский-2</span>
+                        </a>
+                        <div class="product__item__body">
+                            <div class="product__description">
+                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
+                                <p class="product__name-company">
+                                    <span class="company-logo" style="background-image:url(./img/company-logo.png)"></span>
+                                    <span>Синергия</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__sale">ремонт  В подарок</p>
+                            <p class="product__time-sale">02.02 - 02.03</p>
+                            <div class="product__buttons">
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                            <span class="product__name">Европейский-2</span>
+                        </a>
+                        <div class="product__item__body">
+                            <div class="product__description">
+                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
+                                <p class="product__name-company">
+                                    <span>Интеграл Буд</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Софиевка</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__sale">spa-weekend  В подарунок</p>
+                            <p class="product__time-sale">03.02 - 02.03</p>
+                            <div class="product__buttons">
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                            <span class="product__name">“Итальянский”</span>
+                        </a>
+                        <div class="product__item__body">
+                            <div class="product__description">
+                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
+                                <p class="product__name-company">
+                                    <span>Интеграл Буд</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__sale">-10%</p>
+                            <p class="product__time-sale">02.02 - 02.03</p>
+                            <div class="product__buttons">
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-2.png" alt="Фото">
+                            <span class="product__name">Европейский-2</span>
+                        </a>
+                        <div class="product__item__body">
+                            <div class="product__description">
+                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
+                                <p class="product__name-company">
+                                    <span class="company-logo" style="background-image:url(./img/company-logo.png)"></span>
+                                    <span>Синергия</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__sale">-10%</p>
+                            <p class="product__time-sale">02.02 - 02.03</p>
+                            <div class="product__buttons">
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                            <span class="product__name">ЖК “Ласточкино гнездо”</span>
+                        </a>
+                        <div class="product__item__body">
+                            <div class="product__description">
+                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
+                                <p class="product__name-company">
+                                    <span class="company-logo" style="background-image:url(./img/company-logo.png)"></span>
+                                    <span>Синергия</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__sale">-10%</p>
+                            <p class="product__time-sale">02.02 - 02.03</p>
+                            <div class="product__buttons">
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                            <span class="product__name">Европейский-2</span>
+                        </a>
+                        <div class="product__item__body">
+                            <div class="product__description">
+                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
+                                <p class="product__name-company">
+                                    <span class="company-logo" style="background-image:url(./img/company-logo.png)"></span>
+                                    <span>Синергия</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product__item product-slider__item js-slider-item-infinity">
+                        <div class="product__item__header">
+                            <p class="product__sale">-10%</p>
+                            <p class="product__time-sale">02.02 - 02.03</p>
+                            <div class="product__buttons">
+                                <button class="button-favorites">
+                                    <span class="icon-heart-outline"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="product__img">
+                            <img src="./img/product-img-1.png" alt="Фото">
+                            <span class="product__name">Европейский-2</span>
+                        </a>
+                        <div class="product__item__body">
+                            <div class="product__description">
+                                <p class="product__text"><a href="#">Перші два покупці 2-к або 3-к квартири площею понад 75 м² отримують в подарунок</a></p>
+                                <p class="product__name-company">
+                                    <span class="company-logo" style="background-image:url(./img/company-logo.png)"></span>
+                                    <span>Синергия</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product__item__footer">
+                            <p class="product__city">
+                                <span class="icon-map-marker-outline"></span>
+                                <span>Хмельницкий город</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="general-button__wrapper js-arrow-infinity container">
+                    <div class="wrapper">
+                        <button class="general-button prev">
+                            <span class="icon-arrow-left"></span>
+                        </button>
+                        <button class="general-button next">
+                            <span class="icon-arrow-right"></span>
+                        </button>
+                    </div>
+                    <a href="#" class="main-button-more">
+                        <span class="text">Смотреть все акции</span>
+                        <span class="icon-arrow-more"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="seo-block seo-block-product-page">
+            <div class="seo-block__wrapper container">
+                <h2 class="main-caption-l">Коттеджные городки и поселки Украины на Zagorodna.com</h2>
+                <div class="seo-block__content">
+                    <div class="wrapper">
+                        <p>Таунхаус в Киеве для себя и родителей. Дуплекс в пригороде. Коттедж под Киевом малоэтажный на 2 семьи. Купить дачу под Киевом. Купить дом в Украине. Вилла на побережье... Кто не мечтает жить там, где плещется море, шумят реликтовые сосны и можно не вспоминать о суматохе городских "джунглей"?! Каждый! База (каталог) коттеджных городков и поселков Украины, собранная на нашем портале, то, что вам нужно! У нас все функционально, доступно, просто и... в полном объеме! Коттеджные городки Киевской области, построенные коттеджные городки под Киевом, строящиеся и проектируемые коттеджные поселки во всех регионах Украины - к вашим услугам! Позитивная энергетика, или смена места жительства на пользу.
+                        </p>
+                        <p>
+                        Коттеджный городок под Киевом в начале 2000-ных привлекал каждого. КПП на въезде, круглосуточная охрана, водоем в центре коттеджных поселков или на каждом участке, система "умный дом", богатая социальная инфраструктура и доступность транспорта, перспективы жить в однородном окружении манили многих. Но со временем вкусы менялись, время шло. Коттеджные городки Одессы (с участками на первой и последующих береговых линиях), коттеджные поселки во Львове (в историческом центре) и на востоке страны стали не менее привлекательными. Коттеджные поселки Крыма чего стоят! Купить дом в коттеджном поселке под Севастополем или Ялтой - значит позволить себе жить у вечно плещущейся воды, наслаждаться местными красотами, теплым климатом, 
+                        </p>стройными кипарисами. Земля под Киевом не нужна! Мы лучше купим дом под Киевом, дачу под Киевом или любую недвижимость в Киевской области. Бесконечные предложения от портала: купить дом/продать дачу легко…
+                        Портал загородной недвижимости предлагает сотни коттеджных городков от застройщиков, крупных девелоперов со всей территории Украины. Они предлагают купить дом в Украине! На любой вкус и финансовые возможности. Изучите варианты при помощи удобной формы поиска, рассмотрите фото, обратите внимание на параметры, свяжитесь с продавцом для уточнения деталей. Первый раз совершаете покупку дома в коттеджном поселке под Киевом? Цены в коттеджных городках под Киевом вас не пугают, но вы не знаете, как должен правильно выглядеть договор купли-продажи, какие госпошлины и налоги стоит уплатить, какие справки собрать? Сотрудники нашего портала помогут вам в любом вопросе, проведя профессиональную консультацию. 
+                        <p>Недвижимость за городом можете приобретать, не раздумывая, выбрав интересный вариант в интересующем вас городе страны. Купить дачу под Киевом, или недвижимость в Киевской области не составит труда! Продать-купить коттедж в коттеджном городке или земельный участок в коттеджном поселке с нашей помощью - легко. Для продажи собственного коттеджа (в связи со сменой работы, места учебы детей, прочими нюансами) нужно заполнить специальную форму, все информационные поля. Покупатель оценит не только техническую информацию, нюансы, касающиеся вашего объекта недвижимости, но и цену на коттедж. К вашим услугам наши профессионалы, которые помогут правильно оценить дом или участок с тем, чтобы не прогадать при совершении сделки. Продажа дома под Киевом с нашей помощью - быстрый и эффективный результат! Недвижимость в Киевской области, или коттеджный городок под Киевом Коттеджный городок с развлекательным центром, ресторанным комплексом, конной школой и множеством спортивных секций, медицинскими учреждениями 
+                        </p>
+                        <p>это мини-город в городе. Коттеджный поселок под Киевом, выстроенный вдали от промзон и проезжих трасс, привлечет внимание неспешным ритмом жизни истинных консерваторов. Или новаторов, стремящихся попробовать нечто новое. Коттеджные городки Киевской области - вот "заповедная" территория для тех, кто желает проводить свободное время вдали от бизнес-центра, суматохи и вечных проблем. Коттеджи под Киевом пользуются стабильным спросом. Купить дом под Киевом - это значит очертить круг собственного комфорта, желаний и возможностей! Недвижимость в Киевской области всегда пользовалась повышенной популярностью. Это связано с большим потоком смелых и креативных, приезжающих покорять столицу. Земельные участки в коттеджных городках - вот предел мечтаний многих, тех, кто желает выстроить дом по собственному эскизу. Дома под Киевом не привлекает полной готовностью, зачастую большим спросом пользуются те, где еще можно проявить фантазию. С нашим порталом найти любую недвижимость за городом просто! Источник: © Zagorodna.com</p>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -912,6 +1797,27 @@
                 </label>
                 <button class="main-button">Отправить</button>
             </form>
+        </div>
+    </section>
+    <section class="popup popup-full-screen slider-infinity" data-target="full-screen">
+         <button class="close-popup js-close">
+            <span class="decor"></span>
+        </button>
+        <div class="popup__wrapper popup-full-screen__wrapper">
+            <ul class="popup-full-screen__list js-infinity-slider-list">
+                <li class="popup-full-screen__item js-slider-item-infinity show" style="background-image:url(./img/general-img-product-1.png)"></li>
+                <li class="popup-full-screen__item js-slider-item-infinity" style="background-image:url(./img/main-slider-img-1.png)"></li>
+                <li class="popup-full-screen__item js-slider-item-infinity" style="background-image:url(./img/main-slider-img-2.png)"></li>
+                <li class="popup-full-screen__item js-slider-item-infinity" style="background-image:url(./img/main-slider-img-3.jpg)"></li>
+            </ul>
+        </div>
+        <div class="popup-buttons js-arrow-infinity">
+            <button class="popup-button prev">
+                <span class="icon-arrow-left"></span>
+            </button>
+            <button class="popup-button next">
+                <span class="icon-arrow-right"></span>
+            </button>
         </div>
     </section>
     <script src="./js/main.js"></script>
