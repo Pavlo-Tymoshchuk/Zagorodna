@@ -499,7 +499,7 @@
             <div class="product-page__wrapper container">
                 <h4 class="product-page__type">Коттедж</h4>
                 <div class="product-page__main">
-                    <div class="product-page__img-wrapper slider">
+                    <div class="product-page__general-wrapper slider">
                         <div class="product-page__img-header">
                             <div class="product-page__slider-number js-slider-number">
                                 <span class="current"></span>
@@ -562,14 +562,16 @@
                                 </div>
                             </div>
                             <div class="product-page__buttons">
-                                <button class="general-button-color product-page__button-phone">
+                                <button class="product-page__button general-button-color product-page__button-phone">
                                     <span class="icon-phone"></span>
                                     <span>+38 050 384-44-98</span>
                                 </button>
-                                <button class="filter-button">приобрести</button>
-                                <button class="general-button-color product-page__button-question">Задать вопрос</button>
-                                <button class="catalog__filter-button product-page__button-meeting">Назначить визит</button>
+                                <button class="product-page__button filter-button">приобрести</button>
+                                <button class="product-page__button general-button-color product-page__button-question">Задать вопрос</button>
+                                <button class="product-page__button catalog__filter-button product-page__button-meeting">Назначить визит</button>
                             </div>
+                        </div>
+                        <div class="product-page__info-footer">
                             <div class="product-page__address">
                                 <p>Киевская область, Обуховский р-н</p>
                                 <strong>Романков, Ул. Роскошная, Д.1</strong>
@@ -579,8 +581,6 @@
                                 </p>
                                 <span class="icon-place-big"></span>
                             </div>
-                        </div>
-                        <div class="product-page__info-footer">
                             <div class="general-social__wrapper">
                                 <h5>Поделиться ссылкой:</h5>
                                 <ul class="general__socila-list">
@@ -616,12 +616,12 @@
                 </div>
                 <div class="general-tabs">
                     <ul class="general-tabs__list general-tabs__list-product">
-                        <li class="general-tabs__item active">Про комплекс</li>
-                        <li class="general-tabs__item">Типовые проекты</li>
-                        <li class="general-tabs__item">Карта</li>
-                        <li class="general-tabs__item">Видео</li>
-                        <li class="general-tabs__item">Отзывы</li>
-                        <li class="general-tabs__item">Акции</li>
+                        <li class="general-tabs__item active"><a href="#">Про комплекс</a></li>
+                        <li class="general-tabs__item"><a href="#">Типовые проекты</a></li>
+                        <li class="general-tabs__item"><a href="#">Карта</a></li>
+                        <li class="general-tabs__item"><a href="#">Видео</a></li>
+                        <li class="general-tabs__item"><a href="#">Отзывы</a></li>
+                        <li class="general-tabs__item"><a href="#">Акции</a></li>
                         <li class="general-tabs__item general-tabs__item-empty"></li>
                     </ul>
                 </div>
@@ -718,7 +718,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="product-page__characteristic-wrapper">
+                <div class="product-page__characteristic-wrapper js-drop-item">
                     <h4 class="product-page__caption">Характеристики</h4>
                     <ul class="product-page__characteristic-list">
                         <li class="product-page__characteristic-item">
@@ -803,6 +803,36 @@
                         <h5>Описание</h5>
                         <p>Коттеджный городок "Роскошный" расположен в 12 км от Киева по Обуховской трассе в с. Романков Киевской области. Это небольшой коттеджный поселок с готовыми коттеджами, рассчитан на 7 домовладений. Все коттеджи построены из красного облицовочного кирпича. Коттеджный городок введен в эксплуатацию.  Дома в коттеджном поселке имеют площадь от 242 до 290 кв.м. Участки в коттеджном городке "Роскошный" имеют площадь от 9,5 до 11,5 соток. Дома продаются со строительной отделкой. В дома подведено водоснабжение, канализация, газ. В доме имеется итальянский котел, алюминиевые батареи. Городок граничит с коттеджным поселком "Солнечная долина".</p>
                     </div>
+                    <button class="main-button-more js-drop-button"></button>
+                </div>
+                <div class="general-voting general-voting-tablet">
+                    <h5>Чем вам понравился городок “Роскошный”?</h5>
+                    <form action="#" class="general-voting__form">
+                        <div class="wrapper">
+                            <label class="checkbox__wrapper">
+                                <input type="checkbox" class="input-checkbox">
+                                <span class="custome-checkbox">
+                                    <span class='icon-active'></span>
+                                </span>
+                                <span class="checkbox-text">Хорошее озеленение и трава</span>
+                            </label>
+                            <label class="checkbox__wrapper">
+                                <input type="checkbox" class="input-checkbox">
+                                <span class="custome-checkbox">
+                                    <span class='icon-active'></span>
+                                </span>
+                                <span class="checkbox-text">Развитая инфраструктура</span>
+                            </label>
+                            <label class="checkbox__wrapper">
+                                <input type="checkbox" class="input-checkbox">
+                                <span class="custome-checkbox">
+                                    <span class='icon-active'></span>
+                                </span>
+                                <span class="checkbox-text">Близость к городу</span>
+                            </label>
+                        </div>
+                        <button class="main-button">Проголосовать</button>
+                    </form>
                 </div>
             </div>
         </section>

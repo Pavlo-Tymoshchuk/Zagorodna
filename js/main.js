@@ -404,7 +404,7 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         }
         
-        if(!elem.closest(".popup__wrapper") && !elem.closest(".js-button") && !elem.closest('.js-close') && !elem.closest('.js-arrow-infinity')) {
+        if(!elem.closest(".popup__wrapper") && !elem.closest(".js-button") && !elem.closest('.js-close') && !elem.closest('.js-arrow-infinity') && !elem.closest('.footer-callback__form')) {
             if(popupActive) {
                 popupActive.classList.remove('active');
                 htmlOverflow.classList.remove('overflow');
@@ -580,6 +580,23 @@ document.addEventListener('DOMContentLoaded', function(){
                 }
                 
             });
+            
+            var startPointX;
+            var startPointY;
+            document.querySelector(".js-general-image").addEventListener("touchstart", function(event) {
+                startPointX = event.changedTouches[0].screenX;
+                startPointY = event.changedTouches[0].screenY;
+            }, false);
+            document.querySelector(".js-general-image").addEventListener("touchend", function(event){
+                var endPointX = event.changedTouches[0].screenX;
+                var endPointY = event.changedTouches[0].screenY;
+                
+                if(startPointX - endPointX > 40) {
+                    buttonNext.click();
+                } else if(endPointX - startPointX > 40) {
+                    buttonPrev.click();
+                }
+            }, false);
         
         }
     }
