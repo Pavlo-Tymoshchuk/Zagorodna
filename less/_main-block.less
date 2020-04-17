@@ -227,6 +227,10 @@
     }
 }
 
+.filter-check__wrapper {
+    cursor: pointer;
+}
+
 .filter-check__decor-wrapper {
     display: flex;
     border: 1px solid rgb(211, 211, 211);
@@ -251,7 +255,6 @@
     transform: translateY(-50%);
     background-color: #7bc97b;
     transition: right .4s, background-color .4s;
-    cursor: pointer;
 }
 
 .filter-check__input {
@@ -417,7 +420,7 @@
 }
 
 .product__item__header {
-    padding: 15px 10px 15px 20px;
+    padding: 5px 10px 5px 20px;
     display: flex;
     align-items: center;
 }
@@ -470,7 +473,7 @@
     display: flex;
     align-items: center;
     font-size: 20px;
-    padding: 0px 10px;
+    padding: 10px 10px;
     margin-right: 9px;
     position: relative;
     transition: color .4s;
@@ -495,7 +498,7 @@
     justify-content: center;
     align-items: center;
     font-size: 22px;
-    padding: 0px 10px;
+    padding: 10px 10px;
     margin-left: 9px;
     transition: color .4s;
     
@@ -566,6 +569,21 @@
         font-weight: 600;
         padding: 0px 9px;
     }
+}
+
+.product-page__availability {
+    background-color: #7bc97b;
+    border-radius: 20px;
+    padding: 7px 20px 7px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #ffffff;
+    white-space: nowrap;
+    max-width: 192px;
+    overflow: hidden;
+    margin-right: 10px;
+    text-transform: uppercase;
+    position: relative;
 }
 
 .product__item__footer {
@@ -974,7 +992,7 @@
     }
     
     .product__item__header {
-        padding: 10px 10px 10px 10px;
+        padding: 3px 10px 3px 10px;
     }
 }
 
@@ -4224,6 +4242,33 @@
 .product-page__reviews-item__footer {
     text-align: right;
 }
+
+.product__list-tabs {
+    .product__item__header {
+        padding: 3px 10px 3px 10px;
+    }
+    
+    .button-favorites {
+        margin-left: 0px;
+    }
+    
+    .product__buttons {
+        margin-left: auto;
+    }
+    
+    .product__status {
+        margin-right: 0px;
+    }
+    
+    .product-page__info-about-house {
+        max-width: 100%;
+    }
+    
+    .product__item__footer {
+        padding-bottom: 10px;
+    }
+}
+
 /* Companies */
 
 .best-company__container {

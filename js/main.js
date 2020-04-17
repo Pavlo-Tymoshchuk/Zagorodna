@@ -156,12 +156,14 @@ document.addEventListener('DOMContentLoaded', function(){
         if(elem.closest('.js-noty-button')) {
             elem.closest('.js-noty-button').classList.toggle('active');
             notyWrapper.classList.toggle('active');
+            notyWrapper.querySelector(".header__noty__list").scrollTop = 0;
         }
         
         if(!elem.closest('.js-noty-button') && !elem.closest(".js-noty-wrapper")) {
             notyButton.forEach((item) => {
                 item.classList.remove('active');
             });
+            notyWrapper.querySelector(".header__noty__list").scrollTop = 0;
             notyWrapper.classList.remove('active');
         }
     });
