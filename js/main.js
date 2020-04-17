@@ -1,13 +1,13 @@
 
 document.addEventListener('DOMContentLoaded', function(){
 
-    let arrows = document.querySelectorAll(".js-arrows-main");
+    let arrowsMain = document.querySelectorAll(".js-arrows-main");
     
-     function initialSlider() {
-        for(var i = 0;arrows.length > i; i++) {
-            let slider = arrows[i].closest(".js-slider");
-            let arrowNext = arrows[i].querySelector('.next');
-            let arrowPrev = arrows[i].querySelector('.prev');
+     function initialSliderMain() {
+        for(var i = 0;arrowsMain.length > i; i++) {
+            let slider = arrowsMain[i].closest(".js-slider");
+            let arrowNext = arrowsMain[i].querySelector('.next');
+            let arrowPrev = arrowsMain[i].querySelector('.prev');
             let allItems = slider.querySelectorAll('.js-main-slider');
             
            
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     
 
-    initialSlider();
+    initialSliderMain();
     
     
     document.addEventListener('click', function(e){
@@ -327,6 +327,107 @@ document.addEventListener('DOMContentLoaded', function(){
     
     // //Infinty slider
     
+    // SLider
+    
+    let arrows = document.querySelectorAll(".js-arrows");
+    
+     function initialSlider() {
+        for(var i = 0;arrows.length > i; i++) {
+            let slider = arrows[i].closest(".slider");
+            let arrowNext = arrows[i].querySelector('.next');
+            let arrowPrev = arrows[i].querySelector('.prev');
+            let allItems = slider.querySelectorAll('.js-slider-item').length;
+            
+            if(allItems < 2) {
+                arrowNext.classList.add("disabled");
+            }
+            
+            arrowNext.addEventListener('click', function() {
+                let itemShow = slider.querySelector('.js-slider-item.show');
+                
+                if(slider.querySelector('.js-slider-item.show').nextElementSibling == null) {
+                    return;
+                }
+                
+                arrowPrev.classList.remove('disabled');
+                
+                itemShow.nextElementSibling.classList.add('show');
+                itemShow.classList.remove('show');
+                
+                if(slider.querySelector('.js-slider-item.show').nextElementSibling == null) {
+                    arrowNext.classList.add('disabled');
+                }
+            });
+            
+            arrowPrev.addEventListener('click', function() {
+                let itemShow = slider.querySelector('.js-slider-item.show');
+                
+                if(slider.querySelector('.js-slider-item.show').previousElementSibling == null) {
+                    return;
+                }
+
+                arrowNext.classList.remove('disabled');
+                
+                itemShow.previousElementSibling.classList.add('show');
+                itemShow.classList.remove('show');
+                
+                if(slider.querySelector('.js-slider-item.show').previousElementSibling == null) {
+                    arrowPrev.classList.add('disabled');
+                }
+            });
+
+            var startPointX;
+            var startPointY;
+            slider.addEventListener("touchstart", function(event) {
+                startPointX = event.changedTouches[0].screenX;
+                startPointY = event.changedTouches[0].screenY;
+            }, false);
+            slider.addEventListener("touchend", function(event){
+                var endPointX = event.changedTouches[0].screenX;
+                var endPointY = event.changedTouches[0].screenY;
+                
+                if(startPointX - endPointX > 40) {
+                    arrowNext.click();
+                } else if(endPointX - startPointX > 40) {
+                    arrowPrev.click();
+                }
+            }, false);
+        }
+    }
+    
+    let allButtonPlan = document.querySelectorAll('.js-button-plan');
+    
+    allButtonPlan.forEach(function(item){
+        item.addEventListener('click', function(){
+            let dataIndex = item.getAttribute('data-index');
+            let allPopupItem = document.querySelectorAll('.product-page__plan-item.js-slider-item');
+            
+            allPopupItem.forEach(function(item){
+                item.classList.remove("show");
+            });
+            
+            let activeItem = document.querySelector('.product-page__plan-item.js-slider-item[data-index = "' + dataIndex + '"]');
+            activeItem.classList.add('show');
+            
+            let wraperrPopupPlan = document.querySelector('.popup-full-screen[data-target = "full-screen-plan"]');
+            let buttonPrev = wraperrPopupPlan.querySelector('.popup-button.prev');
+            let buttonNext = wraperrPopupPlan.querySelector('.popup-button.next');
+            
+            if(dataIndex == allPopupItem.length) {
+                buttonPrev.classList.remove('disabled');
+                buttonNext.classList.add('disabled');
+            }
+            
+            if(dataIndex > 1 && dataIndex < allPopupItem.length) {
+                console.log("ssds")
+                buttonPrev.classList.remove('disabled');
+                buttonNext.classList.remove('disabled');
+            }
+        });
+    });
+
+    initialSlider();
+    
     // More info
         
       function showMoreInfo() {
@@ -406,7 +507,7 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         }
         
-        if(!elem.closest(".popup__wrapper") && !elem.closest(".js-button") && !elem.closest('.js-close') && !elem.closest('.js-arrow-infinity') && !elem.closest('.footer-callback__form')) {
+        if(!elem.closest(".popup__wrapper") && !elem.closest(".js-button") && !elem.closest('.js-close') && !elem.closest('.popup-button') && !elem.closest('.footer-callback__form')) {
             if(popupActive) {
                 popupActive.classList.remove('active');
                 htmlOverflow.classList.remove('overflow');

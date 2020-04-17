@@ -568,13 +568,13 @@
                         <div class="product-page__plan">
                             <h4 class="product-page__caption">Планировки</h4>
                             <ul class="product-page__plan-list">
-                                <li class="product-page__plan-item">
+                                <li class="product-page__plan-item js-button js-button-plan" data-target="full-screen-plan" data-index="1">
                                     <p class="name">1 этаж</p>
                                     <div class="product-page__plan-img">
                                         <img src="./img/plan-img-1.png" alt="План">
                                     </div>
                                 </li>
-                                <li class="product-page__plan-item">
+                                <li class="product-page__plan-item js-button  js-button-plan" data-target="full-screen-plan" data-index="2">
                                     <p class="name">2 этаж</p>
                                     <div class="product-page__plan-img">
                                         <img src="./img/plan-img-1.png" alt="План">
@@ -660,13 +660,13 @@
                         <div class="product-page__plan product-page__plan-tablet">
                             <h4 class="product-page__caption">Планировки</h4>
                             <ul class="product-page__plan-list">
-                                <li class="product-page__plan-item">
+                                <li class="product-page__plan-item js-button js-button-plan" data-target="full-screen-plan" data-index="1">
                                     <p class="name">1 этаж</p>
                                     <div class="product-page__plan-img">
                                         <img src="./img/plan-img-1.png" alt="План">
                                     </div>
                                 </li>
-                                <li class="product-page__plan-item">
+                                <li class="product-page__plan-item js-button js-button-plan" data-target="full-screen-plan" data-index="2">
                                     <p class="name">2 этаж</p>
                                     <div class="product-page__plan-img">
                                         <img src="./img/plan-img-1.png" alt="План">
@@ -724,6 +724,41 @@
                     </div>
 
                 </div>
+            </div>
+        </section>
+        <section class="popup popup-full-screen slider" data-target="full-screen-plan">
+            <button class="close-popup js-close">
+                <span class="decor"></span>
+            </button>
+            <div class="popup__wrapper popup-full-screen-plan__wrapper">
+                <ul class="product-page__plan-list">
+                    <li class="product-page__plan-item js-slider-item show js-plan" data-index="1">
+                        <p class="name">1 этаж</p>
+                        <div class="product-page__plan-img">
+                            <img src="./img/plan-img-1.png" alt="План">
+                        </div>
+                    </li>
+                    <li class="product-page__plan-item js-slider-item js-plan" data-index="2">
+                        <p class="name">2 этаж</p>
+                        <div class="product-page__plan-img">
+                            <img src="./img/plan-img-1.png" alt="План">
+                        </div>
+                    </li>
+                    <li class="product-page__plan-item js-slider-item js-plan" data-index="3">
+                        <p class="name">3 этаж</p>
+                        <div class="product-page__plan-img">
+                            <img src="./img/plan-img-1.png" alt="План">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="popup-buttons js-arrows">
+                <button class="popup-button prev disabled">
+                    <span class="icon-arrow-left"></span>
+                </button>
+                <button class="popup-button next">
+                    <span class="icon-arrow-right"></span>
+                </button>
             </div>
         </section>
     </main>
