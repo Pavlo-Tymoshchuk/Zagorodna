@@ -525,6 +525,7 @@
                         <div class="product-page__general__caption-wrapper">
                             <h3 class="name-project">Проект 2</h3>
                             <h5 class="type-project">Таунхаус</h5>
+                            <p class="product__status build product__status-tabs">Строится</p>
                         </div>
                         <div class="product-page__general-img js-general-image">
                             <img src="./img/general-img-product-1.png" alt="Городок">
@@ -588,13 +589,13 @@
                         </div>
                         <div class="product-page__info-body">
                             <div class="product-page__buttons product-page__buttons-tabs">
-                                <button class="general-button-color product-page__button-phone">
+                                <button class="product-page__button general-button-color product-page__button-phone">
                                     <span class="icon-phone"></span>
                                     <span>+38 050 384-44-98</span>
                                 </button>
-                                <button class="filter-button">приобрести</button>
-                                <button class="general-button-color product-page__button-question">Задать вопрос</button>
-                                <button class="catalog__filter-button product-page__button-meeting">Назначить визит</button>
+                                <button class="product-page__button filter-button">приобрести</button>
+                                <button class="product-page__button general-button-color product-page__button-question">Задать вопрос</button>
+                                <button class="product-page__button catalog__filter-button product-page__button-meeting">Назначить визит</button>
                             </div>
                             <div class="wrapper">
                                 <div class="product-page__info-about-house">
@@ -656,6 +657,23 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="product-page__plan product-page__plan-tablet">
+                            <h4 class="product-page__caption">Планировки</h4>
+                            <ul class="product-page__plan-list">
+                                <li class="product-page__plan-item">
+                                    <p class="name">1 этаж</p>
+                                    <div class="product-page__plan-img">
+                                        <img src="./img/plan-img-1.png" alt="План">
+                                    </div>
+                                </li>
+                                <li class="product-page__plan-item">
+                                    <p class="name">2 этаж</p>
+                                    <div class="product-page__plan-img">
+                                        <img src="./img/plan-img-1.png" alt="План">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <!-- <div class="product-page__map">
                         <h4 class="product-page__caption product-page__caption-l">Местоположение</h4>
@@ -667,6 +685,7 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2535.627594507758!2d30.49210811573465!3d50.541097879487964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d3ab45cf5c39%3A0x6dc0a04d76668a95!2z0LLRg9C70LjRhtGPINCg0LXQtNGM0YfQuNC90YHRjNC60LAsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1587038931831!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                     </div> -->
+                    
                     <!-- <div class="product-page__video">
                         <h4 class="product-page__caption product-page__caption-l">Видео</h4>
                         <ul class="product-page__video-list">
@@ -684,6 +703,7 @@
                             </li>
                         </ul>
                     </div> -->
+                    
                     <!-- <div class="product-page__reviews">
                         <div class="product-page__reviews-header">
                             <h4 class="product-page__caption-l">Отзывы о “Роскошный”</h4>
@@ -880,6 +900,35 @@
                             </li>
                         </ul>
                     </div> -->
+                </div>
+                <div class="general-voting general-voting-tablet">
+                    <h5>Чем вам понравился городок “Роскошный”?</h5>
+                    <form action="#" class="general-voting__form">
+                        <div class="wrapper">
+                            <label class="checkbox__wrapper">
+                                <input type="checkbox" class="input-checkbox">
+                                <span class="custome-checkbox">
+                                    <span class='icon-active'></span>
+                                </span>
+                                <span class="checkbox-text">Хорошее озеленение и трава</span>
+                            </label>
+                            <label class="checkbox__wrapper">
+                                <input type="checkbox" class="input-checkbox">
+                                <span class="custome-checkbox">
+                                    <span class='icon-active'></span>
+                                </span>
+                                <span class="checkbox-text">Развитая инфраструктура</span>
+                            </label>
+                            <label class="checkbox__wrapper">
+                                <input type="checkbox" class="input-checkbox">
+                                <span class="custome-checkbox">
+                                    <span class='icon-active'></span>
+                                </span>
+                                <span class="checkbox-text">Близость к городу</span>
+                            </label>
+                        </div>
+                        <button class="main-button">Проголосовать</button>
+                    </form>
                 </div>
             </div>
         </section>

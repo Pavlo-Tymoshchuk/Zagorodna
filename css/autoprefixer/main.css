@@ -6483,6 +6483,9 @@ main {
   margin-right: 20px;
   margin-bottom: 20px;
 }
+.product-page__button.product-page__button-meeting {
+  max-width: calc(50% - 20px);
+}
 .product-page__button-phone {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7717,6 +7720,19 @@ main {
   font-weight: 700;
   font-size: 20px;
 }
+@media (max-width: 1366px) {
+  .popup-full-screen__list {
+    height: 550px;
+  }
+  .popup-full-screen__wrapper {
+    padding: 30px 15px;
+  }
+}
+@media (max-width: 992px) {
+  .popup-full-screen__list {
+    height: 350px;
+  }
+}
 /* Footer */
 .footer {
   color: #1a1a1a;
@@ -8663,6 +8679,9 @@ main {
     border-color: #eaeaea;
     -webkit-transition: none;
     transition: none;
+  }
+  .header__nav-item-text {
+    margin-right: auto;
   }
 }
 @media screen and (max-width: 820px) {
@@ -10911,6 +10930,9 @@ main {
     max-width: 100%;
     margin-right: 0px;
   }
+  .product-page__button.product-page__button-meeting {
+    max-width: 100%;
+  }
   .product-page__button-question {
     -webkit-box-ordinal-group: 0;
     -webkit-order: -1;
@@ -10982,17 +11004,15 @@ main {
     max-height: 460px;
     overflow: hidden;
     position: relative;
-    -webkit-transition: max-height 0.2s;
-    transition: max-height 0.2s;
   }
   .product-page__characteristic-wrapper.active {
-    max-height: 2000px;
+    max-height: 2700px;
     -webkit-transition: max-height 0.6s;
     transition: max-height 0.6s;
-    margin-bottom: 110px;
+    padding-bottom: 70px;
   }
-  .product-page__characteristic-wrapper.active .main-button-more {
-    bottom: -30px;
+  .product-page__characteristic-wrapper.active .main-button-more::before {
+    content: "Скрыть все характеристики";
   }
   .product-page__characteristic-wrapper .main-button-more {
     display: -webkit-box;
@@ -11002,6 +11022,10 @@ main {
     position: absolute;
     left: 0px;
     bottom: 0px;
+    max-width: 100%;
+  }
+  .product-page__characteristic-wrapper .main-button-more::before {
+    content: "Показать все характеристики";
   }
   .product-page__characteristic-list {
     margin-bottom: -20px;

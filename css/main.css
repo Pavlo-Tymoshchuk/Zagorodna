@@ -5287,6 +5287,10 @@ main {
 }
 .product-page-tabs__header-img img {
   border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .product-page__general__caption-wrapper {
   display: flex;
@@ -5306,9 +5310,19 @@ main {
 .product-page__main-tabs {
   margin-top: 35px;
 }
+.product__status-tabs {
+  display: none;
+}
 .product-page-tabs__header-info {
   display: flex;
   flex-direction: column;
+}
+.product-page-tabs__header-info .main-caption-l {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 60px;
 }
 .product-page-tabs__header-info .wrapper {
   display: flex;
@@ -5321,6 +5335,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 15px;
 }
 .product-page-tabs__header-info .name {
   color: #575757;
@@ -5331,7 +5346,6 @@ main {
   align-items: center;
   color: #949494;
   font-size: 12px;
-  margin-top: 15px;
 }
 .product-page-tabs__header-info .project h5 {
   font-size: 14px;
@@ -5391,12 +5405,28 @@ main {
 }
 .product-page__same-tabs .product-page__same__item .name {
   margin-left: 20px;
+  width: 28%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .product-page__same-tabs .product-page__same__item .price {
-  width: 35%;
+  width: 37%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.product-page__same-tabs .product-page__same__item .area {
+  width: 20%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .product-page__plan {
   margin-top: 30px;
+}
+.product-page__plan-tablet {
+  display: none;
 }
 .product-page__plan-list {
   display: flex;
@@ -5482,6 +5512,7 @@ main {
 .product-page__reviews-header .main-button {
   max-width: 270px;
   height: 48px;
+  margin-left: 10px;
 }
 .product-page__reviews-item {
   background-color: #ffffff;
@@ -6584,7 +6615,7 @@ main {
   .header__nav-item .general-drop__wrapper {
     display: none;
     opacity: 1;
-    position: relative;
+    position: static;
     visibility: visible;
     transition: none;
     box-shadow: none;
@@ -6985,6 +7016,27 @@ main {
   .general-sitebar {
     display: none;
   }
+  .general-voting__form .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+  }
+  .general-voting-tablet {
+    display: block;
+    margin-top: 60px;
+    padding: 40px 60px;
+  }
+  .general-voting-tablet h5 {
+    text-align: center;
+  }
+  .general-voting-tablet .main-button {
+    max-width: 270px;
+    margin: 35px auto 0px;
+  }
+  .general-voting-tablet .checkbox__wrapper {
+    width: calc(50% - 20px);
+  }
 }
 @media screen and (max-width: 1680px) {
   /* Main slider */
@@ -7280,6 +7332,9 @@ main {
   }
   .product-page__info-wrapper {
     width: calc(45% - 15px);
+  }
+  .product-page__info-about-house {
+    max-width: 175px;
   }
   /* //Product page */
 }
@@ -7631,27 +7686,6 @@ main {
   }
   /* //Article */
   /* Product page */
-  .general-voting-tablet {
-    display: block;
-    margin-top: 60px;
-    padding: 40px 60px;
-  }
-  .general-voting-tablet h5 {
-    text-align: center;
-  }
-  .general-voting-tablet .main-button {
-    max-width: 270px;
-    margin: 35px auto 0px;
-  }
-  .general-voting-tablet .checkbox__wrapper {
-    width: calc(50% - 20px);
-  }
-  .general-voting__form .wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: -20px;
-  }
   .product-page__main {
     flex-wrap: wrap;
     margin-bottom: 60px;
@@ -7678,6 +7712,22 @@ main {
     width: 100%;
     margin-top: 35px;
   }
+  .product-page-tabs__header-img {
+    width: 200px;
+    height: 100px;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+  .product-page__buttons {
+    margin-right: -49px;
+  }
+  .product-page__button {
+    max-width: calc(50% - 49px);
+    margin-right: 49px;
+  }
+  .product-page__button.product-page__button-meeting {
+    max-width: calc(50% - 49px);
+  }
   .product-page__info-header {
     padding-bottom: 8px;
   }
@@ -7687,10 +7737,10 @@ main {
     margin-top: 50px;
   }
   .product-page__info-footer .general-social__wrapper {
-    width: calc(50% - 15px);
+    width: calc(50% - 24px);
   }
   .product-page__address {
-    width: calc(50% - 30px);
+    width: calc(50% - 39px);
     margin: 0px;
     margin-left: 15px;
   }
@@ -7721,6 +7771,53 @@ main {
   }
   .product-page__characteristic-description {
     padding: 27px 30px 35px;
+  }
+  .product-page__info-wrapper-tabs .product-page__status {
+    display: none;
+  }
+  .product__status-tabs {
+    display: block;
+    margin-right: 0px;
+    margin-left: 35px;
+  }
+  .product-page__general__caption-wrapper .type-project {
+    margin-left: auto;
+  }
+  .product-page__info-about-house {
+    max-width: 210px;
+  }
+  .product-page__plan {
+    display: none;
+  }
+  .product-page__plan-tablet {
+    display: block;
+    margin-top: 60px;
+  }
+  .product-page__info-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-page__info-body .wrapper {
+    order: -1;
+  }
+  .product-page__buttons-tabs {
+    margin-bottom: -20px;
+  }
+  .product-page__same-tabs {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .product-page__same-tabs .name {
+    width: 35%;
+  }
+  .product-page__same-tabs .price {
+    width: 30%;
+  }
+  .product-page__same-tabs .area {
+    width: 20%;
+  }
+  .product-page__map-container {
+    height: 500px;
   }
 }
 @media screen and (max-width: 840px) {
@@ -8736,6 +8833,9 @@ main {
     margin-top: 20px;
     width: 50%;
   }
+  .product-page__same-tabs .product-page__same__item .area {
+    width: 50%;
+  }
   .product-page__status-table {
     font-size: 12px;
   }
@@ -8809,6 +8909,79 @@ main {
   }
   .seo-block-product-page {
     margin-top: 65px;
+  }
+  .product-page-tabs__header-info .general-noty__buttons-container {
+    margin-left: 10px;
+  }
+  .product-page-tabs__header {
+    margin-bottom: 40px;
+  }
+  .product-page-tabs__header-img {
+    display: none;
+  }
+  .product-page-tabs__header-info .info {
+    flex-wrap: wrap;
+  }
+  .product-page-tabs__header-info .name {
+    width: 100%;
+  }
+  .product-page-tabs__header-info .project {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .product-page__general__caption-wrapper {
+    flex-wrap: wrap;
+  }
+  .product-page__general__caption-wrapper .name-project {
+    width: 100%;
+    margin-bottom: 13px;
+  }
+  .product-page__general__caption-wrapper .type-project {
+    width: 50%;
+    margin: 0px;
+  }
+  .product-page__general__caption-wrapper .product__status-tabs {
+    width: 50%;
+    text-align: right;
+    margin: 0px;
+  }
+  .product-page__info-about-house {
+    display: none;
+  }
+  .product-page__info-wrapper-tabs .product-page__price {
+    margin-top: 0px;
+  }
+  .product-page__info-wrapper-tabs .product-page__info-body {
+    margin-top: 10px;
+  }
+  .product-page__plan-item {
+    width: 100%;
+  }
+  .product-page__map-address {
+    margin-top: 10px;
+  }
+  .product-page__map-container {
+    height: 400px;
+  }
+  .product-page__video-item {
+    width: 100%;
+    height: 250px;
+  }
+  .product-page__reviews-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .product-page__reviews-header .main-button {
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  .product-page__reviews-item {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+  }
+  .product-page__reviews-item__body {
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 440px) {

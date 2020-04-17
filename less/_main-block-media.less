@@ -3,6 +3,34 @@
     .general-sitebar {
         display: none;
     }
+    
+    .general-voting__form {
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: -20px;
+        }
+    }
+    
+    .general-voting-tablet {
+        display: block;
+        margin-top: 60px;
+        padding: 40px 60px;
+        
+        h5 {
+            text-align: center;
+        }
+        
+        .main-button {
+            max-width: 270px;
+            margin: 35px auto 0px;
+        }
+        
+        .checkbox__wrapper {
+            width: calc(50% - 20px);
+        }
+    }
 }
 
 @media screen and (max-width: 1680px) {
@@ -418,6 +446,10 @@
     
     .product-page__info-wrapper {
         width: calc(45% - 15px);
+    }
+    
+    .product-page__info-about-house {
+        max-width: 175px;
     }
     
     /* //Product page */
@@ -927,34 +959,6 @@
     
     /* Product page */
     
-    .general-voting-tablet {
-        display: block;
-        margin-top: 60px;
-        padding: 40px 60px;
-        
-        h5 {
-            text-align: center;
-        }
-        
-        .main-button {
-            max-width: 270px;
-            margin: 35px auto 0px;
-        }
-        
-        .checkbox__wrapper {
-            width: calc(50% - 20px);
-        }
-    }
-    
-    .general-voting__form {
-        .wrapper {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: -20px;
-        }
-    }
-    
     .product-page__main {
         flex-wrap: wrap;
         margin-bottom: 60px;
@@ -991,6 +995,25 @@
         margin-top: 35px;
     }
     
+    .product-page-tabs__header-img {
+        width: 200px;
+        height: 100px;
+        margin-right: 20px;
+        flex-shrink: 0;
+    }
+    
+    .product-page__buttons {
+        margin-right: -49px;
+    }
+    .product-page__button {
+        max-width: calc(50% - 49px);
+        margin-right: 49px;
+        
+        &.product-page__button-meeting {
+            max-width: calc(50% - 49px);
+        }
+    }
+    
     .product-page__info-header {
         padding-bottom: 8px;
     }
@@ -1001,12 +1024,12 @@
         margin-top: 50px;
         
         .general-social__wrapper {
-            width: calc(50% - 15px);
+            width: calc(50% - 24px);
         }
     }
     
     .product-page__address {
-        width: calc(50% - 30px);
+        width: calc(50% - 39px);
         margin: 0px;
         margin-left: 15px;
     }
@@ -1045,6 +1068,71 @@
     
     .product-page__characteristic-description {
         padding: 27px 30px 35px;
+    }
+    
+    .product-page__info-wrapper-tabs {
+        .product-page__status {
+            display: none;
+        }
+    }
+    
+    .product__status-tabs {
+        display: block;
+        margin-right: 0px;
+        margin-left: 35px;
+    }
+    
+    .product-page__general__caption-wrapper {
+        .type-project {
+            margin-left: auto;
+        }
+    }
+    
+    .product-page__info-about-house {
+        max-width: 210px;
+    }
+    
+    .product-page__plan {
+        display: none;
+    }
+    
+    .product-page__plan-tablet {
+        display: block;
+        margin-top: 60px;
+    }
+    
+    .product-page__info-body {
+        display: flex;
+        flex-direction: column;
+        
+        .wrapper {
+            order: -1;
+        }
+    }
+    
+    .product-page__buttons-tabs {
+        margin-bottom: -20px;
+    }
+    
+    .product-page__same-tabs {
+        width: 100%;
+        margin-top: 0px;
+        
+        .name {
+            width: 35%;
+        }
+        
+        .price {
+            width: 30%;
+        }
+        
+        .area {
+            width: 20%;
+        }
+    }
+    
+    .product-page__map-container {
+        height: 500px;
     }
 }
 
@@ -2464,6 +2552,14 @@
         }
     }
     
+    .product-page__same-tabs {
+        .product-page__same__item {
+            .area {
+                width: 50%;
+            }
+        }
+    }
+    
     .product-page__status-table {
         font-size: 12px;
         
@@ -2560,6 +2656,106 @@
     
     .seo-block-product-page {
         margin-top: 65px;
+    }
+    
+    .product-page-tabs__header-info {
+        .general-noty__buttons-container {
+            margin-left: 10px;
+        }
+    } 
+    
+    .product-page-tabs__header {
+        margin-bottom: 40px;
+    }
+    
+    .product-page-tabs__header-img {
+        display: none;
+    }
+    
+    .product-page-tabs__header-info {
+        .info {
+            flex-wrap: wrap;
+        }
+        
+        .name {
+            width: 100%;
+        }
+        
+        .project {
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 15px;
+        }
+    } 
+    
+    .product-page__general__caption-wrapper {
+        flex-wrap: wrap;
+        
+        .name-project {
+            width: 100%;
+            margin-bottom: 13px;
+        }
+        
+        .type-project {
+            width: 50%;
+            margin: 0px;
+        }
+        
+        .product__status-tabs {
+            width: 50%;
+            text-align: right;
+            margin: 0px;
+        }
+    }
+    
+    .product-page__info-about-house {
+        display: none;
+    }
+    
+    .product-page__info-wrapper-tabs {
+        .product-page__price {
+            margin-top: 0px;
+        }
+        
+        .product-page__info-body {
+            margin-top: 10px;
+        }
+    }
+    
+    .product-page__plan-item {
+        width: 100%;
+    }
+    
+    .product-page__map-address {
+        margin-top: 10px;
+    }
+    
+    .product-page__map-container {
+        height: 400px;
+    }
+    
+    .product-page__video-item {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .product-page__reviews-header {
+        flex-direction: column;
+        align-items: flex-start;
+        
+        .main-button {
+            margin-top: 15px;
+            margin-left: 0px;
+        }
+    }
+    
+    .product-page__reviews-item {
+        padding: 15px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .product-page__reviews-item__body {
+        margin-top: 10px;
     }
 }
 
