@@ -2555,20 +2555,6 @@ main {
   font-weight: 600;
   padding: 0px 9px;
 }
-.product-page__availability {
-  background-color: #7bc97b;
-  border-radius: 20px;
-  padding: 7px 20px 7px;
-  font-size: 12px;
-  font-weight: 800;
-  color: #ffffff;
-  white-space: nowrap;
-  max-width: 192px;
-  overflow: hidden;
-  margin-right: 10px;
-  text-transform: uppercase;
-  position: relative;
-}
 .product__item__footer {
   display: flex;
   justify-content: space-between;
@@ -5565,13 +5551,52 @@ main {
   margin-left: auto;
 }
 .product__list-tabs .product__status {
-  margin-right: 0px;
+  margin-right: -30px;
 }
 .product__list-tabs .product-page__info-about-house {
   max-width: 100%;
 }
 .product__list-tabs .product__item__footer {
   padding-bottom: 10px;
+}
+.product__list-tabs .about-house-wrapper.floor {
+  margin-right: 25px;
+  margin-left: auto;
+}
+.product__item-sales .product__item__body {
+  opacity: 0.6;
+}
+.product__item-sales .product__item__footer {
+  opacity: 0.6;
+}
+.product__item-sales .product__img {
+  position: relative;
+}
+.product__item-sales .product__img::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(88, 88, 88, 0.6);
+}
+.product__item-sales .product__status {
+  opacity: 0.6;
+}
+.product-page__availability {
+  background-color: #7bc97b;
+  border-radius: 20px;
+  padding: 7px 25px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 192px;
+  overflow: hidden;
+  margin-right: 10px;
+  text-transform: uppercase;
+  position: relative;
 }
 /* Companies */
 .best-company__container {
@@ -7182,6 +7207,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .product__wrapper-list-position .product__list {
     max-width: 760px;
