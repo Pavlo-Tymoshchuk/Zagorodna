@@ -188,19 +188,19 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    transform: translateX(-100%);
+    transform: translateX(-150%);
     opacity: 0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: opacity .4s, transform .6s;
+    transition: opacity .4s, transform .8s;
     
     &.show {
         transform: translateX(0);
         opacity: 1;
         
         ~ .popup-full-screen__item {
-            transform: translateX(100%);
+            transform: translateX(150%);
             opacity: 0;
         } 
     }
