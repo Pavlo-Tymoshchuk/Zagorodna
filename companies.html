@@ -522,24 +522,128 @@
                 <div class="best-company-info__container">
                     <h2 class="main-caption-l">Все компании</h2>
                     <div class="main-filtration__wrapper main-filtration__wrapper-best-company">
-                        <ul class="general-filter__list">
-                            <li class="general-filter__item ">
-                                <div class="general-drop js-drop-item">
-                                    <button type="button" class="general-filter__button js-drop-button">
-                                        <input type="text" class="general-drop-input js-drop-input" value="Киевская область, Киев" readonly="">
-                                        <span class="icon-drop"></span>
-                                        <span class="icon-place-big"></span>
-                                    </button>
+                        <form action="#" class="catalog-filter__form">
+                            <label class="input__wrapper js-filter" data-target="filter">
+                                <input type="text" class="main-input" placeholder="Киевская область, Киев">
+                                <span class="icon-place-big"></span>
+                                <span class="line"></span>
+                            </label>
+                            <label class="input__wrapper">
+                                <input type="text" class="main-input main-input-filter" placeholder="Название компании">
+                            </label>
+                            <button class="catalog__filter-button">
+                                <span class="icon-search"></span>
+                            </button>
+                        </form>
+                        <div class="catalog-filter__drop js-filter-drop catalog-drop" data-target="filter">
+                            <div class="wrapper active">
+                                <h4 class="caption">Выберите область</h4>
+                                <div class="general-drop__container">
                                     <div class="general-drop__wrapper">
                                         <ul class="general-drop__list">
-                                            <li class="general-drop__item js-drop-contains active">Киевская</li>
-                                            <li class="general-drop__item js-drop-contains">Киевская1</li>
-                                            <li class="general-drop__item js-drop-contains">Киевская2</li>
-                                            <li class="general-drop__item js-drop-contains">Киевская3</li>
+                                            <li class="general-drop__item">
+                                                <span>Одесская</span>
+                                                <span class="icon-drop"></span>
+                                            </li>
+                                            <li class="general-drop__item">
+                                                <span>Киевская</span>
+                                                <span class="icon-drop"></span>
+                                            </li>
+                                            <li class="general-drop__item">
+                                                <span>Одесса</span>
+                                                <span class="icon-drop"></span>
+                                            </li>
+                                            <li class="general-drop__item">
+                                                <span>Ивано-Франковская</span>
+                                                <span class="icon-drop"></span>
+                                            </li>
+                                        </ul>
+                                        <ul class="general-drop__list">
+                                            <li class="general-drop__item">
+                                                <span>Одесская</span>
+                                                <span class="icon-drop"></span>
+                                            </li>
+                                            <li class="general-drop__item">
+                                                <span>Киевская</span>
+                                                <span class="icon-drop"></span>
+                                            </li>
+                                            <li class="general-drop__item">
+                                                <span>Одесса</span>
+                                                <span class="icon-drop"></span>
+                                            </li>
+                                            <li class="general-drop__item">
+                                                <span>Ивано-Франковская</span>
+                                                <span class="icon-drop"></span>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
-                            </li>
+                            </div>
+                            <div class="wrapper">
+                                <h4 class="caption">Выберите город</h4>
+                                <div class="general-drop__container">
+                                    <div class="general-drop__wrapper">
+                                        <ul class="general-drop__list">
+                                            <li class="general-drop__item">
+                                                <span>Одесса</span>
+                                                <span class="icon-drop"></span>
+                                            </li>
+                                            <li class="general-drop__item">
+                                                <span>Арциз</span>
+                                                <span class="icon-drop"></span>
+                                            </li>
+                                            <li class="general-drop__item">
+                                                <span>Балта</span>
+                                                <span class="icon-drop"></span>
+                                            </li>
+                                            <li class="general-drop__item">
+                                                <span>Ивано-Франковская</span>
+                                                <span class="icon-drop"></span>
+                                            </li>
+                                        </ul>
+                                        <ul class="general-drop__list">
+                                            <li class="general-drop__item">
+                                                <span>Одесса</span>
+                                                <span class="icon-drop"></span>
+                                            </li>
+                                            <li class="general-drop__item">
+                                                <span>Киевская</span>
+                                                <span class="icon-drop"></span>
+                                            </li>
+                                            <li class="general-drop__item">
+                                                <span>Одесса</span>
+                                                <span class="icon-drop"></span>
+                                            </li>
+                                            <li class="general-drop__item">
+                                                <span>Ивано-Франковская</span>
+                                                <span class="icon-drop"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrapper">
+                                <h4 class="caption">Выберите район</h4>
+                                <div class="general-drop__container">
+                                    <div class="general-drop__wrapper">
+                                        <ul class="general-drop__list">
+                                            <li class="general-drop__item">Поселок Котовского</li>
+                                            <li class="general-drop__item">Поселок Таирова</li>
+                                            <li class="general-drop__item">Исторический центр</li>
+                                            <li class="general-drop__item">Днепр</li>
+                                            <li class="general-drop__item">Киев</li>
+                                            <li class="general-drop__item">Харьков</li>
+                                            <li class="general-drop__item">Одесса</li>
+                                            <li class="general-drop__item">Днепр</li>
+                                            <li class="general-drop__item">Молдаванка</li>
+                                            <li class="general-drop__item">Заставы и Ленпоселок </li>
+                                            <li class="general-drop__item">Ближние Мельницы</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="general-filter__list">
                             <li class="general-filter__item">
                                 <div class="general-drop js-drop-item">
                                     <button type="button" class="general-filter__button js-drop-button">

@@ -3958,6 +3958,7 @@
 .product-page-tabs__header-info {
     display: flex;
     flex-direction: column;
+    width: 100%;
     
     .main-caption-l {
         display: -webkit-box;
@@ -3968,7 +3969,9 @@
     }
     .wrapper {
         display: flex;
+        justify-content: space-between;
         margin-bottom: auto;
+        width: 100%;
     }
     
     .general-noty__buttons-container {
@@ -4179,7 +4182,7 @@
     border-radius: 6px;
     overflow: hidden;
     
-    iframe {
+    video {
         width: 100%;
         height: 100%;
     }
@@ -4318,32 +4321,46 @@
 }
 
 .main-filtration__wrapper-best-company {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 50px;
     margin-top: 45px;
+    position: relative;
+    background-color: transparent;
     
-    .general-filter__item {
-        max-width: 50% !important;
+    .catalog-filter__drop {
+        left: 0px;
+    }
+    
+    .catalog-filter__form {
+        max-width: calc(67% - 15px);
+        width: 100%;
         
-        &:nth-child(1) {
-            .icon-place-big {
-                position: absolute;
-                left: 30px;
-                top: 50%;
-                transform: translateY(-50%);
-                font-size: 24px;
-                color: #ababab;
-            }
+        .catalog__filter-button {
+            max-width: 58px;
             
-            .general-filter__button {
-                padding-left: 65px;
+            .icon-search {
+                padding: 0px;
             }
         }
-        &:nth-child(2) {
-            margin-right: 0px;
-            
-            &::before {
-                display: none;
-            }
+        
+        .main-input {
+            background-color: #f5f5f5;
+        }
+    }
+    
+    .general-filter__list {
+        max-width: calc(33% - 15px);
+        width: 100%;
+        
+    }
+    
+    .general-filter__item {
+        background-color: #ffffff;
+        border-radius: 6px;
+        
+        &::before {
+            display: none;
         }
         
         .general-drop-input {
