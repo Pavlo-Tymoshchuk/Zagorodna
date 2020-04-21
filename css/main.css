@@ -1909,6 +1909,13 @@ main {
     background-color: #f5850c;
     transition: none;
   }
+  .researches__link:hover {
+    color: #2c922c;
+  }
+  .researches__link:hover:active {
+    color: #f5850c;
+    transition: none;
+  }
   /* /FAQ */
   /* Dictionary */
   .dictionary__letter-link:hover {
@@ -6474,6 +6481,7 @@ main {
   align-items: center;
   padding: 30px;
   font-size: 17px;
+  transition: color 0.4s;
 }
 .researches__link .icon-arrow-more {
   font-size: 11px;
