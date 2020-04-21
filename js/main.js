@@ -528,24 +528,32 @@ document.addEventListener('DOMContentLoaded', function(){
         let item = e.target;
         let allWrappers = document.querySelectorAll('.js-filter-drop');
         let allItems = document.querySelectorAll('.js-filter');
+        let htmlOVerflow = document.querySelector('html');
         
         if(item.closest('.js-filter')) {
             let target = item.closest('.js-filter').getAttribute('data-target');
             let filterWrapper = document.querySelector('.js-filter-drop[data-target = ' + target + ']');
+            let activeElem = item.closest('.js-filter');
+            
+            if(target == "full-filter") {
+                htmlOVerflow.classList.add('overflow');
+            }
             
             if(filterWrapper.classList.contains("active")){
                 filterWrapper.classList.remove('active');
-                item.closest('.js-filter').classList.remove('active');
+                activeElem.classList.remove('active');
             }else {
                 allWrappers.forEach((item) => {
                     item.classList.remove('active');
                 });
+                
                  filterWrapper.classList.add('active');
-                 item.closest('.js-filter').classList.add('active');
+                 activeElem.classList.add('active');
             }
         }
         
         if(!item.closest('.js-filter') && !item.closest(".js-filter-drop")) {
+            htmlOVerflow.classList.remove('overflow');
             
             if(allWrappers) {
                 allWrappers.forEach((item) => {
@@ -573,7 +581,9 @@ document.addEventListener('DOMContentLoaded', function(){
         }
         
         if(item.closest(".js-catalog-back")) {
+            htmlOVerflow.classList.remove('overflow');
             document.querySelector('.js-filter-drop[data-target = full-filter ]').classList.remove('active');
+            document.querySelector('.js-filter[data-target = full-filter ]').classList.remove('active');
         }
     });
     
@@ -586,6 +596,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let buttonPrev = document.querySelector('.js-image-button-prev');
     let buttonNext = document.querySelector('.js-image-button-next');
     let setAllNumber = document.querySelector('.js-slider-number .all');
+    let generalList = document.querySelector('.product-page__img-list'); 
     
     function setCurrentSlideIndex(item) {
         let slider = item.closest('.slider');
@@ -635,12 +646,11 @@ document.addEventListener('DOMContentLoaded', function(){
             buttonPrev.addEventListener('click', function(){
                 let showImg = document.querySelector('.js-image.active');
                 
-                
                 if(!showImg.previousElementSibling) {
                     return;
                 }
                 
-                showImg.previousElementSibling.scrollIntoView({block: "nearest", behavior: "smooth", inline: "nearest"});
+                showImg.previousElementSibling.scrollIntoView({block: "center", behavior: "smooth", inline: "center"});
 
                 showImg.previousElementSibling.classList.add("active");
                 showImg.classList.remove("active");
@@ -664,8 +674,8 @@ document.addEventListener('DOMContentLoaded', function(){
                 if(!showImg.nextElementSibling) {
                     return;
                 }
-                
-                showImg.nextElementSibling.scrollIntoView({block: "nearest", behavior: "smooth", inline: "nearest"});
+
+                showImg.nextElementSibling.scrollIntoView({block: "nearest", inline: "center"});
                 
                 showImg.nextElementSibling.classList.add("active");
                 showImg.classList.remove("active");

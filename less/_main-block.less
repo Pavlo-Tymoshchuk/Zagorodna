@@ -1831,14 +1831,28 @@
     display: flex;
     position: relative;
     box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.08);
-    border: 4px solid #d3d3d3;
+    border: 4px solid transparent;
     border-radius: 6px;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        left: -4px;
+        top: -4px;
+        width: 100%;
+        height: 100%;
+        border: 4px solid #ffffff;
+        border-radius: 6px;
+        z-index: -1;
+        transition: border-color .4s;
+    }
     
     .input__wrapper {
         width: 50%;
         
-        &.active {
-            .main-input {
+        .main-input {
+            &.active {
+                
                 background-color: #ffffff;
                 
                 &::placeholder {
@@ -1854,7 +1868,7 @@
         &:first-of-type {
             .main-input {
                 border-right: none;
-                border-radius: 6px 0px 0px 6px;
+                // border-radius: 6px 0px 0px 6px;
                 padding-left: 60px;
                 cursor: pointer;
                 
@@ -3223,7 +3237,7 @@
         &::after {
             content: "";
             position: absolute;
-            right: -2px;
+            right: -3px;
             top: 3px;
             height: 33px;
             width: 1px;
@@ -3233,7 +3247,7 @@
         
         &::before {
             right: auto;
-            left: -2px;
+            left: -3px;
         }
         
         &:first-of-type {
@@ -3842,6 +3856,7 @@
 
 .product-page__characteristic-item {
     display: flex;
+    align-items: center;
     background-color: #fafafa;
     border-radius: 6px;
     width: calc(33.333% - 30px);
@@ -4655,4 +4670,37 @@
 
 .article-page__more-news {
     margin: 90px 0px;
+}
+
+/* //Article */
+
+/* Company page */
+
+.company-page {
+    position: relative;
+}
+
+.company-page__main {
+    padding: 55px 0px 70px;
+    
+}
+
+.company-page__main__bg {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    left: 0px;
+    top: -70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.company-page__caption {
+    font-family: "Circe", sans-serif;
+    color: #000000;
+    font-size: 42px;
+    text-transform: uppercase;
+    
 }
