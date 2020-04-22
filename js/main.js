@@ -419,7 +419,6 @@ document.addEventListener('DOMContentLoaded', function(){
             }
             
             if(dataIndex > 1 && dataIndex < allPopupItem.length) {
-                console.log("ssds")
                 buttonPrev.classList.remove('disabled');
                 buttonNext.classList.remove('disabled');
             }
@@ -474,7 +473,6 @@ document.addEventListener('DOMContentLoaded', function(){
     // Popup
         
     let mainButton = document.querySelectorAll('.js-button');
-    let overlay = document.querySelector('.overlay');
     let htmlOverflow = document.querySelector('html');
     
     for(var i = 0; mainButton.length > i; i++) {
@@ -507,7 +505,7 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         }
         
-        if(!elem.closest(".popup__wrapper") && !elem.closest(".js-button") && !elem.closest('.js-close') && !elem.closest('.popup-button') && !elem.closest('.footer-callback__form')) {
+        if(!elem.closest(".popup__wrapper") && !elem.closest(".js-button") && !elem.closest('.js-close') && !elem.closest('.popup-button') && !elem.closest('.footer-callback__form') && !elem.closest('.js-filter') && !elem.closest(".js-filter-drop")) {
             if(popupActive) {
                 popupActive.classList.remove('active');
                 htmlOverflow.classList.remove('overflow');
@@ -553,7 +551,6 @@ document.addEventListener('DOMContentLoaded', function(){
         }
         
         if(!item.closest('.js-filter') && !item.closest(".js-filter-drop")) {
-            htmlOVerflow.classList.remove('overflow');
             
             if(allWrappers) {
                 allWrappers.forEach((item) => {
@@ -715,7 +712,8 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     
     // //Show product img
-});
+    
+    });
 
 window.addEventListener("DOMContentLoaded", function() {
     [].forEach.call( document.querySelectorAll('input[type="tel"]'), function(input) {
@@ -752,4 +750,4 @@ window.addEventListener("DOMContentLoaded", function() {
   
   });
   
-  });
+});

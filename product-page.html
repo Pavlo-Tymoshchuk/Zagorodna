@@ -562,13 +562,13 @@
                                 </div>
                             </div>
                             <div class="product-page__buttons">
-                                <button class="product-page__button general-button-color product-page__button-phone">
+                                <button class="product-page__button general-button-color product-page__button-phone js-button" data-target="call-back-phone">
                                     <span class="icon-phone"></span>
                                     <span>+38 050 384-44-98</span>
                                 </button>
-                                <button class="product-page__button filter-button">приобрести</button>
-                                <button class="product-page__button general-button-color product-page__button-question">Задать вопрос</button>
-                                <button class="product-page__button catalog__filter-button product-page__button-meeting">Назначить визит</button>
+                                <button class="product-page__button filter-button js-button" data-target="help">помощь с подбором</button>
+                                <button class="product-page__button general-button-color product-page__button-question js-button" data-target="questions">Задать вопрос</button>
+                                <button class="product-page__button catalog__filter-button product-page__button-meeting js-button" data-target="meeting">визит в отдел продаж</button>
                             </div>
                         </div>
                         <div class="product-page__info-footer">
@@ -1527,6 +1527,112 @@
                     </div>
 
                 </div>
+            </div>
+        </section>
+        <section class="popup" data-target="questions">
+            <div class="popup__wrapper popup-call-back">
+                <button class="close-popup js-close close-popup-inner">
+                    <span class="decor"></span>
+                </button>
+                <h5 class="popup-caption">Задайте ваш вопрос по наличию и ценам</h5>
+                <form action="#" class="popup-call-back__form">
+                    <label class="input__wrapper">
+                        <span class="input__caption">Имя</span>
+                        <input type="text" class="main-input" placeholder="Как к вам обращаться?">
+                    </label>
+                    <label class="input__wrapper">
+                        <span class="input__caption">Контактный телефон*</span>
+                        <input type="tel" class="main-input" placeholder="Номер телефона">
+                    </label>
+                    <label class="input__wrapper">
+                        <span class="input__caption">Email*</span>
+                        <input type="email" class="main-input" placeholder="Ваш электронный адрес" required>
+                    </label>
+                    <label class="textarea__wrapper">
+                        <span class="input__caption">Какой проект вам нужен?</span>
+                        <textarea class="main-textarea" placeholder="Напишите дополнительно"></textarea>
+                    </label>
+                    <button class="main-button">Отправить</button>
+                </form>
+            </div>
+        </section>
+        <section class="popup" data-target="help">
+            <div class="popup__wrapper popup-call-back">
+                <button class="close-popup js-close close-popup-inner">
+                    <span class="decor"></span>
+                </button>
+                <h5 class="popup-caption">Поможем подобрать дом в нашем городке</h5>
+                <form action="#" class="popup-call-back__form">
+                    <label class="input__wrapper">
+                        <span class="input__caption">Имя</span>
+                        <input type="text" class="main-input" placeholder="Как к вам обращаться?">
+                    </label>
+                    <label class="input__wrapper">
+                        <span class="input__caption">Контактный телефон*</span>
+                        <input type="tel" class="main-input" placeholder="Номер телефона">
+                    </label>
+                    <label class="input__wrapper">
+                        <span class="input__caption">Email*</span>
+                        <input type="email" class="main-input" placeholder="Ваш электронный адрес" required>
+                    </label>
+                    <label class="textarea__wrapper">
+                        <span class="input__caption">Какой проект вам нужен?</span>
+                        <textarea class="main-textarea" placeholder="Напишите дополнительно"></textarea>
+                    </label>
+                    <button class="main-button">Отправить</button>
+                </form>
+            </div>
+        </section>
+        <section class="popup" data-target="meeting">
+            <div class="popup__wrapper popup-call-back">
+                <button class="close-popup js-close close-popup-inner">
+                    <span class="decor"></span>
+                </button>
+                <h5 class="popup-caption">Назначить визит в отдел продаж</h5>
+                <form action="#" class="popup-call-back__form">
+                    <label class="input__wrapper">
+                        <span class="input__caption">Имя</span>
+                        <input type="text" class="main-input" placeholder="Как к вам обращаться?">
+                    </label>
+                    <div class="popup-call-back__meeting-wrapper">
+                        <label class="input__wrapper">
+                            <span class="input__caption">Контактный телефон*</span>
+                            <input type="tel" class="main-input" placeholder="Номер телефона">
+                        </label>
+                        <label class="input__wrapper">
+                            <span class="input__caption">Email*</span>
+                            <input type="email" class="main-input" placeholder="Ваш электронный адрес" required>
+                        </label>
+                    </div>
+                    <label class="input__wrapper">
+                        <span class="input__caption">Дата визита*</span>
+                        <input type="text" class="main-input" placeholder="Удобная вам дата визита" required>
+                    </label>
+                    <label class="textarea__wrapper">
+                        <span class="input__caption">Какой проект вам нужен?</span>
+                        <textarea class="main-textarea" placeholder="Напишите дополнительно"></textarea>
+                    </label>
+                    <button class="main-button">Отправить</button>
+                </form>
+            </div>
+        </section>
+        <section class="popup" data-target="call-back-phone">
+            <div class="popup__wrapper popup-call-back">
+                <button class="close-popup js-close close-popup-inner">
+                    <span class="decor"></span>
+                </button>
+                <h5 class="popup-caption">Заказать обратный звонок</h5>
+                <form action="#" class="popup-call-back__form">
+                    <label class="input__wrapper">
+                        <span class="input__caption">Имя</span>
+                        <input type="text" class="main-input" placeholder="Как к вам обращаться?">
+                    </label>
+                    <label class="input__wrapper">
+                        <span class="input__caption">Контактный телефон*</span>
+                        <input type="tel" class="main-input" placeholder="Номер телефона">
+                    </label>
+                    <button class="main-button">Отправить</button>
+                </form>
             </div>
         </section>
     </main>

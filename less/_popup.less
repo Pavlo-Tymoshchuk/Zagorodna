@@ -142,6 +142,7 @@
 .popup-caption {
     font-family: "Circe", sans-serif;
     font-size: 26px;
+    line-height: 30px;
     text-align: center;
     margin-bottom: 25px;
 }
@@ -160,8 +161,27 @@
         height: 48px;
         margin: 40px auto 0px;
     }
+    
+    .main-input,
+    .main-textarea {
+        &::placeholder {
+            color: #949494;
+        }
+    }
+    
+    .input__caption {
+        color: #3d3d3d;
+    }
 }
 
+.popup-call-back__meeting-wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+    .input__wrapper {
+        width: calc(50% - 15px);
+    }
+}
 
 /* Popup full screen */
 
@@ -309,3 +329,16 @@
     }
 }
 
+@media (max-width: 768px) {
+    .popup-call-back {
+        padding: 25px 30px 30px;
+    }
+    
+    .popup-call-back__meeting-wrapper {
+        flex-direction: column;
+        
+        .input__wrapper {
+            width: 100%;
+        }
+    }
+}
