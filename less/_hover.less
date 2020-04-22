@@ -1023,6 +1023,7 @@
             .custome-checkbox {
                 border-color: #2c922c;
                 color: #2c922c;
+                background-color: #ffffff;
             }
         }
     }
@@ -1040,6 +1041,62 @@
     }
     
     /* Call back */
+    
+    /* Comparison */
+    
+    .comparison__product__item-add-new {
+        a {
+            &:hover {
+                color: #2c922c;
+                
+                .decor {
+                    border-color: #7bc97b;
+                }
+                
+                .icon-plus {
+                    color: #7bc97b;
+                }
+                
+                &:active {
+                    color: #f39631;
+                    transition: none;
+                    
+                    .decor {
+                        border-color: #f39631;
+                        transition: none;
+                    }
+                    
+                    .icon-plus {
+                        color: #f39631;
+                        transition: none;
+                    }
+                }
+            }
+        }
+    }
+    
+    .comparison__button {
+        &:hover {
+            background-color: #f5850c;
+            
+            + .comparison__button__placeholder {
+                opacity: 1;
+                visibility: visible;
+                transition: opacity .4s, visibility 0s 0s;
+            }
+        }
+    }
+    
+    .comparison__product__link {
+        &:hover {
+            color: #2c922c;
+            
+            &:active {
+                color: #f5850c;
+                transition: none;
+            }
+        }
+    }
     
     /* Best-company-info */
     
