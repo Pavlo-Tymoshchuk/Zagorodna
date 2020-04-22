@@ -9867,6 +9867,7 @@ main {
     border-radius: 6px;
     width: 40px;
     height: 40px;
+    margin: 0px !important;
   }
   .comparison__mobile__buttons .general-noty__button-sing-up,
   .comparison__mobile__buttons .general-noty__button-favorite {
