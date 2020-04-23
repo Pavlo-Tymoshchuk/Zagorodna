@@ -28,17 +28,17 @@
             height: 0px;
         }
     </style>
-    <!-- <script>
+    <script>
         window.onload = function() {
             let preloader = document.querySelector(".preloader");
             preloader.classList.add('hide');
         }
-    </script> -->
+    </script>
 </head>
 <body>
-    <!-- <div class="preloader">
+    <div class="preloader">
         <img src="./img/Preloader.gif" alt="Preload">
-    </div> -->
+    </div>
      <header class="header">
         <div class="header__top">
             <div class="header__city general-drop js-drop-item">
@@ -592,7 +592,7 @@
                                 </a>
                             </div>
                             <ul class="comparison__product__list js-mousewheel">
-                                <li class="comparison__product__item">
+                                <li class="comparison__product__item js-mousewheel-item">
                                     <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
                                         <button class="close-popup comparison__delete">
                                             <span class="decor"></span>
@@ -645,7 +645,60 @@
                                         <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
                                     </div>
                                 </li>
-                                <li class="comparison__product__item">
+                                <li class="comparison__product__item js-mousewheel-item">
+                                    <div class="comparison__product__item-body" style='background-image: url(./img/product-img-2.png);'>
+                                        <button class="close-popup comparison__delete">
+                                            <span class="decor"></span>
+                                        </button>
+                                        <div class="general-noty__buttons-container">
+                                            <button class="general-noty__button general-noty__button-sing-up active">
+                                                <span class="icon-bell-outline"></span>
+                                            </button>
+                                            <button class="general-noty__button general-noty__button-favorite">
+                                                <span class="icon-heart-outline"></span>
+                                            </button>
+                                        </div>
+                                        <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
+                                        <div class="comparison__buttons__wrapper">
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
+                                                    <span class="icon-phone"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Обратный звонок</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-write js-button" data-target="questions">
+                                                    <span class="icon-message"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Написать нам</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
+                                                    <span class="icon-calendar"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Назначить визит</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-buy js-button" data-target="help">
+                                                    <span class="icon-key"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Подобрать</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comparison__product__item-footer">
+                                        <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
+                                    </div>
+                                </li>
+                                <li class="comparison__product__item js-mousewheel-item">
                                     <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
                                         <button class="close-popup comparison__delete">
                                             <span class="decor"></span>
@@ -698,7 +751,7 @@
                                         <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
                                     </div>
                                 </li>
-                                <li class="comparison__product__item">
+                                <li class="comparison__product__item js-mousewheel-item">
                                     <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
                                         <button class="close-popup comparison__delete">
                                             <span class="decor"></span>
@@ -751,7 +804,60 @@
                                         <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
                                     </div>
                                 </li>
-                                <li class="comparison__product__item">
+                                <li class="comparison__product__item js-mousewheel-item">
+                                    <div class="comparison__product__item-body" style='background-image: url(./img/product-img-2.png);'>
+                                        <button class="close-popup comparison__delete">
+                                            <span class="decor"></span>
+                                        </button>
+                                        <div class="general-noty__buttons-container">
+                                            <button class="general-noty__button general-noty__button-sing-up active">
+                                                <span class="icon-bell-outline"></span>
+                                            </button>
+                                            <button class="general-noty__button general-noty__button-favorite">
+                                                <span class="icon-heart-outline"></span>
+                                            </button>
+                                        </div>
+                                        <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
+                                        <div class="comparison__buttons__wrapper">
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
+                                                    <span class="icon-phone"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Обратный звонок</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-write js-button" data-target="questions">
+                                                    <span class="icon-message"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Написать нам</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
+                                                    <span class="icon-calendar"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Назначить визит</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-buy js-button" data-target="help">
+                                                    <span class="icon-key"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Подобрать</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comparison__product__item-footer">
+                                        <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
+                                    </div>
+                                </li>
+                                <li class="comparison__product__item js-mousewheel-item">
                                     <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
                                         <button class="close-popup comparison__delete">
                                             <span class="decor"></span>
@@ -804,113 +910,7 @@
                                         <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
                                     </div>
                                 </li>
-                                <li class="comparison__product__item">
-                                    <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
-                                        <button class="close-popup comparison__delete">
-                                            <span class="decor"></span>
-                                        </button>
-                                        <div class="general-noty__buttons-container">
-                                            <button class="general-noty__button general-noty__button-sing-up active">
-                                                <span class="icon-bell-outline"></span>
-                                            </button>
-                                            <button class="general-noty__button general-noty__button-favorite">
-                                                <span class="icon-heart-outline"></span>
-                                            </button>
-                                        </div>
-                                        <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
-                                        <div class="comparison__buttons__wrapper">
-                                            <div class="comparison__button__container">
-                                                <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
-                                                    <span class="icon-phone"></span>
-                                                </button>
-                                                <div class="comparison__button__placeholder">
-                                                    <p>Обратный звонок</p>
-                                                </div>
-                                            </div>
-                                            <div class="comparison__button__container">
-                                                <button class="comparison__button comparison__button-write js-button" data-target="questions">
-                                                    <span class="icon-message"></span>
-                                                </button>
-                                                <div class="comparison__button__placeholder">
-                                                    <p>Написать нам</p>
-                                                </div>
-                                            </div>
-                                            <div class="comparison__button__container">
-                                                <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
-                                                    <span class="icon-calendar"></span>
-                                                </button>
-                                                <div class="comparison__button__placeholder">
-                                                    <p>Назначить визит</p>
-                                                </div>
-                                            </div>
-                                            <div class="comparison__button__container">
-                                                <button class="comparison__button comparison__button-buy js-button" data-target="help">
-                                                    <span class="icon-key"></span>
-                                                </button>
-                                                <div class="comparison__button__placeholder">
-                                                    <p>Подобрать</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__product__item-footer">
-                                        <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
-                                    </div>
-                                </li>
-                                <li class="comparison__product__item">
-                                    <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
-                                        <button class="close-popup comparison__delete">
-                                            <span class="decor"></span>
-                                        </button>
-                                        <div class="general-noty__buttons-container">
-                                            <button class="general-noty__button general-noty__button-sing-up active">
-                                                <span class="icon-bell-outline"></span>
-                                            </button>
-                                            <button class="general-noty__button general-noty__button-favorite">
-                                                <span class="icon-heart-outline"></span>
-                                            </button>
-                                        </div>
-                                        <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
-                                        <div class="comparison__buttons__wrapper">
-                                            <div class="comparison__button__container">
-                                                <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
-                                                    <span class="icon-phone"></span>
-                                                </button>
-                                                <div class="comparison__button__placeholder">
-                                                    <p>Обратный звонок</p>
-                                                </div>
-                                            </div>
-                                            <div class="comparison__button__container">
-                                                <button class="comparison__button comparison__button-write js-button" data-target="questions">
-                                                    <span class="icon-message"></span>
-                                                </button>
-                                                <div class="comparison__button__placeholder">
-                                                    <p>Написать нам</p>
-                                                </div>
-                                            </div>
-                                            <div class="comparison__button__container">
-                                                <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
-                                                    <span class="icon-calendar"></span>
-                                                </button>
-                                                <div class="comparison__button__placeholder">
-                                                    <p>Назначить визит</p>
-                                                </div>
-                                            </div>
-                                            <div class="comparison__button__container">
-                                                <button class="comparison__button comparison__button-buy js-button" data-target="help">
-                                                    <span class="icon-key"></span>
-                                                </button>
-                                                <div class="comparison__button__placeholder">
-                                                    <p>Подобрать</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__product__item-footer">
-                                        <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
-                                    </div>
-                                </li>
-                                <li class="comparison__product__item">
+                                <li class="comparison__product__item js-mousewheel-item">
                                     <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
                                         <button class="close-popup comparison__delete">
                                             <span class="decor"></span>
@@ -964,6 +964,12 @@
                                     </div>
                                 </li>
                             </ul>
+                            <button class="general-button prev js-button-scroll-prev disabled">
+                                <span class="icon-arrow-left"></span>
+                            </button>
+                            <button class="general-button next js-button-scroll-next">
+                                <span class="icon-arrow-right"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1776,24 +1782,51 @@
         // Scroll comparison
         
         function scrollBloks() {
-            if(window.innerWidth > 1195) {
-                document.addEventListener('mouseover', function(e){
-                    let item = e.target;
-                    
-                    if(item.closest('.js-mousewheel')) {
-                        let activeItem = item.closest('.js-mousewheel');
-                        
-                        activeItem.addEventListener('mousewheel', function(e){
-                            var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-                            let allItem = document.querySelectorAll(".js-mousewheel");
-                            allItem.forEach((allItem) => {
-                                allItem.scrollLeft -= (delta*15);
-                            });
-                            e.preventDefault();
-                        });
+            
+            let buttonNext = document.querySelector('.js-button-scroll-next');
+            let buttonPrev = document.querySelector('.js-button-scroll-prev');
+            
+            let allScrollsItems = document.querySelectorAll(".js-mousewheel");
+            let widthContainer = document.querySelector('.js-mousewheel').offsetWidth;
+            let productItem = document.querySelector('.js-mousewheel-item');
+            let productItemAll = document.querySelectorAll('.js-mousewheel-item');
+            
+            let style = productItem.currentStyle || window.getComputedStyle(productItem);
+            let marginItem = style.marginRight.replace(/[^\d]/g, "");
+            let fullWidthElem = productItem.offsetWidth + +marginItem;
+            let maxScrollLeft = (fullWidthElem * productItemAll.length) - widthContainer;
+
+            if(maxScrollLeft <= 0) {
+                buttonNext.classList.add('disabled');
+            }else {
+                buttonNext.classList.remove('disabled');
+            }
+            
+            buttonNext.addEventListener('click', function(){
+                buttonPrev.classList.remove('disabled');
+                
+                allScrollsItems.forEach((item) => {
+                    if(item.scrollLeft < maxScrollLeft) {
+                        item.scrollLeft += fullWidthElem;
+
+                        if(!(item.scrollLeft < (maxScrollLeft - fullWidthElem))){
+                            buttonNext.classList.add('disabled');
+                        }
                     }
                 });
-            }
+            });
+            
+            buttonPrev.addEventListener('click', function(){
+                buttonNext.classList.remove('disabled');
+                
+                allScrollsItems.forEach((item) => {
+                    item.scrollLeft -= fullWidthElem;
+                    
+                    if(item.scrollLeft < 100) {
+                        buttonPrev.classList.add('disabled');
+                    }
+                });
+            });
         }
         
         var startPointX;
@@ -1820,12 +1853,11 @@
             
             item.addEventListener("touchend", function(event) {
                 valueScroll += (startPointX - startPointXMover);
-                console.log(valueScroll)
             }, false)
             
         });
         
-        // scrollBloks();
+        scrollBloks();
             
         function showProductList() {
             let stikyBlockHeight = document.querySelector('.js-comparison-wrapper-product').offsetHeight;
@@ -1856,7 +1888,7 @@
         
         window.addEventListener("resize",function(){
             showProductList();
-            // scrollBloks();
+            scrollBloks();
         });
         
         showProductList()

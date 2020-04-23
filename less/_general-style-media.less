@@ -46,6 +46,16 @@
             margin-left: 0px;
         }
     }
+    
+    .main-filtration__wrapper-favorite {
+        .general-filter__list {
+            justify-content: space-between;
+        }
+        
+        .general-filter__item {
+            max-width: calc(33.333% - 2px) !important;
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -118,15 +128,15 @@
         box-shadow: none;
         
         .general-filter__list {
-            align-items: center;
-            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
         
         .general-filter__item {
             margin-bottom: 30px;
-            max-width: 450px;
+            max-width: calc(50% - 20px) !important;
             background-color: #ffffff;
-            margin-right: 0px;
+            margin-right: 0px !important;
             border-radius: 6px;
             
             .general-drop {
@@ -135,10 +145,6 @@
             
             &::before {
                 display: none;
-            }
-            
-            &:last-child {
-                margin-bottom: 0px;
             }
         }
     }
@@ -208,12 +214,6 @@
         }
     }
     
-    .main-filtration__wrapper-news {
-        .general-filter__item {
-            max-width: 100%;
-        }
-    }
-    
     .general-tabs {
         width: calc(100% + 40px);
         margin-left: -20px;
@@ -222,6 +222,44 @@
     .general-tabs__list {
         
         padding: 25px 35px;
+    }
+    
+    .main-filtration__wrapper-favorite {
+        background-color: transparent;
+        
+        .general-filter__list {
+            justify-content: space-between;
+        }
+        
+        .general-filter__item {
+            max-width: 100% !important;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            border-radius: 6px;
+            margin-right: 0px !important;
+            
+            &::before {
+                display: none;
+            }
+        }
+    }
+    
+    /* Reviws */
+    
+    .add-reviews {
+        &.active {
+            padding: 25px;
+            max-height: 600px;
+        }
+        
+        .input__wrapper {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+        
+        .textarea__wrapper {
+            margin-bottom: 25px;
+        }
     }
 }
 
@@ -273,6 +311,12 @@
             &::before {
                 display: none;
             }
+        }
+    }
+    
+    .main-filtration__wrapper-news {
+        .general-filter__item {
+            max-width: 100% !important;
         }
     }
     

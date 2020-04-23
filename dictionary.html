@@ -447,36 +447,26 @@
             </div>
         </section>
         <section class="dictionary">
-            <div class="dictionary__letter-sticy">
-                <div class="container">
-                    <ul class="dictionary__letter-list">
-                        <li class="dictionary__letter-item">
-                            <a class="dictionary__letter-link" href="#">а</a>
-                        </li>
-                        <li class="dictionary__letter-item">
-                            <a class="dictionary__letter-link" href="#">б</a>
-                        </li>
-                        <li class="dictionary__letter-item">
-                            <a class="dictionary__letter-link" href="#">в</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <div class="dictionary__wrapper container">
                 <h2 class="main-caption-l main-caption-l--transform">Словарь терминов и определний</h2>
                 <p class="dictionaty__text">Знать термины необходимо для того, чтобы грамотно оперировать определениями на рынке недвижимости и строительства. С этой целью редакция портала загородной недвижимости Zagorodna.com подготовила краткий справочник по профессиональной терминологии сферы недвижимого имущества. Он поможет профессионалам рынка оперативно и правильно оперировать терминами в сфере недвижимости, оценки, ипотеки, строительства. В нашем словаре (глоссарии) собран перечень наиболее распространенных специальных терминов в сфере жилой и загородной недвижимости. Термины в словаре сгруппированы в алфавитном порядке. Этот алфавитный список терминов нужно знать при операциях и сделках с недвижимостью риелторам. Здесь собраны наиболее часто употребляемые понятия, дано значение слов и фраз, аббревиатур. Применяйте наш словарь терминов с удовольствием в вашей работе!</p>
-                <ul class="dictionary__letter-list">
-                    <li class="dictionary__letter-item">
-                        <a class="dictionary__letter-link" href="#">а</a>
-                    </li>
-                     <li class="dictionary__letter-item">
-                        <a class="dictionary__letter-link" href="#">б</a>
-                    </li>
-                    <li class="dictionary__letter-item">
-                        <a class="dictionary__letter-link" href="#">в</a>
-                    </li>
-                </ul>
-                <ul class="dictionary__letter-content-list">
+                <div class="dictionary__letter__header js-dictionary-header">
+                    <div class="dictionary__letter__header__wrapper js-dictionary-wrapper">
+                        <ul class="dictionary__letter-list">
+                            <li class="dictionary__letter-item">
+                                <a class="dictionary__letter-link" href="#">а</a>
+                            </li>
+                            <li class="dictionary__letter-item">
+                                <a class="dictionary__letter-link" href="#">б</a>
+                            </li>
+                            <li class="dictionary__letter-item">
+                                <a class="dictionary__letter-link" href="#">в</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <ul class="dictionary__letter-content-list js-dictionary-body">
                     <li class="dictionary__letter-content-item">
                         <div class="caption">
                             <h3>A</h3>
@@ -916,6 +906,44 @@
             </form>
         </div>
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            function showDictionaryList() {
+                let stikyBlockHeight = document.querySelector('.js-dictionary-wrapper').offsetHeight;
+                let stikyBlock = document.querySelector('.js-dictionary-wrapper');
+                let hideBlock = document.querySelector('.js-dictionary-header');
+                let dictionaryBodyBottom = document.querySelector('.js-dictionary-body').getBoundingClientRect().bottom;
+                
+                if(dictionaryBodyBottom < stikyBlockHeight) {
+                    stikyBlock.setAttribute('style', 'position: absolute');
+                    return;
+                }else {
+                    stikyBlock.setAttribute('style', 'position: fixed');
+                }
+            
+                if(hideBlock.getBoundingClientRect().top < 10) {
+                    hideBlock.style.height = stikyBlockHeight + "px";
+                    stikyBlock.setAttribute('style', 'position: fixed');
+                    stikyBlock.classList.add("fixed");
+                }else {
+                    hideBlock.style.height = stikyBlockHeight + "px";
+                    stikyBlock.setAttribute('style', 'position: absolute');
+                    stikyBlock.classList.remove("fixed");
+                }
+            }
+            
+            window.addEventListener("resize",function(){
+                showDictionaryList();
+            });
+            
+            showDictionaryList()
+            
+            document.addEventListener("scroll",function(){
+                showDictionaryList()
+            });
+        
+    });
+    </script>
     <script src="./js/main.js"></script>
 </body>
 </html>

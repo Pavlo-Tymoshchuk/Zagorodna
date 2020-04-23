@@ -541,9 +541,10 @@ document.addEventListener('DOMContentLoaded', function(){
                 filterWrapper.classList.remove('active');
                 activeElem.classList.remove('active');
             }else {
-                allWrappers.forEach((item) => {
-                    item.classList.remove('active');
-                });
+                
+                for(var i = 0; i < allWrappers.length; i++) {
+                    allWrappers[i].classList.remove('active');
+                }
                 
                  filterWrapper.classList.add('active');
                  activeElem.classList.add('active');
@@ -553,13 +554,10 @@ document.addEventListener('DOMContentLoaded', function(){
         if(!item.closest('.js-filter') && !item.closest(".js-filter-drop")) {
             
             if(allWrappers) {
-                allWrappers.forEach((item) => {
-                    item.classList.remove('active');
-                });
-                
-                allItems.forEach((item) => {
-                    item.classList.remove('active');
-                });
+                for(var i = 0; i < allWrappers.length; i++) {
+                    allWrappers[i].classList.remove('active');
+                    allItems[i].classList.remove("active");
+                }
             }
         }
         
@@ -605,6 +603,20 @@ document.addEventListener('DOMContentLoaded', function(){
         setCurrentSlideIndex(item);
     });
     
+    function scrollListNext(activeItem) {
+        let counterElem = activeItem.getAttribute('data-index');
+        let itemWidth = activeItem.offsetWidth;
+        
+        generalList.scrollLeft = itemWidth * counterElem;
+    }
+    
+    function scrollListPrev(activeItem) {
+        let counterElem = activeItem.getAttribute('data-index');
+        let itemWidth = activeItem.offsetWidth;
+        
+        generalList.scrollLeft = itemWidth * (counterElem - 1);
+    }
+    
     function changeImg(item) {
         let style = item.getAttribute('src');
         generalImg.setAttribute('src', style);
@@ -647,8 +659,8 @@ document.addEventListener('DOMContentLoaded', function(){
                     return;
                 }
                 
-                showImg.previousElementSibling.scrollIntoView({block: "center", behavior: "smooth", inline: "center"});
-
+                scrollListPrev(showImg.previousElementSibling);
+                
                 showImg.previousElementSibling.classList.add("active");
                 showImg.classList.remove("active");
                 
@@ -672,7 +684,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     return;
                 }
 
-                showImg.nextElementSibling.scrollIntoView({block: "nearest", inline: "center"});
+                scrollListNext(showImg);
                 
                 showImg.nextElementSibling.classList.add("active");
                 showImg.classList.remove("active");

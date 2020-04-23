@@ -383,23 +383,23 @@ main {
   transition: border-color 0.4s, background-color 0.4s;
 }
 .main-textarea::-webkit-input-placeholder {
-  color: #575757;
+  color: #949494;
   font-weight: 600;
 }
 .main-textarea::-moz-placeholder {
-  color: #575757;
+  color: #949494;
   font-weight: 600;
 }
 .main-textarea:-ms-input-placeholder {
-  color: #575757;
+  color: #949494;
   font-weight: 600;
 }
 .main-textarea::-ms-input-placeholder {
-  color: #575757;
+  color: #949494;
   font-weight: 600;
 }
 .main-textarea::placeholder {
-  color: #575757;
+  color: #949494;
   font-weight: 600;
 }
 .main-textarea:focus {
@@ -408,7 +408,7 @@ main {
 }
 .main-input {
   width: 100%;
-  height: 44px;
+  height: 48px;
   border: 4px solid #eaeaea;
   background-color: #f5f5f5;
   border-radius: 6px;
@@ -420,23 +420,23 @@ main {
   transition: border-color 0.4s, background-color 0.4s;
 }
 .main-input::-webkit-input-placeholder {
-  color: #575757;
+  color: #949494;
   font-weight: 600;
 }
 .main-input::-moz-placeholder {
-  color: #575757;
+  color: #949494;
   font-weight: 600;
 }
 .main-input:-ms-input-placeholder {
-  color: #575757;
+  color: #949494;
   font-weight: 600;
 }
 .main-input::-ms-input-placeholder {
-  color: #575757;
+  color: #949494;
   font-weight: 600;
 }
 .main-input::placeholder {
-  color: #575757;
+  color: #949494;
   font-weight: 600;
 }
 .main-input:focus {
@@ -1308,9 +1308,33 @@ main {
 .add-reviews {
   background-color: #ffffff;
   border-radius: 6px;
-  padding: 45px 30px;
+  padding: 0px 30px;
   text-align: center;
+  max-height: 0px;
+  overflow: hidden;
+}
+.add-reviews.active {
+  max-height: 515px;
+  padding: 45px 30px;
   margin-bottom: 45px;
+  -webkit-animation: addRreviews 0.5s;
+  animation: addRreviews 0.5s;
+}
+@-webkit-keyframes addRreviews {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes addRreviews {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .reviews__form {
   display: -webkit-box;
@@ -1365,7 +1389,20 @@ main {
   font-size: 21px;
   color: #f49f43;
 }
+.star__wrapper-set .star__list .start__item {
+  cursor: pointer;
+  margin: 0px;
+  padding-right: 5px;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.star__wrapper-set .star__list .start__item:last-child {
+  margin-right: 0px;
+}
 .star__wrapper-set .star__list .start__item:hover ~ .start__item {
+  color: #ababab;
+}
+.star__wrapper-set .star__list .start__item.active ~ .start__item {
   color: #ababab;
 }
 /* Header */
@@ -1754,7 +1791,22 @@ main {
   transition: color 0.4s;
 }
 .header__form .main-input {
-  height: 52px;
+  height: 56px;
+}
+.header__form .main-input::-webkit-input-placeholder {
+  color: #575757;
+}
+.header__form .main-input::-moz-placeholder {
+  color: #575757;
+}
+.header__form .main-input:-ms-input-placeholder {
+  color: #575757;
+}
+.header__form .main-input::-ms-input-placeholder {
+  color: #575757;
+}
+.header__form .main-input::placeholder {
+  color: #575757;
 }
 .header__buttons__wrapper {
   display: -webkit-box;
@@ -2394,6 +2446,14 @@ main {
   }
   .product-page__plan-item:hover:active .name {
     color: #f5850c;
+  }
+  .product-page__reviews-header .main-button.active:hover {
+    -webkit-box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.4);
+  }
+  .reviews-page .general-heading .main-button.active:hover {
+    -webkit-box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.4);
   }
   /* //Product */
   /* Popular */
@@ -4075,6 +4135,19 @@ main {
 }
 .reviews-page .general-heading .main-button {
   max-width: 270px;
+}
+.reviews-page .general-heading .main-button::before {
+  content: "Добавить отзыв";
+}
+.reviews-page .general-heading .main-button.active {
+  background-color: #ffffff;
+  color: #3d3d3d;
+}
+.reviews-page .general-heading .main-button.active::before {
+  content: "Отмена";
+}
+.reviews-page .add-reviews.active {
+  margin-top: 40px;
 }
 .general-tabs {
   background-color: #ffffff;
@@ -6609,6 +6682,9 @@ main {
   width: 30px;
   height: 90px;
   background-color: #ffffff;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 .product-page__img-navigation .general-button span {
   font-weight: 700;
@@ -7437,6 +7513,16 @@ main {
   max-width: 270px;
   height: 48px;
   margin-left: 10px;
+}
+.product-page__reviews-header .main-button::before {
+  content: "Добавить отзыв";
+}
+.product-page__reviews-header .main-button.active {
+  background-color: #ffffff;
+  color: #3d3d3d;
+}
+.product-page__reviews-header .main-button.active::before {
+  content: "Отмена";
 }
 .product-page__reviews-item {
   background-color: #ffffff;
@@ -8703,6 +8789,29 @@ main {
 .comparison__header__wrapper.fixed .comparison__product__item-body {
   height: 160px;
 }
+.comparison__header__wrapper .wrapper {
+  position: relative;
+}
+.comparison__header__wrapper .general-button {
+  position: absolute;
+  left: 325px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2;
+  -webkit-transition: opacity 0.4s, visibility 0s 0s;
+  transition: opacity 0.4s, visibility 0s 0s;
+}
+.comparison__header__wrapper .general-button.next {
+  right: 15px;
+  left: auto;
+}
+.comparison__header__wrapper .general-button.disabled {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.4s, visibility 0s 0.4s;
+  transition: opacity 0.4s, visibility 0s 0.4s;
+}
 .comparison__header__container.position-absolute {
   position: absolute;
   width: 100%;
@@ -8718,6 +8827,7 @@ main {
   -ms-overflow-style: none;
   padding: 10px 0px 20px 30px;
   margin: -10px 0px -20px -30px;
+  scroll-behavior: smooth;
 }
 .comparison__product__list::-webkit-scrollbar {
   display: none;
@@ -8768,13 +8878,13 @@ main {
   position: absolute;
   display: block;
   top: 0;
-  right: -20px;
+  right: -15px;
   height: 100%;
   width: 20px;
   z-index: 2;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.2)), color-stop(25%, rgba(255, 255, 255, 0.4)), color-stop(50%, rgba(255, 255, 255, 0.6)), color-stop(75%, rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0)));
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.8) 75%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.8) 75%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.2)), color-stop(25%, rgba(255, 255, 255, 0.4)), color-stop(50%, rgba(255, 255, 255, 0.6)), color-stop(75%, rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.8) 75%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.8) 75%, rgba(255, 255, 255, 0) 100%);
 }
 .comparison__header-add-new .decor {
   display: -webkit-box;
@@ -8999,10 +9109,9 @@ main {
   background-color: #f5f5f5;
 }
 .comparison__filter-table__caption {
-  width: 225px;
+  width: 255px;
   text-transform: uppercase;
   color: #575757;
-  margin-right: 30px;
   font-size: 14px;
   font-weight: 400;
   -webkit-flex-shrink: 0;
@@ -9018,7 +9127,8 @@ main {
   overflow: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  padding: 15px 27px 15px 0px;
+  padding: 15px 27px 15px 30px;
+  scroll-behavior: smooth;
 }
 .comparison__filter-table__list::-webkit-scrollbar {
   display: none;
@@ -9896,6 +10006,18 @@ main {
   }
   .general-tabs__list {
     padding: 25px 35px;
+  }
+  /* Reviws */
+  .add-reviews.active {
+    padding: 25px;
+    max-height: 600px;
+  }
+  .add-reviews .input__wrapper {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .add-reviews .textarea__wrapper {
+    margin-bottom: 25px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -11090,6 +11212,14 @@ main {
     width: 20%;
   }
   /* //Product page */
+  /* Comparison */
+  .comparison__header__wrapper .general-button {
+    display: none;
+  }
+  .comparison__filter-table__list,
+  .comparison__product__list {
+    scroll-behavior: initial;
+  }
 }
 @media screen and (max-width: 1024px) {
   /* Comparison */
@@ -12700,8 +12830,8 @@ main {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .reviews-page .reviews__drop {
-    margin-top: 20px;
+  .reviews-page .general-top__drop {
+    margin-top: 25px;
   }
   .reviews-slider__item {
     width: calc(91% - 10px);

@@ -463,7 +463,7 @@
                             </ul>
                         </div>
                     </div>
-                    <button class="main-button js-filter" data-target="reviews"></button>
+                    <!-- <button class="main-button js-review-button"></button> -->
                 </div>
                 <div class="general-tabs">
                     <ul class="general-tabs__list">
@@ -475,7 +475,7 @@
                         <li class="general-tabs__item general-tabs__item-empty"></li>
                     </ul>
                 </div>
-                <div class="add-reviews js-filter-drop" data-target="reviews">
+                <div class="add-reviews js-review-drop">
                     <h4 class="product-page__caption-l">Оцените объект</h4>
                     <div class="star__wrapper star__wrapper-set">
                         <ul class="star__list">
@@ -1219,6 +1219,39 @@
             </form>
         </div>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            // Stars 
+            document.addEventListener("click", function(e){
+                let item = e.target;
+                
+                if(item.closest('.js-stars-item')) {
+                    let value = item.closest('.js-stars-item').getAttribute('data-index');
+                    let allStars = document.querySelectorAll(".js-stars-item");
+                    
+                    allStars.forEach(function(item){
+                        item.classList.remove('active');
+                    });
+                    item.closest('.js-stars-item').classList.add('active');
+                    document.querySelector(".js-input-stars").value = value;
+                }
+            });
+            
+            // //Stars 
+            
+            // Review
+            
+            document.addEventListener('click', function(e){
+                let item = e.target;
+                
+                if(item.closest('.js-review-button')) {
+                    let reviewContainer = document.querySelector('.js-review-drop');
+                    item.closest('.js-review-button').classList.toggle('active');
+                    reviewContainer.classList.toggle('active');
+                }
+            });
+        });
+    </script>
     <script src="./js/main.js"></script>
 </body>
 </html>

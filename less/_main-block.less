@@ -3525,6 +3525,7 @@
         width: 30px;
         height: 90px;
         background-color: #ffffff;
+        flex-shrink: 0;
         
         span {
             font-weight: 700;
@@ -5240,44 +5241,58 @@
 
 /* Dectionary */
 
-.dictionaty {
+.dictionary {
     .article-page__more-news {
         margin-bottom: 0px;
+    }
+    
+    .main-caption-l {
+        margin-bottom: 35px;
     }
 }
 
 .dictionaty__text {
     font-size: 14px;
     line-height: 25px;
-    margin-top: 37px;
+    margin-bottom: 30px;
 }
 
-.dictionary__letter-sticy {
-    display: flex;
-    align-items: center;
-    position: fixed;
+.dictionary__letter__header {
+    position: relative;
+}
+
+.dictionary__letter__header__wrapper {
+    position: absolute;
     left: 0px;
     top: 0px;
     width: 100%;
+    z-index: 2;
     height: 50px;
-    background-color: #ffffff;
-    transform: translateY(-100%);
-    opacity: 0px;
-    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.08);
-    transition: transform .4s, opacity .4s;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     
-    .container {
-        width: 100%;
+    &::-webkit-scrollbar {
+        display: none;
     }
     
-    .dictionary__letter-list {
-        margin-top: 0px;
+    &.fixed {
+        background-color: #ffffff;
+        box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.08);
+        
+        .dictionary__letter-list {
+            max-width: 1195px;
+            width: 100%;
+            padding: 0px 40px;
+            margin: 0px auto;
+        }
     }
 }
 
 .dictionary__letter-list {
     display: flex;
-    margin-top: 45px;
 }
 
 .dictionary__letter-item {
@@ -5302,7 +5317,7 @@
 }
 
 .dictionary__letter-content-list {
-    margin-top: 40px;
+    margin-top: 35px;
     
     .caption {
         font-family: "Circe", sans-serif;
@@ -5578,6 +5593,30 @@
             height: 160px;
         }
     }
+    
+    .wrapper {
+        position: relative;
+    }
+    
+    .general-button {
+        position: absolute;
+        left: 325px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        transition: opacity .4s, visibility 0s 0s;
+        
+        &.next {
+            right: 15px;
+            left: auto;
+        }
+        
+        &.disabled {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .4s, visibility 0s .4s;
+        }
+    }
 }
 
 .comparison__header__container {
@@ -5595,6 +5634,7 @@
     -ms-overflow-style: none;
     padding: 10px 0px 20px 30px;
     margin: -10px 0px -20px -30px;
+    scroll-behavior: smooth;
     
     &::-webkit-scrollbar {
         display: none;
@@ -5629,11 +5669,11 @@
             position: absolute;
             display: block;
             top: 0;
-            right: -20px;
+            right: -15px;
             height: 100%;
             width: 20px;
             z-index: 2;
-            background: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.4) 25%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0.8) 75%, rgba(255,255,255,0) 100%);
+            background: linear-gradient(-90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.4) 25%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0.8) 75%, rgba(255,255,255,0) 100%);
         }
     }
     
@@ -5758,8 +5798,7 @@
     transform: translateX(-50%);
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.06);
     background-color: #ffffff;
-    height: 48px;
-    padding: 0px 15px;
+    padding: 15px;
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
@@ -5837,10 +5876,9 @@
 }
 
 .comparison__filter-table__caption {
-    width: 225px;
+    width: 255px;
     text-transform: uppercase;
     color: #575757;
-    margin-right: 30px;
     font-size: 14px;
     font-weight: 400;
     flex-shrink: 0;
@@ -5853,7 +5891,8 @@
     overflow: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding: 15px 27px 15px 0px;
+    padding: 15px 27px 15px 30px;
+    scroll-behavior: smooth;
     
     &::-webkit-scrollbar {
         display: none;

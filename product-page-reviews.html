@@ -524,9 +524,9 @@
                     <div class="product-page__reviews">
                         <div class="product-page__reviews-header">
                             <h4 class="product-page__caption-l">Отзывы о “Роскошный”</h4>
-                            <button class="main-button js-filter" data-target="reviews"></button>
+                            <button class="main-button js-review-button"></button>
                         </div>
-                        <div class="add-reviews js-filter-drop" data-target="reviews">
+                        <div class="add-reviews js-review-drop">
                             <h4 class="product-page__caption-l">Оцените объект</h4>
                             <div class="star__wrapper star__wrapper-set">
                                 <ul class="star__list">
@@ -1146,6 +1146,18 @@
             });
             
             // //Stars 
+            
+            // Review
+            
+            document.addEventListener('click', function(e){
+                let item = e.target;
+                
+                if(item.closest('.js-review-button')) {
+                    let reviewContainer = document.querySelector('.js-review-drop');
+                    item.closest('.js-review-button').classList.toggle('active');
+                    reviewContainer.classList.toggle('active');
+                }
+            });
         });
     </script>
     <script src="./js/main.js"></script>
