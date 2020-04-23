@@ -479,6 +479,73 @@
     /* //Product page */
 }
 
+@media screen and (max-width: 1024px) {
+    /* Comparison */
+    
+    .comparison__wrapper {
+        padding-left: 10px;
+    }
+    
+    .comparison__header-add-new {
+        a {
+            width: 180px;
+            height: 200px;
+        }
+        
+        .decor {
+            width: 60px;
+            height: 60px;
+        }
+        
+        .icon-plus {
+            font-size: 25px;
+        }
+    }
+    
+    .comparison__header__wrapper {
+        padding-left: 10px;
+        
+        &.fixed {
+            padding-left: 10px;
+        }
+    }
+    
+    .comparison__product__item {
+        width: 150px;
+    }
+    
+    .comparison__buttons__wrapper {
+        flex-wrap: wrap;
+        padding: 5px 25px;
+    }
+    
+    .comparison__filter-table__caption {
+        width: 180px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 12px;
+    }
+    
+    .comparison__filter-table__item {
+        width: 150px;
+    }
+    
+    .comparison__product__item-body {
+        height: 200px;
+    }
+    
+    .comparison__filter-table__header {
+        font-size: 20px;
+    }
+    
+    .comparison__product__link {
+        font-size: 14px;
+    }
+    
+    /* //Comparison */
+}
+
 @media screen and (max-width: 992px) {
     
     /* Main slider */
@@ -1245,69 +1312,6 @@
     } 
     
     /* Research */
-    
-    /* Comparison */
-    
-    .comparison__wrapper {
-        padding-left: 10px;
-    }
-    
-    .comparison__header-add-new {
-        a {
-            width: 180px;
-            height: 200px;
-        }
-        
-        .decor {
-            width: 60px;
-            height: 60px;
-        }
-        
-        .icon-plus {
-            font-size: 25px;
-        }
-    }
-    
-    .comparison__header {
-        padding-left: 10px;
-        
-        &.fixed {
-            padding-left: 10px;
-        }
-    }
-    
-    .comparison__product__item {
-        width: 150px;
-    }
-    
-    .comparison__buttons__wrapper {
-        flex-wrap: wrap;
-        padding: 5px 25px;
-    }
-    
-    .comparison__filter-table__caption {
-        width: 180px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        font-size: 12px;
-    }
-    
-    .comparison__filter-table__item {
-        width: 150px;
-    }
-    
-    .comparison__product__item-body {
-        height: 200px;
-    }
-    
-    .comparison__filter-table__header {
-        font-size: 20px;
-    }
-    
-    .comparison__product__link {
-        font-size: 14px;
-    }
 }
 
 @media screen and (max-width: 840px) {
@@ -3209,6 +3213,20 @@
         }
     }
     
+    .comparison__header__wrapper {
+        &.fixed {
+            .comparison__header-add-new {
+                a {
+                    height: 105px;
+                }
+            }
+            
+            .comparison__product__item-body {
+                height: 105px;
+            }
+        }
+    }
+    
     .comparison__header-add-new {
         a {
             width: 90px;
@@ -3226,9 +3244,14 @@
             font-size: 20px;
         }
     }
+    .comparison__product__list {
+        padding: 10px 0px 20px 20px;
+        margin: -10px 0px -20px -20px;
+    }
     
     .comparison__product__item {
         width: 105px;
+        margin-right: 20px;
     }
     
     .comparison__product__item-body {
@@ -3241,6 +3264,10 @@
     
     .comparison__product__item .general-noty__buttons-container {
         display: none;
+    }
+    
+    .comparison__header-add-new {
+        margin-right: 20px;
     }
     
     .comparison__product__mobile-button {
@@ -3264,15 +3291,6 @@
     
     .comparison__product__item-footer {
         margin-top: 10px;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        
-        a {
-            display: block;
-        }
     }
     
     .comparison__filter-table {
@@ -3287,6 +3305,7 @@
     .comparison__filter-table__caption {
         width: 105px;
         padding: 13px 0px 13px 20px;
+        margin-right: 20px;
     }
     
     .comparison__filter-table__list {
@@ -3295,6 +3314,11 @@
     
     .comparison__filter-table__item {
         width: 105px;
+        margin-right: 20px;
+    }
+    
+    .comparison__button-write {
+        font-size: 15px;
     }
     
     /* //Comparison */

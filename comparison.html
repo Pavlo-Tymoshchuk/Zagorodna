@@ -28,17 +28,17 @@
             height: 0px;
         }
     </style>
-    <script>
+    <!-- <script>
         window.onload = function() {
             let preloader = document.querySelector(".preloader");
             preloader.classList.add('hide');
         }
-    </script>
+    </script> -->
 </head>
 <body>
-    <div class="preloader">
+    <!-- <div class="preloader">
         <img src="./img/Preloader.gif" alt="Preload">
-    </div>
+    </div> -->
      <header class="header">
         <div class="header__top">
             <div class="header__city general-drop js-drop-item">
@@ -556,7 +556,6 @@
                 </div>
             </div>
             <div class="comparison__wrapper">
-                <div class="comparison__header-hide"></div>
                 <div class="comparison__mobile__buttons popup" data-target="comparison-button">
                     <div class="wrapper">
                         <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
@@ -579,558 +578,564 @@
                         </button>
                     </div>
                 </div>
-                <div class="comparison__header">
-                    <div class="comparison__header-add-new">
-                        <a href="#">
-                            <div class="decor">
-                                <p class="plus">
-                                    <span class="icon-plus"></span>
-                                </p>
+                <div class="comparison__header js-comparison-header">
+                    <div class="comparison__header__container js-comparison-container">
+                        <div class="comparison__header__wrapper js-comparison-wrapper-product">
+                            <div class="comparison__header-add-new">
+                                <a href="#">
+                                    <div class="decor">
+                                        <p class="plus">
+                                            <span class="icon-plus"></span>
+                                        </p>
+                                    </div>
+                                    <p>Добавить еще</p>
+                                </a>
                             </div>
-                            <p>Добавить еще</p>
-                        </a>
-                    </div>
-                    <ul class="comparison__product__list js-mousewheel">
-                        <li class="comparison__product__item">
-                            <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
-                                <button class="close-popup comparison__delete">
-                                    <span class="decor"></span>
-                                </button>
-                                <div class="general-noty__buttons-container">
-                                    <button class="general-noty__button general-noty__button-sing-up active">
-                                        <span class="icon-bell-outline"></span>
-                                    </button>
-                                    <button class="general-noty__button general-noty__button-favorite">
-                                        <span class="icon-heart-outline"></span>
-                                    </button>
-                                </div>
-                                <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
-                                <div class="comparison__buttons__wrapper">
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
-                                            <span class="icon-phone"></span>
+                            <ul class="comparison__product__list js-mousewheel">
+                                <li class="comparison__product__item">
+                                    <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
+                                        <button class="close-popup comparison__delete">
+                                            <span class="decor"></span>
                                         </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Обратный звонок</p>
+                                        <div class="general-noty__buttons-container">
+                                            <button class="general-noty__button general-noty__button-sing-up active">
+                                                <span class="icon-bell-outline"></span>
+                                            </button>
+                                            <button class="general-noty__button general-noty__button-favorite">
+                                                <span class="icon-heart-outline"></span>
+                                            </button>
+                                        </div>
+                                        <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
+                                        <div class="comparison__buttons__wrapper">
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
+                                                    <span class="icon-phone"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Обратный звонок</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-write js-button" data-target="questions">
+                                                    <span class="icon-message"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Написать нам</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
+                                                    <span class="icon-calendar"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Назначить визит</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-buy js-button" data-target="help">
+                                                    <span class="icon-key"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Подобрать</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-write js-button" data-target="questions">
-                                            <span class="icon-message"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Написать нам</p>
-                                        </div>
+                                    <div class="comparison__product__item-footer">
+                                        <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
                                     </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
-                                            <span class="icon-calendar"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Назначить визит</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-buy js-button" data-target="help">
-                                            <span class="icon-key"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Подобрать</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comparison__product__item-footer">
-                                <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
-                            </div>
-                        </li>
-                        <li class="comparison__product__item">
-                            <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
-                                <button class="close-popup comparison__delete">
-                                    <span class="decor"></span>
-                                </button>
-                                <div class="general-noty__buttons-container">
-                                    <button class="general-noty__button general-noty__button-sing-up active">
-                                        <span class="icon-bell-outline"></span>
-                                    </button>
-                                    <button class="general-noty__button general-noty__button-favorite">
-                                        <span class="icon-heart-outline"></span>
-                                    </button>
-                                </div>
-                                <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
-                                <div class="comparison__buttons__wrapper">
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
-                                            <span class="icon-phone"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Обратный звонок</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-write js-button" data-target="questions">
-                                            <span class="icon-message"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Написать нам</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
-                                            <span class="icon-calendar"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Назначить визит</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-buy js-button" data-target="help">
-                                            <span class="icon-key"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Подобрать</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comparison__product__item-footer">
-                                <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
-                            </div>
-                        </li>
-                        <li class="comparison__product__item">
-                            <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
-                                <button class="close-popup comparison__delete">
-                                    <span class="decor"></span>
-                                </button>
-                                <div class="general-noty__buttons-container">
-                                    <button class="general-noty__button general-noty__button-sing-up active">
-                                        <span class="icon-bell-outline"></span>
-                                    </button>
-                                    <button class="general-noty__button general-noty__button-favorite">
-                                        <span class="icon-heart-outline"></span>
-                                    </button>
-                                </div>
-                                <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
-                                <div class="comparison__buttons__wrapper">
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
-                                            <span class="icon-phone"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Обратный звонок</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-write js-button" data-target="questions">
-                                            <span class="icon-message"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Написать нам</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
-                                            <span class="icon-calendar"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Назначить визит</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-buy js-button" data-target="help">
-                                            <span class="icon-key"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Подобрать</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comparison__product__item-footer">
-                                <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
-                            </div>
-                        </li>
-                        <li class="comparison__product__item">
-                            <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
-                                <button class="close-popup comparison__delete">
-                                    <span class="decor"></span>
-                                </button>
-                                <div class="general-noty__buttons-container">
-                                    <button class="general-noty__button general-noty__button-sing-up active">
-                                        <span class="icon-bell-outline"></span>
-                                    </button>
-                                    <button class="general-noty__button general-noty__button-favorite">
-                                        <span class="icon-heart-outline"></span>
-                                    </button>
-                                </div>
-                                <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
-                                <div class="comparison__buttons__wrapper">
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
-                                            <span class="icon-phone"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Обратный звонок</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-write js-button" data-target="questions">
-                                            <span class="icon-message"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Написать нам</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
-                                            <span class="icon-calendar"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Назначить визит</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-buy js-button" data-target="help">
-                                            <span class="icon-key"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Подобрать</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comparison__product__item-footer">
-                                <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
-                            </div>
-                        </li>
-                        <li class="comparison__product__item">
-                            <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
-                                <button class="close-popup comparison__delete">
-                                    <span class="decor"></span>
-                                </button>
-                                <div class="general-noty__buttons-container">
-                                    <button class="general-noty__button general-noty__button-sing-up active">
-                                        <span class="icon-bell-outline"></span>
-                                    </button>
-                                    <button class="general-noty__button general-noty__button-favorite">
-                                        <span class="icon-heart-outline"></span>
-                                    </button>
-                                </div>
-                                <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
-                                <div class="comparison__buttons__wrapper">
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
-                                            <span class="icon-phone"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Обратный звонок</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-write js-button" data-target="questions">
-                                            <span class="icon-message"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Написать нам</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
-                                            <span class="icon-calendar"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Назначить визит</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-buy js-button" data-target="help">
-                                            <span class="icon-key"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Подобрать</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comparison__product__item-footer">
-                                <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
-                            </div>
-                        </li>
-                        <li class="comparison__product__item">
-                            <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
-                                <button class="close-popup comparison__delete">
-                                    <span class="decor"></span>
-                                </button>
-                                <div class="general-noty__buttons-container">
-                                    <button class="general-noty__button general-noty__button-sing-up active">
-                                        <span class="icon-bell-outline"></span>
-                                    </button>
-                                    <button class="general-noty__button general-noty__button-favorite">
-                                        <span class="icon-heart-outline"></span>
-                                    </button>
-                                </div>
-                                <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
-                                <div class="comparison__buttons__wrapper">
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
-                                            <span class="icon-phone"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Обратный звонок</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-write js-button" data-target="questions">
-                                            <span class="icon-message"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Написать нам</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
-                                            <span class="icon-calendar"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Назначить визит</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-buy js-button" data-target="help">
-                                            <span class="icon-key"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Подобрать</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comparison__product__item-footer">
-                                <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
-                            </div>
-                        </li>
-                        <li class="comparison__product__item">
-                            <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
-                                <button class="close-popup comparison__delete">
-                                    <span class="decor"></span>
-                                </button>
-                                <div class="general-noty__buttons-container">
-                                    <button class="general-noty__button general-noty__button-sing-up active">
-                                        <span class="icon-bell-outline"></span>
-                                    </button>
-                                    <button class="general-noty__button general-noty__button-favorite">
-                                        <span class="icon-heart-outline"></span>
-                                    </button>
-                                </div>
-                                <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
-                                <div class="comparison__buttons__wrapper">
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
-                                            <span class="icon-phone"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Обратный звонок</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-write js-button" data-target="questions">
-                                            <span class="icon-message"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Написать нам</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
-                                            <span class="icon-calendar"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Назначить визит</p>
-                                        </div>
-                                    </div>
-                                    <div class="comparison__button__container">
-                                        <button class="comparison__button comparison__button-buy js-button" data-target="help">
-                                            <span class="icon-key"></span>
-                                        </button>
-                                        <div class="comparison__button__placeholder">
-                                            <p>Подобрать</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comparison__product__item-footer">
-                                <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="comparison__filter-table">
-                    <div class="comparison__filter-table__header">
-                        <p>Общее</p>
-                    </div>
-                    <div class="comparison__filter-table__body">
-                        <div class="wrapper">
-                            <h4 class="comparison__filter-table__caption">Статус строительства</h4>
-                            <ul class="comparison__filter-table__list js-mousewheel">
-                                <li class="comparison__filter-table__item">
-                                    <p class="product__status completed">Завершен</p>
                                 </li>
-                                <li class="comparison__filter-table__item">
-                                    <p class="product__status completed">Завершен</p>
+                                <li class="comparison__product__item">
+                                    <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
+                                        <button class="close-popup comparison__delete">
+                                            <span class="decor"></span>
+                                        </button>
+                                        <div class="general-noty__buttons-container">
+                                            <button class="general-noty__button general-noty__button-sing-up active">
+                                                <span class="icon-bell-outline"></span>
+                                            </button>
+                                            <button class="general-noty__button general-noty__button-favorite">
+                                                <span class="icon-heart-outline"></span>
+                                            </button>
+                                        </div>
+                                        <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
+                                        <div class="comparison__buttons__wrapper">
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
+                                                    <span class="icon-phone"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Обратный звонок</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-write js-button" data-target="questions">
+                                                    <span class="icon-message"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Написать нам</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
+                                                    <span class="icon-calendar"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Назначить визит</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-buy js-button" data-target="help">
+                                                    <span class="icon-key"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Подобрать</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comparison__product__item-footer">
+                                        <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
+                                    </div>
                                 </li>
-                                <li class="comparison__filter-table__item">
-                                    <p class="product__status completed">Завершен</p>
+                                <li class="comparison__product__item">
+                                    <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
+                                        <button class="close-popup comparison__delete">
+                                            <span class="decor"></span>
+                                        </button>
+                                        <div class="general-noty__buttons-container">
+                                            <button class="general-noty__button general-noty__button-sing-up active">
+                                                <span class="icon-bell-outline"></span>
+                                            </button>
+                                            <button class="general-noty__button general-noty__button-favorite">
+                                                <span class="icon-heart-outline"></span>
+                                            </button>
+                                        </div>
+                                        <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
+                                        <div class="comparison__buttons__wrapper">
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
+                                                    <span class="icon-phone"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Обратный звонок</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-write js-button" data-target="questions">
+                                                    <span class="icon-message"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Написать нам</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
+                                                    <span class="icon-calendar"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Назначить визит</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-buy js-button" data-target="help">
+                                                    <span class="icon-key"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Подобрать</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comparison__product__item-footer">
+                                        <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
+                                    </div>
                                 </li>
-                                <li class="comparison__filter-table__item">
-                                    <p class="product__status completed">Завершен</p>
+                                <li class="comparison__product__item">
+                                    <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
+                                        <button class="close-popup comparison__delete">
+                                            <span class="decor"></span>
+                                        </button>
+                                        <div class="general-noty__buttons-container">
+                                            <button class="general-noty__button general-noty__button-sing-up active">
+                                                <span class="icon-bell-outline"></span>
+                                            </button>
+                                            <button class="general-noty__button general-noty__button-favorite">
+                                                <span class="icon-heart-outline"></span>
+                                            </button>
+                                        </div>
+                                        <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
+                                        <div class="comparison__buttons__wrapper">
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
+                                                    <span class="icon-phone"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Обратный звонок</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-write js-button" data-target="questions">
+                                                    <span class="icon-message"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Написать нам</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
+                                                    <span class="icon-calendar"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Назначить визит</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-buy js-button" data-target="help">
+                                                    <span class="icon-key"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Подобрать</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comparison__product__item-footer">
+                                        <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
+                                    </div>
                                 </li>
-                                <li class="comparison__filter-table__item">
-                                    <p class="product__status build">Строится</p>
+                                <li class="comparison__product__item">
+                                    <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
+                                        <button class="close-popup comparison__delete">
+                                            <span class="decor"></span>
+                                        </button>
+                                        <div class="general-noty__buttons-container">
+                                            <button class="general-noty__button general-noty__button-sing-up active">
+                                                <span class="icon-bell-outline"></span>
+                                            </button>
+                                            <button class="general-noty__button general-noty__button-favorite">
+                                                <span class="icon-heart-outline"></span>
+                                            </button>
+                                        </div>
+                                        <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
+                                        <div class="comparison__buttons__wrapper">
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
+                                                    <span class="icon-phone"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Обратный звонок</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-write js-button" data-target="questions">
+                                                    <span class="icon-message"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Написать нам</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
+                                                    <span class="icon-calendar"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Назначить визит</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-buy js-button" data-target="help">
+                                                    <span class="icon-key"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Подобрать</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comparison__product__item-footer">
+                                        <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
+                                    </div>
                                 </li>
-                                <li class="comparison__filter-table__item">
-                                    <p class="product__status build">Строится</p>
+                                <li class="comparison__product__item">
+                                    <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
+                                        <button class="close-popup comparison__delete">
+                                            <span class="decor"></span>
+                                        </button>
+                                        <div class="general-noty__buttons-container">
+                                            <button class="general-noty__button general-noty__button-sing-up active">
+                                                <span class="icon-bell-outline"></span>
+                                            </button>
+                                            <button class="general-noty__button general-noty__button-favorite">
+                                                <span class="icon-heart-outline"></span>
+                                            </button>
+                                        </div>
+                                        <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
+                                        <div class="comparison__buttons__wrapper">
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
+                                                    <span class="icon-phone"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Обратный звонок</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-write js-button" data-target="questions">
+                                                    <span class="icon-message"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Написать нам</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
+                                                    <span class="icon-calendar"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Назначить визит</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-buy js-button" data-target="help">
+                                                    <span class="icon-key"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Подобрать</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comparison__product__item-footer">
+                                        <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
+                                    </div>
                                 </li>
-                                <li class="comparison__filter-table__item">
-                                    <p class="product__status completed">Завершен</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="wrapper">
-                            <h4 class="comparison__filter-table__caption">Количество квартир</h4>
-                            <ul class="comparison__filter-table__list js-mousewheel">
-                                <li class="comparison__filter-table__item">
-                                    <p>400</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>400</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>400</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>400</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>300</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>300</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>200</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="wrapper">
-                            <h4 class="comparison__filter-table__caption">Парковка</h4>
-                            <ul class="comparison__filter-table__list js-mousewheel">
-                                <li class="comparison__filter-table__item">
-                                    <p>—</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>—</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>—</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>—</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>500 м</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>500 м</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>500 м</p>
+                                <li class="comparison__product__item">
+                                    <div class="comparison__product__item-body" style='background-image: url(./img/product-img-1.png);'>
+                                        <button class="close-popup comparison__delete">
+                                            <span class="decor"></span>
+                                        </button>
+                                        <div class="general-noty__buttons-container">
+                                            <button class="general-noty__button general-noty__button-sing-up active">
+                                                <span class="icon-bell-outline"></span>
+                                            </button>
+                                            <button class="general-noty__button general-noty__button-favorite">
+                                                <span class="icon-heart-outline"></span>
+                                            </button>
+                                        </div>
+                                        <button class="comparison__product__mobile-button js-button" data-target="comparison-button"></button>
+                                        <div class="comparison__buttons__wrapper">
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-call-back js-button" data-target="call-back-phone">
+                                                    <span class="icon-phone"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Обратный звонок</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-write js-button" data-target="questions">
+                                                    <span class="icon-message"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Написать нам</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-meeting js-button" data-target="meeting">
+                                                    <span class="icon-calendar"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Назначить визит</p>
+                                                </div>
+                                            </div>
+                                            <div class="comparison__button__container">
+                                                <button class="comparison__button comparison__button-buy js-button" data-target="help">
+                                                    <span class="icon-key"></span>
+                                                </button>
+                                                <div class="comparison__button__placeholder">
+                                                    <p>Подобрать</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comparison__product__item-footer">
+                                        <a href="#" class="comparison__product__link">Европейский-2 Европейский-2</a>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="comparison__filter-table">
-                    <div class="comparison__filter-table__header">
-                        <p>Местоположение</p>
+                <div class="comparison__body js-comparison-body">
+                    <div class="comparison__filter-table">
+                        <div class="comparison__filter-table__header">
+                            <p>Общее</p>
+                        </div>
+                        <div class="comparison__filter-table__body">
+                            <div class="wrapper">
+                                <h4 class="comparison__filter-table__caption">Статус строительства</h4>
+                                <ul class="comparison__filter-table__list js-mousewheel">
+                                    <li class="comparison__filter-table__item">
+                                        <p class="product__status completed">Завершен</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p class="product__status completed">Завершен</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p class="product__status completed">Завершен</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p class="product__status completed">Завершен</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p class="product__status build">Строится</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p class="product__status build">Строится</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p class="product__status completed">Завершен</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="wrapper">
+                                <h4 class="comparison__filter-table__caption">Количество квартир</h4>
+                                <ul class="comparison__filter-table__list js-mousewheel">
+                                    <li class="comparison__filter-table__item">
+                                        <p>400</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>400</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>400</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>400</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>300</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>300</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>200</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="wrapper">
+                                <h4 class="comparison__filter-table__caption">Парковка</h4>
+                                <ul class="comparison__filter-table__list js-mousewheel">
+                                    <li class="comparison__filter-table__item">
+                                        <p>—</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>—</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>—</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>—</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>500 м</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>500 м</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>500 м</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="comparison__filter-table__body">
-                        <div class="wrapper">
-                            <h4 class="comparison__filter-table__caption">Город</h4>
-                            <ul class="comparison__filter-table__list js-mousewheel">
-                                <li class="comparison__filter-table__item">
-                                    <p class="product__status completed">Завершен</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p class="product__status completed">Завершен</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p class="product__status completed">Завершен</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p class="product__status completed">Завершен</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p class="product__status build">Строится</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p class="product__status build">Строится</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p class="product__status completed">Завершен</p>
-                                </li>
-                            </ul>
+                    <div class="comparison__filter-table">
+                        <div class="comparison__filter-table__header">
+                            <p>Местоположение</p>
                         </div>
-                        <div class="wrapper">
-                            <h4 class="comparison__filter-table__caption">Адрес</h4>
-                            <ul class="comparison__filter-table__list js-mousewheel">
-                                <li class="comparison__filter-table__item">
-                                    <p>400</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>400</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>400</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>400</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>300</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>300</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>200</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="wrapper">
-                            <h4 class="comparison__filter-table__caption">Расстояние до центра</h4>
-                            <ul class="comparison__filter-table__list js-mousewheel">
-                                <li class="comparison__filter-table__item">
-                                    <p>—</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>—</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>—</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>—</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>500 м</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>500 м</p>
-                                </li>
-                                <li class="comparison__filter-table__item">
-                                    <p>Рядом</p>
-                                </li>
-                            </ul>
+                        <div class="comparison__filter-table__body">
+                            <div class="wrapper">
+                                <h4 class="comparison__filter-table__caption">Город</h4>
+                                <ul class="comparison__filter-table__list js-mousewheel">
+                                    <li class="comparison__filter-table__item">
+                                        <p class="product__status completed">Завершен</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p class="product__status completed">Завершен</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p class="product__status completed">Завершен</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p class="product__status completed">Завершен</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p class="product__status build">Строится</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p class="product__status build">Строится</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p class="product__status completed">Завершен</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="wrapper">
+                                <h4 class="comparison__filter-table__caption">Адрес</h4>
+                                <ul class="comparison__filter-table__list js-mousewheel">
+                                    <li class="comparison__filter-table__item">
+                                        <p>400</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>400</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>400</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>400</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>300</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>300</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>200</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="wrapper">
+                                <h4 class="comparison__filter-table__caption">Расстояние до центра</h4>
+                                <ul class="comparison__filter-table__list js-mousewheel">
+                                    <li class="comparison__filter-table__item">
+                                        <p>—</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>—</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>—</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>—</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>500 м</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>500 м</p>
+                                    </li>
+                                    <li class="comparison__filter-table__item">
+                                        <p>Рядом</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1820,24 +1825,38 @@
             
         });
         
-        scrollBloks();
+        // scrollBloks();
             
         function showProductList() {
-            let stikyBlockHeight = document.querySelector('.comparison__header').offsetHeight;
-            let stikyBlock = document.querySelector('.comparison__header');
-            let hideBlock = document.querySelector('.comparison__header-hide');
-            hideBlock.style.height = stikyBlockHeight + "px";
+            let stikyBlockHeight = document.querySelector('.js-comparison-wrapper-product').offsetHeight;
+            let stikyBlock = document.querySelector('.js-comparison-wrapper-product');
+            let hideBlock = document.querySelector('.js-comparison-header');
+            let comparisonHeaderContainer = document.querySelector('.js-comparison-container');
+            let comparisonBodyBottom = document.querySelector('.js-comparison-body').getBoundingClientRect().bottom;
             
-            if(hideBlock.getBoundingClientRect().top < 10) {
-                stikyBlock.classList.add('fixed');
+            if(comparisonBodyBottom < stikyBlockHeight) {
+                stikyBlock.setAttribute('style', 'position: absolute');
+                comparisonHeaderContainer.setAttribute('style', `position: absolute; bottom: ${stikyBlockHeight}px; width: 100%; left: 0px;`);
+                return;
             }else {
-                stikyBlock.classList.remove('fixed');
+                stikyBlock.setAttribute('style', 'position: fixed');
+                comparisonHeaderContainer.setAttribute('style', 'position: static');
+            }
+           
+            if(hideBlock.getBoundingClientRect().top < 10) {
+                hideBlock.style.height = stikyBlockHeight + "px";
+                stikyBlock.setAttribute('style', 'position: fixed');
+                stikyBlock.classList.add("fixed");
+            }else {
+                hideBlock.style.height = stikyBlockHeight + "px";
+                stikyBlock.setAttribute('style', 'position: absolute');
+                stikyBlock.classList.remove("fixed");
             }
         }
         
         window.addEventListener("resize",function(){
             showProductList();
-            scrollBloks();
+            // scrollBloks();
         });
         
         showProductList()

@@ -463,7 +463,7 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- <button class="main-button">Добавить отзыв</button> -->
+                    <button class="main-button js-filter" data-target="reviews"></button>
                 </div>
                 <div class="general-tabs">
                     <ul class="general-tabs__list">
@@ -474,6 +474,44 @@
                         <li class="general-tabs__item">О новостройках</li>
                         <li class="general-tabs__item general-tabs__item-empty"></li>
                     </ul>
+                </div>
+                <div class="add-reviews js-filter-drop" data-target="reviews">
+                    <h4 class="product-page__caption-l">Оцените объект</h4>
+                    <div class="star__wrapper star__wrapper-set">
+                        <ul class="star__list">
+                            <li class="start__item js-stars-item" data-index="2">
+                                <span class="icon-star"></span>
+                            </li>
+                            <li class="start__item js-stars-item" data-index="4">
+                                <span class="icon-star"></span>
+                            </li>
+                            <li class="start__item js-stars-item" data-index="6">
+                                <span class="icon-star"></span>
+                            </li>
+                            <li class="start__item js-stars-item" data-index="8">
+                                <span class="icon-star"></span>
+                            </li>
+                            <li class="start__item js-stars-item" data-index="10">
+                                <span class="icon-star"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="#" class="reviews__form">
+                        <input type="hidden" class="js-input-stars" value="10">
+                        <label class="textarea__wrapper">
+                            <span class="input__caption">Дополнительная информация</span>
+                            <textarea class="main-textarea" placeholder="Напишите дополнительно"></textarea>
+                        </label>
+                        <label class="input__wrapper">
+                            <span class="input__caption">Имя</span>
+                            <input type="text" class="main-input" placeholder="Как к вам обращаться?">
+                        </label>
+                        <label class="input__wrapper">
+                            <span class="input__caption">Email*</span>
+                            <input type="email" class="main-input" placeholder="Ваш электронный адрес" required>
+                        </label>
+                        <button class="main-button">Опубликовать</button>
+                    </form>
                 </div>
                 <!-- <ul class="reviews__list">
                     <li class="reviews__item js-item">
