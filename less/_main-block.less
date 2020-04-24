@@ -4387,12 +4387,18 @@
 }
 
 .product__item-sales {
+    pointer-events: none;
+    
+    .product__item__header {
+        opacity: 0.6;
+    }
+    
     .product__item__body {
-        opacity: 0.6
+        opacity: 0.6;
     }
     
     .product__item__footer {
-        opacity: 0.6
+        opacity: 0.6;
     }
     
     .product__img {
@@ -4408,14 +4414,7 @@
             background-color: rgba(88, 88, 88, 0.6)
         }
     }
-    
-    .product__status {
-        opacity: 0.6;
-    }
 }
-
-
-
 
 .product-page__availability {
     background-color: #7bc97b;
@@ -5626,14 +5625,14 @@
     
     .general-button {
         position: absolute;
-        left: 325px;
+        left: 540px;
         top: 50%;
         transform: translateY(-50%);
         z-index: 2;
         transition: opacity .4s, visibility 0s 0s;
         
         &.next {
-            right: 15px;
+            right: 145px;
             left: auto;
         }
         
