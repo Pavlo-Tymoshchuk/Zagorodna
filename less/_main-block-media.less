@@ -234,6 +234,9 @@
     .product-item__map-catalog {
         display: block;
         overflow: hidden;
+        margin-left: 40px;
+        margin-right: 0px !important;
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
         
         iframe {
             width: calc(100% + 300px);
@@ -799,6 +802,12 @@
     .reviews__item {
         width: 530px;
         margin-right: 0px;
+    }
+    
+    .reviews-page__wrapper {
+        .reviews__item {
+            width: 100%;
+        }
     }
     
     /* Reviews */
@@ -2045,11 +2054,11 @@
     }
     
     .article-page__comments {
-        margin-top: 60px;
+        margin: 60px 0px;
     }
     
     .article-page__more-news {
-        margin: 60px 0px;
+        margin-bottom: 60px;
     }
     
     
@@ -2353,6 +2362,10 @@
     
     .product__item {
         margin-right: 0px;
+    }
+    
+    .product-item__map-catalog {
+        margin-left: 0px;
     }
 }
 
@@ -2853,6 +2866,21 @@
     /*// News */
     
     /* Article */
+    
+    .article-page__wrapper {
+        .general-heading {
+            flex-direction: column;
+            
+            .main-caption-l {
+                margin-right: 0px;
+            }
+        }
+        
+        .general-noty__buttons-container {
+            margin-top: 20px;
+        }
+    }
+    
     .article-main {
         width: calc(100% + 40px);
         margin-left: -20px;

@@ -7196,6 +7196,9 @@ main {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 700;
@@ -12779,6 +12782,20 @@ main {
       opacity: 1;
     }
   }
+  /* links */
+  .links {
+    margin-top: 45px;
+    padding-bottom: 15px;
+  }
+  .links__list {
+    font-size: 12px;
+    margin-right: -25px;
+  }
+  .links__item {
+    margin-right: 25px;
+    margin-bottom: 15px;
+  }
+  /* links */
 }
 @media screen and (max-width: 727px) {
   .product__wrapper-list-position .product__list {
