@@ -211,6 +211,40 @@
         }
     }
     
+    .header__livesearch__item__link {
+        &:hover {
+            background-color: #f7f7f7;
+            
+            .header__livesearch__item__info__body {
+                .name {
+                    color: #2c922c;
+                }
+            }
+            
+            &:active {
+                .header__livesearch__item__info__body {
+                    .name {
+                        color: #f5850c;
+                        transition: none;
+                    }
+                }
+            }
+        }
+    }
+    
+    .header__livesearch__footer {
+        a {
+            &:hover {
+                color: #2c922c;
+                
+                &:active {
+                    color: #f5850c;
+                    transition: none;
+                }
+            }
+        }
+    }
+    
     /* // Header */
     
     /* General */
