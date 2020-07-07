@@ -725,7 +725,20 @@ document.addEventListener('DOMContentLoaded', function(){
     
     // //Show product img
     
+    // Hide category links
+    
+    let allLitemCategory = document.querySelectorAll('.js-catagory-links-item');
+    
+    allLitemCategory.forEach((item) => {
+        allLinksLength = item.querySelectorAll(".js-sub-link").length;
+        
+        if(allLinksLength <= 6) {
+            item.querySelector('.js-category-button').classList.add('hide');
+        }
     });
+    
+     // //Hide category links
+});
 
 window.addEventListener("DOMContentLoaded", function() {
     [].forEach.call( document.querySelectorAll('input[type="tel"]'), function(input) {
